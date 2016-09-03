@@ -1,36 +1,22 @@
 ---
 id: 940
+layout: post
 title: My Advice For Chef in Large Corporations
 date: 2015-09-23T11:21:34+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-my-advice-for-chef-in-large-corporations 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=940
 permalink: /my-advice-for-chef-in-large-corporations/
-snap_isAutoPosted:
-  - 1
-dsq_thread_id:
-  - 4158265275
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:4:"doFB";i:0;}}";'
-snapLI:
-  - 's:289:"a:1:{i:0;a:9:{s:4:"doLI";s:1:"1";s:8:"postType";s:1:"A";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";}}";'
-snapTW:
-  - 's:318:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:62:"My advice to those who implement @chef in large corps - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"646721227445305344";s:5:"pDate";s:19:"2015-09-23 16:22:11";}}";'
-categories:
-  - insights
-tags:
-  - chef
-  - devops
-  - implementation
-  - strategy
 ---
-Here's my simple advice about [Chef](http://hedge-ops.com/intrinsic-motivators-leading-to-chef/) I wish I would have heard a year ago:
+Here's my simple advice about [Chef](/intrinsic-motivators-leading-to-chef/) I wish I would have heard a year ago:
 
-All of the stories about [the unicorns, rainbows, and fairies](http://www.itskeptic.org/content/devops-unicorns-horses-and-mules) that are doing absolutely amazing things with configuration automation are extremely inspirational. [Read about them](http://hedge-ops.com/customizing-chef-book-review/). Learn about them. Enjoy their talks. Enjoy their hipster vibe. Tell yourself that you are going to be cool like that one day.
+All of the stories about [the unicorns, rainbows, and fairies](http://www.itskeptic.org/content/devops-unicorns-horses-and-mules) that are doing absolutely amazing things with configuration automation are extremely inspirational. [Read about them](/customizing-chef-book-review/). Learn about them. Enjoy their talks. Enjoy their hipster vibe. Tell yourself that you are going to be cool like that one day.
 
 And then forget everything they are talking about. Because what they are doing is likely too advanced for what you're trying to do, because you're not five years or more into your infrastructure automation initiative.
 
@@ -45,9 +31,9 @@ Create these four nodes in your Data Center, behind firewalls, with no outside 
   3. A Chef Analytics Server
   4. An Artifacts Server (like SFTP server)
 
-Does your security team not allow connectivity between Production and UAT? Awesome! Build two environments! Does your security team segment audited environments from non-audited environments? Awesome! Build the above four servers in _every segmented environment you have. _
+Does your security team not allow connectivity between Production and UAT? Awesome! Build two environments! Does your security team segment audited environments from non-audited environments? Awesome! Build the above four servers in _every segmented environment you have.
 
-You heard that right. Now isn't the time to get into pissing matches about your "new devops vision of greatness" that will totally transform&#8230;EVERYTHING! No, now is the time to automate the things. Set up your servers and make it happen.
+You heard that right. Now isn't the time to get into pissing matches about your "new devops vision of greatness" that will totally transfor...EVERYTHING! No, now is the time to automate the things. Set up your servers and make it happen.
 
 If this becomes political, then you are doing it wrong.
 
@@ -66,7 +52,7 @@ Here's what's most important: an application team deploys an upgrade with zer
 
 Notice nobody cared about a stupid security argument about what ports are open between environments (there are none in the above proposal) or trying to be [like Etsy](https://codeascraft.com/) or Netflix. People saw the zero outage and zero problems and people said to themselves, &#8216;Holy Shit This Is Real.'
 
-<img class="aligncenter" src="http://i.imgur.com/ON3nwXb.png" alt="" width="500" height="500" />
+!(Holy Shit This Is Real)[http://i.imgur.com/ON3nwXb.png]
 
 Multiply the "[Holy Shit This Is Real](http://imgur.com/ON3nwXb)" moments.
 
