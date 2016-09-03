@@ -1,35 +1,22 @@
 ---
 id: 914
+layout: post
 title: Three Essential Components to Compliance at Velocity in the Enteprise
 date: 2015-11-06T08:00:26+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-three-essential-components-to-compliance-at-velocity-in-the-enteprise 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=914
 permalink: /three-essential-components-to-compliance-at-velocity-in-the-enteprise/
 dsq_thread_id:
   - 4272696529
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:4:"doFB";i:0;s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:316:"a:1:{i:0;a:10:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:8:"postType";s:1:"A";s:11:"isPrePosted";s:1:"1";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:332:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:76:"Compliance at velocity in the enterprise with help from @dromologue - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"662634789816504321";s:5:"pDate";s:19:"2015-11-06 14:17:00";}}";'
-categories:
-  - tools
-  - Uncategorized
-tags:
-  - chef
-  - compliance
-  - Learning Chef
-  - Security
 ---
-Security has been the most difficult part of [implementing chef](http://hedge-ops.com/intrinsic-motivators-leading-to-chef/) in my large organization. I recently spoke with Chef about this and had a great conversation with [Justin Arbuckle](https://twitter.com/dromologue) related to it. Chef is focusing this year on helping organizations like mine to achieve compliance at velocity.
+Security has been the most difficult part of [implementing chef](/intrinsic-motivators-leading-to-chef/) in my large organization. I recently spoke with Chef about this and had a great conversation with [Justin Arbuckle](https://twitter.com/dromologue) related to it. Chef is focusing this year on helping organizations like mine to achieve compliance at velocity.
 
 Through the conversation and Justin's great advice, I realized that every Chef initiative must have these three elements to be sucessful:
   
