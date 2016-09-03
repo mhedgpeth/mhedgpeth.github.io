@@ -1,23 +1,20 @@
 ---
 id: 734
+layout: post
 title: "My Son's Choice Between Negativity and Taking Action"
 date: 2015-01-30T08:00:06+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-my-sons-choice-between-negativity-and-taking-action 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=734
 permalink: /my-sons-choice-between-negativity-and-taking-action/
-snapFB:
-  - 's:159:"a:1:{i:0;a:4:{s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:35:"10152471133176268_10152545615661268";s:5:"pDate";s:19:"2015-01-30 14:03:39";}}";'
-snapLI:
-  - 's:290:"a:1:{i:0;a:5:{s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:19:"5966928522340556800";s:7:"postURL";s:124:"https://www.linkedin.com/updates?discuss=&amp;scope=16659297&amp;stype=M&amp;topic=5966928522340556800&amp;type=U&amp;a=Fm11";s:5:"pDate";s:19:"2015-01-30 14:03:39";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:142:"a:1:{i:0;a:4:{s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"561162842317918208";s:5:"pDate";s:19:"2015-01-30 14:03:42";}}";'
 dsq_thread_id:
   - 3469651584
-categories:
-  - insights
 tags:
   - despair
   - leadership
@@ -28,7 +25,7 @@ tags:
   - patience
   - take action
 ---
-My son has felt negative about everything lately which has created for him a vicious cycle of disdain and despair. [He is a lot like me](http://hedge-ops.com/embrace-difficulty/ "Embrace Difficulty"), so whenever we learn a lesson about him, it usually has something to do with [how I'm wired as well](http://hedge-ops.com/failure-the-catalyst/ "Failure the Catalyst"). He and I sat in bed a few nights ago and I walked him through this very basic method of how leaders have a choice to make:<!--more-->
+My son has felt negative about everything lately which has created for him a vicious cycle of disdain and despair. [He is a lot like me](/embrace-difficulty/ "Embrace Difficulty"), so whenever we learn a lesson about him, it usually has something to do with [how I'm wired as well](/failure-the-catalyst/ "Failure the Catalyst"). He and I sat in bed a few nights ago and I walked him through this very basic method of how leaders have a choice to make:<!--more-->
 
 First, I talked about how he and I are gifted with the ability to think deeply about things and thus we see things that other people don't see.** We have the responsibility of being able to see problems that other people don't see.** Something that bothers him is how his cub scout pack meetings spend too much time talking to the parents and that leaves him feeling like the meeting isn't his. When I asked one of his good friends about cub scouts, his friend said, "It's good."
 
