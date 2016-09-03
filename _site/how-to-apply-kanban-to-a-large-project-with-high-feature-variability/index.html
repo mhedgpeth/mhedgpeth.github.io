@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | How to Apply Kanban to a Large Project with High Feature Variability</title>
+    <meta name="description" content="I was introducing some ideas I’ve learned recently about throughput management to a friend of mine who is on a large project. The question came up, how to ma...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href=""></a> in <a href='/category/insights'>Insights</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i>  minutes
+            </p>
+
+            <h1>How to Apply Kanban to a Large Project with High Feature Variability</h1>
+
+            <p>I was introducing some ideas I’ve learned recently about <a title="Initial Tracked Metrics for Kanban Adoption" href="http://hedge-ops.com/initial-tracked-metrics-for-kanban-adoption/" target="_blank">throughput management</a> to a friend of mine who is on a large project. The question came up, how to make throughput a useful metric when there are some very small features that go through the system and others that can take months with a large team.</p>
+
+<p>Let’s review a bit: throughput is the measurement of number of items you process through a system over a period of time. So you would say that you did fifteen features and bugs last month, and ten the month before.</p>
+
+<p>If you had no control or process in place to deal with the fact that a new customer might want its killer feature, which is months of work for you, then this metric will quickly become meaningless. What to do?</p>
+
+<p>There is a simple way to handle this and a complicated way. I suppose the complicated way will be what’s needed for my friend’s project, but the simple way is good enough for my project.<!--more--></p>
+
+<p><strong>The Simple Way: Break Things Down into MMFs</strong></p>
+
+<p>On a simpler project, you can simply break a large request down into a <a title="Minimal Marketable Feature" href="http://www.netobjectives.com/minimum-marketable-features-mmfs-explained" target="_blank">Minimal Marketable Feature</a>. The team asks the question, what is the minimal value we can deliver to the customer in a way that they both understand it and accept it as adding value to them? It’s not something like “the database column is added to the database” but it’s also not “your killer feature is delivered.”</p>
+
+<p>When you break things down into outcomes that the customer cares about, you end up with a lot of smaller issues and variability is much smaller.</p>
+
+<p>This is what I would try first. But what if that doesn’t work? What if the customer doesn’t care about your breakdown and just wants the feature?</p>
+
+<p><strong>The Complicated Way: Break Epics into Stories</strong></p>
+
+<p>The more complicated way I got from <a title="Kanban Book" href="http://amzn.to/1GgXlcU" target="_blank">the Kanban book</a> is to continue to allow the customer to define things _their _way. Those items, when they are too big to break down, are called Epics and won’t be counted as throughput. The Epics are broken down into stories that are still testable outcomes. In other words, we are still avoiding the “database column is added” story. Your throughput metric will track the number of stories that are processed through the system.</p>
+
+<p>I’ve seen mixed success from teams that are trying to break things down. People tend to want to break things down into layers and not into testable outcomes for end users. Once that skill is mastered, however, the team has a good way to track throughput through the system.</p>
+
+<p><strong>But what about Story Points?</strong></p>
+
+<p>Another way to track throughput is through story points. I don’t like this. I’ve read evidence that when velocity by story points are managed to increase, the team simply begins to increase their story point estimates. We want to make sure we manage elements of the system that cannot be doctored, either subconsciously or consciously.</p>
+
+<p>Also the Kanban book adds to the disdain of story point estimates by bemoaning the waste associated with getting an entire team together for the estimation.</p>
+
+<p>So the exercise to measure throughput starts with ensuring that items flowing through the system are of a predictable size. Either way above would work, even for my friend on the large, established project.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Mar 23, 2015</span></p>
+                <p><a href=""></a> in <a href='/category/insights'>Insights</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/insights'>Insights</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

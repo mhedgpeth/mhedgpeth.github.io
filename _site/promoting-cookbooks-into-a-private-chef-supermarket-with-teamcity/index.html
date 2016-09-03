@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Promoting Cookbooks into a Private Chef Supermarket with TeamCity</title>
+    <meta name="description" content="We want the ability to control which versions of which cookbooks we rely on and that those cookbooks are available to us even if the author removes them from...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/feature-promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href="/author/michael">Michael hedgpeth</a> in <a href='/category/chef'>Chef</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> 10 minutes
+            </p>
+
+            <h1>Promoting Cookbooks into a Private Chef Supermarket with TeamCity</h1>
+
+            <p><a href="http://hedge-ops.com/my-advice-for-chef-in-large-corporations/">We want the ability to control</a> which versions of which cookbooks we rely on and that those cookbooks are available to us even if the author removes them from GitHub. In fact with <a href="http://www.theverge.com/2016/3/24/11300840/how-an-irate-developer-briefly-broke-javascript">the recent craziness on dependency management</a> and after listening to <a href="https://www.arresteddevops.com/availability/">an episode on availability on Arrested DevOps,</a> I’m starting to think that this isn’t just for large organizations like mine.</p>
+
+<p>So to protect ourselves from that kind of craziness, we have created a <a href="https://www.chef.io/blog/2015/12/31/a-supermarket-of-your-own-running-a-private-supermarket/">private chef supermarket</a> that we host all dependencies on. Then in our policyfiles, we specify that private supermarket as our default source for finding cookbooks.<!--more--></p>
+
+<p>At first, to get us started, we manually uploaded the cookbooks we needed and got to working. Then as we scaled we got tired of people asking us to upload another version. On top of that we want to have a good, clean process for approving external cookbooks/code into our blessed environment. Here’s how we implemented it:</p>
+
+<h2 id="synchronize-github-with-internal-git-server">1: Synchronize GitHub with internal Git server</h2>
+
+<p>We have an internal, corporately blessed git server we use, so we needed to get what was in GitHub into that Git server. For each of the cookbooks, we create a TeamCity <a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration">build configuration</a> (that’s based on a <a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration+Template">template</a>) that does just this with a simple <a href="https://confluence.jetbrains.com/display/TCD9/Command+Line">Command Line runner</a> (that runs in Windows only at the moment):</p>
+
+<pre class="lang:default decode:true ">mkdir %Repository Name%.git
+git clone --mirror %Github Clone URL%
+cd %Repository Name%.git
+git remote add stash %Stash Clone URL%
+git push --all stash
+git push --tags stash</pre>
+
+<p>There are three variables that are <a href="https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Parameters">defined as parameters</a> here:</p>
+
+<ol>
+  <li>Repository Name: the name of the git repository, like <span class="lang:default decode:true crayon-inline ">chef-client</span></li>
+  <li>Github Clone URL: the URL to clone the git on GitHub, like <span class="lang:default decode:true crayon-inline ">https://github.com/chef-cookbooks/chef-client</span></li>
+  <li>Stash URL: the URL to push the code to internally</li>
+</ol>
+
+<p>I had to go into our internal Git server and create a repo with the same name as the GitHub one so something could be pushed.</p>
+
+<p>I then <a href="https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Triggers">schedule this to run every day</a>, and let it do its thing. If I got crazy I could make it run everytime there was a checkin on github, but the model doesn’t _have _to have immediacy to it. My repository internally will be reasonably up to date.</p>
+
+<h2 id="create-an-internally-approved-branch-based-on-a-tag">2: Create an internally approved branch based on a tag</h2>
+
+<p>The next thing we do is create a new branch on our internal git server that outlines what we have code reviewed and have approved to be a part of our infrastructure. During the first setup, we first clone the repo on our local machine with the internal git server:</p>
+
+<pre class="lang:default decode:true ">git clone http://mycompanygitserver.com/chef-client.git</pre>
+
+<p>Then we simply run these commands:</p>
+
+<pre class="lang:default decode:true ">git checkout -b mycompany-approved v4.3.2
+git push origin mycompany-approved</pre>
+
+<p>This creates our “safe” branch, from which our promotion can occur.</p>
+
+<h2 id="run-cookbook-build-just-as-with-other-cookbooks">3: Run cookbook build just as with other cookbooks</h2>
+
+<p>The cookbook build will run as I outlined in <a href="http://hedge-ops.com/chef-cookbook-builds-in-teamcity/">a different post</a>. The only difference is the VCS Root that I pull will be off of the <span class="lang:default decode:true crayon-inline ">mycompany-approved</span>  branch created above.</p>
+
+<h2 id="promote-cookbook-to-supermarket">4: Promote cookbook to supermarket</h2>
+
+<p>Then I promote a cookbook to the supermarket using a TeamCity template that I use for all cookbook promotions, which is basically this command:</p>
+
+<pre class="lang:default decode:true ">knife supermarket share %cookbook_name% "Other" -o .</pre>
+
+<p>I had to ensure that the <span class="lang:default decode:true crayon-inline ">knife-supermarket</span>  gem was installed on my build server (of course, configured by chef as well). Also I parameterized the cookbook name so this could be inside of a template that can be reused everywhere.</p>
+
+<p>The cookbook also has a <a href="https://confluence.jetbrains.com/display/TCD9/Snapshot+Dependencies">snapshot dependency</a> to the cookbook build above, ensuring that it is only released to our supermarket when it passes the build. That keeps everyone honest.</p>
+
+<h2 id="merge-into-approved-branch-as-people-request">5: Merge into approved branch as people request</h2>
+
+<p>People will still request that we merge into the approved branch, which is locked down so that a smaller team can approve of the changes. We can use a pull request model to review and audit how this happens.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Doing it this way gave us the most control over which changes go into our infrastructure. It avoids the public supermarket alltogether, because we found that the packages posted on that server cannot be pushed to another supermarket. Even if that problem were fixed, this way is superior because it gives us the ability to code review and audit every dependency we have going into our system.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/michael.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Apr 29, 2016</span></p>
+                <p><a href="/author/michael">Michael hedgpeth</a> in <a href='/category/chef'>Chef</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/chef'>Chef</a>
+                            ,
+                        </li>
+                        
+                        <li>
+                            <a href='/category/chef'>Teamcity</a>
+                            ,
+                        </li>
+                        
+                        <li>
+                            <a href='/category/chef'>Pipeline</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+        <div class="row read-another-section">
+    
+        
+        <a href="/2016-01-15-dont-start-with-tools"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another"></h3>
+        </div></a>
+        
+    
+        
+        <a href="/2015-01-30-my-sons-choice-between-negativity-and-taking-action"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another"></h3>
+        </div></a>
+        
+    
+        
+        <a href="/2014-08-22-our-cultures-script"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another"></h3>
+        </div></a>
+        
+    
+        
+        <a href="/finding-alignment/"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another">Finding Alignment</h3>
+        </div></a>
+        
+    
+        
+        <a href="/finding-habitat/"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another">Finding Habitat</h3>
+        </div></a>
+        
+    
+        
+        <a href="/disruption-is-uncomfortable/"><div class="col-sm-6 col-md-2 no-gutter read-another-container">
+            <div class="overlay"></div>
+            <img src='/img/.jpg'>
+            <h3 class="read-another">Disruption is Uncomfortable</h3>
+        </div></a>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+</div>
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

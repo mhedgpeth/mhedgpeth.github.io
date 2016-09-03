@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Finding Habitat</title>
+    <meta name="description" content="A few months ago I caught up with Julian Dunn in Ghent about what he was up to. His talk on orchestration was instrumental in forming our approach to solving...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/finding-habitat/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/feature-finding-habitat.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href="/author/michael">Michael hedgpeth</a> in <a href='/category/automation'>Automation</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i> 5 minutes
+            </p>
+
+            <h1>Finding Habitat</h1>
+
+            <p>A few months ago I caught up with Julian Dunn in Ghent about what he was up to. His <a href="https://www.youtube.com/watch?v=kfF9IATUask">talk on orchestration</a> was instrumental in forming <a href="/orchestration-maturity-model-with-chef/">our approach</a> to solving the problem with Consul and his <a href="http://www.juliandunn.net/2015/12/04/the-oncoming-train-of-enterprise-container-deployments/">blog post on docker</a> showed me he was thinking deeply and critically about some interesting topics. I reached out to him to learn more about what he was up to and spent some time with him to learn about Habitat.</p>
+
+<p>When I learned that Fletcher Nichol was also working on the project, I got even more excited. Fletcher’s work on <a href="http://kitchen.ci/">Test Kitchen</a> has <a href="/test-kitchen-required-not-optional/">revolutionized our workflow</a>. Recently, I saw it lower the barrier to entry for <a href="http://www.anniehedgie.com/">my wife</a> to learn Chef. There really is a “before Kitchen” and “after Kitchen” epoch in her learning. It’s that revolutionary. And to see that Fletcher was focusing on this problem as well was quite exciting.</p>
+
+<p><a href="https://www.chef.io/blog/2016/06/14/introducing-habitat/">Adam Jacob’s blog post </a> left me both intrigued me and a little confused. I wanted to understand what Habitat was and how it fit into Chef’s infrastructure and strategy. So I watched the event and got on twitter and had a fun time figuring it out.<!--more--></p>
+
+<p>It was clear to me even from my early talks with Julian that Habitat was a disruptive technology. This is yet another reason why <a href="/technology-partnership/">Chef is such a good partner for us</a>. I can trust them to prioritize _the right solution _for me over whether this will help their sales numbers this quarter. That trust drives sales higher than other companies because navigating this journey is difficult and we need people on our side who will tell us the hard truths on how to arrive at our destination. So kudos to Chef and its leadership for being so brave to make this step that says “there’s another aspect to the problem that could be better, here’s what we think”</p>
+
+<p>Unfortunately, the initial message of Habitat didn’t resonate with me. I feel that it suffered from a few flaws that hurt it’s ability to resonate with enterprise customers like me:</p>
+
+<ul>
+  <li><strong>You’re doing it wrong</strong>. I reread the narrative about the siloed enterprise and the big web and am still struggling to understand it. What I felt initially is “how you have been approaching the problem of configuration management is all wrong.” I’m honestly not sure whether that should have been the feeling I got because honestly I still don’t understand the narrative they were going for. I do know that a good pitch to enterprise people _should not _start with the message “your organization is fundamentally improperly structured” People don’t like to hear that. And even if they agree, there is nothing they can do about it. The message (intended or not) isn’t necessary because Habitat doesn’t ask you to change any of that (see my revised message below).</li>
+  <li><strong>Here is a Cool Solution.</strong> And it is. You put some really great people on this project for months or more, I expect it to be cool. But from an enterprise perspective its coolness carries little weight on whether it will help us solve the problems we are having. I would have preferred some discussion on what outcomes the team was able to accomplish as they partnered with an early customer, preferably from the enterprise. What did they do? Is it better? Why? Without this context it was difficult to put the solution in context.</li>
+  <li><strong>Context?</strong> This was the part I struggled with the most. How does Habitat fit into the Chef ecosystem? Where does it start and Chef begin? What problems does it solve that _both _products could solve? Why would I choose one over the other? It was difficult to understand, especially over the medium of twitter where characters are limited and tone isn’t easily communicated.</li>
+</ul>
+
+<p>Am I still excited about Habitat? Absolutely! After talking with a few people and with Julian for 15 minutes or so, I can now think about it in terms that make sense to me that I can share with others in our organization. In the spirit of providing alternatives when sharing problems, <strong>here’s the pitch I would give if someone in my organization would ask me about it today</strong>:</p>
+
+<blockquote>
+  <p>Chef’s has done an outstanding job with configuration management of infrastructure. This is why they are our partner. They have built upon that core competency with a reporting product to see what’s happening and a delivery product to manage changes. On top of that (and most importantly for us), they even help make your infrastructure more secure by helping you scan your infrastructure for security vulnerabilities and use Chef to remediate them. With Chef it is very easy to get a secure, hardened infrastructure configured for your business.</p>
+
+  <p>That’s not all you want to do, though. You want applications _running _on that infrastructure. And it turns out when you start down this path, things get complicated quickly. You face problems that aren’t _really _configuration management problems like orchestration or service discovery. You have to figure out how to scale. And you have an application team that wants to focus on _those issues _rather than configure a specific machine to run. They might even insist on _not _running a production-like machine for their development by insisting that they use docker to speed up development. How do you engage the application team in a way that helps them own their solution and use it, then deliver that automation to a broader ecosystem in a meaningful way?</p>
+
+  <p>Enter Habitat. With Habitat, your application team can define availability, upgrade, red/green deployments, and other application-level-concerns and package that _with the application _and deliver it to their target environments. This means that Chef can focus what it’s good at: configuration management of the infrastructure. A habitat package can live as a docker container on a development machine, a minimal QA environment, or as a full-blown linux node which was also configured using Chef.</p>
+
+  <p>It’s tempting to try to find the one solution that will solve all of your problems. Many times that leaves you doing _a lot of work _as you try to solve a problem with a solution that was not meant to solve those types of problems. Instead, it’s totally fine to have a solution to the application’s problems and a different solution for the infrastructure problems. As long as both solutions start with code, are tested early and often, and meet together very quickly, we can take advantage of their differentiated power.</p>
+</blockquote>
+
+<p>This, to me is Habitat’s story and is what makes me so excited for its future and so happy that I’m a partner with Chef.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/michael.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Jun 15, 2016</span></p>
+                <p><a href="/author/michael">Michael hedgpeth</a> in <a href='/category/automation'>Automation</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/automation'>Automation</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/finding-habitat/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/finding-habitat/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/finding-habitat/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

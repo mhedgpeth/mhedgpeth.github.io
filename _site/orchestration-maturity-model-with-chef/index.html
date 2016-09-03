@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Orchestration Maturity Model with Chef</title>
+    <meta name="description" content="One of our earliest questions about configuration management tools is how we would do orchestration with them. We realized early on that with chef the orches...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/orchestration-maturity-model-with-chef/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href=""></a> in <a href='/category/insights'>Insights</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i>  minutes
+            </p>
+
+            <h1>Orchestration Maturity Model with Chef</h1>
+
+            <p>One of our <a href="http://hedge-ops.com/proof-of-concept/">earliest questions</a> about configuration management tools is how we would do orchestration with them. We realized early on that with chef the orchestration story was fairly weak, especially compared with something like <a href="http://saltstack.com/">salt</a>. But chef’s <a href="http://hedge-ops.com/technology-partnership/">other benefits</a> outweighed the weaknesses so we moved forward.</p>
+
+<p>The whole time though I was confused about why Chef hadn’t invested more in orchestration. Salt and Ansible has it as a first class citizen and Puppet was <a href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html">actively adding it to its product</a>. I didn’t really “get” it until I listened to Julian Dunn’s <a href="https://www.youtube.com/watch?v=kfF9IATUask">excellent presentation</a> on it at Ghent.</p>
+
+<p>Chef, as a company, is more interested in giving you what will work for you than giving you what you’re asking for. This is what makes them such a special partner for us. They’re more of a coach and less of an enabler. This has led me to think of orchestration as a maturity journey through three phases:<!--more--></p>
+
+<h2 id="phase-1-do-it-like-before"><strong>Phase 1: Do it Like Before!</strong></h2>
+
+<p>The first phase of orchestration will be to model how you have been doing things before. OK, I need to stop services, copy files, start services. That’s orchestration, right?</p>
+
+<p>At a surface level this is fine, but it leaves out the edge cases that happen when you’re dealing with a scaled infrastructure:</p>
+
+<ul>
+  <li>What happens when a node was down and didn’t get the message to stop, and then comes back up in the middle of your upgrade, and starts?</li>
+  <li>What happens when a new node is added at a time when  you’re not doing an upgrade? Are any of those orchestration commands critical to the node itself?</li>
+  <li>Are you splitting configuration management between your configuration management tool _and _your orchestration? If you are directly stopping a service, THEN running chef later, then your configuration management is leaking out of your system and into other places.</li>
+</ul>
+
+<h2 id="phase-2-declaratively-manage-state"><strong>Phase 2: Declaratively Manage State</strong></h2>
+
+<p>If we’re writing chef recipes and starting from the beginning with some infrastructure, why live with the limitations of Phase 1? Why don’t we solve this problem? Thankfully with a tool like <a href="https://www.consul.io/">consul</a> we can solve the problem by making some subtle changes:</p>
+
+<ul>
+  <li>Create a real-time shared data view of the state of your system (with consul, <a href="https://zookeeper.apache.org/">zookeeper</a>)</li>
+  <li>Using this shared data view, define _all _desired states of the system. So if you need to transition your web cluster from the states of: off, waiting, converged, set that in your key value store</li>
+  <li>Write your chef recipe to define the desired state (resources) that are compiled <em>based on the desired state defined in the shared data view</em>. So you have an if statement that says “if we want this thing to be off right now, there is a service resource with action of ‘off’”</li>
+  <li>Write an orchestrator that manages the state transitions between nodes in the environment <em>by updating the shared data view</em>.  With consul we can do a consul_exec on our nodes to force chef to run. Or take it even further. And the orchestrator itself can be written through chef.</li>
+</ul>
+
+<p>This gives you a number of benefits over the earlier phase:</p>
+
+<ul>
+  <li>If a node isn’t there when the state changes, it checks in and converges to the correct state, immediately! You _always _get the node at the right state in the process because they are sharing the latest up to date shared data view</li>
+  <li>If a node is added, it will also converge to the correct state. It checks in and catches up immediately. Now you don’t have to worry about adding nodes and coordinating that with upgrades; things will just happen.</li>
+  <li>All configuration management are belong to chef. Simple.</li>
+</ul>
+
+<h2 id="phase-3-decouple-the-nodes"><strong>Phase 3: Decouple the Nodes</strong></h2>
+
+<p>The unfortunate reality though, is that even after phase 2 you may not be ready for bursting and scale. In order for those capabilities to exist, you need to have services that are independent of each other. So it shouldn’t matter that your web tier is on a particular version and the database hasn’t caught up yet. The web tier should tolerate that reality. So you can then update them separately and not worry about it.</p>
+
+<p>I still think there is a role for real-time orchestration to happen in order to manage the portions of your infrastructure to go through a little at a time until all is upgraded. But the complexities of having to turn one layer off so another layer can do its thing should largely go away.</p>
+
+<p>Unfortunately this is really up to the software design itself to facilitate. Therefore, it’s really a business decision on whether that infrastructure should be made burstable and thus truly cloud-enabled. In some cases, we’ll only get as far as phase 2. In others we’ll go all the way, but probably camp out at phase 2 while the software catches up. That’s the way it should be: let’s get there little by little. As long as we’re going in the right direction, we’re good.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Apr 22, 2016</span></p>
+                <p><a href=""></a> in <a href='/category/insights'>Insights</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/insights'>Insights</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/orchestration-maturity-model-with-chef/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/orchestration-maturity-model-with-chef/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/orchestration-maturity-model-with-chef/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

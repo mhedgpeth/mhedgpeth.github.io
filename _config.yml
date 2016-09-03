@@ -1,0 +1,20 @@
+# Site settings
+title: hedge-ops
+email: mhedgpeth-hedge-ops-email@gmail.com
+description: 'Operational excellence through operation and culture'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: 'http://hedge-ops.com'
+enable_retina: false
+permalink: :title
+nav_list:
+  Home : ['Home', '/', 'fa-home']
+  About : ['About', '/about', 'fa-anchor']
+  Contact : ['Contact', '/contact', 'fa-plane']
+  Author : ['Author', '/author/michelle', 'fa-user']
+single_footer: '<p>The writer community loves your content. Writer &copy; 2016 <a href="/">latest posts</a></p>'
+footer_links:
+    About: ['About', '/about']
+
+
+# Build settings
+# markdown: kramdown

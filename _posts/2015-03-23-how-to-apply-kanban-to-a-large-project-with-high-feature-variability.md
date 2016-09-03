@@ -1,0 +1,60 @@
+---
+id: 847
+title: How to Apply Kanban to a Large Project with High Feature Variability
+date: 2015-03-23T08:00:01+00:00
+author: Michael Hedgpeth
+layout: post
+guid: http://hedge-ops.com/?p=847
+permalink: /how-to-apply-kanban-to-a-large-project-with-high-feature-variability/
+snap_isAutoPosted:
+  - 1
+snap_MYURL:
+  - 
+snapEdIT:
+  - 1
+snapFB:
+  - 's:362:"a:1:{i:0;a:12:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:35:"10152471133176268_10152642806636268";s:5:"pDate";s:19:"2015-03-23 13:15:18";}}";'
+snapTW:
+  - 's:272:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"579994839221022720";s:5:"pDate";s:19:"2015-03-23 13:15:20";}}";'
+snapLI:
+  - 's:292:"a:1:{i:0;a:9:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";}}";'
+dsq_thread_id:
+  - 3619437840
+categories:
+  - insights
+tags:
+  - Kanban
+  - lean enterprise
+  - measurement
+  - Metrics
+  - Throughput
+---
+I was introducing some ideas I've learned recently about <a title="Initial Tracked Metrics for Kanban Adoption" href="http://hedge-ops.com/initial-tracked-metrics-for-kanban-adoption/" target="_blank">throughput management</a> to a friend of mine who is on a large project. The question came up, how to make throughput a useful metric when there are some very small features that go through the system and others that can take months with a large team.
+
+Let's review a bit: throughput is the measurement of number of items you process through a system over a period of time. So you would say that you did fifteen features and bugs last month, and ten the month before.
+
+If you had no control or process in place to deal with the fact that a new customer might want its killer feature, which is months of work for you, then this metric will quickly become meaningless. What to do?
+
+There is a simple way to handle this and a complicated way. I suppose the complicated way will be what's needed for my friend's project, but the simple way is good enough for my project.<!--more-->
+
+**The Simple Way: Break Things Down into MMFs**
+
+On a simpler project, you can simply break a large request down into a <a title="Minimal Marketable Feature" href="http://www.netobjectives.com/minimum-marketable-features-mmfs-explained" target="_blank">Minimal Marketable Feature</a>. The team asks the question, what is the minimal value we can deliver to the customer in a way that they both understand it and accept it as adding value to them? It's not something like "the database column is added to the database" but it's also not "your killer feature is delivered."
+
+When you break things down into outcomes that the customer cares about, you end up with a lot of smaller issues and variability is much smaller.
+
+This is what I would try first. But what if that doesn't work? What if the customer doesn't care about your breakdown and just wants the feature?
+
+**The Complicated Way: Break Epics into Stories**
+
+The more complicated way I got from <a title="Kanban Book" href="http://amzn.to/1GgXlcU" target="_blank">the Kanban book</a> is to continue to allow the customer to define things _their _way. Those items, when they are too big to break down, are called Epics and won't be counted as throughput. The Epics are broken down into stories that are still testable outcomes. In other words, we are still avoiding the "database column is added" story. Your throughput metric will track the number of stories that are processed through the system.
+
+I've seen mixed success from teams that are trying to break things down. People tend to want to break things down into layers and not into testable outcomes for end users. Once that skill is mastered, however, the team has a good way to track throughput through the system.
+
+**But what about Story Points?**
+
+Another way to track throughput is through story points. I don't like this. I've read evidence that when velocity by story points are managed to increase, the team simply begins to increase their story point estimates. We want to make sure we manage elements of the system that cannot be doctored, either subconsciously or consciously.
+
+Also the Kanban book adds to the disdain of story point estimates by bemoaning the waste associated with getting an entire team together for the estimation.
+
+So the exercise to measure throughput starts with ensuring that items flowing through the system are of a predictable size. Either way above would work, even for my friend on the large, established project.

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Kanban Prioritization with Cost of Delay</title>
+    <meta name="description" content="We have established an input queue and defined the one metric that matters for our Kanban project. Our standups are more focused than ever before. Now we nee...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/kanban-prioritization-with-cost-of-delay/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href=""></a> in <a href='/category/insights'>Insights</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i>  minutes
+            </p>
+
+            <h1>Kanban Prioritization with Cost of Delay</h1>
+
+            <p>We have established an <a title="Defining the Kanban Input Queue" href="http://hedge-ops.com/defining-the-kanban-input-queue/" target="_blank">input queue</a> and defined <a title="The One Metric That Matters" href="http://hedge-ops.com/the-one-metric-that-matters/" target="_blank">the one metric that matters</a> for our Kanban project. Our standups are <a title="Kanban Standup Meetings" href="http://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/" target="_blank">more focused than ever before</a>. Now we need to focus on how to prioritize items that go into our input queue. <a title="Lean Enterprise" href="http://amzn.to/1LfPSL8" target="_blank">Lean Enterprise</a> outlines an interesting way of doing this: prioritize items by their cost of delay.</p>
+
+<p>On an immature product, you might prioritize in order of who is screaming the loudest. This creates an unhealthy competition among stakeholders to see who can be the most dramatic when asking for a change.</p>
+
+<p>Slightly more mature projects might look to the Hippo: the highest paid person’s opinion. This can lead to a strategy that is out of touch with what customers want, because the highest paid person usually talks only to other highly paid people and their direct subordinates.</p>
+
+<p>A functional Kanban project looks to return on investment. How much money will we get from this endeavor, and how quickly will we pay off the cost to create the change?</p>
+
+<p>This is great, but the problem comes about in software when you have a lot of options on the table that would have a healthy return on investment. <em>What then? </em><!--more--></p>
+
+<p>This is when the cost of delay calculation comes in handy. From <em>Lean Enterprise:</em></p>
+
+<blockquote>
+  <p>To use Cost of Delay, we begin by deciding on the metric we are trying to optimize across our value stream. For organizations engaged in product development, this is typically lifecycle profit…When presented with a decision, we look at all the pieces of work affected by that decision and calculate how to maximize our One Metric That Matters given the various options we have. For this, we have to work out, for each piece of work, <strong>what happens to our key metric when we delay that work</strong> (hence, “cost of delay”).</p>
+</blockquote>
+
+<p>Tomorrow morning I’m meeting with stakeholders for one of my projects and will prioritize tasks with this in mind. The project is focused on adding quality to our products, so the one metric that matters for this project is the rate of adoption of new features by our customers.</p>
+
+<p>With that in mind we’ll have a few options:</p>
+
+<ul>
+  <li>we can  invest in a large, new feature that we have evidence has prevented higher adoption</li>
+  <li>we can work on decreasing the defect rate of the automation effort itself, as there are currently more defects being reported than there are being fixed within the automation product itself</li>
+  <li>we can enhance the automation application by adding an undo feature which will make people more efficient at creating automated scripts</li>
+</ul>
+
+<p>These are all important feature requests. I can name individuals who would choose a different answer as to the most important. When evaluated through the cost of delay paradigm, however, things become clear:</p>
+
+<div class="table-responsive">
+  <table style="width:100%; " class="easy-table easy-table-default " border="0">
+    <tr>
+      <th>
+        Effort
+      </th>
+      
+      <th>
+        What Happens to Adoption When We Delay The Work
+      </th>
+    </tr>
+    
+    <tr>
+      <td>
+        Adding Test Coverage to Large Feature
+      </td>
+      
+      <td>
+        It continues to suffer. This is the main inhibitor to adoption.
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Fix Defect Rate
+      </td>
+      
+      <td>
+        It will suffer slowly over time as the automation product becomes more and more unusable. For now, there won't be much of an effect on the adoption rate of products.
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        Add Undo
+      </td>
+      
+      <td>
+        Over time, people should be quicker at creating scripts and coverage will go up, which should affect adoption in a positive way. If we delay this, we delay a more efficient test adoption.
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Doing this exercise makes it clear to me what our next priority should be. It will be interesting to see if the cost of delay method can be easily understood and adopted by others. We are early in our adoption of Kanban, so we are building this ship as we sail it. I suppose I’ll see soon enough.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>May 1, 2015</span></p>
+                <p><a href=""></a> in <a href='/category/insights'>Insights</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/insights'>Insights</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/kanban-prioritization-with-cost-of-delay/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/kanban-prioritization-with-cost-of-delay/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/kanban-prioritization-with-cost-of-delay/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Chef Cookbook Builds in TeamCity</title>
+    <meta name="description" content="As more and more teams are coming on board with Chef, I’ve began to standardize our pipeline and ensure that everyone meets quality gates for the infrastruct...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/chef-cookbook-builds-in-teamcity/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href=""></a> in <a href='/category/tools'>Tools</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i>  minutes
+            </p>
+
+            <h1>Chef Cookbook Builds in TeamCity</h1>
+
+            <p>As more and more teams are <a href="http://hedge-ops.com/my-advice-for-chef-in-large-corporations/">coming on board with Chef</a>, I’ve began to standardize our pipeline and ensure that everyone meets quality gates for the infrastructure they are creating. This started with finally figuring out how to get <a href="http://hedge-ops.com/test-kitchen-required-not-optional/">Test Kitchen working with Windows</a>, then quickly migrated to getting it running in <a href="http://hedge-ops.com/christmas-with-russians/">TeamCity</a>. Our entire division uses TeamCity for configuration management, so it’s something that I needed to plan out carefully in order to make the Chef pipeline _feel _like it’s a part of a team’s normal build process.<!--more--></p>
+
+<h2 id="project-structure">Project Structure</h2>
+
+<p>With this in mind, we created a** Chef** <a href="https://confluence.jetbrains.com/display/TCD9/Creating+and+Editing+Projects">subproject</a> _inside _of each team’s _existing _project. We want them to have ownership when Chef infrastructure breaks and to take action on problems, just as if the problem happened in their own software build.</p>
+
+<p>We then created a** Chef Cookbook** <a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration+Template">build template</a> at the <Root Project=""> level that all cookbooks can use for their own builds. This template defines a cookbook parameter that enables the build steps below to know where the cookbook is in source.</Root></p>
+
+<h2 id="version-control-settings">Version Control Settings</h2>
+
+<p>We’re not really sure about how we approach testing at the moment when it comes to dependencies. If a cookbook is very young or if we are testing a lot of things at once, we might want to use relative path dependencies to other cookbooks. Or we might want to use data bags at some level. So we’ve decided on the build agent itself to mimic a chef repo and then test it that way. We do this <a href="https://confluence.jetbrains.com/display/TCD9/Build+Checkout+Directory#BuildCheckoutDirectory-Customcheckoutdirectory">through a checkout rule</a>, like this:</p>
+
+<pre>+:.=&gt;cookbooks/contributors
+
+</pre>
+
+<p>This means that the contributors cookbook will go to the cookbooks/contributors repo relative to build working directory.</p>
+
+<h2 id="build-steps">Build Steps</h2>
+
+<h3 id="run-foodcritic"><strong>1. Run Foodcritic</strong></h3>
+
+<p>We want to do Chef liniting first before we get into further testing, so we run <a href="http://www.foodcritic.io/">foodcritic</a>. This is done simply by creating a <a href="https://confluence.jetbrains.com/display/TCD9/Command+Line">Command Line runner</a> with the foodcritic command:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1.png" rel="attachment wp-att-1155"><img class="aligncenter wp-image-1157 size-full" src="http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1.png" alt="" width="875" height="661" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1.png 875w, http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1-300x227.png 300w, http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1-768x580.png 768w" sizes="(max-width: 875px) 100vw, 875px" /></a></p>
+
+<h3 id="run-rubocop"><strong>2. Run Rubocop</strong></h3>
+
+<p>Once foodcritic runs, we want to finish our cookbook linting with <a href="http://batsov.com/rubocop/">rubocop</a>:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-foodcritic-1.png" rel="attachment wp-att-1157"><br /> </a> <a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-rubocop.png" rel="attachment wp-att-1158"><img class="aligncenter wp-image-1158 size-full" src="http://hedge-ops.com/wp-content/uploads/2016/03/run-rubocop.png" alt="run-rubocop" width="872" height="419" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/run-rubocop.png 872w, http://hedge-ops.com/wp-content/uploads/2016/03/run-rubocop-300x144.png 300w, http://hedge-ops.com/wp-content/uploads/2016/03/run-rubocop-768x369.png 768w" sizes="(max-width: 872px) 100vw, 872px" /></a></p>
+
+<h3 id="run-cookbook-unit-tests"><strong>3. Run Cookbook Unit Tests</strong></h3>
+
+<p>I’m not a huge fan of <a href="https://docs.chef.io/chefspec.html">ChefSpec</a> because I believe they mock too much out and end up not adding a lot of value. But I do think having at least one there that ensures that your code will converge is immensely helpful. It’s much better waiting the few seconds to ensure that code converges than the few minutes to wait for kitchen to tell you the same thing. So I put the step here:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-chef-unit-tests.png" rel="attachment wp-att-1159"><img class="aligncenter size-full wp-image-1159" src="http://hedge-ops.com/wp-content/uploads/2016/03/run-chef-unit-tests.png" alt="run-chef-unit-tests" width="875" height="635" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/run-chef-unit-tests.png 875w, http://hedge-ops.com/wp-content/uploads/2016/03/run-chef-unit-tests-300x218.png 300w, http://hedge-ops.com/wp-content/uploads/2016/03/run-chef-unit-tests-768x557.png 768w" sizes="(max-width: 875px) 100vw, 875px" /></a></p>
+
+<p><em>Update: actually just before this published, I removed this. The Chef Spec unit tests required too much ruby expertise to be helpful. Plus people are working well with kitchen and learn to rely on it instead. So as of yesterday, this step was removed.</em></p>
+
+<h3 id="run-test-kitchen"><strong>4.</strong> <strong>Run Test Kitchen</strong></h3>
+
+<p>And now for the magic! I need to <a href="http://hedge-ops.com/test-kitchen-required-not-optional/">run Test Kitchen</a>. If I’m using vagrant, I need to have a physical build agent to do this on. <a href="http://hedge-ops.com/tutorial-for-test-kitchen-with-azure/">If I’m running azure</a>, I need to have some credentials set up on the build agent. All of that configuration is handled through chef itself, so at this point all I need to do is run the command itself:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-test.png" rel="attachment wp-att-1160"><img class="aligncenter size-full wp-image-1160" src="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-test.png" alt="run-kitchen-test" width="878" height="666" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-test.png 878w, http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-test-300x228.png 300w, http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-test-768x583.png 768w" sizes="(max-width: 878px) 100vw, 878px" /></a></p>
+
+<p>Kitchen test will do a create, converge, and verify. It runs through the whole process. And I’ve tested that if it fails, the build will fail.</p>
+
+<h3 id="kitchen-destroy"><strong>5. Kitchen Destroy</strong></h3>
+
+<p>If the above test fails, it’s important to not keep the virtual machine running. This is especially true if I’m using the azure runner. So at the end I’ll call kitchen destroy, and _always _call it, even if the previous command failed:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-destroy.png" rel="attachment wp-att-1161"><img class="aligncenter size-full wp-image-1161" src="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-destroy.png" alt="run-kitchen-destroy" width="878" height="621" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-destroy.png 878w, http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-destroy-300x212.png 300w, http://hedge-ops.com/wp-content/uploads/2016/03/run-kitchen-destroy-768x543.png 768w" sizes="(max-width: 878px) 100vw, 878px" /></a></p>
+
+<h2 id="build-agent-setup">Build Agent Setup</h2>
+
+<p>As I mentioned earlier, our build agents are set up through Chef itself, so configuration of them is easy. Since we are creating our Chef Projects inside of the product’s projects, we don’t want to mix their build agents with the chef ones. We keep them separated because we let each team have their own build agents that they manage. To solve for the mix, we add the** Chef** subproject set up above to our own Chef build <a href="https://confluence.jetbrains.com/display/TCD9/Agent+Pools">agent pool</a>. Then in our template, we add a <a href="https://confluence.jetbrains.com/display/TCD9/Agent+Requirements">build agent requirement</a>:</p>
+
+<p><a href="http://hedge-ops.com/wp-content/uploads/2016/03/chef-cookbook-requirement.png" rel="attachment wp-att-1162"><img class="aligncenter size-full wp-image-1162" src="http://hedge-ops.com/wp-content/uploads/2016/03/chef-cookbook-requirement.png" alt="chef-cookbook-requirement" width="508" height="190" srcset="http://hedge-ops.com/wp-content/uploads/2016/03/chef-cookbook-requirement.png 508w, http://hedge-ops.com/wp-content/uploads/2016/03/chef-cookbook-requirement-300x112.png 300w" sizes="(max-width: 508px) 100vw, 508px" /></a></p>
+
+<p>In our recipe for the build agent, we set this environment variable, so this limits our cookbook builds to only run on build agents on which our chef recipe has run.</p>
+
+<h2 id="triggering">Triggering</h2>
+
+<p>Finally, we want to trigger this cookbook build whenever something in the cookbook is checked in. We do this through adding a <a href="https://confluence.jetbrains.com/display/TCD9/Configuring+VCS+Triggers">VCS trigger</a> with the default settings to the template.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>With the template in place, it takes about ten minutes to add a team’s cookbook to be fully tested and built within their own environment. It feels very much like a software build, which is fantastic for everyone because it reminds us that the infrastructure code we are creating is like any other code; it should be subject to automation just like the rest.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Apr 15, 2016</span></p>
+                <p><a href=""></a> in <a href='/category/tools'>Tools</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/tools'>Tools</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/chef-cookbook-builds-in-teamcity/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/chef-cookbook-builds-in-teamcity/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/chef-cookbook-builds-in-teamcity/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>

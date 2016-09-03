@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>hedge-ops | Three Essential Components to Compliance at Velocity in the Enteprise</title>
+    <meta name="description" content="Security has been the most difficult part of implementing chef in my large organization. I recently spoke with Chef about this and had a great conversation w...">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="canonical" href="http://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/">
+    <link rel="alternate" type="application/rss+xml" title="hedge-ops" href="http://hedge-ops.com/feed.xml" />
+
+    <!--[if lt IE 9]>
+        <script src="/js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+
+  <body class="">
+    <!-- if the user has javascript disabled they can still use the menu -->
+<noscript>
+    <div class="no-js-menu clearfix">
+        <ul>
+            
+                <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+            
+                <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+            
+                <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+            
+                <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+            
+        </ul>
+    </div>
+</noscript>
+<!-- end no script -->
+
+    <header class="hero-image" style="background-image: url(/img/.jpg);">
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    <div id="menu-target">
+    <ul>
+        
+            <li><i class="fa fa-home"></i><a href="/">Home</a></li>
+        
+            <li><i class="fa fa-anchor"></i><a href="/about">About</a></li>
+        
+            <li><i class="fa fa-plane"></i><a href="/contact">Contact</a></li>
+        
+            <li><i class="fa fa-user"></i><a href="/author/michelle">Author</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+<main class="container">
+    <div class="row">
+        <div class="col-xs-12 single-content">
+            <p class="meta">
+                <a href=""></a> in <a href='/category/tools'>Tools</a> <i class="link-spacer"></i> <i class="fa fa-bookmark"></i>  minutes
+            </p>
+
+            <h1>Three Essential Components to Compliance at Velocity in the Enteprise</h1>
+
+            <p>Security has been the most difficult part of <a href="http://hedge-ops.com/intrinsic-motivators-leading-to-chef/">implementing chef</a> in my large organization. I recently spoke with Chef about this and had a great conversation with <a href="https://twitter.com/dromologue">Justin Arbuckle</a> related to it. Chef is focusing this year on helping organizations like mine to achieve compliance at velocity.</p>
+
+<p>Through the conversation and Justin’s great advice, I realized that every Chef initiative must have these three elements to be sucessful:</p>
+
+<!--more-->
+
+<h2 id="focus-on-the-workflow"><strong>Focus on the Workflow</strong></h2>
+
+<p>At first I was focused on the technology and what talked to what, which commands would be used, and how awesome the outcome would be for our business. From a security perspective, however, this was worthless. Security and compliance are focused on _how we can safely make changes to this system. _This means that you don’t accidentally bring production down by a cookbook change. It also means that you get approvals within a defined process before making _any _change. For us, this workflow didn’t really take shape until we decided to fully adopt <a href="https://github.com/chef/chef-dk/blob/master/POLICYFILE_README.md">the Policy feature</a> and workflow for change management. We then wrote extensive documentation and visio diagrams to explain every element of every step in the journey from a checkin to a production change.</p>
+
+<p>It wasn’t until we had this documented and clear that we started making progress with our security team. The lesson we learned was: <em>the technology is secondary to the workflow</em>. The workflow is most important. And, for you, if you’re security conscious and you haven’t looked at Policies yet, you really need to.</p>
+
+<h2 id="make-it-real"><strong>Make it Real</strong></h2>
+
+<p>Looking back at the last few months of our implementation, we’ve spent way too much time in visio and not enough time creating a real environment in order to demonstrate the changes we’re talking about. I spent quite a lot of time trying to consolidate the chef ecosystem into something that someone could understand in an hour-long meeting, but that was ineffective. It turns out that: (1) chef is complicated and hard, that’s why it’s so powerful, and (2) people don’t generally have time to wrap their minds around it like I have.</p>
+
+<p>Knowing what I know today, I would have started by creating an environment that demonstrated what I was talking about and then showed every stakeholder the workflow (defined above) applied to a real work situation that I could control. This is what we have done: we migrated YouTrack management to Chef and will demonstrate a secure, repeatable workflow to our security stakeholders with that.</p>
+
+<p>This will shift the conversation away from the abstract and into the implemented. It also means there are no unknowns to implementing the solution.</p>
+
+<h2 id="empower-security"><strong>Empower Security</strong></h2>
+
+<p>Security people are used to hearing from people, “We want to do this cool thing that will make _our _lives easier but will make _your _lives more difficult.” It’s natural for them to  approach chef in the same way.</p>
+
+<p>Fortunately, chef has made some amazing investments lately in features that enable a partnership with security rather than an impediment. The <a href="https://www.chef.io/blog/2015/04/09/chef-audit-mode-cis-benchmarks/">audit mode features</a> recently released in Chef allow a security team to map the auditor’s implementation of the security compliance into actionable requirements that can then be applied to the system.</p>
+
+<p>So, all of the sudden, the crazy devops person who wants to make everything go faster is the person who will enable automated, reported compliance for PCI throughout our data center. The posture of the security group changes from being antagonistic into being a true partnership.</p>
+
+<p>We’re planning on taking some PCI requirements and writing audit cookbooks for them. We’ll go into the auditing relationship with demonstratable proof that we are creating a more secure, auditable, and fast system for managing configuration in our hosted environment.</p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+
+<p>Empathy is probably the most important aspect of any change. Begin with how a change will improve the effectiveness of your colleagues and the ultimate profitability of your company. Security is no different. Thanks to my friends at Chef, I have a more solid strategy for meeting those goals.</p>
+
+
+        </div><!-- main-content/col -->
+    </div> <!--/row -->
+
+</main> <!-- /container -->
+
+<footer class="single">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2">
+            <img src="/img/.jpg" class="user-icon " alt="user-image">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="category-list">
+                <p>Published <span>Nov 6, 2015</span></p>
+                <p><a href=""></a> in <a href='/category/tools'>Tools</a></p>
+
+                <div class="other-catergories">
+                    <h3>Also found in</h3>
+
+                    <ul>
+                        
+                        <li>
+                            <a href='/category/tools'>Tools</a>
+                            ,
+                        </li>
+                        
+                        <li>
+                            <a href='/category/tools'>Uncategorized</a>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="" data-url="http://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/"><i class="fa fa-twitter"></i></a>
+
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="" data-url="http://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:mhedgpeth-hedge-ops-email@gmail.com?body=http://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
+
+
+    
+</footer>
+
+
+    <script src='/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js'></script>
+    <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src='/js/vendor/jquery.jpanelmenu.min.js'></script>
+    <script type='application/javascript' src='/js/vendor/fastclick.min.js'></script>
+    
+    <script src=' /js/main.js'></script>
+  </body>
+
+</html>
