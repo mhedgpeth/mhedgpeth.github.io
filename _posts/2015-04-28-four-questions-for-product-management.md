@@ -1,34 +1,22 @@
 ---
 id: 849
+layout: post
 title: Four Questions for Product Management
 date: 2015-04-28T08:00:47+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-four-questions-for-product-management 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=849
 permalink: /four-questions-for-product-management/
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:4:"doFB";i:0;s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:292:"a:1:{i:0;a:9:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:272:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"593041450746548228";s:5:"pDate";s:19:"2015-04-28 13:17:54";}}";'
 dsq_thread_id:
   - 3719826747
-categories:
-  - insights
-tags:
-  - Kanban
-  - lean
-  - lean enterprise
-  - product management
 ---
-As product managers, how do we arrive at delighting customers? There are [organizational](http://hedge-ops.com/mission-command/ "Mission Command") and <a title="Is Continuous Delivery Needed In Our Organization?" href="http://hedge-ops.com/is-continuous-delivery-needed-in-our-organization/" target="_blank">cultural initiatives</a> that I've learned through the <a title="Lean Enterprise" href="http://amzn.to/1utrIYL" target="_blank">Lean Enterprise</a> book, like finding the <a title="The One Metric That Matters" href="http://hedge-ops.com/the-one-metric-that-matters/" target="_blank">one metric that matters</a>. These flow into team-level initiatives that I've learned through the <a title="Kanban Book" href="http://amzn.to/1CcuYsg" target="_blank">Kanban book</a>, like <a title="Defining the Kanban Input Queue" href="http://hedge-ops.com/defining-the-kanban-input-queue/" target="_blank">defining an input queue</a> and <a title="Standups" href="http://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/" target="_blank">structuring your standups in a better way</a>. But I believe the fundamental change agent lies in how a product manager approaches requirements analysis.
+As product managers, how do we arrive at delighting customers? There are [organizational](/mission-command/ "Mission Command") and (/is-continuous-delivery-needed-in-our-organization/) that I've learned through the [Lean Enterprise](http://amzn.to/1utrIYL) book, like finding the [one metric that matters](/the-one-metric-that-matters/). These flow into team-level initiatives that I've learned through the [Kanban book](http://amzn.to/1CcuYsg), like [defining an input queue](/defining-the-kanban-input-queue/) and [structuring your standups in a better way](/kanban-standup-meetings-a-way-out-of-standup-hell/). But I believe the fundamental change agent lies in how a product manager approaches requirements analysis.
 
 I believe requirements analysis boils down to four fundamental questions. The maturity of the team is dependent on which of these questions are being asked. This is in order from lower maturity to higher maturity, but they are all essential.<!--more-->
 
