@@ -1,27 +1,20 @@
 ---
 id: 721
+layout: post
 title: The Lean Startup Cycle
 date: 2015-01-23T08:00:30+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-the-lean-startup-cycle 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=721
 permalink: /the-lean-startup-cycle/
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:4:"doFB";i:0;}}";'
-snapLI:
-  - 's:540:"a:1:{i:0;a:13:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:19:"5964391784422400000";s:7:"postURL";s:124:"https://www.linkedin.com/updates?discuss=&amp;scope=16659297&amp;stype=M&amp;topic=5964391784422400000&amp;type=U&amp;a=pzBV";s:5:"pDate";s:19:"2015-01-23 14:03:34";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:308:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:52:"Create success through the #leanstartup cycle %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"558626104181682176";s:5:"pDate";s:19:"2015-01-23 14:03:36";}}";'
 dsq_thread_id:
   - 3448457365
-categories:
-  - insights
 tags:
   - Budget Cycling
   - innovation
@@ -40,7 +33,7 @@ When you start a project the normal course of action is to try to get as many pe
   1. Working out what we need to _learn _by creating a value hypothesis
   2. Decide what to _measure _in order to test that hypothesis
   3. Design an experiment, called the _minimum viable product_
-  4. _Build _the minimum viable product to gather the necessary data from real customers to determine if we have a good product/market fit.
+  4. _Build_ the minimum viable product to gather the necessary data from real customers to determine if we have a good product/market fit.
 
 The authors continue:
 
