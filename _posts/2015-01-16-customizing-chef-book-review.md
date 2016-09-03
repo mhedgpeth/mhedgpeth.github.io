@@ -1,27 +1,20 @@
 ---
 id: 705
+layout: post
 title: Customizing Chef Book Review
 date: 2015-01-16T08:00:36+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-customizing-chef-book-review 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=705
 permalink: /customizing-chef-book-review/
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:4:"doFB";i:0;}}";'
-snapLI:
-  - 's:540:"a:1:{i:0;a:13:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:19:"5961854523805880320";s:7:"postURL";s:124:"https://www.linkedin.com/updates?discuss=&amp;scope=16659297&amp;stype=M&amp;topic=5961854523805880320&amp;type=U&amp;a=rnE4";s:5:"pDate";s:19:"2015-01-16 14:01:24";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:320:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:64:"My review of Customizing Chef by @jonlives - really great %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"556088844357873665";s:5:"pDate";s:19:"2015-01-16 14:01:26";}}";'
 dsq_thread_id:
   - 3425926693
-categories:
-  - book review
 tags:
   - Book Learning
   - Book Review
