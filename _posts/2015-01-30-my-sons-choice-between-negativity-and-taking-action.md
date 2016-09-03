@@ -1,6 +1,6 @@
 ---
 id: 734
-title: 'My Son's Choice Between Negativity and Taking Action'
+title: "My Son's Choice Between Negativity and Taking Action"
 date: 2015-01-30T08:00:06+00:00
 author: Michael Hedgpeth
 layout: post

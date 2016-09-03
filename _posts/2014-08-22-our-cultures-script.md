@@ -1,6 +1,6 @@
 ---
 id: 477
-title: 'Our Culture's Script'
+title: "Our Culture's Script"
 date: 2014-08-22T08:00:38+00:00
 author: Michael Hedgpeth
 layout: post

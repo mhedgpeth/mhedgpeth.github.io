@@ -10,7 +10,8 @@ author_avatar: michael
 show_avatar: true
 read_time: 10
 feature_image: feature-orchestration-maturity-model-with-chef 
-show_related_posts: true guid: http://hedge-ops.com/?p=1207
+show_related_posts: true 
+guid: http://hedge-ops.com/?p=1207
 permalink: /orchestration-maturity-model-with-chef/
 dsq_thread_id:
   - 4767801652
