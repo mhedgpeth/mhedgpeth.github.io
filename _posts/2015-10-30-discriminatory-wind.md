@@ -1,34 +1,22 @@
 ---
 id: 912
+layout: post
 title: Discriminatory Wind
 date: 2015-10-30T08:00:05+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-discriminatory-wind 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=912
 permalink: /discriminatory-wind/
 dsq_thread_id:
   - 4272613352
-snap_isAutoPosted:
-  - 1
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:398:"a:1:{i:0;a:12:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:52:"My thoughts on discrimination in technology - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:35:"10152471133176268_10153060950186268";s:5:"pDate";s:19:"2015-10-30 13:02:33";}}";'
-snapLI:
-  - 's:289:"a:1:{i:0;a:9:{s:4:"doLI";s:1:"1";s:8:"postType";s:1:"A";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";}}";'
-snapTW:
-  - 's:302:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:46:"My thoughts on discrimination in tech - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"660079357923229697";s:5:"pDate";s:19:"2015-10-30 13:02:37";}}";'
-categories:
-  - discrimination
-tags:
-  - conference
-  - discrimination
-  - technology
-  - women
 ---
-The other day I was [riding my bike](http://hedge-ops.com/engineering-travel/) to work, felt great, and got there in 26 minutes. I usually take about 35 minutes to get there. My wife even noticed with [my automated location texts](http://hedge-ops.com/sanitize-your-smartphone-with-republic-wireless/) that my phone sent her (Michael is leaving home, Michael is arriving at work). She sent me a text congratulating me on the great accomplishment. I even congratulated myself a bit on how regularly I bike now and how I've gotten so much better at this over the last year.
+The other day I was [riding my bike](/engineering-travel/) to work, felt great, and got there in 26 minutes. I usually take about 35 minutes to get there. My wife even noticed with [my automated location texts](/sanitize-your-smartphone-with-republic-wireless/) that my phone sent her (Michael is leaving home, Michael is arriving at work). She sent me a text congratulating me on the great accomplishment. I even congratulated myself a bit on how regularly I bike now and how I've gotten so much better at this over the last year.
 
 At the end of the day, I started home. The wind was screaming in my face, and I could barely go over 10 MPH.
 
