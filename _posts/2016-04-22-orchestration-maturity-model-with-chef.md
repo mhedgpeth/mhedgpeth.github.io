@@ -1,32 +1,19 @@
 ---
 id: 1207
-title: Orchestration Maturity Model with Chef
-date: 2016-04-22T08:00:44+00:00
-author: Michael Hedgpeth
 layout: post
-guid: http://hedge-ops.com/?p=1207
+title: Orchestration Maturity Model with Chef
+categories: chef orchestration
+date: 2016-04-22T08:00:44+00:00
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-orchestration-maturity-model-with-chef 
+show_related_posts: true guid: http://hedge-ops.com/?p=1207
 permalink: /orchestration-maturity-model-with-chef/
-snap_isAutoPosted:
-  - 1
 dsq_thread_id:
   - 4767801652
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:231:"a:1:{i:0;a:9:{s:4:"doFB";i:0;s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:2:"do";s:1:"1";}}";'
-snapLI:
-  - 's:308:"a:1:{i:0;a:10:{s:4:"doLI";s:1:"1";s:8:"postType";s:1:"A";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:12:"liMsgFormatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:2:"do";s:1:"1";s:11:"isPrePosted";s:1:"1";}}";'
-snapTW:
-  - 's:357:"a:1:{i:0;a:10:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:83:"My maturity model for orchestrating @chef nodes, w/ help from @julian_dunn - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:2:"do";s:1:"1";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"723497830329913345";s:5:"pDate";s:19:"2016-04-22 13:04:59";}}";'
-categories:
-  - insights
-tags:
-  - chef
-  - consul
-  - orchestration
-  - zookeeper
 ---
 One of our [earliest questions](http://hedge-ops.com/proof-of-concept/) about configuration management tools is how we would do orchestration with them. We realized early on that with chef the orchestration story was fairly weak, especially compared with something like [salt](http://saltstack.com/). But chef's [other benefits](http://hedge-ops.com/technology-partnership/) outweighed the weaknesses so we moved forward.
 
