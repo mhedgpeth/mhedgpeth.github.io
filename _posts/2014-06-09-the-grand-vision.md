@@ -1,25 +1,20 @@
 ---
 id: 151
+layout: post
 title: The Grand Vision
 date: 2014-06-09T08:00:03+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-the-grand-vision 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=151
 permalink: /the-grand-vision/
 dsq_thread_id:
   - 2800879534
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - goals
   - marketing
@@ -84,6 +79,6 @@ This kind of thinking happens all the time:
   </table>
 </div>
 
-**It's so easy to avoid the really tough problems in front of you by dreaming a big dream.** I think many of us like to think if we can't do it all, then why do it at all? The real battle is won when we drop that all or nothing thinking and get something done&#8230;**today**.
+**It's so easy to avoid the really tough problems in front of you by dreaming a big dream.** I think many of us like to think if we can't do it all, then why do it at all? The real battle is won when we drop that all or nothing thinking and get something done...**today**.
 
 When have you let the grand vision distract you from what really needed to be done right then and there?
