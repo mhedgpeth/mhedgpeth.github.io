@@ -1,27 +1,20 @@
 ---
 id: 703
+layout: post
 title: Learning Chef Book Review
 date: 2015-01-09T08:00:12+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-learning-chef-book-review 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=703
 permalink: /learning-chef-book-review/
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:214:"a:1:{i:0;a:8:{s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:4:"doFB";i:0;}}";'
-snapLI:
-  - 's:540:"a:1:{i:0;a:13:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:19:"5959320146865639425";s:7:"postURL";s:124:"https://www.linkedin.com/updates?discuss=&amp;scope=16659297&amp;stype=M&amp;topic=5959320146865639425&amp;type=U&amp;a=yBib";s:5:"pDate";s:19:"2015-01-09 14:10:41";}}";'
-snap_isAutoPosted:
-  - 1
-snapTW:
-  - 's:323:"a:1:{i:0;a:9:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:67:"My review of Learning Chef by @misheska and @sethvargo %SURL% #chef";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:11:"isPrePosted";s:1:"1";s:8:"isPosted";s:1:"1";s:4:"pgID";s:18:"553554467539271681";s:5:"pDate";s:19:"2015-01-09 14:10:44";}}";'
 dsq_thread_id:
   - 3405072022
-categories:
-  - book review
 tags:
   - Book Learning
   - Book Reviews
