@@ -1,31 +1,26 @@
 ---
 id: 207
+layout: post
 title: You Need a Budget
 date: 2014-06-18T07:45:19+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-you-need-a-budget 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=207
 permalink: /you-need-a-budget/
 dsq_thread_id:
   - 2793812732
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - tools
 tags:
   - budgeting
   - product review
   - you need a budget
 ---
-I experienced [a financial tailspin](%20http://hedge-ops.com/failure-the-catalyst/) that got my attention enough to make some serious changes in my life. I needed to assemble a team that could help me meet my goals. [A friend of mine](http://www.theprayerroomdfw.com/index.cfm?i=11234&mid=25&blogid=4177) had told me about budgeting software that he had loved that fit with how I liked to budget. I hadn't taken [You Need a Budget](http://ynab.refr.cc/C9FV2R2) (YNAB, pronounced why-nab) seriously until then, but now was the time to dive deeper into this tool to see if it would fit my needs.
+I experienced [a financial tailspin](/failure-the-catalyst/) that got my attention enough to make some serious changes in my life. I needed to assemble a team that could help me meet my goals. [A friend of mine](http://www.theprayerroomdfw.com/index.cfm?i=11234&mid=25&blogid=4177) had told me about budgeting software that he had loved that fit with how I liked to budget. I hadn't taken [You Need a Budget](http://ynab.refr.cc/C9FV2R2) (YNAB, pronounced why-nab) seriously until then, but now was the time to dive deeper into this tool to see if it would fit my needs.
 
 What I found was a great software tool created by a team that cared more about serving people and changing lives than making money. This is a critical piece of being on my team: you must be more dedicated to serving others than to enriching yourself. And the small team that created YNAB was dedicated to service over self. This software has changed my life in so many ways; I feel indebted to them to do whatever I can to make them successful.
 
