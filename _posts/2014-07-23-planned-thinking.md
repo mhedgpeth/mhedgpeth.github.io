@@ -1,32 +1,27 @@
 ---
 id: 309
+layout: post
 title: Planned Thinking
 date: 2014-07-23T08:00:05+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-planned-thinking 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=309
 permalink: /planned-thinking/
 dsq_thread_id:
   - 2849997171
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - tools
 tags:
   - checkvist
   - gtd
   - process
   - review
 ---
-In 2012 our efforts to add automated integrated testing to our central Point-of-Sale product were showing great results. We [were finding 20-40%](http://hedge-ops.com/measure-for-reality/ "Measure for Reality") of all defects found in the software, many of which were found within hours of those defects being introduced by the developer. It took years of hard work to get to this place, and I was feeling good about our accomplishments.
+In 2012 our efforts to add automated integrated testing to our central Point-of-Sale product were showing great results. We [were finding 20-40%](/measure-for-reality/) of all defects found in the software, many of which were found within hours of those defects being introduced by the developer. It took years of hard work to get to this place, and I was feeling good about our accomplishments.
 
 But there was a problem.
 
