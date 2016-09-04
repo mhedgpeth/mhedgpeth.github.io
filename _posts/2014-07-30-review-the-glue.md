@@ -1,25 +1,20 @@
 ---
 id: 315
+layout: post
 title: Review the Glue
 date: 2014-07-30T08:00:41+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-review-the-glue 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=315
 permalink: /review-the-glue/
 dsq_thread_id:
   - 2849997425
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - tools
 tags:
   - checkvist
   - gtd
@@ -39,7 +34,7 @@ Think about what we talked about earlier regarding your cluttered mind. You can'
 
 Think about the empty inbox. Are you _really_ going to put that important email in the @Actions folder if you don't trust that you'll keep it there? No. What you'll do instead is keep the _important_ emails in your inbox because, really, you don't have a review system in place.
 
-This is where <a href="https://checkvist.com" target="_blank">Checkvist</a> really shines for me. I review items in Checkvist two ways:
+This is where [Checkvist](https://checkvist.com) really shines for me. I review items in Checkvist two ways:
 
 **Due Dates.** If I need to get something done within a certain amount of time, I'll set its due date. Every day I'll check the "Due" screen (shortcut dd) and make sure I'm not missing anything. I'll even set due dates on items that I _commit _to doing by that time. For example no one is forcing me to read a book by August 1, but I put that as a due date to tell myself that is my goal.
 
