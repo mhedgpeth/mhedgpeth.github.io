@@ -1,32 +1,27 @@
 ---
 id: 524
+layout: post
 title: Escaping with the News
 date: 2014-09-03T08:00:59+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-escaping-with-the-news
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=524
 permalink: /escaping-with-the-news/
 dsq_thread_id:
   - 2960848900
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - distraction
   - escaping
   - news
   - purpose
 ---
-I was having a great time at a party at my house recently, when a friend of mine who is quite conservative started talking to me about <a href="http://en.wikipedia.org/wiki/2012_Benghazi_attack" target="_blank">the Benghazi incident of September 2012</a>. He went on and on about how outrageous it is.
+I was having a great time at a party at my house recently, when a friend of mine who is quite conservative started talking to me about [the Benghazi incident of September 2012](http://en.wikipedia.org/wiki/2012_Benghazi_attack). He went on and on about how outrageous it is.
 
 I respond, "I just don't see how any of this is important or relevant to my life."
 
@@ -56,7 +51,7 @@ To illustrate, let's comment on some CNN and Fox News headlines as of the date o
       <td >
         <a href="http://www.cnn.com/2014/07/26/world/meast/mideast-crisis/index.html?hpt=hp_t1">Rockets fired; Israel-Hamas truce appears over</a>
       </td>
-      
+       
       <td >
         None. The rockets likely won't make it to North Texas. There is no election today to influence our political establishment, and political leadership in the U.S. seem to be aligned (for the most part).
       </td>
