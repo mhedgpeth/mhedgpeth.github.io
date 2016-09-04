@@ -1,32 +1,27 @@
 ---
 id: 471
+layout: post
 title: Life is Art
 date: 2014-08-18T08:00:05+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-life-is-art 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=471
 permalink: /life-is-art/
 dsq_thread_id:
   - 2937405110
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - success
 tags:
   - art
   - life
   - meaning
   - tolerance
 ---
-Earlier this year, I was pretty excited about some [drastic changes](http://hedge-ops.com/achievable-contentment/ "Achievable Contentment") we had made in our lifestyle. Whenever I'm excited about something, I must tell someone and my friend at a dinner party at my house was no exception. I excitedly pointed out all the ways that simplicity has led us to a life of greater contentment and tranquility.
+Earlier this year, I was pretty excited about some [drastic changes](/achievable-contentment/) we had made in our lifestyle. Whenever I'm excited about something, I must tell someone and my friend at a dinner party at my house was no exception. I excitedly pointed out all the ways that simplicity has led us to a life of greater contentment and tranquility.
 
 I could sense my friend becoming increasingly uncomfortable.
 
