@@ -1,9 +1,16 @@
 ---
 id: 4
+layout: post
 title: Generosity with the Unexpected
 date: 2014-06-04T08:00:59+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-generosity-with-the-unexpected 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=4
 permalink: /generosity-with-the-unexpected/
 dsq_thread_id:
