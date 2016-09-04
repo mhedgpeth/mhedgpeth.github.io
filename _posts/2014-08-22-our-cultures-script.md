@@ -1,25 +1,20 @@
 ---
 id: 477
+layout: post
 title: "Our Culture's Script"
 date: 2014-08-22T08:00:38+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-our-cultures-script
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=477
 permalink: /our-cultures-script/
 dsq_thread_id:
   - 2949692705
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - success
 tags:
   - consumerism
   - life
@@ -28,7 +23,7 @@ tags:
   - purpose
   - success
 ---
-We want our lives to be <a href="http://hedge-ops.com/life-is-art/" target="_blank">a work of art</a> and reflect the beauty and meaning of our values. Most of us in search of meaning in our lives will naturally absorb our culture's script for us:<!--more-->
+We want our lives to be [a work of art](/life-is-art/) and reflect the beauty and meaning of our values. Most of us in search of meaning in our lives will naturally absorb our culture's script for us:<!--more-->
 
 > _To create a beautiful work of art, you must feel good. To feel good, first you must make good money. You need to go to school and then get a good, stable job._
 > 
@@ -46,8 +41,8 @@ This isn't a good way to create a life of meaning and value.
 
 **It's a great way to sell stuff though.**
 
-This script does nothing about the biggest human problem: **no matter how much you have today, you always need more.** Once you realize that, the above description becomes silly. <a href="https://www.youtube.com/watch?v=uEY58fiSK8E" target="_blank">You'll never have too much convenience</a>. No matter how much comfort you have, you know people who have more and that makes you feel&#8230;uncomfortable. There will always be someone who gets more respect than you do. Your needs are _insatiable._ 
+This script does nothing about the biggest human problem: **no matter how much you have today, you always need more.** Once you realize that, the above description becomes silly. [You'll never have too much convenience](https://www.youtube.com/watch?v=uEY58fiSK8E). No matter how much comfort you have, you know people who have more and that makes you feel&#8230;uncomfortable. There will always be someone who gets more respect than you do. Your needs are _insatiable._ 
 
 This is unavoidable.
 
-The solution?** Accept insatiability as a fact of life,** dealing with it on a regular basis, and you will have a shot at sanity. How do you do this? Keep reading to find out.
+The solution? **Accept insatiability as a fact of life,** dealing with it on a regular basis, and you will have a shot at sanity. How do you do this? Keep reading to find out.
