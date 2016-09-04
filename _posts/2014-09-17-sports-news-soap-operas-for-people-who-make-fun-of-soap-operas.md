@@ -1,25 +1,20 @@
 ---
 id: 536
+layout: post
 title: 'Sports News: Soap Operas for People Who Make Fun of Soap Operas'
 date: 2014-09-17T08:00:17+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-sports-news-soap-operas-for-people-who-make-fun-of-soap-operas 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=536
 permalink: /sports-news-soap-operas-for-people-who-make-fun-of-soap-operas/
 dsq_thread_id:
   - 3023065147
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - distraction
   - escaping
@@ -32,17 +27,17 @@ Then I realized something:
 
 **Sports News is even more worthless than "Real" News.**<!--more-->
 
-Yes, you are hearing me correctly. I <a href="http://hedge-ops.com/escaping-with-the-news/" target="_blank">just finished</a> outlining everything wasteful and dumb about CNN and Fox News, but I'm saying sports news is even worse than that. The difference: at least in "real" news we are talking about people's lives and well being. In sports we are talking about a game using the same medium and tone that we talk about people's lives and well being.
+Yes, you are hearing me correctly. I [just finished](/escaping-with-the-news/) outlining everything wasteful and dumb about CNN and Fox News, but I'm saying sports news is even worse than that. The difference: at least in "real" news we are talking about people's lives and well being. In sports we are talking about a game using the same medium and tone that we talk about people's lives and well being.
 
 A couple of observations really hit this home for me:
 
 **Sports news _loves _the soap opera story.** It's funny to think that way, too, since so many sports fans are uber-masculine and would never admit to enjoying soap operas as entertainment. A few examples (as you read these in the tone of an airhead woman in her early twenties talking about a soap opera):
 
-_OMG did you hear about** <a href="http://espn.go.com/dallas/mlb/story/_/id/11471420/ron-washington-quits-manager-texas-rangers" target="_blank">Ron Washington</a>?** He RESIGNED today as manager of the Rangers for personal reasons. Jon Daniels says it ISN'T about drugs. But who knows? I wonder how the players are feeling?_
+_OMG did you hear about** [Ron Washington](http://espn.go.com/dallas/mlb/story/_/id/11471420/ron-washington-quits-manager-texas-rangers)?** He RESIGNED today as manager of the Rangers for personal reasons. Jon Daniels says it ISN'T about drugs. But who knows? I wonder how the players are feeling?_
 
-_OMG did you hear about the <a href="http://insider.espn.go.com/blog/nfl/rumors/post/_/id/24032/will-refs-pocket-flags-in-regular-season" target="_blank">number of penalties being called in NFL preseason</a>? I wonder if, like, the NFL will call those during the REGULAR SEASON!?!?! This might like change the whole game._
+_OMG did you hear about the [number of penalties being called in NFL preseason](http://insider.espn.go.com/blog/nfl/rumors/post/_/id/24032/will-refs-pocket-flags-in-regular-season)? I wonder if, like, the NFL will call those during the REGULAR SEASON!?!?! This might like change the whole game._
 
-_OMG, did you <a href="http://espn.go.com/blog/denver-broncos/post/_/id/8501/wes-welker-roundup-everything-you-need-to-know-about-his-suspension" target="_blank">hear that Wes Welker</a> is SUSPENDED for FOUR GAMES for taking drugs? I wonder what drugs they are???? O&#8230;.M&#8230;..G&#8230;..!?!?!?!_
+_OMG, did you [hear that Wes Welker](http://espn.go.com/blog/denver-broncos/post/_/id/8501/wes-welker-roundup-everything-you-need-to-know-about-his-suspension) is SUSPENDED for FOUR GAMES for taking drugs? I wonder what drugs they are????...!?!?!?!_
 
 What is all of this about?
 
