@@ -1,38 +1,33 @@
 ---
 id: 544
+layout: post
 title: Focus with the Amazon Kindle
 date: 2014-10-03T08:00:20+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-focus-with-the-amazon-kindle
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=544
 permalink: /focus-with-the-amazon-kindle/
 dsq_thread_id:
   - 3044468501
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - books
   - kindle
   - leadership
   - reading
 ---
-I've been writing about [focusing on what matters](http://hedge-ops.com/life-is-art/ "Life is Art") lately by [making good choices](http://hedge-ops.com/achievable-contentment/ "Achievable Contentment") with how and what you consume. Some things are just a complete waste of time like the [local news](http://hedge-ops.com/rubbernecking-with-the-locals/ "Rubbernecking with the Locals"). Other things have a good alternative, like [reading the Economist](http://hedge-ops.com/the-economist-keeps-it-real/ "The Economist Keeps it Real") instead of going to [news sites](http://hedge-ops.com/escaping-with-the-news/ "Escaping with the News").
+I've been writing about [focusing on what matters](/life-is-art/ "Life is Art") lately by [making good choices](/achievable-contentment/) with how and what you consume. Some things are just a complete waste of time like the [local news](/rubbernecking-with-the-locals/). Other things have a good alternative, like [reading the Economist](/the-economist-keeps-it-real/) instead of going to [news sites](/escaping-with-the-news/).
 
 As I wrote last time, though, in this mobile world that isn't enough. You have to make sure your smartphone is serving you and not enslaving you. And beyond that I'm convinced **to lead a life of growth and meaning you need to read.** Probably more than you are right now.
 
 So how do we do that? The solutions that come to mind immediately are: on our smartphone, a paper book, or a tablet. I'm going to talk about a better way to read books: through the Amazon Kindle.<!--more-->
 
-A few years back <a href="http://www.chrisdikes.com/" target="_blank">my friend Chris</a> asked me what I thought about the Kindle, and my opinion to him as of July 16, 2010 was: "_It seems like having a book would be better._" Well, thankfully Chris didn't listen to my awful advice and bought one, told me about it, changed my mind, and I haven't looked back.
+A few years back [my friend Chris](http://www.chrisdikes.com/) asked me what I thought about the Kindle, and my opinion to him as of July 16, 2010 was: "_It seems like having a book would be better._" Well, thankfully Chris didn't listen to my awful advice and bought one, told me about it, changed my mind, and I haven't looked back.
 
 Here's what's so great about the Kindle:
 
