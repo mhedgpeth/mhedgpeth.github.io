@@ -3,7 +3,7 @@ id: 207
 layout: post
 title: You Need a Budget
 date: 2014-06-18T07:45:19+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

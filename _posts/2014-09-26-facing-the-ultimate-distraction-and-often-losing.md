@@ -3,7 +3,7 @@ id: 540
 layout: post
 title: Facing the Ultimate Distraction and Often Losing
 date: 2014-09-26T08:00:09+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,9 @@ id: 658
 layout: post
 title: Assumption of Agreement
 date: 2014-11-17T08:00:31+00:00
-categories: culture
+categories:
+  - growth
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

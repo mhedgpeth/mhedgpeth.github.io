@@ -3,7 +3,9 @@ id: 717
 layout: post
 title: Mission Command
 date: 2015-01-19T08:00:54+00:00
-categories: culture
+categories: 
+  - process
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

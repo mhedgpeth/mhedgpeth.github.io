@@ -3,7 +3,7 @@ id: 385
 layout: post
 title: Month Ahead
 date: 2014-06-20T08:00:18+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

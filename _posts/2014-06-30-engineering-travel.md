@@ -3,7 +3,7 @@ id: 293
 layout: post
 title: Engineering Travel
 date: 2014-06-30T08:00:05+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

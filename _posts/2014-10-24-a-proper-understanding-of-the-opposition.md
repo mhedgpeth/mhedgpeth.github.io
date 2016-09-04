@@ -3,7 +3,7 @@ id: 654
 layout: post
 title: A Proper Understanding of the Opposition
 date: 2014-10-24T08:00:31+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

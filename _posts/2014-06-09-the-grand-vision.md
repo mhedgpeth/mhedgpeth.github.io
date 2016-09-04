@@ -3,7 +3,10 @@ id: 151
 layout: post
 title: The Grand Vision
 date: 2014-06-09T08:00:03+00:00
-categories: culture
+categories:
+  - process
+  - culture
+  - growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,7 @@ id: 480
 layout: post
 title: Finding a Philosophy of Life
 date: 2014-08-25T08:00:29+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

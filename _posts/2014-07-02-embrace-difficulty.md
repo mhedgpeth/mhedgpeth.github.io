@@ -3,7 +3,10 @@ id: 295
 layout: post
 title: Embrace Difficulty
 date: 2014-07-02T08:12:45+00:00
-categories: culture
+categories:
+  - growth
+  - culture
+  - process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

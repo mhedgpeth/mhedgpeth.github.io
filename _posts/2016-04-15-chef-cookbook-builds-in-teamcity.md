@@ -4,7 +4,10 @@ layout: post
 title: Chef Cookbook Builds in TeamCity
 date: 2016-04-15T08:00:50+00:00
 author: Michael Hedgpeth
-categories: teamcity chef
+categories: 
+  - automation
+  - chef
+  - teamcity
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

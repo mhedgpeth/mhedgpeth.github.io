@@ -3,7 +3,9 @@ id: 701
 layout: post
 title: Solving SSL Validation failure with knife
 date: 2015-01-05T08:00:37+00:00
-categories: culture
+categories: 
+  - automation
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,10 @@ id: 1028
 layout: post
 title: The Power of Culture in Cross-Discipline Change Initiatives
 date: 2016-02-12T08:00:17+00:00
-categories: culture
+categories: 
+  - culture
+  - chef
+  - security
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

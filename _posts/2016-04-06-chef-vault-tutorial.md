@@ -3,7 +3,10 @@ id: 1181
 layout: post
 title: chef-vault Tutorial
 date: 2016-04-06T00:00:32+00:00
-categories: chef security
+categories:
+  - automation
+  - chef
+  - security
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

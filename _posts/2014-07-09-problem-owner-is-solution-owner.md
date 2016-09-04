@@ -3,7 +3,7 @@ id: 299
 layout: post
 title: Problem Owner is Solution Owner
 date: 2014-07-09T08:07:29+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

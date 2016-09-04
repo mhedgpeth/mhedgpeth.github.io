@@ -3,7 +3,9 @@ id: 707
 layout: post
 title: The Phoenix Project Book Review
 date: 2015-02-02T08:00:14+00:00
-categories: culture
+categories:
+  - books
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

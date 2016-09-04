@@ -3,7 +3,9 @@ id: 660
 layout: post
 title: The Ultimate Test of Tolerance
 date: 2014-11-24T08:00:10+00:00
-categories: culture
+categories: 
+  - growth
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

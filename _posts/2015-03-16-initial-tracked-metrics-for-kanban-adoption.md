@@ -3,7 +3,7 @@ id: 840
 layout: post
 title: Initial Tracked Metrics for Kanban Adoption
 date: 2015-03-16T08:00:39+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

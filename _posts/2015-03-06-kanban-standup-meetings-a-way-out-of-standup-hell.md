@@ -3,7 +3,7 @@ id: 832
 layout: post
 title: 'Kanban Standup Meetings: A Way Out of Standup Hell?'
 date: 2015-03-06T08:00:35+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

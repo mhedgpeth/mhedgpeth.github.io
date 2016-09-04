@@ -3,7 +3,9 @@ id: 317
 layout: post
 title: Mind Like Water
 date: 2014-08-01T08:00:37+00:00
-categories: culture
+categories:
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,7 @@ id: 536
 layout: post
 title: 'Sports News: Soap Operas for People Who Make Fun of Soap Operas'
 date: 2014-09-17T08:00:17+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

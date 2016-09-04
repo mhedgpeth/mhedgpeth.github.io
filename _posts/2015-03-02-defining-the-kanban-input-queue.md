@@ -3,7 +3,7 @@ id: 827
 layout: post
 title: Defining the Kanban Input Queue
 date: 2015-03-02T10:00:33+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

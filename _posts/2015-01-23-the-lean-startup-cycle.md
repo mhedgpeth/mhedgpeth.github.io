@@ -3,7 +3,9 @@ id: 721
 layout: post
 title: The Lean Startup Cycle
 date: 2015-01-23T08:00:30+00:00
-categories: culture
+categories:
+  - process
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

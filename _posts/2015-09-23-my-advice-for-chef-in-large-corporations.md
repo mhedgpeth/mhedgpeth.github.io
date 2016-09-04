@@ -3,7 +3,9 @@ id: 940
 layout: post
 title: My Advice For Chef in Large Corporations
 date: 2015-09-23T11:21:34+00:00
-categories: culture
+categories: 
+  - culture
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

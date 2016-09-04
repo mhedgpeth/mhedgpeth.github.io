@@ -3,7 +3,9 @@ id: 313
 layout: post
 title: Process and Organize
 date: 2014-07-28T08:00:39+00:00
-categories: culture
+categories: 
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

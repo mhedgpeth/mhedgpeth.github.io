@@ -3,7 +3,7 @@ id: 838
 layout: post
 title: Kanban Decoupling Input Cadence from Delivery Cadence
 date: 2015-03-13T08:00:45+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

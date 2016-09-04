@@ -3,7 +3,11 @@ id: 16
 layout: post
 title: Christmas with Russians
 date: 2014-05-26T08:00:28+00:00
-categories: culture
+categories:
+  - culture
+  - growth
+  - teamcity
+  - automation
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

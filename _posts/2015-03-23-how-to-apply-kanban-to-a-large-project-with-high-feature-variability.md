@@ -3,7 +3,7 @@ id: 847
 layout: post
 title: How to Apply Kanban to a Large Project with High Feature Variability
 date: 2015-03-23T08:00:01+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

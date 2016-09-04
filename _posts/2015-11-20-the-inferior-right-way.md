@@ -3,7 +3,10 @@ id: 938
 layout: post
 title: 'The Inferior "Right" Way'
 date: 2015-11-20T08:00:20+00:00
-categories: culture
+categories: 
+  - culture
+  - teamcity
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

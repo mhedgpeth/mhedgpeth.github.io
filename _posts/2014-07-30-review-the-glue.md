@@ -3,7 +3,9 @@ id: 315
 layout: post
 title: Review the Glue
 date: 2014-07-30T08:00:41+00:00
-categories: culture
+categories:
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

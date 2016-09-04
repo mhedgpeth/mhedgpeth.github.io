@@ -3,7 +3,9 @@ id: 728
 layout: post
 title: Progression of Responsibility
 date: 2015-02-06T08:00:02+00:00
-categories: culture
+categories:
+  - process
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

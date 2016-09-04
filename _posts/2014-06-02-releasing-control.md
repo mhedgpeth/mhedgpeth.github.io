@@ -3,7 +3,7 @@ id: 14
 layout: post
 title: Releasing Control
 date: 2014-06-02T08:00:43+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

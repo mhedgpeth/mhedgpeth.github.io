@@ -2,7 +2,10 @@
 id: 1207
 layout: post
 title: Orchestration Maturity Model with Chef
-categories: chef orchestration
+categories:
+  - automation
+  - chef
+  - consul
 date: 2016-04-22T08:00:44+00:00
 author_name: "Michael Hedgpeth"
 author_url: /author/michael

@@ -3,7 +3,9 @@ id: 1263
 layout: post
 title: Finding Habitat
 date: 2016-06-15T07:39:22+00:00
-categories: automation
+categories: 
+  - automation
+  - chef
 author_name: Michael Hedgpeth
 author_url: /author/michael
 author_avatar: michael

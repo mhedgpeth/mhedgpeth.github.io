@@ -3,7 +3,7 @@ id: 228
 layout: post
 title: Increase Income by Negotiating
 date: 2014-06-27T08:00:20+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

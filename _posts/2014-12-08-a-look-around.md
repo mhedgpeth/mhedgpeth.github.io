@@ -3,7 +3,7 @@ id: 694
 layout: post
 title: A Look Around
 date: 2014-12-08T11:39:48+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

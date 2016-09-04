@@ -3,7 +3,7 @@ id: 584
 layout: post
 title: Two Questions You Should Ask About Your Commitments
 date: 2014-10-06T08:00:51+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

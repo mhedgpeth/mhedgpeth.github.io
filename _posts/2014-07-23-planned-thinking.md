@@ -3,7 +3,9 @@ id: 309
 layout: post
 title: Planned Thinking
 date: 2014-07-23T08:00:05+00:00
-categories: culture
+categories: 
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

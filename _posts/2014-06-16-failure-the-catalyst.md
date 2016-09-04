@@ -3,7 +3,10 @@ id: 202
 layout: post
 title: Failure the Catalyst
 date: 2014-06-16T08:00:40+00:00
-categories: culture
+categories:
+  - growth
+  - culture
+  - process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

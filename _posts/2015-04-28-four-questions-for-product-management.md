@@ -3,7 +3,7 @@ id: 849
 layout: post
 title: Four Questions for Product Management
 date: 2015-04-28T08:00:47+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

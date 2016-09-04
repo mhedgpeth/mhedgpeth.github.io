@@ -3,7 +3,7 @@ id: 544
 layout: post
 title: Focus with the Amazon Kindle
 date: 2014-10-03T08:00:20+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

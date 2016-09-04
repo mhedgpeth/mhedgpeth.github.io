@@ -3,7 +3,9 @@ id: 471
 layout: post
 title: Life is Art
 date: 2014-08-18T08:00:05+00:00
-categories: culture
+categories:
+  - growth
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

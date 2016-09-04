@@ -3,7 +3,10 @@ id: 12
 layout: post
 title: Failure Masquerading as Success
 date: 2014-05-30T08:00:57+00:00
-categories: culture
+categories:
+  - growth
+  - culture
+  - process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

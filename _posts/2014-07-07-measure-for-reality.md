@@ -3,7 +3,7 @@ id: 297
 layout: post
 title: Measure for Reality
 date: 2014-07-07T08:10:44+00:00
-categories: culture
+categories: process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

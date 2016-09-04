@@ -3,7 +3,7 @@ id: 6
 layout: post
 title: Achievable Contentment
 date: 2014-05-28T09:30:37+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,9 @@ id: 1111
 layout: post
 title: Tutorial for Test Kitchen with Azure
 date: 2016-03-04T08:00:20+00:00
-categories: chef kitchen
+categories:
+  - automation
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

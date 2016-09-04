@@ -3,7 +3,7 @@ id: 709
 layout: post
 title: Coding for Kids
 date: 2015-01-12T08:00:18+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

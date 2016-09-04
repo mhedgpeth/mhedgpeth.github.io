@@ -3,7 +3,9 @@ id: 303
 layout: post
 title: Solve Problems by Isolating Them
 date: 2014-07-16T08:02:33+00:00
-categories: culture
+categories:
+  - process
+  - growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

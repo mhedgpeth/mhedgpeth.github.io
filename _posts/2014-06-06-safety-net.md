@@ -3,7 +3,10 @@ id: 149
 layout: post
 title: Safety Net
 date: 2014-06-06T08:00:33+00:00
-categories: culture
+categories:
+  - process
+  - culture
+  - growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,9 @@ id: 319
 layout: post
 title: Getting Things Done Action Plan
 date: 2014-08-04T08:00:55+00:00
-categories: culture
+categories:
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

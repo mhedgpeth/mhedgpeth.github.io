@@ -3,7 +3,9 @@ id: 305
 layout: post
 title: How Growth Got Me Organized and Productive
 date: 2014-07-21T08:00:35+00:00
-categories: culture
+categories: 
+  - growth
+  - gtd
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

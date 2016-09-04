@@ -3,7 +3,10 @@ id: 703
 layout: post
 title: Learning Chef Book Review
 date: 2015-01-09T08:00:12+00:00
-categories: culture
+categories: 
+  - books
+  - chef
+  - automation
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

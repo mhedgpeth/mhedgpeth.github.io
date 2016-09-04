@@ -3,7 +3,7 @@ id: 532
 layout: post
 title: The Economist Keeps it Real
 date: 2014-09-05T08:00:12+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

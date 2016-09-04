@@ -3,7 +3,7 @@ id: 215
 layout: post
 title: Move the Needle with Dave Ramsey
 date: 2014-06-23T08:00:21+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

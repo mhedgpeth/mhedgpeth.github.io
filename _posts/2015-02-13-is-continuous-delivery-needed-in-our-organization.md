@@ -3,7 +3,9 @@ id: 823
 layout: post
 title: Is Continuous Delivery Needed in Our Organization?
 date: 2015-02-13T08:00:49+00:00
-categories: culture
+categories: 
+  - culture
+  - process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

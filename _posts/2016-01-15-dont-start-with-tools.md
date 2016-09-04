@@ -3,7 +3,9 @@ id: 1013
 layout: post
 title: "Don't Start with Tools"
 date: 2016-01-15T08:00:05+00:00
-categories: culture
+categories:
+  - culture
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

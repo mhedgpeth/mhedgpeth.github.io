@@ -3,7 +3,7 @@ id: 220
 layout: post
 title: Lowering Expenses with Contentment
 date: 2014-06-25T08:00:26+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

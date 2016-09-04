@@ -3,7 +3,7 @@ id: 602
 layout: post
 title: You Have Time
 date: 2014-09-24T08:00:39+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

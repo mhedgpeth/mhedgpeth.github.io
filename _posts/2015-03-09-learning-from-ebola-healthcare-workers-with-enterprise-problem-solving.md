@@ -3,7 +3,9 @@ id: 834
 layout: post
 title: Learning from Ebola Healthcare Workers with Enterprise Problem Solving
 date: 2015-03-09T09:30:21+00:00
-categories: culture
+categories:
+  - process
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

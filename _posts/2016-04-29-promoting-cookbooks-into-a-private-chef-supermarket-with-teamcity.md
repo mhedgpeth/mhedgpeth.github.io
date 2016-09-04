@@ -3,7 +3,10 @@ id: 1222
 layout: post
 title: Promoting Cookbooks into a Private Chef Supermarket with TeamCity
 date: 2016-04-29T08:01:34+00:00
-categories: chef teamcity pipeline
+categories:
+  - automation
+  - chef
+  - teamcity
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

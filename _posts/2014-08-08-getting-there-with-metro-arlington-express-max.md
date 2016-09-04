@@ -3,7 +3,7 @@ id: 464
 layout: post
 title: Getting There with Metro Arlington Express (MAX)
 date: 2014-08-08T08:00:03+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

@@ -3,7 +3,10 @@ id: 1015
 layout: post
 title: 'Technology < Partnership'
 date: 2016-01-22T08:00:43+00:00
-categories: culture
+categories:
+  - culture
+  - automation
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

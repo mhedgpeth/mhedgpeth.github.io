@@ -3,7 +3,7 @@ id: 198
 layout: post
 title: Engineering Laundry
 date: 2014-06-13T08:00:54+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

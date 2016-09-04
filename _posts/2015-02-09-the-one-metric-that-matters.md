@@ -3,7 +3,9 @@ id: 779
 layout: post
 title: The One Metric that Matters
 date: 2015-02-09T08:00:34+00:00
-categories: culture
+categories:
+  - process
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

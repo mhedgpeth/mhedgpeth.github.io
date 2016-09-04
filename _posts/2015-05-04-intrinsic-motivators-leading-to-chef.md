@@ -3,7 +3,9 @@ id: 883
 layout: post
 title: Intrinsic Motivators Leading to Chef
 date: 2015-05-04T08:00:25+00:00
-categories: culture
+categories: 
+  - culture
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

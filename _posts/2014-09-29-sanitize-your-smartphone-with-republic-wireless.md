@@ -3,7 +3,7 @@ id: 542
 layout: post
 title: Sanitize Your Smartphone with Republic Wireless
 date: 2014-09-29T08:00:08+00:00
-categories: culture
+categories: growth
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

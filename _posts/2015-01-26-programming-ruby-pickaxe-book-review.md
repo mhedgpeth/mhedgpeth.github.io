@@ -3,7 +3,10 @@ id: 737
 layout: post
 title: Programming Ruby (Pickaxe) Book Review
 date: 2015-01-26T08:00:32+00:00
-categories: culture
+categories:
+  - books
+  - chef
+  - automation
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

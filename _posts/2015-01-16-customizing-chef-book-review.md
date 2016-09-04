@@ -3,7 +3,10 @@ id: 705
 layout: post
 title: Customizing Chef Book Review
 date: 2015-01-16T08:00:36+00:00
-categories: culture
+categories: 
+  - books
+  - chef
+  - automation
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

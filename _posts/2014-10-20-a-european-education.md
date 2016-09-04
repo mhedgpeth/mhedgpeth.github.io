@@ -3,7 +3,9 @@ id: 651
 layout: post
 title: A European Education
 date: 2014-10-20T22:14:05+00:00
-categories: culture
+categories: 
+  - growth
+  - culture
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

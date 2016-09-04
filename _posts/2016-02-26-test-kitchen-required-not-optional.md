@@ -3,7 +3,9 @@ id: 1105
 layout: post
 title: 'Test Kitchen: Required, not Optional'
 date: 2016-02-26T08:00:21+00:00
-categories: kitchen chef
+categories:
+  - automation
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael

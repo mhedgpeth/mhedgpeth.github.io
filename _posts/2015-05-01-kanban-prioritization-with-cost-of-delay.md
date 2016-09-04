@@ -3,7 +3,8 @@ id: 852
 layout: post
 title: Kanban Prioritization with Cost of Delay
 date: 2015-05-01T08:00:12+00:00
-categories: culture
+categories:
+  - process
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael
