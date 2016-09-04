@@ -1,34 +1,29 @@
 ---
 id: 293
+layout: post
 title: Engineering Travel
 date: 2014-06-30T08:00:05+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-engineering-travel 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=293
 permalink: /engineering-travel/
 dsq_thread_id:
   - 2795896561
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - biking
   - car
   - commuting
   - mpg
 ---
-This year our family has been [focused on contentment](http://hedge-ops.com/lowering-expenses-with-contentment/ "Lowering Expenses with Contentment") over consumerism. It all started with realizing that our children believed the lie that stuff was going to make them happy. Where on earth would they learn that behavior? It was probably from that school they went to. No, as we looked further they learned it from us, because we were living that way as well.
+This year our family has been [focused on contentment](/lowering-expenses-with-contentment/) over consumerism. It all started with realizing that our children believed the lie that stuff was going to make them happy. Where on earth would they learn that behavior? It was probably from that school they went to. No, as we looked further they learned it from us, because we were living that way as well.
 
-When we started focusing on contentment, we realized it was a part of our whole lives. This wasn't about just saving money on groceries and not eating out. Everything we did was a topic of conversation. And thus, the topic of travel went up, and we went through a bit of a transformation on how we see it. As I did in [an earlier post](http://hedge-ops.com/engineering-laundry/ "Engineering Laundry"), I'll walk you through what I did and hope you get some ideas about how you can find more contentment in your travel choices.<!--more-->
+When we started focusing on contentment, we realized it was a part of our whole lives. This wasn't about just saving money on groceries and not eating out. Everything we did was a topic of conversation. And thus, the topic of travel went up, and we went through a bit of a transformation on how we see it. As I did in [an earlier post](/engineering-laundry/), I'll walk you through what I did and hope you get some ideas about how you can find more contentment in your travel choices.<!--more-->
 
 # Inherited System
 
@@ -50,7 +45,7 @@ These last two elements are critical components for the new system outlined bel
 When we started looking at our lives and budget holistically, we saw a few problems with the system we had been living by:
 
   1. **We had a sedentary lifestyle that was setting us up for health problems.** I had a desk job. Anytime we wanted to go _anywhere_ we went and sat on a metal-encased couch that launched us down a paved road. I was gaining a few pounds every few years. I went to the gym sometimes, but it was hard to fit it into my busy schedule.
-  2. **We had a consumptive mindset.** I'm convinced that [a key to contentment](http://hedge-ops.com/achievable-contentment/ "Achievable Contentment") must be to think of yourself as a producer instead of a consumer. If you feel _entitled_ to consume, then nothing is ever good enough. When I produce as much as possible, the times when I do consume are wonderful, gracious experiences. Our system made us 100% consumers of our transportation, via the car.
+  2. **We had a consumptive mindset.** I'm convinced that [a key to contentment](/achievable-contentment/ "Achievable Contentment") must be to think of yourself as a producer instead of a consumer. If you feel _entitled_ to consume, then nothing is ever good enough. When I produce as much as possible, the times when I do consume are wonderful, gracious experiences. Our system made us 100% consumers of our transportation, via the car.
 
 # New System
 
