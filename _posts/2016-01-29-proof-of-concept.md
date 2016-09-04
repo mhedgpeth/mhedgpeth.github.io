@@ -3,7 +3,9 @@ id: 1017
 layout: post
 title: Proof of Concept
 date: 2016-01-29T08:00:45+00:00
-categories: culture
+categories: 
+  - culture
+  - chef
 author_name: "Michael Hedgpeth"
 author_url: /author/michael
 author_avatar: michael
