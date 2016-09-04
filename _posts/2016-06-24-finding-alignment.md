@@ -10,7 +10,8 @@ author_avatar: michael
 show_avatar: true
 read_time: 10
 feature_image: feature-finding-alignment 
-show_related_posts: true 
+show_related_posts: true
+square_related: related-finding-alignment
 guid: http://hedge-ops.com/?p=1270
 permalink: /finding-alignment/
 dsq_thread_id:

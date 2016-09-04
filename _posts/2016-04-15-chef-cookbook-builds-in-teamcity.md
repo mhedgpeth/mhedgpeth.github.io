@@ -12,6 +12,7 @@ show_avatar: true
 read_time: 10
 feature_image: feature-chef-cookbook-builds-in-teamcity 
 show_related_posts: true
+square_related: related-chef-cookbook-builds-in-teamcity
 guid: http://hedge-ops.com/?p=1154
 permalink: /chef-cookbook-builds-in-teamcity/
 dsq_thread_id:

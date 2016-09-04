@@ -11,6 +11,7 @@ show_avatar: true
 read_time: 10
 feature_image: feature-disruption-is-uncomfortable
 show_related_posts: true
+square_related: related-disruption-is-uncomfortable
 guid: http://hedge-ops.com/?p=1255
 permalink: /disruption-is-uncomfortable/
 dsq_thread_id:

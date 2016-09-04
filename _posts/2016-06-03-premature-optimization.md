@@ -11,6 +11,7 @@ show_avatar: true
 read_time: 10
 feature_image: feature-premature-optimization 
 show_related_posts: true 
+square_related: related-premature-optimization 
 guid: http://hedge-ops.com/?p=1252
 permalink: /premature-optimization/
 dsq_thread_id:

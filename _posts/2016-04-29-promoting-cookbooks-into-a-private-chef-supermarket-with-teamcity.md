@@ -11,6 +11,7 @@ show_avatar: true
 read_time: 10
 feature_image: feature-promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity 
 show_related_posts: true 
+square_related: related-promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity
 guid: http://hedge-ops.com/?p=1222
 permalink: /promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/
 dsq_thread_id:

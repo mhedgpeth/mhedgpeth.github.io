@@ -11,6 +11,7 @@ show_avatar: true
 read_time: 10
 feature_image: feature-orchestration-maturity-model-with-chef 
 show_related_posts: true 
+square_related: related-orchestration-maturity-model-with-chef
 guid: http://hedge-ops.com/?p=1207
 permalink: /orchestration-maturity-model-with-chef/
 dsq_thread_id:

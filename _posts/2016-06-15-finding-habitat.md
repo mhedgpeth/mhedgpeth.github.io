@@ -10,6 +10,8 @@ author_avatar: michael
 show_avatar: true
 read_time: 5
 feature_image: feature-finding-habitat
+show_related_posts: true
+square_related: related-finding-habitat
 guid: http://hedge-ops.com/?p=1263
 permalink: /finding-habitat/
 dsq_thread_id:
