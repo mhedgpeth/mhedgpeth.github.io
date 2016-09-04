@@ -1,29 +1,24 @@
 ---
 id: 654
+layout: post
 title: A Proper Understanding of the Opposition
 date: 2014-10-24T08:00:31+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-a-proper-understanding-of-the-opposition 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=654
 permalink: /a-proper-understanding-of-the-opposition/
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
 tags:
   - politics
   - religion
   - tolerance
 ---
-Here’s a fun exercise: first read the first five headlines on <http://www.dailykos.com/>. Next read the first five headlines on <http://www.lucianne.com/>. See any patterns?
+Here’s a fun exercise: first read the first five headlines on [DailyKOS](http://www.dailykos.com/). Next read the first five headlines on [Lucianne](http://www.lucianne.com/). See any patterns?
 
 **On DailyKOS** you get the feeling that Republicans are heartless idiots with half a brain, and that our world’s problems would be solved if they would just get out of the way of progress.
 
@@ -33,7 +28,7 @@ If you’re the typical American, you probably relate to one site and not to ano
 
 I’ve only recently recognized how destructive this is to my life, my thinking, and my relationships.<!--more-->
 
-If I want to pursue [a life of meaning and purpose](http://hedge-ops.com/achievable-contentment/ "Achievable Contentment"), I need to be constantly open to the reality that **_I don’t have all the answers_** and pursue growth in all areas. If I’m doing this right this means that I will learn from people with drastically different perspectives than me. If I was only a part of the American Political echo chamber on either side, I would in effect cut myself off of half of the country’s ideas and thoughts. This isn’t a recipe for growth.
+If I want to pursue [a life of meaning and purpose](/achievable-contentment/), I need to be constantly open to the reality that **_I don’t have all the answers_** and pursue growth in all areas. If I’m doing this right this means that I will learn from people with drastically different perspectives than me. If I was only a part of the American Political echo chamber on either side, I would in effect cut myself off of half of the country’s ideas and thoughts. This isn’t a recipe for growth.
 
 If I want to deepen my ability to think about tough, difficult issues the world faces, I need to be constantly open to the reality that _**tough issues cannot be reduced to simple soundbite answers those from the media on both sides provide.**_ If I go through life just listening to one side and thinking that if the other side would just grow half a brain we’d all move past these elementary problems, I end up being mentally lazy. And I don’t grow.
 
