@@ -1,25 +1,20 @@
 ---
 id: 405
+layout: post
 title: Ten Takeaways from the Last 10 Years at Radiant/NCR
 date: 2014-07-11T08:00:22+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-ten-takeaways-from-the-last-10-years-at-radiantncr 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=405
 permalink: /ten-takeaways-from-the-last-10-years-at-radiantncr/
 dsq_thread_id:
   - 2834144276
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - success
 tags:
   - ncr
   - radiant
@@ -43,7 +38,7 @@ tags:
 
 This was where I had found myself in the spring of 2004.<!--more--> For some reason, I thought it was a great idea to accept a developer position at a Law Firm that specialized in foreclosures. In some cosmic twist, they sat me in the cubicle next to the lady who was delivering the bad news to people. All day.
 
-I had to get out of there. But to where? A recruiter had told me about this place that was a <a title="Radiant Systems" href="http://en.wikipedia.org/wiki/Radiant_Systems" target="_blank"><em>real</em> software company</a> that created a POS for restaurants called Aloha. I was done being the IT department. I wanted to be a part of a _real_ software company. So on July 12, 2004, ten years from tomorrow, I started working at Radiant Systems.
+I had to get out of there. But to where? A recruiter had told me about this place that was a [_real_ software company](http://en.wikipedia.org/wiki/Radiant_Systems) that created a POS for restaurants called Aloha. I was done being the IT department. I wanted to be a part of a _real_ software company. So on July 12, 2004, ten years from tomorrow, I started working at Radiant Systems.
 
 I arrived ten years ago a mid-level software engineer whose confidence was shaken by all the foreclosures I had to hear about, and a rough few years of post-Y2K job market crappiness.
 
