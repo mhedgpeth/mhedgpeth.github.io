@@ -21,14 +21,14 @@ We were having a great time with our new friends from California on a gogi-berry
 
 I was eating dinner at my church on a Wednesday night with other members, and one member starts talking about how evil Wendy Davis is and how Obama has ruined everything. I sat there quietly as the whole table seemed to being railing on how dumb the Democrats were and how the world was going to end because of them.
 
-What’s the common thread?<!--more--> It’s what I call the 
+What's the common thread?<!--more--> It's what I call the 
 
 [Chris Dikes Assumption of Agreement Hypothesis](http://www.chrisdikes.com/2013/05/30/the-ever-changing-idea-of-god/). From his post:
 
-> One common thread I’ve found is this:  people want, sometimes even insist, for you to agree with them and what they think about God/religion.  Divergence of opinion and differing ideas are seen as a threat.
+> One common thread I've found is this:  people want, sometimes even insist, for you to agree with them and what they think about God/religion.  Divergence of opinion and differing ideas are seen as a threat.
 > 
-> I don’t get that.
+> I don't get that.
 
-Well said, Chris. I don’t get it, either. I think this extends to politics and lifestyle, as well. We all assume that everyone in our group will think of us as being intelligent and on the right path. Anyone who thinks we’re not on the right path is obviously a threat to that and must be silenced.
+Well said, Chris. I don't get it, either. I think this extends to politics and lifestyle, as well. We all assume that everyone in our group will think of us as being intelligent and on the right path. Anyone who thinks we're not on the right path is obviously a threat to that and must be silenced.
 
-If we want to grow, influence others, and sharpen our thinking we need to grow past this. **Disagreement isn’t a threat**. [Everyone doesn’t have to agree with us](/life-is-art/). In fact, if we’re truly honest with ourselves, **_people who disagree with us are much more effective at changing our perspective when we let them._** We can never get there if we’re not open to the assumption that there are pleasant people with whom we have a lot in common that fundamentally disagree with some of our religious, political, or cultural views.
+If we want to grow, influence others, and sharpen our thinking we need to grow past this. **Disagreement isn't a threat**. [Everyone doesn't have to agree with us](/life-is-art/). In fact, if we're truly honest with ourselves, **_people who disagree with us are much more effective at changing our perspective when we let them._** We can never get there if we're not open to the assumption that there are pleasant people with whom we have a lot in common that fundamentally disagree with some of our religious, political, or cultural views.

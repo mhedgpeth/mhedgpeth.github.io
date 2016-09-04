@@ -20,7 +20,7 @@ Recently a colleague and I were talking about his team's agile transformation. H
 
 I was reminded of this while recently reading [Building a DevOps Culture](http://www.amazon.com/Building-DevOps-Culture-Mandi-Walls-ebook/dp/B00CBM1WFC/ref=sr_1_1?ie=UTF8&qid=1452565552&sr=8-1&keywords=building+devops+culture) by  [Mandi Walls](https://twitter.com/lnxchk). She writes:
 
-> Proving change is necessary requires some legwork. It’s fine to want to change your organization because “everyone” is doing DevOps now, but you’re looking at months of work, new tools to learn and implement, teams to restructure. These costs must be outweighed by the benefits, so you have to be able to put real value on your processes.
+> Proving change is necessary requires some legwork. It's fine to want to change your organization because "everyone" is doing DevOps now, but you're looking at months of work, new tools to learn and implement, teams to restructure. These costs must be outweighed by the benefits, so you have to be able to put real value on your processes.
 > 
 > Articulating upfront what your goals are will help you with other phases of your DevOps roll out.
 

@@ -28,17 +28,17 @@ tags:
 ---
 I was having a great time at a party at my house recently, when a friend of mine who is quite conservative started talking to me about <a href="http://en.wikipedia.org/wiki/2012_Benghazi_attack" target="_blank">the Benghazi incident of September 2012</a>. He went on and on about how outrageous it is.
 
-I respond, “I just don’t see how any of this is important or relevant to my life.”
+I respond, "I just don't see how any of this is important or relevant to my life."
 
-With an outraged tone, he responds with eyes wide open in outrage, “You don’t think _Benghazi_ is important???”<!--more-->
+With an outraged tone, he responds with eyes wide open in outrage, "You don't think _Benghazi_ is important???"<!--more-->
 
-To my life? No, I don’t. In fact I can take that a step further: **the news, especially political news is designed to get people to get outraged over things that are not in their power to change or influence.** This state of frustration and anger puts them in a place where they are willing to buy more things in the advertisements, which is good for the provider of the outrageous news. But for the person who is consuming it, it is the very definition of a waste of time: spending time on something one doesn’t find enjoying, can’t do anything about, and causes them to act in ways that are outside of their values. This is insanity!
+To my life? No, I don't. In fact I can take that a step further: **the news, especially political news is designed to get people to get outraged over things that are not in their power to change or influence.** This state of frustration and anger puts them in a place where they are willing to buy more things in the advertisements, which is good for the provider of the outrageous news. But for the person who is consuming it, it is the very definition of a waste of time: spending time on something one doesn't find enjoying, can't do anything about, and causes them to act in ways that are outside of their values. This is insanity!
 
-I’d like to propose we ask a question about every news article that we consume from now on: “**How will my life change as a result of me knowing this information?**”
+I'd like to propose we ask a question about every news article that we consume from now on: "**How will my life change as a result of me knowing this information?**"
 
-I propose the answer is, for the most part, “none at all”.
+I propose the answer is, for the most part, "none at all".
 
-To illustrate, let’s comment on some CNN and Fox News headlines as of the date of first writing this, July 26, 2014:
+To illustrate, let's comment on some CNN and Fox News headlines as of the date of first writing this, July 26, 2014:
 
 <div class="table-responsive">
   <table  style="width:100%; "  class="easy-table easy-table-default " border="0">
@@ -58,7 +58,7 @@ To illustrate, let’s comment on some CNN and Fox News headlines as of the date
       </td>
       
       <td >
-        None. The rockets likely won’t make it to North Texas. There is no election today to influence our political establishment, and political leadership in the U.S. seem to be aligned (for the most part).
+        None. The rockets likely won't make it to North Texas. There is no election today to influence our political establishment, and political leadership in the U.S. seem to be aligned (for the most part).
       </td>
     </tr>
     
@@ -88,7 +88,7 @@ To illustrate, let’s comment on some CNN and Fox News headlines as of the date
       </td>
       
       <td >
-        None. I live in North Texas, not Denver. I do not use marijuana. I suppose if I did this news article wouldn’t change my mind about it. There is no marijuana vote on the Texas ballot today for me to vote on.
+        None. I live in North Texas, not Denver. I do not use marijuana. I suppose if I did this news article wouldn't change my mind about it. There is no marijuana vote on the Texas ballot today for me to vote on.
       </td>
     </tr>
     
@@ -98,7 +98,7 @@ To illustrate, let’s comment on some CNN and Fox News headlines as of the date
       </td>
       
       <td >
-        None. I am not subject to torture or defining what torture is in the coming months as far as I know. In fact if I were to be tortured, I’m not sure that this report would have anything to do with how I would be treated.
+        None. I am not subject to torture or defining what torture is in the coming months as far as I know. In fact if I were to be tortured, I'm not sure that this report would have anything to do with how I would be treated.
       </td>
     </tr>
     
@@ -108,7 +108,7 @@ To illustrate, let’s comment on some CNN and Fox News headlines as of the date
       </td>
       
       <td >
-        None. I have managed to live my life for 35 years without knowing what the term “caller id spoofing” means. Even if there were a risk, I suppose I would hear about it from the phone company. The fact that it’s on a news site tells me that it is a rare occurrence. Besides, I don’t even own a business so there is absolutely no chance of anything in this article affecting my life.
+        None. I have managed to live my life for 35 years without knowing what the term "caller id spoofing" means. Even if there were a risk, I suppose I would hear about it from the phone company. The fact that it's on a news site tells me that it is a rare occurrence. Besides, I don't even own a business so there is absolutely no chance of anything in this article affecting my life.
       </td>
     </tr>
     
@@ -118,12 +118,12 @@ To illustrate, let’s comment on some CNN and Fox News headlines as of the date
       </td>
       
       <td >
-        None. I don’t work at McDonald’s. I also don’t eat there very often. I suppose if their wages do go up, the price of a Happy Meal will eventually go up, thus creating an unexpected surprise on the rare occasion that I go to McDonalds. But we’re quite a ways from this: they are <em>vowing </em>civil disobedience. Nothing has actually happened. This affects my life in no way whatsoever.
+        None. I don't work at McDonald's. I also don't eat there very often. I suppose if their wages do go up, the price of a Happy Meal will eventually go up, thus creating an unexpected surprise on the rare occasion that I go to McDonalds. But we're quite a ways from this: they are <em>vowing </em>civil disobedience. Nothing has actually happened. This affects my life in no way whatsoever.
       </td>
     </tr>
   </table>
 </div>
 
-Let me give you a little guarantee: If you play this game for a few days on the news sites you are visiting, you will very quickly be awakened to the reality that this all is a complete and total waste of your time. **You are a pawn in someone else’s game to get you to buy stuff.** There actually isn’t news on almost every day. And when there is it can be summed up in a ten second brief description.
+Let me give you a little guarantee: If you play this game for a few days on the news sites you are visiting, you will very quickly be awakened to the reality that this all is a complete and total waste of your time. **You are a pawn in someone else's game to get you to buy stuff.** There actually isn't news on almost every day. And when there is it can be summed up in a ten second brief description.
 
-So let’s stop investing so much time in “news” and make some _real_ news in our own lives.
+So let's stop investing so much time in "news" and make some _real_ news in our own lives.

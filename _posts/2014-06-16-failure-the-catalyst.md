@@ -25,9 +25,9 @@ tags:
   - failure
   - home improvement
 ---
-“We don’t take credit cards, only cash.”
+"We don't take credit cards, only cash."
 
-It was November 2009, and I was locked into “Project: Have a Third Child”. Part of the deal I made with my wife is that we could offset some of the hardships of having another child by doing some things for ourselves. This translated partly into changing our half bath into a full bath and completely redoing the furniture and decorating of our master bedroom.
+It was November 2009, and I was locked into "Project: Have a Third Child". Part of the deal I made with my wife is that we could offset some of the hardships of having another child by doing some things for ourselves. This translated partly into changing our half bath into a full bath and completely redoing the furniture and decorating of our master bedroom.
 
 As with most home projects, reality quickly surpassed our budget. That was OK. I was going to use my credit card. Nevermind that I promised myself I would never use it in this manner&#8230;this totally frivolous remodeling project was an emergency! I would pay it off, I promised. I just needed to get through this.
 
@@ -97,4 +97,4 @@ My wife and I awoke to how totally out of control and useless our current financ
   </table>
 </div>
 
-Failure feels terrible at the moment, but it really is a wonderful blessing because it is the only catalyst I know of for real success. I haven’t yet been able to believe this enough to make failure suck any less, but it sure is nice to know while I’m going through it.
+Failure feels terrible at the moment, but it really is a wonderful blessing because it is the only catalyst I know of for real success. I haven't yet been able to believe this enough to make failure suck any less, but it sure is nice to know while I'm going through it.

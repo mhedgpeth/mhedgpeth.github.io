@@ -24,11 +24,11 @@ tags:
   - checkvist
   - gtd
 ---
-The result of [Getting Things Done](http://hedge-ops.com/productivity/ "How Growth Got Me Organized and Productive"), when implemented properly, is “Mind Like Water”. When I first heard the term, I thought it meant, “peaceful, still, quiet.” That’s pretty silly though because water is in many _other_ states as well, just as often!
+The result of [Getting Things Done](http://hedge-ops.com/productivity/ "How Growth Got Me Organized and Productive"), when implemented properly, is "Mind Like Water". When I first heard the term, I thought it meant, "peaceful, still, quiet." That's pretty silly though because water is in many _other_ states as well, just as often!
 
-What _Mind Like Water_ really means is that you _appropriately_ react to your world. If a small pebble is thrown into a pond, it makes a small splash. If a large boulder is hurled into that same pond, it’s going to make a huge splash. This is how our minds should work.<!--more-->
+What _Mind Like Water_ really means is that you _appropriately_ react to your world. If a small pebble is thrown into a pond, it makes a small splash. If a large boulder is hurled into that same pond, it's going to make a huge splash. This is how our minds should work.<!--more-->
 
-**The problem is we get tricked into reacting to pebbles as if they are boulders.** How to get out of it? Let’s review the system:
+**The problem is we get tricked into reacting to pebbles as if they are boulders.** How to get out of it? Let's review the system:
 
   * **Collect** helps you know that you can get to it later, and focus on the things that are happening now.
   * **Process/Organize** helps you get the small things off your plate so you can focus, and organize the large things into actionable steps you know you will come back to later.
@@ -38,7 +38,7 @@ Do you see a pattern? Everything in this system is oriented around you forgettin
 
 All of the pieces of the system must be in place for you to reach this state of tranquility and productivity. And I only reached it when I used <a href="https://checkvist.com/" target="_blank">Checkvist</a>, because that was the only system where I could get a good review workflow going and it is so adaptable because of its free form structure and keyboard centricity.
 
-The strange thing about GTD is the lack of focus on organizing what you do_._ Other systems will focus on prioritization, or assigning an "A" to the most important things. With Checkvist and GTD, once you organize your outcomes into actionable steps, and trust that you don’t have to keep juggling a million things, _what you need to do becomes obvious._ What do I need to do today? Let me review my lists and the most important thing will pop out at me. I’ll say “no” to all the rest by delegating them or saving them for later.
+The strange thing about GTD is the lack of focus on organizing what you do_._ Other systems will focus on prioritization, or assigning an "A" to the most important things. With Checkvist and GTD, once you organize your outcomes into actionable steps, and trust that you don't have to keep juggling a million things, _what you need to do becomes obvious._ What do I need to do today? Let me review my lists and the most important thing will pop out at me. I'll say "no" to all the rest by delegating them or saving them for later.
 
 There is no need for priority codes.
 
