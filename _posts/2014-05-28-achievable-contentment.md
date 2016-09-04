@@ -1,25 +1,20 @@
 ---
 id: 6
+layout: post
 title: Achievable Contentment
 date: 2014-05-28T09:30:37+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-achievable-contentment 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=6
 permalink: /achievable-contentment/
 dsq_thread_id:
   - 2790122789
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - success
 tags:
   - Achieving Goals
   - contentment
@@ -27,7 +22,7 @@ tags:
   - Software Architect
   - success
 ---
-"You're doing great here, and you're an asset to what we're doing. We think you have a bright future with us." My boss was obviously happy [with my performance](http://hedge-ops.com/ten-takeaways-from-the-last-10-years-at-radiantncr/ "Ten Takeaways from the Last 10 Years at Radiant/NCR") and was telling me about it in no uncertain terms.
+"You're doing great here, and you're an asset to what we're doing. We think you have a bright future with us." My boss was obviously happy [with my performance](/ten-takeaways-from-the-last-10-years-at-radiantncr/) and was telling me about it in no uncertain terms.
 
 "That's great, and I appreciate it, but when will I get promoted to Software Architect?"<!--more-->
 

@@ -1,27 +1,20 @@
 ---
 id: 16
+layout: post
 title: Christmas with Russians
 date: 2014-05-26T08:00:28+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-christmas-with-russians 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=16
 permalink: /christmas-with-russians/
 dsq_thread_id:
   - 2790122782
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - insights
-  - success
-  - tools
 tags:
   - career
   - Continous Integration
@@ -34,17 +27,17 @@ It was Christmas 2008, and the world was going to end. We didn't know if there 
 
 I could have done anything with those two weeks.<!--more-->
 
-I chose to set up <a href="http://martinfowler.com/articles/continuousIntegration.html" target="_blank">Continous Integration</a> for one of our largest products through <a title="TeamCity" href="http://www.jetbrains.com/teamcity/" target="_blank">TeamCity</a>.
+I chose to set up [Continous Integration](http://martinfowler.com/articles/continuousIntegration.html) for one of our largest products through [TeamCity](http://www.jetbrains.com/teamcity/).
 
-This was something I was passionate about. I had <a href="http://www.amazon.com/gp/product/B0026772IS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0026772IS&linkCode=as2&tag=hedgeopscom-20&linkId=RJ6US3SXFLCWDTR5" target="_blank">read the literature</a> on how transformative Continuous Integration had been to organizations. This product was built twice a day by a homeade tool called bmcon.exe and some batch files. If the build broke, dozens of people stopped everything to try to get it working, with no clear feedback mechanism for knowing what went wrong, who did it, and whether it was being worked on.
+This was something I was passionate about. I had [read the literature](http://www.amazon.com/gp/product/B0026772IS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0026772IS&linkCode=as2&tag=hedgeopscom-20&linkId=RJ6US3SXFLCWDTR5) on how transformative Continuous Integration had been to organizations. This product was built twice a day by a homeade tool called bmcon.exe and some batch files. If the build broke, dozens of people stopped everything to try to get it working, with no clear feedback mechanism for knowing what went wrong, who did it, and whether it was being worked on.
 
 It was my moral duty to fix this.
 
-And it so happened that those working on TeamCity were going to take their Christmas holiday…<a href="http://en.wikipedia.org/wiki/Christmas_in_Russia" target="_blank">on January 7</a>. They were Russian. So I took it upon myself to monitor the email and get the build working over the Christmas holidays. I remember on Christmas day <a href="http://youtrack.jetbrains.com/issue/TW-6471" target="_blank">I was conversing with</a> <a href="http://de.linkedin.com/in/jonnyzzz" target="_blank">Eugene Pentrenko</a> across the world about how to deal with the complexities of TFS pulling thousands of files and then building them*.
+And it so happened that those working on TeamCity were going to take their Christmas holiday...[on January 7](http://en.wikipedia.org/wiki/Christmas_in_Russia). They were Russian. So I took it upon myself to monitor the email and get the build working over the Christmas holidays. I remember on Christmas day [I was conversing with](http://youtrack.jetbrains.com/issue/TW-6471) [Eugene Pentrenko](http://de.linkedin.com/in/jonnyzzz) across the world about how to deal with the complexities of TFS pulling thousands of files and then building them*.
 
 Years later, almost all of our products build with TeamCity, and we have thousands of integration tests and tens of thousands unit tests that run on our 100+ build agents to make it happen. It is central to everything we do. And it all started one Christmas years ago when I had a "moral duty" to do something.
 
-In the book "<a href="http://www.amazon.com/gp/product/B008KPM424/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008KPM424&linkCode=as2&tag=hedgeopscom-20&linkId=52YQPMBZ7Z4IMUKU" target="_blank">Selling with Noble Purpose</a>",<a href="http://www.mcleodandmore.com/what-is-selling-with-noble-purpose/" target="_blank">Lisa McLeod</a> leads the reader through an exercise where the reader thinks about situations where one makes a difference with customers, in a different way than other people, while loving what they are doing. When I went through this exercise I was reminded of this story. Through the exercise I found my noble purpose:
+In the book "[Selling with Noble Purpose](http://www.amazon.com/gp/product/B008KPM424/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008KPM424&linkCode=as2&tag=hedgeopscom-20&linkId=52YQPMBZ7Z4IMUKU)", [Lisa McLeod](http://www.mcleodandmore.com/what-is-selling-with-noble-purpose/) leads the reader through an exercise where the reader thinks about situations where one makes a difference with customers, in a different way than other people, while loving what they are doing. When I went through this exercise I was reminded of this story. Through the exercise I found my noble purpose:
 
 **I share tools and insight for success**
 
