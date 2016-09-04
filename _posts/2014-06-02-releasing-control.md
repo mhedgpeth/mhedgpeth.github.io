@@ -1,25 +1,20 @@
 ---
 id: 14
+layout: post
 title: Releasing Control
 date: 2014-06-02T08:00:43+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-releasing-control 
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=14
 permalink: /releasing-control/
 dsq_thread_id:
   - 2790122814
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - success
 tags:
   - control
   - counseling
@@ -29,7 +24,7 @@ tags:
 ---
 "Thank God we're in marriage counseling so my wife can finally get her crap together."
 
-A thought that most people have when they enter the marriage counselor's office. I came into the office that day of <a href="http://www.drlescarter.com/" target="_blank">Les Carter</a>, with my wonderful wife, ready for some change. I had a list of things. She was this. She was that. Why can't she just…?<!--more-->
+A thought that most people have when they enter the marriage counselor's office. I came into the office that day of [Les Carter](http://www.drlescarter.com/), with [my wonderful wife](http://www.anniehedgie.com), ready for some change. I had a list of things. She was this. She was that. Why can't she just…?<!--more-->
 
 As we started I heard a similar tone from my wife. She had a similar list, where only the subject had changed. He is this. He is that. Why can't he just…?
 
