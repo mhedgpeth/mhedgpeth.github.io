@@ -1,25 +1,20 @@
 ---
 id: 464
+layout: post
 title: Getting There with Metro Arlington Express (MAX)
 date: 2014-08-08T08:00:03+00:00
-author: Michael Hedgpeth
-layout: post
+categories: culture
+author_name: "Michael Hedgpeth"
+author_url: /author/michael
+author_avatar: michael
+show_avatar: true
+read_time: 10
+feature_image: feature-getting-there-with-metro-arlington-express-max
+show_related_posts: true 
 guid: http://hedge-ops.com/?p=464
 permalink: /getting-there-with-metro-arlington-express-max/
 dsq_thread_id:
   - 2910710945
-snap_MYURL:
-  - 
-snapEdIT:
-  - 1
-snapFB:
-  - 's:218:"a:1:{i:0;a:8:{s:4:"doFB";s:1:"1";s:8:"postType";s:1:"A";s:10:"AttachPost";s:1:"2";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapLI:
-  - 's:265:"a:1:{i:0;a:8:{s:4:"doLI";s:1:"1";s:10:"AttachPost";s:1:"1";s:10:"SNAPformat";s:41:"New post has been published on %SITENAME%";s:11:"SNAPformatT";s:18:"New Post - %TITLE%";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";s:9:"isAutoURL";s:1:"A";s:8:"urlToUse";s:0:"";}}";'
-snapTW:
-  - 's:146:"a:1:{i:0;a:5:{s:4:"doTW";s:1:"1";s:10:"SNAPformat";s:16:"%TITLE% - %SURL%";s:8:"attchImg";s:1:"1";s:9:"isAutoImg";s:1:"A";s:8:"imgToUse";s:0:"";}}";'
-categories:
-  - tools
 tags:
   - arlington
   - mass transit
@@ -28,13 +23,13 @@ tags:
   - travel
   - uta
 ---
-Last week my family spent the week at my childhood home in Arlington with my mom. We had a great week of organization, projects, and best of all: [my favorite food](http://hedge-ops.com/empathy/ "Empathy") from my childhood.
+Last week my family spent the week at my childhood home in Arlington with my mom. We had a great week of organization, projects, and best of all: [my favorite food](/empathy/) from my childhood.
 
-My mom lives in Central Arlington, southwest of UTA. I work near the <a href="http://www.trinityrailwayexpress.org/stationsdetail.html?item_id=5" target="_blank">TRE Centreport station</a>, so I decided to try something a bit different:
+My mom lives in Central Arlington, southwest of UTA. I work near the [TRE Centreport station](http://www.trinityrailwayexpress.org/stationsdetail.html?item_id=5), so I decided to try something a bit different:
 
 I didn't take my car for the entire week.<!--more-->
 
-How did I do this, you ask? By taking advantage of an awesome new service in Arlington: <a href="http://www.ridethemax.com/" target="_blank">the Metro Arlington Express (MAX)</a>. The line goes from the east side of the UTA campus, stops at Collins, and drops off at the TRE station, 300 yards from my work.
+How did I do this, you ask? By taking advantage of an awesome new service in Arlington: [the Metro Arlington Express (MAX)](http://www.ridethemax.com/). The line goes from the east side of the UTA campus, stops at Collins, and drops off at the TRE station, 300 yards from my work.
 
 I thought I would review the experience for those who are interested in what it is like and may want to take advantage of it themselves.
 
