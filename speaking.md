@@ -14,11 +14,13 @@ I plan on speaking a few times a year, and when I do I will supplement the subje
 
 _September 16, 2016_
 
+**[Operationalizing Open Source](https://t.co/1bTyAKPUKD)** on Arrested DevOps with Doug Ireton
+
 **[Interview with Lucas Welch](https://www.youtube.com/watch?v=ZG3OZologLU&list=PL11cZfNdwNyO5zYE2HUlx3ZuAm5ysvpoj&index=26)** and **[NCR DevOps Story](https://www.youtube.com/watch?v=ef9sxkvpV7c&list=PL11cZfNdwNyO5zYE2HUlx3ZuAm5ysvpoj&index=25)** at ChefConf 2016
 
 [**Implementing DevOps to Deliver Business Value &#8211; A Real World Example**](https://channel9.msdn.com/Events/DevOps-Microsoft-Chef/ChefConf-2016/Implementing-DevOps-to-Deliver-Business-Value-A-Real-World-Example) with John Kerry on Channel 9 during ChefConf
 
-**Canary in a Coalmine: Managing Organizational Change through Rapid Prototyping Pressure**, with John Kerry at ChefConf 2016 ([presentation](http://prezi.com/yrzh4vdv_ijn/?utm_campaign=share&utm_medium=copy))
+**[Canary in a Coalmine: Managing Organizational Change through Rapid Prototyping Pressure](https://t.co/WHloI4hPID)**, with John Kerry at ChefConf 2016 ([presentation](http://prezi.com/yrzh4vdv_ijn/?utm_campaign=share&utm_medium=copy))
 
 _July 2016_
 
