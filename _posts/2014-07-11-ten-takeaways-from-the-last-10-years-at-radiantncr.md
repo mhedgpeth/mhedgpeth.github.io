@@ -4,10 +4,10 @@ layout: post
 title: Ten Takeaways from the Last 10 Years at Radiant/NCR
 date: 2014-07-11T08:00:22+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-ten-takeaways-from-the-last-10-years-at-radiantncr 
 show_related_posts: true 

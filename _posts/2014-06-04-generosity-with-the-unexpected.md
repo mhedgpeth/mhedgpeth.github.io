@@ -7,10 +7,10 @@ categories:
   - process
   - growth
   - teamcity
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-generosity-with-the-unexpected 
 show_related_posts: true 

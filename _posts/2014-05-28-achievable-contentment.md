@@ -4,10 +4,10 @@ layout: post
 title: Achievable Contentment
 date: 2014-05-28T09:30:37+00:00
 categories: growth
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-achievable-contentment 
 show_related_posts: true 

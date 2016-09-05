@@ -6,10 +6,10 @@ date: 2016-06-15T07:39:22+00:00
 categories: 
   - automation
   - chef
-author_name: Michael Hedgpeth
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 5
 feature_image: feature-finding-habitat
 show_related_posts: true

@@ -6,10 +6,10 @@ date: 2016-02-26T08:00:21+00:00
 categories:
   - automation
   - chef
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-test-kitchen-required-not-optional 
 show_related_posts: true 

@@ -4,10 +4,10 @@ layout: post
 title: Putting Developers On Call
 date: 2016-01-13T08:00:14+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-putting-developers-on-call 
 show_related_posts: true 

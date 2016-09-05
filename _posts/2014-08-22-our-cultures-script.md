@@ -4,10 +4,10 @@ layout: post
 title: "Our Culture's Script"
 date: 2014-08-22T08:00:38+00:00
 categories: growth
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-our-cultures-script
 show_related_posts: true 

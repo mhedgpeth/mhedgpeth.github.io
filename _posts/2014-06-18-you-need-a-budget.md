@@ -4,10 +4,10 @@ layout: post
 title: You Need a Budget
 date: 2014-06-18T07:45:19+00:00
 categories: growth
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-you-need-a-budget 
 show_related_posts: true 

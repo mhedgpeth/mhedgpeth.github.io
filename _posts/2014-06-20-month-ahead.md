@@ -4,10 +4,10 @@ layout: post
 title: Month Ahead
 date: 2014-06-20T08:00:18+00:00
 categories: growth
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-month-ahead 
 show_related_posts: true 

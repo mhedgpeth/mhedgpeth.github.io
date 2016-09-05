@@ -4,10 +4,10 @@ layout: post
 title: How to Apply Kanban to a Large Project with High Feature Variability
 date: 2015-03-23T08:00:01+00:00
 categories: process
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-how-to-apply-kanban-to-a-large-project-with-high-feature-variability 
 show_related_posts: true 

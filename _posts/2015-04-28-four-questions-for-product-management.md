@@ -4,10 +4,10 @@ layout: post
 title: Four Questions for Product Management
 date: 2015-04-28T08:00:47+00:00
 categories: process
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-four-questions-for-product-management 
 show_related_posts: true 

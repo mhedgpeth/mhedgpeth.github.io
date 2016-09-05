@@ -4,10 +4,10 @@ layout: post
 title: Escaping with the News
 date: 2014-09-03T08:00:59+00:00
 categories: growth
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-escaping-with-the-news
 show_related_posts: true 

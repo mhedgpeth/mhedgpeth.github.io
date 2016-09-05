@@ -4,10 +4,10 @@ layout: post
 title: A Litmus Test for Tolerance
 date: 2014-11-14T08:00:38+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-a-litmus-test-for-tolerance
 show_related_posts: true 

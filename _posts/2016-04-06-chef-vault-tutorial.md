@@ -7,10 +7,10 @@ categories:
   - automation
   - chef
   - security
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 30
 feature_image: feature-chef-vault-tutorial 
 show_related_posts: true 

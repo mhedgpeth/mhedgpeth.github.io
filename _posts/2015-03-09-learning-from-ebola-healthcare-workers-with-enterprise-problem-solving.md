@@ -6,10 +6,10 @@ date: 2015-03-09T09:30:21+00:00
 categories:
   - process
   - culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-learning-from-ebola-healthcare-workers-with-enterprise-problem-solving
 show_related_posts: true 

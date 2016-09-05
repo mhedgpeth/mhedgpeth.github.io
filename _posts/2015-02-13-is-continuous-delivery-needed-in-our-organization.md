@@ -6,10 +6,10 @@ date: 2015-02-13T08:00:49+00:00
 categories: 
   - culture
   - process
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-is-continuous-delivery-needed-in-our-organization 
 show_related_posts: true 

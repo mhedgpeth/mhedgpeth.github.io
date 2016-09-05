@@ -6,10 +6,10 @@ date: 2015-05-04T08:00:25+00:00
 categories: 
   - culture
   - chef
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-intrinsic-motivators-leading-to-chef 
 show_related_posts: true 

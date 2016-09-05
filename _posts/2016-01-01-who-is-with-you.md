@@ -4,10 +4,10 @@ layout: post
 title: Who is with you?
 date: 2016-01-01T08:00:31+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-who-is-with-you 
 show_related_posts: true 

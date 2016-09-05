@@ -4,10 +4,10 @@ layout: post
 title: The Overdependent Organization
 date: 2016-02-05T08:00:36+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-the-overdependent-organization 
 show_related_posts: true 

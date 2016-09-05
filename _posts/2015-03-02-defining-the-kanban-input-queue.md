@@ -4,10 +4,10 @@ layout: post
 title: Defining the Kanban Input Queue
 date: 2015-03-02T10:00:33+00:00
 categories: process
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-defining-the-kanban-input-queue 
 show_related_posts: true 

@@ -6,10 +6,10 @@ date: 2015-09-23T11:21:34+00:00
 categories: 
   - culture
   - chef
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-my-advice-for-chef-in-large-corporations 
 show_related_posts: true 

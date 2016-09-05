@@ -4,10 +4,10 @@ layout: post
 title: Alignment
 date: 2015-11-13T08:00:34+00:00
 categories: culture
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-alignment 
 show_related_posts: true 

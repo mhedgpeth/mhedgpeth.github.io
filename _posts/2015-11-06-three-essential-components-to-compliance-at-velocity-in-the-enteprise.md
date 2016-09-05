@@ -7,10 +7,10 @@ categories:
   - culture
   - chef
   - security
-author_name: "Michael Hedgpeth"
+author_name: Michael
 author_url: /author/michael
 author_avatar: michael
-show_avatar: true
+show_avatar: false
 read_time: 10
 feature_image: feature-three-essential-components-to-compliance-at-velocity-in-the-enteprise 
 show_related_posts: true 
