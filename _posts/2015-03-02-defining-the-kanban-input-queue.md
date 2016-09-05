@@ -16,7 +16,7 @@ permalink: /defining-the-kanban-input-queue/
 dsq_thread_id:
   - 3562340767
 categories:
-  - insights
+  - process
 tags:
   - agile
   - Backlog Management
