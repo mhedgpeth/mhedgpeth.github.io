@@ -39,7 +39,7 @@ I have a very conflicted relationship with Facebook. To understand, let's filter
 
 Hopefully that illustrates it for you. The promise of Facebook is so alluring: this is a situation in which being informed can really pay off. After all, this is your life! The problem is there is not a very easy way to filter out the noise within Facebook to get to the reality. And the second problem is that even when people are informed about your life through Facebook, when you finally meet face to face _there is nothing to talk about!_
 
-You read that correctly. **Facebook, rather than making you _more social _actually makes you less social.** You already know the things about people that you used to talk to them about to gain interest. So over time you talk to people in smalltalk less and less. Over time you are less and less social.
+You read that correctly. **Facebook, rather than making you _more social_ actually makes you less social.** You already know the things about people that you used to talk to them about to gain interest. So over time you talk to people in smalltalk less and less. Over time you are less and less social.
 
 So this is my conflicted relationship with Facebook. On the one hand I like being in tune with friends and family. On the other hand, that comes at the price of a lot of checking and time. I've considered over and over giving it up all together. But as my brother says, [leaving Facebook is the adult's equivalent of running away from home](http://weknowmemes.com/2011/11/quitting-facebook-is-the-adult-version-of-running-away-from-home/).
 

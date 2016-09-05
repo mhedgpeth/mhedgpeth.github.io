@@ -20,7 +20,7 @@ dsq_thread_id:
 ---
 I'm reading about culture in [Lean Enterprise](http://amzn.to/1LfPSL8), and the author makes the point that [bonuses aren't the most effective means of motivating employees](https://www.youtube.com/watch?v=u6XAPnuFjJc):
 
-> While extrinsic motivators such as bonuses are effective in...mechanical work, they actually _reduce _performance in the context of knowledge work. People involved in nonroutine work are motivated by intrinsic factors summarized by Dan Pink as:
+> While extrinsic motivators such as bonuses are effective in...mechanical work, they actually _reduce_ performance in the context of knowledge work. People involved in nonroutine work are motivated by intrinsic factors summarized by Dan Pink as:
 
 > 1: _Autonomy:_ the desire to direct our own lives.
 

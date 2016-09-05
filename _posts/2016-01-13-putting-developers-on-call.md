@@ -26,7 +26,7 @@ The main reason this would be a challenge for us is that for compliance reasons 
 
 So that's a bummer.
 
-But wait, do they _have _to access production to be on call? What if they were on call _with _someone in operations that had the access. When there was an incident they could hop on to a screen sharing application and troubleshoot things together. In fact, this mirrors what happens when an incident is escalated: you have everyone get on a call and talk through an issue together, with operations having the power and control to make the changes.
+But wait, do they _have_ to access production to be on call? What if they were on call _with_ someone in operations that had the access. When there was an incident they could hop on to a screen sharing application and troubleshoot things together. In fact, this mirrors what happens when an incident is escalated: you have everyone get on a call and talk through an issue together, with operations having the power and control to make the changes.
 
 If our developers were on call, they would accept more responsibility for creating a great product. They would then see the outcome of their good or bad design, and improve on it. Operations would feel like they're not on an island trying to make something work with no context. The good things that could come out of such an initiative surely outweigh the problems.
 

@@ -19,19 +19,19 @@ permalink: /chef-vault-tutorial/
 dsq_thread_id:
   - 4724864294
 ---
-This week I researched <a href="https://github.com/chef/chef-vault" target="_blank">chef-vault</a> and struggled quite a bit <a href="https://docs.chef.io/chef_vault.html" target="_blank">with the documentation</a>, so I thought I would write a bit of a tutorial on the technology for those who are interested in quickly understanding how it might work for their organizations.
+This week I researched [chef-vault](https://github.com/chef/chef-vault) and struggled quite a bit [with the documentation](https://docs.chef.io/chef_vault.html), so I thought I would write a bit of a tutorial on the technology for those who are interested in quickly understanding how it might work for their organizations.
 
 ## Why chef-vault?
 
-<a href="https://docs.chef.io/data_bags.html#encrypt-a-data-bag-item" target="_blank">Encrypted data bags</a> force you to copy the shared secret that is used for decryption to your infrastructure. It's very easy to take that secret file and nefariously decrypt the data from somewhere else without anyone knowing about it. Chef-vault makes this much more difficult by giving both nodes and chef server users expressed permission to decrypt certain data. With chef-vault you don't have to share a secret file with all of your nodes. This is a step up that simplifies everything.
+[Encrypted data bags](https://docs.chef.io/data_bags.html#encrypt-a-data-bag-item) force you to copy the shared secret that is used for decryption to your infrastructure. It's very easy to take that secret file and nefariously decrypt the data from somewhere else without anyone knowing about it. Chef-vault makes this much more difficult by giving both nodes and chef server users expressed permission to decrypt certain data. With chef-vault you don't have to share a secret file with all of your nodes. This is a step up that simplifies everything.
 
-The solution isn't without its drawbacks. The main one is if you add nodes, you have to rerun something on the server to get that node to be able to decrypt the data bag. With <a href="https://www.hashicorp.com/blog/vault.html" target="_blank">Hashicorp's vault</a> you get better control over that, and better lease management, and credentials creation. To me, encrypted data bags are an unreliable used car, chef-vault is a nice mid-size sedan, and Hashicorp's vault is like a luxury car.
+The solution isn't without its drawbacks. The main one is if you add nodes, you have to rerun something on the server to get that node to be able to decrypt the data bag. With [Hashicorp's vault](https://www.hashicorp.com/blog/vault.html) you get better control over that, and better lease management, and credentials creation. To me, encrypted data bags are an unreliable used car, chef-vault is a nice mid-size sedan, and Hashicorp's vault is like a luxury car.
 
 So now that we know where the tool sits within our choices, let's look at the basics:<!--more-->
 
 ## Setup
 
-To get started with chef-vault, have the latest <a href="https://downloads.chef.io/chef-dk/" target="_blank">ChefDK</a> installed (0.12 or greater) and install the <a href="https://rubygems.org/gems/chef-vault/versions/2.8.0" target="_blank">chef-vault gem</a>:
+To get started with chef-vault, have the latest [ChefDK](https://downloads.chef.io/chef-dk/) installed (0.12 or greater) and install the [chef-vault gem](https://rubygems.org/gems/chef-vault/versions/2.8.0):
 
 ```bash
 chef gem install chef-vault

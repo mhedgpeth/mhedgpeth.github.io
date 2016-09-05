@@ -37,6 +37,6 @@ However, these people are professional scientists, and they probably follow [a m
 
 **Next, they test the most promising hypothesis.** The team may decide to educate the tribal leaders. They then create a short-term way to test their hypothesis. They decide to go to one village and talk to the tribal leaders then pay an informant to record the activities of the next funeral, which is likely to happen in the coming days. They try this with ten villages.
 
-**Finally, they measure the results of the test.** Out of the ten villages, only two changed their practices. While many of us might view this as a failure, the scientists see this as success. We now know what _wouldn't _be helpful. Now we can come up with a better hypothesis and start the process all over again.
+**Finally, they measure the results of the test.** Out of the ten villages, only two changed their practices. While many of us might view this as a failure, the scientists see this as success. We now know what _wouldn't_ be helpful. Now we can come up with a better hypothesis and start the process all over again.
 
 This method is what got us technology, medicine, and progress. **Why aren't we using it in the enterprise?**

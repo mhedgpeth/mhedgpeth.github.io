@@ -35,7 +35,7 @@ To Operations, SecOps are paranoid and developers don't have a clue.
 
 Instead of the attitude I learned as a developer, I should have taken an attitude of a business person: "What are the problems that are or have the potential to drag down revenue and increase costs, and how can I help fix them?" It turns out that SecOps and Operations both have extremely valuable roles and they aren't getting in the way of my awesome developer changes. They have problems just like the rest of us, and if I take the time to understand them, perhaps we can partner and solve them together.
 
-Instead of coming to SecOps to try to get approval for the tool, why don't I start with their compliance challenges and how we solve those? If I can use a tool to get their system more compliant, then that's a _better _baseline from which we can do some other great things, like configuration management.
+Instead of coming to SecOps to try to get approval for the tool, why don't I start with their compliance challenges and how we solve those? If I can use a tool to get their system more compliant, then that's a _better_ baseline from which we can do some other great things, like configuration management.
 
 Instead of coming to Operations to merely implement the tool, why don't I start with the problems they are having and iteratively help them solve those problems? Instead of just relying on the development teams, maybe I should start going to the Change Advisory Board meetings and then show up when the deployment happens. Then after that I can follow up and say, "For a couple of days of work, we can automate that. How does that sound?" All of the sudden I go from being a _developer who doesn't get it_ to _partner who will make my life easier_.
 

@@ -27,7 +27,7 @@ In every Agile project, you're supposed to have a daily standup meeting to facil
 
 [If you're following the Scrum process](http://www.mountaingoatsoftware.com/agile/scrum/daily-scrum), the meeting should last 10-15 minutes and everyone should go around the room talking about what they accomplished yesterday, what they plan on doing today, and what, if anything, is blocking them. Every software development methodology I have read tells you to do them; I've even seen people have success with them on waterfall projects.
 
-Everyone is excited about doing the standups correctly, and then someone gets tired and [everyone sits down](http://www.batimes.com/articles/seven-common-mistakes-with-the-daily-stand-up-meeting.html). Eventually what tends to happen on my team is that everyone reports to _me, _the leader, what they intend on doing today and I give them about 10-30 seconds of comment to help them along. While I'm engaging with each person, the others are thinking about other things. There is no collective ownership.
+Everyone is excited about doing the standups correctly, and then someone gets tired and [everyone sits down](http://www.batimes.com/articles/seven-common-mistakes-with-the-daily-stand-up-meeting.html). Eventually what tends to happen on my team is that everyone reports to _me_, the leader, what they intend on doing today and I give them about 10-30 seconds of comment to help them along. While I'm engaging with each person, the others are thinking about other things. There is no collective ownership.
 
 This is by no means a functional standup meeting.
 

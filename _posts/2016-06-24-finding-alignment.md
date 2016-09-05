@@ -25,13 +25,13 @@ I've been told this many times before. In the early days of trying to create ali
 
 That's quite a different story, isn't it?
 
-So how to respond? I've been tempted in the past to write people off and try to do it anyways. I've found over the years though that this is a mistake, because a sufficiently motivated individual _can _and _will _destroy your project if they don't feel listened to.
+So how to respond? I've been tempted in the past to write people off and try to do it anyways. I've found over the years though that this is a mistake, because a sufficiently motivated individual _can_ and _will_ destroy your project if they don't feel listened to.
 
 I've found that the keys are** respect** and** empathy**.<!--more-->
 
-**Respect** can't be faked. I can't _really _only respect my opinion, or those of the consultants I'm working with, and then merely try to get _you _on board with _my _project. That doesn't work. People see past that. Instead, I need to walk into the relationship with the understanding and true belief that you are a smart person with real needs that may be solvable by what I'm working on. This is a discovery of where your needs meet my solutions. I'm open to changing my solution because I cannot possibly predict all of your needs without your iterative interaction.
+**Respect** can't be faked. I can't _really_ only respect my opinion, or those of the consultants I'm working with, and then merely try to get _you_ on board with _my_ project. That doesn't work. People see past that. Instead, I need to walk into the relationship with the understanding and true belief that you are a smart person with real needs that may be solvable by what I'm working on. This is a discovery of where your needs meet my solutions. I'm open to changing my solution because I cannot possibly predict all of your needs without your iterative interaction.
 
-**Empathy** is key because I really need to _feel _what you're feeling, from a business perspective, and even from a personal perspective. What makes you excited or happy? What are you afraid of? What is painful for you? How does that affect you? Is there anything I can do to help you with that?
+**Empathy** is key because I really need to _feel_ what you're feeling, from a business perspective, and even from a personal perspective. What makes you excited or happy? What are you afraid of? What is painful for you? How does that affect you? Is there anything I can do to help you with that?
 
 Following this pattern has led me to understand that, at a generic level, different groups have a natural alignment and misalignment with DevOps:
 
@@ -44,7 +44,7 @@ Following this pattern has led me to understand that, at a generic level, differ
 
 As I focus on respect and empathy I can find the natural alignment and mitigate the natural misalignment with each group.
 
-**For developers** we can help them deliver features faster and thus get a truly agile feedback loop. But we can also help them culturally begin to share the ownership of the operatability of their product with the operations team. The key is ensuring that their desire for consistency and velocity outweighs their disdain for caring about how it works in production. We do this by finding their pain points in operations, catch them _blaming _operations for those pain points, then show them that they actually can do something about their problem.
+**For developers** we can help them deliver features faster and thus get a truly agile feedback loop. But we can also help them culturally begin to share the ownership of the operatability of their product with the operations team. The key is ensuring that their desire for consistency and velocity outweighs their disdain for caring about how it works in production. We do this by finding their pain points in operations, catch them _blaming_ operations for those pain points, then show them that they actually can do something about their problem.
 
 **For QA** we can help them deliver features more safely by minimizing the amount of time they spend creating environments and ensuring that they have consistent, hardened environments. This is all exciting, but they must engage the other teams to define infrastructure and they must be willing to not be lazy and just "click the damn checkbox"; in IIS when they want something changed. Culturally they shouldn't have a problem with this, but in reality QA always gets changes at the end of a release or sprint and is under a time crunch to ensure quality. So we work with them to show them how much time they are spending on this and how we can use automation to get them focused on the important stuff: ensuring quality in a way that computers can't or writing automation against production-like environments.
 
@@ -54,4 +54,4 @@ As I focus on respect and empathy I can find the natural alignment and mitigate 
 
 **For Management** they get the benefits outlined above. But they also have to lead a cultural transformation. We can't do it the easy way when that means "just running the command"; or "clicking that checkbox over there";. We have to be committed to a repeatable, auditable process for change. So we need to train the people we have with new skills and be patient as they figure this out. We need to be OK with someone spending a little while on automating that thing, because the payoff will be huge over the next few years. And we need to be OK with absorbing the cost of tooling and vendor partnerships to realize the dream.
 
-Once we see the lay"way, it's much easier to get everyone to the goal together. While I can't guarantee that one won't encounter the statement at the beginning of the post, I can guarantee that following this model will give someone something _constructive _to do afterwards.
+Once we see the lay"way, it's much easier to get everyone to the goal together. While I can't guarantee that one won't encounter the statement at the beginning of the post, I can guarantee that following this model will give someone something _constructive_ to do afterwards.

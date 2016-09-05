@@ -27,7 +27,7 @@ Through the conversation and Justin's great advice, I realized that every Chef i
 
 ## **Focus on the Workflow**
 
-At first I was focused on the technology and what talked to what, which commands would be used, and how awesome the outcome would be for our business. From a security perspective, however, this was worthless. Security and compliance are focused on _how we can safely make changes to this system. _This means that you don't accidentally bring production down by a cookbook change. It also means that you get approvals within a defined process before making _any _change. For us, this workflow didn't really take shape until we decided to fully adopt [the Policy feature](https://github.com/chef/chef-dk/blob/master/POLICYFILE_README.md) and workflow for change management. We then wrote extensive documentation and visio diagrams to explain every element of every step in the journey from a checkin to a production change.
+At first I was focused on the technology and what talked to what, which commands would be used, and how awesome the outcome would be for our business. From a security perspective, however, this was worthless. Security and compliance are focused on _how we can safely make changes to this system_. This means that you don't accidentally bring production down by a cookbook change. It also means that you get approvals within a defined process before making _any_ change. For us, this workflow didn't really take shape until we decided to fully adopt [the Policy feature](https://github.com/chef/chef-dk/blob/master/POLICYFILE_README.md) and workflow for change management. We then wrote extensive documentation and visio diagrams to explain every element of every step in the journey from a checkin to a production change.
 
 It wasn't until we had this documented and clear that we started making progress with our security team. The lesson we learned was: _the technology is secondary to the workflow_. The workflow is most important. And, for you, if you're security conscious and you haven't looked at Policies yet, you really need to.
 
@@ -41,7 +41,7 @@ This will shift the conversation away from the abstract and into the implemented
 
 ## **Empower Security**
 
-Security people are used to hearing from people, "We want to do this cool thing that will make _our _lives easier but will make _your _lives more difficult." It's natural for them to  approach chef in the same way.
+Security people are used to hearing from people, "We want to do this cool thing that will make _our_ lives easier but will make _your_ lives more difficult." It's natural for them to  approach chef in the same way.
 
 Fortunately, chef has made some amazing investments lately in features that enable a partnership with security rather than an impediment. The [audit mode features](https://www.chef.io/blog/2015/04/09/chef-audit-mode-cis-benchmarks/) recently released in Chef allow a security team to map the auditor's implementation of the security compliance into actionable requirements that can then be applied to the system.
 

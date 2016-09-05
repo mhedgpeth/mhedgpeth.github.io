@@ -18,9 +18,9 @@ permalink: /all-or-nothing-changes/
 
 So it's only natural that I would fight it in change initiatives at work. When I get an idea for a change, I become obsessed. I read everything I can about it. I watch videos. I absorb the technology. Then I come up with a grand vision about how everything can be different. It's exciting.
 
-But if I sell people on _that _grand vision, I've fallen into a trap by handing the opponents of the change a huge weapon. If what you're selling is perfection (or "all" in this case), then all it takes is for someone to demonstrate how your tool can't possibly solve all the problems that we have.<!--more-->
+But if I sell people on _that_ grand vision, I've fallen into a trap by handing the opponents of the change a huge weapon. If what you're selling is perfection (or "all" in this case), then all it takes is for someone to demonstrate how your tool can't possibly solve all the problems that we have.<!--more-->
 
-If instead you're selling that a change will create a measurable impact for some of our major problems and opportunities, of course, the change can be scaled elsewhere. But let's not focus on that right now. Let's make something work. Let's show everyone that this is for real. Let's avoid _nothing_. But let's avoid _all, _as well.
+If instead you're selling that a change will create a measurable impact for some of our major problems and opportunities, of course, the change can be scaled elsewhere. But let's not focus on that right now. Let's make something work. Let's show everyone that this is for real. Let's avoid _nothing_. But let's avoid _all_, as well.
 
 Now that I don't have to create the perfect utopia I will brag about to my grandchildren, I can solve real problems. I can be flexible with my solution architecture. I can be more flexible with tools. I can solve real problems and create a platform for even greater change.
 

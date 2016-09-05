@@ -36,7 +36,7 @@ You can see that we had a lot in Ready for QA and nothing flowing to "Done". But
 
 **Lead Time**
 
-In a Kanban system, lead time is important because it is the basis of actions in the system. If the lead time is 20 days, you're asking your stakeholders the question, "What X items will you want 20 days from now?" Also, when determining whether something needs to be rushed through a system, we _have _to know lead time. In other words, if a stakeholder needs something in 30 days, is it possible? Without a lead time metric, that's not known.
+In a Kanban system, lead time is important because it is the basis of actions in the system. If the lead time is 20 days, you're asking your stakeholders the question, "What X items will you want 20 days from now?" Also, when determining whether something needs to be rushed through a system, we _have_ to know lead time. In other words, if a stakeholder needs something in 30 days, is it possible? Without a lead time metric, that's not known.
 
 Anderson stresses the importance of lead time distribution over mean lead time, because it will help the team understand the certainty with which commitments can be made. I wasn't able to generate lead time from YouTrack, but I created a mock one in Excel fairly easily:
 

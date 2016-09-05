@@ -24,7 +24,7 @@ There are three elements to every solution:
 
 It's so easy to skip step #2. Why would you need that [if you are so smart](/surrounded/) and already know the solutions?
 
-The problem is in order to _really _do #3 you have [to have alignment](/alignment/). When you get to the end and have the solution, you should look around and see a crowd around you celebrating the accomplishment of _their _problems with _their _solution.
+The problem is in order to _really_ do #3 you have [to have alignment](/alignment/). When you get to the end and have the solution, you should look around and see a crowd around you celebrating the accomplishment of _their_ problems with _their_ solution.
 
 You are solving this together.
 

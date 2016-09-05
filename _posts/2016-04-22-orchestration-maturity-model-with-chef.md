@@ -34,20 +34,20 @@ At a surface level this is fine, but it leaves out the edge cases that happen wh
 
   * What happens when a node was down and didn't get the message to stop, and then comes back up in the middle of your upgrade, and starts?
   * What happens when a new node is added at a time when  you're not doing an upgrade? Are any of those orchestration commands critical to the node itself?
-  * Are you splitting configuration management between your configuration management tool _and _your orchestration? If you are directly stopping a service, THEN running chef later, then your configuration management is leaking out of your system and into other places.
+  * Are you splitting configuration management between your configuration management tool _and_ your orchestration? If you are directly stopping a service, THEN running chef later, then your configuration management is leaking out of your system and into other places.
 
 ## **Phase 2: Declaratively Manage State**
 
 If we're writing chef recipes and starting from the beginning with some infrastructure, why live with the limitations of Phase 1? Why don't we solve this problem? Thankfully with a tool like [consul](https://www.consul.io/) we can solve the problem by making some subtle changes:
 
   * Create a real-time shared data view of the state of your system (with consul, [zookeeper](https://zookeeper.apache.org/))
-  * Using this shared data view, define _all _desired states of the system. So if you need to transition your web cluster from the states of: off, waiting, converged, set that in your key value store
+  * Using this shared data view, define _all_ desired states of the system. So if you need to transition your web cluster from the states of: off, waiting, converged, set that in your key value store
   * Write your chef recipe to define the desired state (resources) that are compiled _based on the desired state defined in the shared data view_. So you have an if statement that says "if we want this thing to be off right now, there is a service resource with action of &#8216;off'"
   * Write an orchestrator that manages the state transitions between nodes in the environment _by updating the shared data view_.  With consul we can do a consul_exec on our nodes to force chef to run. Or take it even further. And the orchestrator itself can be written through chef.
 
 This gives you a number of benefits over the earlier phase:
 
-  * If a node isn't there when the state changes, it checks in and converges to the correct state, immediately! You _always _get the node at the right state in the process because they are sharing the latest up to date shared data view
+  * If a node isn't there when the state changes, it checks in and converges to the correct state, immediately! You _always_ get the node at the right state in the process because they are sharing the latest up to date shared data view
   * If a node is added, it will also converge to the correct state. It checks in and catches up immediately. Now you don't have to worry about adding nodes and coordinating that with upgrades; things will just happen.
   * All configuration management are belong to chef. Simple.
 

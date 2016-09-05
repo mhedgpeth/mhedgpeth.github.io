@@ -21,11 +21,11 @@ permalink: /chef-cookbook-builds-in-teamcity/
 dsq_thread_id:
   - 4670828786
 ---
-As more and more teams are [coming on board with Chef](http://hedge-ops.com/my-advice-for-chef-in-large-corporations/), I've began to standardize our pipeline and ensure that everyone meets quality gates for the infrastructure they are creating. This started with finally figuring out how to get [Test Kitchen working with Windows](http://hedge-ops.com/test-kitchen-required-not-optional/), then quickly migrated to getting it running in [TeamCity](http://hedge-ops.com/christmas-with-russians/). Our entire division uses TeamCity for configuration management, so it's something that I needed to plan out carefully in order to make the Chef pipeline _feel _like it's a part of a team's normal build process.<!--more-->
+As more and more teams are [coming on board with Chef](http://hedge-ops.com/my-advice-for-chef-in-large-corporations/), I've began to standardize our pipeline and ensure that everyone meets quality gates for the infrastructure they are creating. This started with finally figuring out how to get [Test Kitchen working with Windows](http://hedge-ops.com/test-kitchen-required-not-optional/), then quickly migrated to getting it running in [TeamCity](http://hedge-ops.com/christmas-with-russians/). Our entire division uses TeamCity for configuration management, so it's something that I needed to plan out carefully in order to make the Chef pipeline _feel_ like it's a part of a team's normal build process.<!--more-->
 
 ## Project Structure
 
-With this in mind, we created a** Chef** [subproject](https://confluence.jetbrains.com/display/TCD9/Creating+and+Editing+Projects) _inside _of each team's _existing _project. We want them to have ownership when Chef infrastructure breaks and to take action on problems, just as if the problem happened in their own software build.
+With this in mind, we created a** Chef** [subproject](https://confluence.jetbrains.com/display/TCD9/Creating+and+Editing+Projects) _inside_ of each team's _existing_ project. We want them to have ownership when Chef infrastructure breaks and to take action on problems, just as if the problem happened in their own software build.
 
 We then created a** Chef Cookbook** [build template](https://confluence.jetbrains.com/display/TCD9/Build+Configuration+Template) at the <Root Project> level that all cookbooks can use for their own builds. This template defines a cookbook parameter that enables the build steps below to know where the cookbook is in source.
 
@@ -33,9 +33,9 @@ We then created a** Chef Cookbook** [build template](https://confluence.jetbrai
 
 We're not really sure about how we approach testing at the moment when it comes to dependencies. If a cookbook is very young or if we are testing a lot of things at once, we might want to use relative path dependencies to other cookbooks. Or we might want to use data bags at some level. So we've decided on the build agent itself to mimic a chef repo and then test it that way. We do this [through a checkout rule](https://confluence.jetbrains.com/display/TCD9/Build+Checkout+Directory#BuildCheckoutDirectory-Customcheckoutdirectory), like this:
 
-<pre>+:.=&gt;cookbooks/contributors
-
-</pre>
+```
++:.=&gt;cookbooks/contributors
+```
 
 This means that the contributors cookbook will go to the cookbooks/contributors repo relative to build working directory.
 
@@ -71,7 +71,7 @@ Kitchen test will do a create, converge, and verify. It runs through the whole p
 
 ### **5. Kitchen Destroy**
 
-If the above test fails, it's important to not keep the virtual machine running. This is especially true if I'm using the azure runner. So at the end I'll call kitchen destroy, and _always _call it, even if the previous command failed:
+If the above test fails, it's important to not keep the virtual machine running. This is especially true if I'm using the azure runner. So at the end I'll call kitchen destroy, and _always_ call it, even if the previous command failed:
 
 ![Run Kitchen Destroy](/img/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-kitchen-destroy.png)
 

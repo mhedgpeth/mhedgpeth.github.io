@@ -28,6 +28,6 @@ Now for the second question: **What would be the reaction of others if you _di
 
 I can tell my wife, "No, I don't want to do that. Let's think of an alternative." She would respond with love, acceptance, and we would work something out.
 
-I couldn't tell my church from college that. If you had asked me at the time to imagine it being gone, I would have sworn up and down to you that I loved it, etc. But then if you would have asked me if I was _free _to reject it, if I was being honest I would have to say no.
+I couldn't tell my church from college that. If you had asked me at the time to imagine it being gone, I would have sworn up and down to you that I loved it, etc. But then if you would have asked me if I was _free_ to reject it, if I was being honest I would have to say no.
 
 So **rid yourself of everything you are relieved to get rid of. Only keep that which you can freely and openly reject.**

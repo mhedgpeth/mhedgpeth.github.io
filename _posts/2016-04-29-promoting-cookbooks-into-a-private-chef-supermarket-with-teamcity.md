@@ -45,7 +45,7 @@ There are three variables that are [defined as parameters](https://confluence.je
 
 I had to go into our internal Git server and create a repo with the same name as the GitHub one so something could be pushed.
 
-I then [schedule this to run every day](https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Triggers), and let it do its thing. If I got crazy I could make it run everytime there was a checkin on github, but the model doesn't _have _to have immediacy to it. My repository internally will be reasonably up to date.
+I then [schedule this to run every day](https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Triggers), and let it do its thing. If I got crazy I could make it run everytime there was a checkin on github, but the model doesn't _have_ to have immediacy to it. My repository internally will be reasonably up to date.
 
 ## 2: Create an internally approved branch based on a tag
 

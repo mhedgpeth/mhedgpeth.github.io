@@ -31,7 +31,7 @@ Yes, you are hearing me correctly. I [just finished](/escaping-with-the-news/) o
 
 A couple of observations really hit this home for me:
 
-**Sports news _loves _the soap opera story.** It's funny to think that way, too, since so many sports fans are uber-masculine and would never admit to enjoying soap operas as entertainment. A few examples (as you read these in the tone of an airhead woman in her early twenties talking about a soap opera):
+**Sports news _loves_ the soap opera story.** It's funny to think that way, too, since so many sports fans are uber-masculine and would never admit to enjoying soap operas as entertainment. A few examples (as you read these in the tone of an airhead woman in her early twenties talking about a soap opera):
 
 _OMG did you hear about** [Ron Washington](http://espn.go.com/dallas/mlb/story/_/id/11471420/ron-washington-quits-manager-texas-rangers)?** He RESIGNED today as manager of the Rangers for personal reasons. Jon Daniels says it ISN'T about drugs. But who knows? I wonder how the players are feeling?_
 

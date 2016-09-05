@@ -32,7 +32,7 @@ This is what I would try first. But what if that doesn't work? What if the custo
 
 **The Complicated Way: Break Epics into Stories**
 
-The more complicated way I got from [the Kanban book](http://amzn.to/1GgXlcU) is to continue to allow the customer to define things _their _way. Those items, when they are too big to break down, are called Epics and won't be counted as throughput. The Epics are broken down into stories that are still testable outcomes. In other words, we are still avoiding the "database column is added" story. Your throughput metric will track the number of stories that are processed through the system.
+The more complicated way I got from [the Kanban book](http://amzn.to/1GgXlcU) is to continue to allow the customer to define things _their_ way. Those items, when they are too big to break down, are called Epics and won't be counted as throughput. The Epics are broken down into stories that are still testable outcomes. In other words, we are still avoiding the "database column is added" story. Your throughput metric will track the number of stories that are processed through the system.
 
 I've seen mixed success from teams that are trying to break things down. People tend to want to break things down into layers and not into testable outcomes for end users. Once that skill is mastered, however, the team has a good way to track throughput through the system.
 

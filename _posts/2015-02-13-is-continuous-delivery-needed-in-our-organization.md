@@ -31,10 +31,10 @@ I'd say the answer to this is usually, regardless of the tooling used, within a 
 
 **How quickly does a customer want a feature in production?**
 
-This is a trickier question. We can separate the answer into what the customer _wants _and what the customer _expects. _The customer _wants _to have the feature in production right now. Otherwise they wouldn't have told you about it. I have never heard a user make a request for change in software and say, "I'm just letting you know, I'd rather have it six months from now." Now is always better.
+This is a trickier question. We can separate the answer into what the customer _wants_ and what the customer _expects_. The customer _wants_ to have the feature in production right now. Otherwise they wouldn't have told you about it. I have never heard a user make a request for change in software and say, "I'm just letting you know, I'd rather have it six months from now." Now is always better.
 
 However, our customers have a business to run, so they're not going to be foolish with updates. They want us to [fully test and properly deliver the software](/safety-net/). So I believe their answer to this question would be: **as quickly as you can safely get it to me.**
 
-This is a flexible arrangement based on the trust we create from automating our delivery and testing process. The better job we do, the more they trust us and the quicker they get their software. It will probably never be _today _that they get updates, but also if we're taking this seriously it also shouldn't be a long time.
+This is a flexible arrangement based on the trust we create from automating our delivery and testing process. The better job we do, the more they trust us and the quicker they get their software. It will probably never be _today_that they get updates, but also if we're taking this seriously it also shouldn't be a long time.
 
 So even for us, with real customers that are paying us to get it right, there is room for continuous delivery and Chef.

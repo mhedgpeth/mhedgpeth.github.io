@@ -17,7 +17,7 @@ tags:
   - purpose
   - time management
 ---
-I'm taking a break from [my hatred of all things](/rubbernecking-with-the-locals/) news to take a step back and write about _why _I've been so negative in these recent posts about the news.<!--more-->
+I'm taking a break from [my hatred of all things](/rubbernecking-with-the-locals/) news to take a step back and write about _why_ I've been so negative in these recent posts about the news.<!--more-->
 
 I'm not against entertainment. I think it serves a valuable role in our lives. I like watching a football game or hearing about things that are none of my business. It's a lot of fun.
 

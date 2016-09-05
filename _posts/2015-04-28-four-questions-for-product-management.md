@@ -28,7 +28,7 @@ This is the foundational question. You have to undertstand.
 
 **Why do you want to do that?**
 
-This is the question many people don't get to. The thought is that a customer knows what they want and why is their business. I've learned over the years that this can be dangerous. If we don't understand _why _they want what they are asking for, then how can we know we are delivering the right thing?
+This is the question many people don't get to. The thought is that a customer knows what they want and why is their business. I've learned over the years that this can be dangerous. If we don't understand _why_ they want what they are asking for, then how can we know we are delivering the right thing?
 
 I've seen time and time again the scenario I like to call** Declare Victory Yet Nothing Changes** scenario. This is where you do what was asked for, but the outcome everyone was looking for doesn't materialize. But it's easy to declare victory in that situation since you did indeed do what was asked for.
 

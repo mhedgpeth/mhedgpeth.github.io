@@ -23,7 +23,7 @@ Slightly more mature projects might look to the Hippo: the highest paid person's
 
 A functional Kanban project looks to return on investment. How much money will we get from this endeavor, and how quickly will we pay off the cost to create the change?
 
-This is great, but the problem comes about in software when you have a lot of options on the table that would have a healthy return on investment. _What then? _<!--more-->
+This is great, but the problem comes about in software when you have a lot of options on the table that would have a healthy return on investment. _What then?_<!--more-->
 
 This is when the cost of delay calculation comes in handy. From _Lean Enterprise:_
 

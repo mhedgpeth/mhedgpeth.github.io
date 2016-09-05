@@ -28,7 +28,7 @@ tags:
 ---
 The more I measure [the more successful I am](/measure-for-reality/). I've known this for a while, but I realize that the lack of measurement is still the thing that is holding my career back. I've already written about how measurement is key to [The Lean Startup Cycle](/the-lean-startup-cycle/) of using the scientific method to find innovation in your organization. So I'm hooked with this idea, but I desperately want to implement it in a good way. I want to have a breakthrough.<!--more-->
 
-The _Lean Enterprise_ book cites the _Lean Analytics _book concept of **The One Metric That Matters (OMTM):**
+The _Lean Enterprise_ book cites the _Lean Analytics_ book concept of **The One Metric That Matters (OMTM):**
 
 > OMTM is a single metric that we prioritize as the most important to drive decisions depending on the stage of our product lifecycle and our business model&#8230;We focus on One Metric that Matters to:
 > 

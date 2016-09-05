@@ -16,7 +16,7 @@ permalink: /the-missing-compilerunit-test-for-feelings/
 dsq_thread_id:
   - 4605117064
 ---
-As technical people we become fascinated early on by [the](/christmas-with-russians/) [numerous](/getting-things-done-action-plan/) [tools](/my-advice-for-chef-in-large-corporations/) out there that make our jobs easier. A compiler or syntax checker is almost an afterthought these days: of course you would want some guidance on whether your code was in compliance with the language before running it. Unit tests are the same way; if I can run something and get a good answer on whether it is OK _before  _I put it in a shared environment, then [that will save me tons of time](/test-kitchen-required-not-optional/).
+As technical people we become fascinated early on by [the](/christmas-with-russians/) [numerous](/getting-things-done-action-plan/) [tools](/my-advice-for-chef-in-large-corporations/) out there that make our jobs easier. A compiler or syntax checker is almost an afterthought these days: of course you would want some guidance on whether your code was in compliance with the language before running it. Unit tests are the same way; if I can run something and get a good answer on whether it is OK _before_ I put it in a shared environment, then [that will save me tons of time](/test-kitchen-required-not-optional/).
 
 Unfortunately, there isn't a similar tool for how people feel about you. A technical person can fall into the trap of looking at more technical-oriented clues to how people feel, but these often fall short:<!--more-->
 

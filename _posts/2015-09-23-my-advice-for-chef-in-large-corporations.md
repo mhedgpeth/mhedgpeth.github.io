@@ -33,13 +33,13 @@ Create these four nodes in your Data Center, behind firewalls, with no outside 
   3. A Chef Analytics Server
   4. An Artifacts Server (like SFTP server)
 
-Does your security team not allow connectivity between Production and UAT? Awesome! Build two environments! Does your security team segment audited environments from non-audited environments? Awesome! Build the above four servers in _every segmented environment you have.
+Does your security team not allow connectivity between Production and UAT? Awesome! Build two environments! Does your security team segment audited environments from non-audited environments? Awesome! Build the above four servers in _every segmented environment you have_.
 
 You heard that right. Now isn't the time to get into pissing matches about your "new devops vision of greatness" that will totally transfor...EVERYTHING! No, now is the time to automate the things. Set up your servers and make it happen.
 
 If this becomes political, then you are doing it wrong.
 
-_But Michael, how am I going to maintain all those environments? _Well, thankfully you have the joy and pleasure of (1) probably having a bad system in place which is why you are looking at Chef, and (2) Policyfiles. So get over your perfectionism and implement this easy workflow for change management:
+_But Michael, how am I going to maintain all those environments?_ Well, thankfully you have the joy and pleasure of (1) probably having a bad system in place which is why you are looking at Chef, and (2) Policyfiles. So get over your perfectionism and implement this easy workflow for change management:
 
   1. [Use a policyfile](https://docs.chef.io/config_rb_policyfile.html) for every node in your infrastructure
   2. Save changes to policyfiles into Git where each team has their policyfiles in their own git repository separate from their cookbooks
