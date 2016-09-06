@@ -1,6 +1,6 @@
 ---
 id: 656
-layout: post
+layout: post-sidebar
 title: A Litmus Test for Tolerance
 date: 2014-11-14T08:00:38+00:00
 categories: culture
