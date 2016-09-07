@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Exposing the Unknown"
-# date: 2016-06-24T08:00:59+00:00
+date: 2016-09-09T08:00:00+00:00
 categories: growth
 author_name: Michael
 author_url: /author/michael
