@@ -2,12 +2,12 @@
 layout: post
 title: "Summer of Discovery"
 # date: 2016-06-24T08:00:59+00:00
-categories: process
+categories: growth
 author_name: Michael
 author_url: /author/michael
 author_avatar: michael
 show_avatar: false
-read_time: 10
+read_time: 5
 feature_image: feature-summer-of-discovery 
 show_related_posts: true
 square_related: related-summer-of-discovery
