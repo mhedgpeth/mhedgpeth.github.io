@@ -1,0 +1,28 @@
+---
+layout: post
+title: "The Goal"
+# date: 2016-09-09T08:00:00+00:00
+categories: growth
+author_name: Michael
+author_url: /author/michael
+author_avatar: michael
+show_avatar: false
+read_time: 5
+feature_image: feature-the-goal
+show_related_posts: true
+square_related: related-the-goal
+permalink: /the-goal/
+---
+A while back I was working with someone who wasn't new to technology, but was new to the style of software development that my team was operating within. We worked on [getting honest about where he was at](/exposing-the-unknown/) over the first few weeks of working together. I could tell this was uncomfortable for him, and, frankly I've also grown in my empathy for the fear and difficulty experienced by being new with a new technology or process.
+
+I remember clearly talking to my colleague in a 1:1 that he wasn't where he needed to be to be successful. He knew it. I knew it.
+
+That's usually a bad place. That's usually the place where people give up on each other. That's the place where both parties start making plans to get them out of the uncomfortable situation.
+
+Instead of doing that, though, we talked about his goals. What did he want to get out of this job? Out of his life? What is he missing?
+
+Then we aligned his goals with mine by creating a growth plan that identified some training opportunities, coding challenges, and regular communication.
+
+A few years later and my colleague is doing well. He made the transition. I see so many managers take the easy way out by their inability to see what's possible in people. If you had a chance to change someone's life by helping them gain valuable skills and insights that will serve them the rest of their lives, why wouldn't you take it? 
+
+Watching lives change through clear goals has been one of the most rewarding aspects of my career. 

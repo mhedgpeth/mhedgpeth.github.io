@@ -32,7 +32,7 @@ The insight we found was that _before making a change that has risk, build a saf
 This insight relates to so many areas of life and business:
 
 <div class="table-responsive">
-  <table  style="width:100%; "  class="easy-table easy-table-default " border="0">
+  <table  style="width:100%; "  class="table" border="0">
     <tr>
       <th >
         When doing
