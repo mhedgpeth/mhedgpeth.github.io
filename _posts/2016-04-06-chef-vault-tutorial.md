@@ -135,6 +135,12 @@ knife vault refresh passwords root --clean-unknown-clients
 
 This updates the `root_keys`  encrypted data bag with information on the nodes that now match the search criteria. So it's  important to know that the nodes that can read a vault is a snapshot in time based on the search criteria, not a dynamic list.
 
+If you aren't using a search criteria, you'll need to add nodes to the administrators list itself:
+
+```
+knife vault update passwords root -A 'newnode,newnode2'
+```
+
 ## Rotating keys
 
 You might want to rotate the key that encrypts the data in the data bag. The way this works is the clients use their own key as a private key to combine with the public key on the chef server to decrypt the data bag's key. That key encrypts the real data bag. This command will change that key:
