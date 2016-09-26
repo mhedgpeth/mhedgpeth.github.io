@@ -43,7 +43,7 @@ driver:
  name: azurerm
 
 driver_config:
- subscription_id: &lt;%= ENV['AZURE_SUBSCRIPTION_ID'] %&gt;
+ subscription_id: <%= ENV['AZURE_SUBSCRIPTION_ID'] %>
  location: 'South Central US'
  machine_size: 'Standard_D1'
 
@@ -72,11 +72,56 @@ suites:
 
 It's really that simple. Now I can run test kitchen commands:
 
-| Team        | Natural Alignment                                                                   | Natural Misalignment                                |
-|-------------|-------------------------------------------------------------------------------------|-----------------------------------------------------|
-| Development | Faster Delivery of features                                                         | Have to be engaged in operations, more "work" to do |
-| Operations  | Less fires, more consistency                                                        | Have to learn a new skillset and be a beginner      |
-| Security    | More consistency, compliance                                                        | Automation can cause unknown vulnerabilities        |
-| Business    | Faster ROI for development, lower cost for operations, and a scale model that works | Takes ongoing investment in culture and tools       |
+<table>
+  <tr>
+    <th>
+      command
+    </th>
+    <th>
+      description
+    </th>
+  </tr>
+  <tr>
+    <td>
+      kitchen create
+    </td>
+    <td>
+      creates azure infrastructure for running, powers on machines
+    </td>
+  </tr>
+  <tr>
+    <td>
+      kitchen converge
+    </td>
+    
+    <td>
+      does kitchen create if needed, will converge the node using chef
+    </td>
+  </tr>
+  <tr>
+    <td>
+      kitchen verify
+    </td>
+    <td>
+      does create and converge if needed, runs the tests that you've written
+    </td>
+  </tr>
+  <tr>
+    <td>
+      kitchen test
+    </td>
+    <td>
+      does everything: create, converge, verify
+    </td>
+  </tr>
+  <tr>
+    <td>
+      kitchen destroy
+    </td>
+    <td>
+      don't forget this one; it removes the resources
+    </td>
+  </tr>
+</table>
 
 There you have it, go through those easy steps and you have Kitchen working with Azure.
