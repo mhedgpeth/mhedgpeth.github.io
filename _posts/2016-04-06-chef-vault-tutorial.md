@@ -79,7 +79,7 @@ This uploads two data bag items to a data bag called "passwords":
 
 ### Making it Even More Secure
 
-[Noah Kantrowitz](https://coderanger.net/) helped me understand the vulnerabilities of the above approach using the `-S`  flag. With that flag, you give the nodes the ability to define the criteria by which they are allowed to decrypt the vault. So if you say I want nodes that have `policy_name:webserver`  to decrypt this data, all it takes is someone saying they are `&#8216;policy_name:webserver'`  and they will be granted the keys.
+[Noah Kantrowitz](https://coderanger.net/) helped me understand the vulnerabilities of the above approach using the `-S`  flag. With that flag, you give the nodes the ability to define the criteria by which they are allowed to decrypt the vault. So if you say I want nodes that have `policy_name:webserver`  to decrypt this data, all it takes is someone saying they are `'policy_name:webserver'`  and they will be granted the keys.
 
 A better way to handle this is through specifying each node explicitly through the -A flag. So your command would be:
 
