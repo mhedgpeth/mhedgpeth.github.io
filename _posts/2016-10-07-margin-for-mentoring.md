@@ -19,7 +19,7 @@ It was during this time that I really dropped the ball on mentoring.
 
 I would be in meetings all day, and the poor members of my team would need my help in growing and learning and I would be absent. They would try to catch me as I walked very briefly to my desk before going to the next meeting. It was really bad.
 
-I realized a valuable lesson during that season. If you're in meetings all day and don't have time for people around you, then you and others around you are going to stagnate. I'm sure that's probably good for people at a certain level, but for most of us that is **a very bad thing**.
+I realized a valuable lesson during that season. If you're in meetings all day and don't have time for people around you, then you and others around you are going to stagnate. That may be fine for people at a certain level, but for most of us that is **a very bad thing**.
 
 Since then, I've learned to create margin in my day so I can check in with people. I keep my calendar blocked during a portion of the day and I [focus on planning](/planning-vs-execution) and also on _talking to people_. I reach out to them, make sure that we have an [open line of communication](/exposing-the-unknown/) and that they have a [solid plan themselves](/internalizing-the-plan/).
 
