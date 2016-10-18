@@ -134,7 +134,7 @@ data_collector.token "guid-from-previous-step"
 
 ## Configure Notification replacement for Analytics
 
-We were taking advantage of the notifications in Chef Analytics and needed a replacement. My colleague has written a slack notifier report handler for Chef that we're now using.
+We were taking advantage of the notifications in Chef Analytics and needed a replacement. My colleague has written [a slack notifier report handler](https://github.com/jkerry/SimpleSlackHandler) for Chef that we're now using.
 
 # Initial Thoughts on Visibility
 
