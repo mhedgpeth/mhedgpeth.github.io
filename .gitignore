@@ -1,2 +1,4 @@
 _site/*
 .sass-cache/*
+_infrastructure/*.tfvars
+_infrastructure/*.tfstate*
