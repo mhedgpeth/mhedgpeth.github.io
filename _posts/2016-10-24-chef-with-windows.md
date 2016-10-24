@@ -27,7 +27,7 @@ So if the business is using GPOs for managing configuration state on the active 
 
 Keep digging.
 
-Can you get a machine up and running quickly? Whey not? Would chef help with that?
+Can you get a machine up and running quickly? Why not? Would chef help with that?
 
 If you need to configure a third party tool like monitoring or logging, can you do that effectively? Sure it's great when all you do is Microsoft and it all fits together nicely, but is that realistic?
 
