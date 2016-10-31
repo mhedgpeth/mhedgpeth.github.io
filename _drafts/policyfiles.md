@@ -118,6 +118,8 @@ Then in our recipe code we can reference the `policy_group` and easily get to ou
 database = node['myapp'][Chef::Config.policy_group]['database']
 ```
 
+If you have a lot of legacy cookbooks that depend on the node environment, or if you simply don't want to deal with the hierarchy mentioned above, the [poise-hoist](https://github.com/poise/poise-hoist) cookbook will do a lot of the work for you by merging this hierarchy to a higher level. This means that your environment specific attributes can be used the way they always were, except now they're declared right next to the run list and promoted through your pipeline.
+
 ## Creation of the Policyfile.lock.json file
 
 Now that you have a declaration of what you want to run on a machine, it's time to create a point in time snapshot of *specific* dependencies Chef will use on a node. This is your actual policy and it is stored in your `Policyfile.lock.json` file. This is the file that your node will read to pull dependencies down and run them locally.
@@ -191,15 +193,31 @@ The `qa` above is your policy group. A policy group is a logical group of nodes 
 
 ## Setting up Chef Client
 
-To run this on a node, the `client.rb` needs to have the following attributes set:
+To get your node to have the appropriate policy name and group, you need to update its attributes. The easiest way to do this is when bootstrapping the node itself:
 
-```ruby
-# client.rb
-policy_name      'webserver' # corresponds to the 'name' in Policyfile.rb and Policyfile.lock.json
-policy_group     'qa' # arbitrary name, similar to environments
+```
+knife bootstrap mywebserver --policy-group qa --policy-name webserver
 ```
 
-The idea here is that you create a `policy_group` for your different environments. You might have `development` then `qa` then `uat` then `production`. Each `policy_group` will have a specific `Policyfile.lock.json` associated with it. 
+If you, like me, have a node-centric bootstrapping mechanism, your bootstrapper will need to update node attributes using the `-j` flag. First create attributes with the `policy_name` and `policy_group` in them:
+
+```json
+# attributes.json
+{
+  "policy_name": "webserver",
+  "policy_group": "qa"
+}
+```
+
+And then run:
+
+```
+chef-client -j attributes.json 
+```
+
+From there your node will use that policy.
+
+I used to manually add the settings to `client.rb` directly, but now know that this is bad because it will mean I have to manually update them again if I ever need to change it. Setting them in the node attributes directly allows me to change them remotely on the Chef Server.
 
 ## Packaging it for Air Gapped environments
 
