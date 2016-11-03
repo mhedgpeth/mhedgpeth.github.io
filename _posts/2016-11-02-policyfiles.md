@@ -128,6 +128,7 @@ Now that you have a declaration of what you want to run on a machine and your en
 To generate your `Policyfile.lock.json` file, run:
 
 ```
+rm Policyfile.lock.json # remove any old lockfiles first
 chef install Policyfile.rb 
 ```
 
@@ -182,15 +183,18 @@ Remember, we are running this code with elevated privileges, so if you're runnin
 
 ## Pushing it to the Chef Server
 
-Now that we have a lockfile built, it's time to make the policy active for our nodes. If our nodes, Chef Server, and development machine are all on the same network, we can simply push the policy to the Chef Server directly:
+Now that we have a lockfile built, it's time to make the policy active for our nodes. If our nodes, Chef Server, and development machine are all on the same network, we can simply push the policy to the Chef Server directly. If you're doing this within CI and it's possible on another agent or at another time, you'll want to run `chef install` first to ensure the cookbooks are locally cached. The `chef install` command will *not* replace the lockfile if it already exists.
 
 ```
+chef install Policyfile.rb # to ensure dependencies are loaded
 chef push qa Policyfile.rb
 ```
 
 This will push the policy and all dependencies declared in the lockfile to the Chef Server for the `qa` policy group. Once you run this command, you can guarantee that you can run it on a node. No more remembering to upload a specific dependency; it's simply there for you to run and will include the exact same cookbooks that are in the lockfile.
 
 The `qa` above is your policy group. **A policy group, similar to an environment, is a logical group of nodes that you want to have the same policy.** Since many times you'll be using the same Chef Server to manage multiple environments, you'll want to split your nodes into different policy groups so you can make sure that you are flowing policy changes through a pipeline before they get to production.
+
+Also note that you should *never* run the `chef update` command. Results of this are not easily predicatable, so I've stayed away from it. If you need to regenerate a lockfile, remove the old one and run `chef install`. If you want to push the policy, ensure that the dependencies are loaded with `chef install` and then push it with `chef push`.
 
 ## Setting up Chef Client
 
