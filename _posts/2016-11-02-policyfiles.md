@@ -255,6 +255,35 @@ We're going to want to add this workflow to a pipeline that we can manage in Jen
 5. Push the `Policyfile.lock.json` file to the Chef Server for locally available resources. If there is a pipeline, push to one policy group at a time and make sure they work before pushing out even further.
 6. If there isn't a Chef Server connected to your build environment, post the policyfile archive to be loaded by your air-gapped environment. Much of this can be automated, but you'll find that there is a step where you have to physically deal with the air-gapped environment (by definition).
 
+## Which Policy is Active?
+
+As I said before, this revision id that is generated as a part of your lockfile will be the single identifier for this policy from here on out. So to see which policy is active you can simply run:
+
+```
+chef show-policy webserver
+```
+
+Which will generate:
+
+```
+webserver
+========
+
+* qa:  6156a875a7
+```
+
+Here you have the first ten characters of your revision id, and it is clear the exact versioin of the policy that is active for the `qa` group. If you're checking in your lockfiles through a pipeline, this revision id should be stored with your lockfile in your git repo and thus you can understand when it was created. You have a great understanding of the exact changes that went into your environment.
+
+Similarly, when you run `chef-client`, you see exactly the revision id and policy that is used:
+
+```
+PS D:\chef> chef-client
+Starting Chef Client, version 12.11.18
+Using policy 'webserver' at revision '6156a875a7c0eb06ce9gdc9e3d4f19809752942efd6dd20888ddd9fd8bbbd43b5'
+```
+
+So at all levels you have repeatability and traceability of all changes.
+
 # Conclusion
 
 The Chef Community should adopt Policyfiles because they are easier to learn than the legacy workflow, give you better control change management, and are more flexible for security-concious implementations. Hopefully this blog post will serve as an impetus for broader adoption of the feature and eventual inclusion into the Automate product suite. 
