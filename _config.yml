@@ -1,7 +1,7 @@
 # Site settings
 title: hedge-ops
 email: mhedgpeth-hedge-ops-email@gmail.com
-description: 'Operational excellence through operation and culture'
+description: 'Operational excellence through automation and culture'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: 'http://mhedgpeth.github.io'
 enable_retina: false
