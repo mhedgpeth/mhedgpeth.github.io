@@ -121,6 +121,8 @@ database = node['myapp'][Chef::Config.policy_group]['database']
 
 If you have a lot of legacy cookbooks that depend on the node environment, or if you simply don't want to deal with the hierarchy mentioned above, the [poise-hoist](https://github.com/poise/poise-hoist) cookbook will do a lot of the work for you by merging this hierarchy to a higher level. This means that your environment specific attributes can be used the way they always were, except now they're declared right next to the run list and promoted through your pipeline.
 
+If you want to learn about this in more detail, check out [my follow up post](/policyfile-attributes/) that dives into this more deeply.
+
 ## Creation of the Policyfile.lock.json file
 
 Now that you have a declaration of what you want to run on a machine and your environment-specific settings declared, it's time to create a point in time snapshot of *specific* dependencies Chef will use on a node. This is your actual policy and it is stored in your `Policyfile.lock.json` file. This is the file that your node will read to pull dependencies down and run them locally.
