@@ -87,7 +87,7 @@ If you were using environments before and that kept you from using Policyfiles, 
 
 The same workflow we used above to migrate from environments can be used with our roles as well.
 
-It's first though to think about roles within the scope of Policyfiles: they simply don't exist. Instead we can use a wrapper cookbook that encapsulates everything we want that role to do.
+We should first understand that roles don't exist within policyfiles. To accomplish the same end, we use a wrapper cookbook that encapsulates everything we want that role to do.
 
 For example you could have a base role that you want everything to follow by creating a `mycompany-platform` cookbook. Its default recipe could be something like this:
 
