@@ -178,6 +178,35 @@ Chef::Mixin::DeepMerge.hash_only_merge!(node.role_default, environment)
 
 This will, as before, make it so you can have Policyfiles and largely the same code as before because you were able to bring the environment data in from another source and merge it.
 
+# Multi-Dimensional Attributes with Data Bags and Policyfiles
+
+We have a couple of products that take this even further. You might have two dimensions of settings: in America, you one service and in Europe you use another. This is true for all environments, but the environments have their own distinct settings.
+
+In this situation you can create two different types of data bags: `environment-uat` but also a `american-services` and `european-services`. Then you could have nodes know which environment they're in and load the appropriate settings.
+
+You would have a couple of data bags:
+
+```json
+{
+    "filename": "american-services",
+    "weather": "american-weather-services.com"
+}
+{
+    "filename": "european-services",
+    "weather": "letempsenfrance.fr"    
+}
+```
+
+Then you can merge that in as normal, based on timezone, or whichever element fits your situation:ß
+
+```ruby
+service = Time.now().gmt_offset < 0 ? 'american' : 'european'
+service_settings = data_bag_item('my_application', "#{service}-services")
+Chef::Mixin::DeepMerge.hash_only_merge!(node.role_default, service_settings)
+```
+
+The long term solution for much of this is to define it within Consul. But that requires learning and adopting another thing, which in my opinion slows you down. Get what you need to get done here, and then adopt other things that work for you one step at a time.
+
 # Policyfile Nirvana - Infrastructure Versions Decoupled from Scripts
 
 When we start with policyfiles, as with the first few use cases above, we tend to put a lot of information in the policyfiles themselves. As things get more complicated, we start to shy away from that because it creates maintainability problems. I've grown in my usage of policyfiles to think of **policyfiles as a mechanism for getting the right versions of the chef recipes on the node to simply run them.** That's where they really shine; they're an excellent dependency management/workflow simplification feature. They're NOT going to shine for the other things.

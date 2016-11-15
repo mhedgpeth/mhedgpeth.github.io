@@ -102,24 +102,34 @@ Pretty quickly you'll run into situations where you have environment specific se
 
 ```ruby
 # in the Policyfile:
-default['myapp'] = {
-  qa: {
+default['qa'] = {
+  myapp: {
     database: 'qaserver01'
-  },
-  uat: {
+  }
+}
+default['uat'] = {
+  myapp: {
     database: 'uatdbsrv32'
-  },
-  production: {
+  }
+}
+default['production'] = {
+  myapp: {
     database: 'proddbsrv62'
   }
+}
 ```
 Then in our recipe code we can reference the `policy_group` and easily get to our setting:
 
 ```ruby
-database = node['myapp'][Chef::Config.policy_group]['database']
+database = node[Chef::Config.policy_group]['myapp']['database']
 ```
 
-If you have a lot of legacy cookbooks that depend on the node environment, or if you simply don't want to deal with the hierarchy mentioned above, the [poise-hoist](https://github.com/poise/poise-hoist) cookbook will do a lot of the work for you by merging this hierarchy to a higher level. This means that your environment specific attributes can be used the way they always were, except now they're declared right next to the run list and promoted through your pipeline.
+Or you could take it one step closer and include the [poise-hoist](https://github.com/poise/poise-hoist) cookbook in your `run_list` and simply write:
+
+```ruby
+# with poise-hoist, you can't tell if you're using policyfiles
+database = node['myapp']['database']
+```
 
 If you want to learn about this in more detail, check out [my follow up post](/policyfile-attributes/) that dives into this more deeply.
 
