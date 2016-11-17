@@ -197,7 +197,7 @@ You would have a couple of data bags:
 }
 ```
 
-Then you can merge that in as normal, based on timezone, or whichever element fits your situation:ß
+Then you can merge that in as normal, based on timezone, or whichever element fits your situation:
 
 ```ruby
 service = Time.now().gmt_offset < 0 ? 'american' : 'european'
@@ -205,7 +205,7 @@ service_settings = data_bag_item('my_application', "#{service}-services")
 Chef::Mixin::DeepMerge.hash_only_merge!(node.role_default, service_settings)
 ```
 
-The long term solution for much of this is to define it within Consul. But that requires learning and adopting another thing, which in my opinion slows you down. Get what you need to get done here, and then adopt other things that work for you one step at a time.
+The long term solution for much of this is to define it within a service discovery product like Consul. But that requires learning and adopting another thing, which will probably slow down getting the wins you'll need early on to be successful. Get what you need to get done here, and then adopt other things that work for you one step at a time.
 
 # Policyfile Nirvana - Infrastructure Versions Decoupled from Scripts
 
