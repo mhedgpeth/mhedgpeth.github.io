@@ -17,7 +17,7 @@ I started my career as a software engineer, and I always love creating a new app
 
 Over the years, I've become increasingly aware of the gulf that exists between making something real on my own machine as a developer and making something real for a user of my software who is experiencing an ROI for my work. That frustration led me to tackle the problem of how to better deploy an application into production. I've found [Habitat](https://www.habitat.sh/) to be a compelling but often misunderstood new option within this space. In this post, I'll describe the pros and cons of other application deployment technologies and then at the end talk about what makes me so excited about Habitat.
 
-Here are the various approaches to appliation automation, from the simplest to the most complex:
+Here are the various approaches to application automation, from the simplest to the most complex:
 
 ## Scripted
 
@@ -33,7 +33,7 @@ If you're using a manual or bash/powershell scripted way to deploy applications,
 
 The next obvious solution to this problem of how to get your application in production is to package the application and its files with scripts that will deploy it. This is what we considered when we evaluated [XL Deploy](https://xebialabs.com/products/xl-deploy/). Also, in a windows-only world one could use [Chocolatey](https://chocolatey.org/) for this purpose.
 
-These tools really shine when deployment of a package is relatively simple and isolated. I love and use chocolatey for third party applications, like installing ChefDK or even chrome on a new machine. The package mechanism also allows you to promote a single package through multiple environments, thus ensuring that you have better quality when you go to production.
+These tools really shine when deployment of a package is relatively simple and isolated. I love and use Chocolatey for third party applications, like installing ChefDK or even chrome on a new machine. The package mechanism also allows you to promote a single package through multiple environments, thus ensuring that you have better quality when you go to production.
 
 The packaged mechanism is almost always a better model than the pure scripted mechanism mentioned above. However, we decided not to go with this way to deploy applications because we wanted a more holistic model for how to manage the _entire_ machine that the application needed.
 
@@ -43,13 +43,13 @@ So for complex applications, I don't recommend using a packaged mechanism for ap
 
 ## Configuration Management
 
-Up until recently, if one were to want to take a more holistic approach to application deployment automation, one would be wise to use a configuration management tool like [Chef](https://www.chef.io/) to do application deployment.
+Up until recently, if one were to want to take a more holistic approach to application deployment automation, the best choice was to use a configuration management tool like [Chef](https://www.chef.io/).
 
 This has several advantages. First, with Chef you get a holistic machine level environment within which your application will run. So with our IIS example, you get a _configured_ IIS Server there upon which your application will run. You can use [Test Kitchen](/test-kitchen-required-not-optional/) to ensure that the entire machine will run, so you have a much better ability to test that your deployment code works early in the process. And integration testing with other third party applications is natural as well; if you have a problem with running an APM or Security tool with your application, you'll find those problems more easily while using a configuration management approach to application automation, because you'll more naturally be able to include all the machine dependencies into a coded, trackable artifact like a [Policyfile](/policyfiles/).
 
 This is ultimately the path we took two and a half years ago, and I'm glad we did. The holistic approach has proven to be more difficult to execute than a simple scripted or package-based mechanism, but it also gives us consistency, which gives us higher uptime and [ability to scale](/our-superbowl/).
 
-This approach also has its drawbacks, however. First, it has been difficult to get our developers and QA staff to really embrace Chef for _their_ environments. They can't just take a "chef" package and "run" it on a developer or QA machine for feature testing. They probably need an entire separate machine there. And they probably want it to be connected to a Chef Server. All of this overhead makes it difficult or impossible for a developer to want to use the chef deployment mechanism locally. When we get to a shared, stable QA environment or UAT environment, it's fine. But for a QA person trying to test an app on a private local machine, Chef isn't a very good natural choice.
+This approach has its drawbacks. First, it has been difficult to get our developers and QA staff to really embrace Chef for _their_ environments. They can't just take a "chef" package and "run" it on a developer or QA machine for feature testing. They probably need an entire separate machine there. And they probably want it to be connected to a Chef Server. All of this overhead makes it difficult or impossible for a developer to want to use the chef deployment mechanism locally. When we get to a shared, stable QA environment or UAT environment, it's fine. But for a QA person trying to test an app on a private local machine, Chef isn't a very good natural choice.
 
 The second drawback to this approach is the distinct difference that exists between a promise-based configuration management system's capabilities and the workflow-oriented approach that exists in a typical deployment. With deployment you're talking about steps, like "first I upgrade the database, then I update the files, then I turn the websites on and add them back to the LB". A "desired state" DSL like Chef, Puppet, or DSC is not a very natural way to express this. We've gotten around it with Chef and can get by, but the unnatural expression of workflow within a promise-based DSL has slowed down our adoption of Chef.
 
@@ -72,8 +72,7 @@ That's relatively simple, and how most people think of an orchestrated deploymen
 5. service action: started (every time)
 ```
 
-If you don't know Chef, you're probably thoroughly confused, and that's the point. Chef is just not very good at executing a workflow like this. You might say that Ansible or Puppet Orchestration are
-better at it, but the reality is that you're still using a promise language to express a workflow problem. You've found a hammer and now you think everything is a nail. Is there a better way? Perhaps.
+If you don't know Chef, you're probably thoroughly confused, and that's the point. Chef is just not very good at executing a workflow like this. You might say that Ansible or Puppet Orchestration are better at it, but the reality is that you're still using a promise language to express a workflow problem. You've found a hammer and now you think everything is a nail. Is there a better way? Perhaps.
 
 ## Containers
 

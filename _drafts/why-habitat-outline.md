@@ -7,14 +7,19 @@
   - Michael Hedgpeth, NCR
   - Story - developer -> devops
   - Node application needing to deploy
+  - Habitat is misunderstood; let's put it in context
 
 ## Scripted
 
+The natural choice
+
 **Examples**: copy files, `npm install | node app.js`
 **Advantages**: fits the developer workflow
-**Disadvantages**: bespoke, difficult to maintain, can fail unexpectely, only run in production
+**Disadvantages**: bespoke, difficult to maintain, can fail unexpectely, may only run in production
 
 ## Packaged
+
+The natural improvement
 
 **Examples**: XL Deploy, Chocolately, Octopus Deploy
 **Advantages**: Simple, Portable, Intuitive
@@ -22,11 +27,15 @@
 
 ## Configuration Management
 
+The holistic option
+
 **Examples**: Chef, Puppet, Ansible
 **Advantages**: Holistic view, Testable, Consistency
-**Disadvantages**: Promise != Workflow
+**Disadvantages**: QA/Dev rejection; Promise != Workflow (Orchestration)
 
 ## Containers
+
+The new thing that WILL SOLVE EVERYTHING!!!!
 
 **Examples**: Docker, Kubernetes, Mesosphere, Open Shift
 **Advantages**: Extremely portable, scalable
