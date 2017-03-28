@@ -429,52 +429,105 @@ How to run ChefSpec tests
 Where ChefSpec tests are stored
 
 ### GENERIC TESTING TOPICS
+
 Candidates should understand:
+
 The test-driven development (TDD) workflow
 Where tests are stored
 How tests are organized in a cookbook
 Naming conventions - how Test Kitchen finds tests
-Tools to test code "at rest" 
+Tools to test code "at rest"
+  ChefSpec
 Integration testing tools
+  InSpec, Test Kitchen
 Tools to run code and test the output
-When to use ChefSpec in the workflow  
+  InSpec, Test Kitchen
+When to use ChefSpec in the workflow
+  After code, lint, but before test Kitchen
 When to use Test Kitchen in the workflow
+  after code, lint but before deployment to a real node
 Testing intent
 Functional vs unit testing
+  functional is better because it tests the *outcomes* and not just the code approach
 
 ## TROUBLESHOOTING 
 
 ### READING TEST-KITCHEN OUTPUT
+
 Candidates should understand:
+
 Test Kitchen phases and associated output
 
 ### COMPILE VS. CONVERGE
+
 Candidates should understand:
+
 What happens during the compile phase of a chef-client run
+  a resource list is created from all recipes
 What happens during the converge phase of a chef-client run
+  the resources are tested and if failing, repaired
 When pure Ruby gets executed
+  compile phase
 When Chef code gets executed
+  converge phase
 
 ## SEARCH AND DATABAGS 
 
 ### DATA BAGS
+
 Candidates should understand:
+
 What databags are
+  data stores on the chef server that can be referenced
 Where databags are stored
+  chef server
 When to use databags
+  when data is shared among lots of nodes, or when you want the data to be decoupled from the cookbook/policy
 How to use databags
+Declared in json:
+```json
+{
+  "name": "values"
+  "message": "michael was here"
+}
+```
+uploaded to a chef server:
+`knife data bag from file myproduct /path/to/values.json`
+then used in a recipe:
+```ruby
+values = data_bag_item('myproduct', 'values')
+message = values['message']
+```
 How to create a databag
+  `knife data bag create`
 How to update a databag
+  `knife data bag from file`
 How to search databags
+  `knife search data bag 'message:*'`
 Chef Vault
+  is really awesome
 The difference between databags and attributes
+  data bags have no precedence, and are cookbook independent.
 What 'knife' commands to use to CRUD databags
+  create: `knife data bag create myproduct`
+  read: `knife data bag show myproduct values`
+  delete: `knife data bag delete myproduct`
+  update: either `knife data bag edit myproduct values` or `knife data bag from file myproduct values.json` (preferred)
+
 
 ### SEARCH
 Candidates should understand:
 What data is indexed and searchable
-Local Cookbook Development Page 7 v1.0.3
+  `client`, `environment`, `node`, `role`, or `[data bag name]` where if it's not provided will default to `node`
 Why you would search in a recipe
+  to find nodes of another type, but typically you want to avoid this
 Search criteria syntax
+  `'name:valuewildcard'` like `knife search node 'platform:ubuntu'`
 How to invoke a search from the command line
+  see previous
 How to invoke a search from within a recipe
+```ruby
+search(:node, 'platform:ubuntu').each do |result|
+  puts "result['name']"
+end
+```
