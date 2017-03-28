@@ -15,7 +15,7 @@ The natural choice
 
 **Examples**: copy files, `npm install | node app.js`
 **Advantages**: fits the developer workflow
-**Disadvantages**: bespoke, difficult to maintain, can fail unexpectely, may only run in production
+**Disadvantages**: bespoke, difficult to maintain, can fail unexpectedly, may only run in production
 
 ## Packaged
 
