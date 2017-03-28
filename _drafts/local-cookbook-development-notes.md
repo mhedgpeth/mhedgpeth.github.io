@@ -349,37 +349,84 @@ ERB syntax
   it's just ruby in between `<% -%>` and when outputting data, it's `<%= %>`
 
 ### CUSTOM RESOURCES - HOW THEY ARE STRUCTURED AND WHERE THEY GO
+
 Candidates should understand:
+
 What custom resources are
 How to consume resources specified in another cookbook
+  depend on cookbook, and then use them
 Naming conventions
+  `cookbookname_resource_name` by default, for example `mycookbook_website`
 How to test custom resources
+  by using a wrapper cookbook embedded inside of the cookbook (I usually put it in `test/cookbooks` and then included in the runlist)
 
 ### LIBRARIES 
-Candidates should understand:
-What libraries are and when to use them
-Where libraries are stored
 
-## AVAILALABLE TESTING FRAMEWORKS 
+Candidates should understand:
+
+What libraries are and when to use them
+  Reusuable ruby code, use to share code
+Where libraries are stored
+  in the `libraries` folder
+
+## AVAILABLE TESTING FRAMEWORKS
 
 ### INSPEC
+
 Candidates should understand:
+
 How to test common resources with InSpec
+```ruby
+  describe file('michael.txt') do
+    it { should exist }
+    its('content') { should match('Michael was here') }
+  end
+
+  describe port(8080) do 
+    it { should be_listening }
+  end
+
+  describe service('telnet') do
+    it { should be_installed }
+    it { should be_enabled }
+    it { should be_running }
+  end
+```
 InSpec syntax
 How to write InSpec tests
 How to run InSpec tests
+  `inspec exec .`
 Where InSpec tests are stored
+  either in profiles or in the cookbook itself
 
 ### CHEFSPEC
+
 Candidates should understand:
+
 What ChefSpec is
 The ChefSpec value proposition
+  faster run time than test kitchen
 What happens when you run ChefSpec
+  it tests the resources compiled, not running those resources
 ChefSpec syntax
+```ruby
+describe 'scenario'
+  context 'when something happens' do
+    let :chef_run do
+      runner = ChefSpec::SoloRunner.new(platform: 'windows', version: '2012R2')
+      runner.converge(described_recipe)
+    end
+
+    it 'converges successfully' do
+      expect { chef_run }.to_not raise_error
+    end
+  end
+```
 How to write ChefSpec tests
+  you shouldn't
 How to run ChefSpec tests
+  `rspec` or `chef exec rspec`
 Where ChefSpec tests are stored
-Local Cookbook Development Page 6 v1.0.3
 
 ### GENERIC TESTING TOPICS
 Candidates should understand:
