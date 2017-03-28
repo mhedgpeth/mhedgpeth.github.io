@@ -195,7 +195,8 @@ RuboCop configuration & commands
 Auto correction
   `-a` or `--auto-correct` to auto-correct offenses
 How to be selective about the rules you run
-  
+  add exclusions to `.rubocop.yml` or inline as `# rubocop:disable RuleName`
+
 ### TEST KITCHEN
 
 Candidates should understand:
@@ -210,74 +211,142 @@ Regression testing
 ### DRIVERS
 
 Candidates should understand:
+
 Test Kitchen provider & platform support
+  drivers include vagrant (where platforms come from atlas), docker which has built-in image mapping for many platforms, or you can configure the image
+
 How to use .kitchen.yml to set up complex testing matrices
+  set up suites, map those to platforms, add a run list and attributes
+
 How to test a cookbook on multiple deployment scenarios
+  with suites
 How to configure drivers
+  with settings under the drivers
 
 ### PROVISIONER
 
 Candidates should understand:
 The available provisioners
-Local Cookbook Development Page 4 v1.0.3
+  `chef_zero`, `chef_solo`
 How to configure provisioners
+```yml
+  provisioner: chef_zero
+    client_rb: 'alternative-client.rb'
+    json_attributes:
+      message: Hello!
+```
 When to use chef-client vs. chef-solo vs. Chef
+  for test kitchen, always use `chef_zero`. Use the Chef one if you're needing to use a chef server
 How to use the shell provisioner  
+  shell provisioner calls `bootstrap.sh` or `bootstrap.ps1`, depending on whether `powershell_shell` is set to true
 
 ### SUITES
 
 Candidates should understand:
 What a suite is
+  A scenario for running a test
 How to use suites to test different recipes in different environments
+  1) edit their run lists, and 2) define a platform for the suite in the `platforms` setting
 Testing directory for InSpec
+  by default, this is in the `./test/integration/suite-name` folder
 How to configure suites
+  they'll have `attributes` under them, etc.
 
 ### PLATFORMS
+
 Candidates should understand:
+
 How to specify platforms
+  in the `platforms:` section
 Common platforms
+  `ubuntu-x`, `centos-x`, `debian-x`, `windows`
 How to locate base images
+  On the bento organization on Atlas: https://atlas.hashicorp.com/bento
 Common images and custom images
 
 ### KITCHEN COMMANDS
-Candidates should understand:
-The basic Test Kitchen workflow
-'kitchen' commands
-When tests get run
-How to install bussers 
-What 'kitchen init' does
 
-### COOKBOOK COMPONENTS 
-DIRECTORY STRUCTURE OF A COOKBOOK
 Candidates should understand:
+
+The basic Test Kitchen workflow
+  create -> converge -> verify -> destroy
+'kitchen' commands
+  `kitchen create`
+  `kitchen converge`
+  `kitchen verify`
+  `kitchen test` <- does everything
+  `kitchen destroy`
+When tests get run
+  during converge
+How to install bussers **(??)**
+What 'kitchen init' does
+  creates a `.kitchen.yml` file
+
+## COOKBOOK COMPONENTS 
+
+### DIRECTORY STRUCTURE OF A COOKBOOK
+
+Candidates should understand:
+
 What the components of a cookbook are
 What siblings of cookbooks in a repository are
+  `roles`, `environments`, `data_bags`
 The default recipe & attributes files
 Why there is a 'default' subdirectory under 'templates’
+  it is the fallback of where to go for templates. Templates can also be platform specific, where the platform would be the directory. Or you can specify the group in the recipe code, which would be configurable
 Where tests are stored
+  inspec: `tests/integration/default`
+  serverspec: `spec` directory
 
 ### ATTRIBUTES AND HOW THEY WORK 
+
 Candidates should understand:
+
 What attributes are
 Attributes as a nested hash
 How attributes are defined
 How attributes are named
 How attributes are referenced
 Attribute precedence levels
+  **see above**
 What Ohai is
-Local Cookbook Development Page 5 v1.0.3
+  discovers data about the machine and adds it to the node object
 What the 'platform' attribute is
+  tells what platform chef is running on
 How to use the 'platform' attribute in recipes
+  `if node['platform'] == 'ubuntu' ...`
 
 ### FILES AND TEMPLATES - DIFFERENCE AND HOW THEY WORK, WHEN TO USE EACH
+
 Candidates should understand:
+
 How to instantiate files on nodes
+  using the resources listed below
 The difference between 'file', 'cookbook_file', 'remote_file', and 'template'
+  `file`: writes a file out directly or sets its attributes
+  `cookbook_file`: a file from the cookbook, contents exact
+  `remote_file`: a file from the internet or other remote location
+  `template`: a file from the cookbook, whose values are configurable by the recipe
 How two teams can manage the same file
+  if they can share the same cookbok, then by overriding attributes on the same cookbook. Otherwise use partial templates (see below)
 How to write templates
+```ruby
+template '/var/chef/file.txt'
+  source 'file.txt.erb'
+  variables({
+    message: 'Michael was here'
+  })
+end
+```
+and in the template:
+```
+message = <%= message %>
+```
 What 'partial templates' are
+  an ability to separate writing a single file. Uses the `render` method
 Common file-related resource actions and properties
 ERB syntax
+  it's just ruby in between `<% -%>` and when outputting data, it's `<%= %>`
 
 ### CUSTOM RESOURCES - HOW THEY ARE STRUCTURED AND WHERE THEY GO
 Candidates should understand:
