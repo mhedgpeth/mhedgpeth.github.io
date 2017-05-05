@@ -121,7 +121,7 @@ default['production'] = {
 Then in our recipe code we can reference the `policy_group` and easily get to our setting:
 
 ```ruby
-database = node[Chef::Config.policy_group]['myapp']['database']
+database = node[node.policy_group]['myapp']['database']
 ```
 
 Or you could take it one step closer and include the [poise-hoist](https://github.com/poise/poise-hoist) cookbook in your `run_list` and simply write:
