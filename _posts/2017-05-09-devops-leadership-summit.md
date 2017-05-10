@@ -17,8 +17,8 @@ Last year when we organized the first DevOps Days DFW, many attendees told us th
 
 We're pleased to have [Nicole Forsgren](http://nicolefv.com/) of DORA, [Adam Jacob](https://www.linkedin.com/in/adamjacob/) from Chef Software, and [John Willis](https://www.linkedin.com/in/johnwillisatlanta/) from Docker join us for the event. We will have a couple of talks, a workshop, and an interactive networking lunch where attendees can interact directly with our speakers.
 
-Attendance to the event is limited to 50 people and is by invitation only. The ideal attendee is a Director, VP, or C-level executive who is or is interested in facilitating a DevOps transformation in his or her company. To nominate yourself or someone else, let us know how this person fits that criteria via email: organizers-dallas-2017@devopsdays.org. 
+Attendance to the event is limited to 50 people and is by invitation only through nominations. The ideal attendee is a Director, VP, or C-level executive who is or is interested in facilitating a DevOps transformation in his or her company. To nominate yourself or someone else, let us know how this person fits that criteria via email: organizers-dallas-2017@devopsdays.org. 
 
-The cost of the event is covered by a ticket to DevOps Days DFW 2017, which can be purchased [here](https://www.eventbrite.com/e/devopsdays-dfw-2017-tickets-33482024637). We don't expect everyone attending the Leadership event to attend the entire DevOps Days. In fact, it would be great if they came to the keynotes in the morning and that's it.
+The cost of the event is covered by a ticket to DevOps Days DFW 2017, which can be purchased [here](https://www.eventbrite.com/e/devopsdays-dfw-2017-tickets-33482024637). We don't expect everyone attending the Leadership event to attend the entire DevOps Days. In fact, it would be just fine if they came to the keynotes in the morning and that's it.
 
 If you know anyone who would benefit from coming to our Leadership Summit, please let us know!
