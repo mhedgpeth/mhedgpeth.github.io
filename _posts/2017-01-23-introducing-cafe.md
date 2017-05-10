@@ -10,7 +10,7 @@ show_avatar: false
 read_time: 5
 feature_image: feature-introducing-cafe
 show_related_posts: true
-square_related: related-cafe
+square_related: related-introducing-cafe
 permalink: /introducing-cafe/
 ---
 I was fortuntate enough to be at Chef Summit in Seattle last November and learned two very valuable things there: First, I learned that the core power of Chef is in its community and ecosystem. Within this ecosystem we can depart from the user customer/vendor relationship where you're at the mercy of a product team and may or may not have enough sway to get your stuff done. Instead you can work with the community to contribute your own stuff. This inspired me to be a contributor instead of just a taker.
