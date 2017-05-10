@@ -1,8 +1,11 @@
-Cookbook coded
-Linted with cookstyle
+
+I would like to lay out the way that I've learned to implement Chef as a reference for my colleagues and others in the industry to apply some best practices to their Chef implementation. It turns out that there is a lot to learn when doing Chef the right way; I hope that you'll be able to read through this and learn a thing or two about how you might do Chef.
+
+(/) Cookbook coded
+(/) Linted with cookstyle
 Runs Kitchen with InSpec
-Pipeline to internal supermarket
-Good process for review:
+(/) Pipeline to internal supermarket
+(/) Good process for review:
   * Pull Requests Tested
   * master locked down
 Policyfile pipeline to nexus
