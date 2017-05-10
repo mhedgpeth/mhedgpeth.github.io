@@ -25,7 +25,7 @@ To me, the best way to do this is with `rake` (see [this example](https://github
 
 Along with the advantages, its disadvantage is that it can be difficult for non-ruby developers to understand, *however*, the simple execution overcomes any issues.
 
-We use the same `rakefile` for every cookbook, located in the base folder of the cookbook. Here are contents:
+We use the same `rakefile` for every cookbook, located in the base folder of the cookbook. Each cookbook in our model gets its own git repository. Here are contents:
 
 ```ruby
 task default: [:clean, :style, :test]

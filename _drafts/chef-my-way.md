@@ -8,7 +8,8 @@ Runs Kitchen with InSpec
 (/) Good process for review:
   * Pull Requests Tested
   * master locked down
-Policyfile pipeline to nexus
+(/) Policyfile pipeline to nexus
+
 InSpec Profile Pipeline to Automate
 Databag versions and pipeline (chef not bound to application version)
 Clean node object
@@ -16,11 +17,11 @@ Clean node object
   * Minimal reportable node
   * using ohai plugins where it makes sense
 Artifacts stored in Nexus
-Cafe Schedules Chef
-Orchestration
+(/) Cafe Schedules Chef
+(/) Orchestration
 Rollback Process Defined
 Private QA deployment (habitat)
-Jenkins deployment to environment
+(/) Jenkins deployment to environment
 Regular health/inspec scanning
 Cross-cutting concerns dealt with (zabbix, cloud passage, dynatrace)
 Using Automate
