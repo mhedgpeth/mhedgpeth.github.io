@@ -13,7 +13,7 @@ show_related_posts: true
 square_related: related-cookbook-development-with-rakefile
 permalink: /cookbook-development-with-rakefile/
 ---
-When we started Chef, we had a loose set of rules for everyone to follow and sent them on their way. We quickly realized, however, that we needed to standardize how a cookbook met quality standards before it got released. We would try to make a simple change to a cookbook and it didn't meet our coding standards. Or they forgot to introduce kitchen. Or they remembered but they didn't do anything when their kitchen broke three weeks ago. It was chaos.
+When we [started Chef](/my-advice-for-chef-in-large-corporations/), we had a loose set of rules for everyone to follow and sent them on their way. We quickly realized, however, that we needed to standardize how a cookbook met quality standards before it got released. We would try to make a simple change to a cookbook and it didn't meet our coding standards. Or they forgot to [introduce kitchen](/test-kitchen-required-not-optional/). Or they remembered but they didn't do anything when their kitchen broke three weeks ago. It was chaos.
 
 Essentially our cookbooks are like any other code product: they need a build process, automated testing, and a way to release them to the outside world. Without that, you'll have chaos and doom.
 
