@@ -13,9 +13,11 @@ show_related_posts: true
 square_related: related-cookbook-development-with-rakefile
 permalink: /cookbook-development-with-rakefile/
 ---
-When we started Chef, we had a loose set of rules for everyone to follow and sent them on their way. We quickly realized, however, that we needed to standardize how a cookbook met quality standards before it got released. Essentially our cookbooks are like any other code product: they need a build process, automated testing, and a way to release them to the outside world. Without that, you'll have chaos and doom.
+When we started Chef, we had a loose set of rules for everyone to follow and sent them on their way. We quickly realized, however, that we needed to standardize how a cookbook met quality standards before it got released. We would try to make a simple change to a cookbook and it didn't meet our coding standards. Or they forgot to introduce kitchen. Or they remembered but they didn't do anything when their kitchen broke three weeks ago. It was chaos.
 
-To me, the best way to do this is with `rake` (see [this example](https://github.com/mhedgpeth/cafe-cookbook/blob/master/Rakefile) on my `cafe` cookbook).
+Essentially our cookbooks are like any other code product: they need a build process, automated testing, and a way to release them to the outside world. Without that, you'll have chaos and doom.
+
+The best way I know of to do this is with `rake` (see [this example](https://github.com/mhedgpeth/cafe-cookbook/blob/master/Rakefile) on my `cafe` cookbook).
 
 `rake` has several advantages:
 
@@ -23,9 +25,9 @@ To me, the best way to do this is with `rake` (see [this example](https://github
 2. It easily integrates within a chef environment using the `chef exec` commands
 3. It integrates well into any existing pipeline or CI server
 
-Along with the advantages, its disadvantage is that it can be difficult for non-ruby developers to understand, *however*, the simple execution overcomes any issues.
+Its one disadvantage is that it can be difficult for non-ruby developers to understand, *however*, the benefits above far outweighs this advantage. We've found that with the simple `rakefile` below, most people don't even have to touch their rakefile and can just use it.
 
-We use the same `rakefile` for every cookbook, located in the base folder of the cookbook. Each cookbook in our model gets its own git repository. Here are contents:
+We use the same `rakefile` for every cookbook, located in the base folder of the cookbook in a dedicated git repository for that cookbook. Here's an example:
 
 ```ruby
 task default: [:clean, :style, :test]
@@ -46,6 +48,7 @@ task :clean do
   ).each { |f| FileUtils.rm_rf(Dir.glob(f)) }
 end
 desc 'Run foodcritic and cookstyle on this cookbook'
+
 task style: 'style:all'
 namespace :style do
   # Cookstyle
@@ -78,6 +81,7 @@ namespace :style do
   end
   task all: [:cookstyle, :foodcritic]
 end
+
 desc 'Run unit and functional tests'
 task test: 'test:all'
 namespace :test do
@@ -91,6 +95,7 @@ namespace :test do
   rescue
     puts ">>> Gem load error: #{e}, omitting tests:unit" unless ENV['CI']
   end
+
   begin
     require 'kitchen/rake_tasks'
     desc 'Run kitchen integration tests'
@@ -104,8 +109,10 @@ namespace :test do
       sh 'kitchen destroy'
     end
   end
+
   task all: ['test:unit', 'test:kitchen:all']
 end
+
 desc 'bumps the patch version and releases the cookbook to the supermarket'
 task release: 'release:all'
 namespace :release do
@@ -120,6 +127,7 @@ namespace :release do
   rescue
     puts ">>> Gem load error: #{e}, omitting release:bump*" unless ENV['CI']
   end
+
   begin
     require 'stove/rake_task'
     Stove::RakeTask.new
@@ -131,6 +139,8 @@ namespace :release do
   task all: ['release:tag', 'release:publish']
 end
 ```
+
+As I've said before, you don't really need to be able to understand every line of this `rakefile` in order to make good use of it. So let's get up to speed on that part:
 
 ## Setup
 
@@ -148,6 +158,8 @@ These gems are used for uploading to a supermarket and bumping a version, respec
 |----------|-------------------------------------------|-------------------------|
 | Lint     | Ensures that code meets standards         | chef exec rake -t style |
 | Test     | Ensures that code runs and is ready to go | chef exec rake -t test  |
+
+We run our `rake` within the chef ruby environment, so we prepend it with `chef exec` which says "run this with chef's built-in ruby". That makes everything much more consistent and easy, especially considering we're using cookstyle and kitchen gems here.
 
 To run your linting, just run `chef exec rake -t style`. This will run **both** [cookstyle](https://github.com/chef/cookstyle) and [foodcritic](http://www.foodcritic.io/) on your cookbooks. We've found both linting tools to be helpful. Cookstyle is an more sane wrapper around rubocop.
 
@@ -174,7 +186,7 @@ When you run this with a CI server, you'll need set the `CI` environment variabl
 
 ## Why not Delivery though?
 
-I have many friends in the Chef Community, including Matt Stratton [who suggest](https://www.mattstratton.com/post/getting-started-with-chef/) using Chef Delivery cookbooks to do this same thing. We didn't go in this direction for a few reasons:
+My friend Matt Stratton [suggests](https://www.mattstratton.com/post/getting-started-with-chef/) using Chef Delivery cookbooks to do this same thing. We didn't go in this direction for a few reasons:
 
 1. **Ignorance**: we don't know delivery very well and there isn't a community around it that can get a local build up and running quickly. Most of delivery seems to be centered around getting Chef Workflow to work, which is not something we had plans to do.
 2. **Training**: more people know rake than know delivery. So rake is the easier option

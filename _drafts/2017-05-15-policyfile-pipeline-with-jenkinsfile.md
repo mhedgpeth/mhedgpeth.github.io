@@ -15,9 +15,11 @@ permalink: /policyfile-pipeline-with-jenkinsfile/
 ---
 I'm a huge proponent of [policyfiles](/policyfiles/) for managing Chef changes in all of your environments. Let's talk a little about how we take a policyfile and create a pipeline in Jenkins around it to get it deployed to the right places.
 
-For policyfiles, we create a similar process to our cookbooks: 
+Many environments that aren't as security-conscious will have a single Chef Server to rule them all, connected to a single CI server. This is the model that Chef Workflow assumes, and it's a nice situation. In those situations, the pipeline I lay out will be much simpler, but I still recommend following the basic pieces. We'll go for a disconnected, releasable pipeline that can and will traverse the development to operations barrier that many security-minded organizations have.
 
-1. We keep a separate `policies` git repo for each product group of policies that we have. **We don't keep the policyfiles in the cookbook.** This is largely because we want to have our own pipeline for policies that is **unrelated** to the cookbook pipeline. This is a feature not a bug. More on that below.
+For our policyfiles pipeline, we create a similar process to our cookbooks: 
+
+1. We keep a separate `policies` git repo for each product group of policies that we have. **We don't keep the policyfiles in the cookbook.** This is largely because we want to have our own pipeline for policies that is **unrelated** to the cookbook pipeline. The cookbook pipeline will promote a cookbook to a _supermarket_, and the policy will pull the cookbook _from_ that supermarket. This creates two separate processes that have a beginning and end, but are disconnected, so allow for independence. This is a critical aspect to designing any pipeline, and one I'll blog about in the near future.
 2. We have a `rakefile` for doing tasks that can be done locally on a developer machine
 3. We then put that into a pipeline with a `Jenkinsfile`. 
 
@@ -180,3 +182,7 @@ Here is a description of all the stages:
 | Publish  | Publishes this all to artifactory                                 |
 
 You can see a pattern here with the pipelines. They rely on script that can run locally, then end up being deployed to something that is a source of the next step in the process. More on that in the next post: how we deploy these policies to a Chef Server.
+
+# Conclusion
+
+Hopefully you're starting to see the pattern I use when designing a pipeline element in my Chef Pipeline. Everything has a starting point and a destination. Every pipeline _segment_ will take a "stable" input and put it into an "even more stable" location at the end. It all flows together very quickly and then allows for quick changes that can flow to production.

@@ -13,21 +13,21 @@ show_related_posts: true
 square_related: related-cookbook-pipeline-with-jenkinsfile
 permalink: /cookbook-pipeline-with-jenkinsfile/
 ---
-Now that we have a [local cookbook build](cookbook-development-with-rakefile) ready to go, it's time to get that in a CI environment. I have been a fan of [TeamCity](https://www.jetbrains.com/teamcity) and my friends at Chef have a nice tool in [Chef Workflow in Automate](https://docs.chef.io/workflow.html). For us, however, [Jenkins](https://jenkins.io/) is our tool of choice with managing our pipelines, for a few reasons:
+Now that we have a [local cookbook build](cookbook-development-with-rakefile) ready to go, it's time to get that in a CI environment. I have been a fan of [TeamCity](https://www.jetbrains.com/teamcity) and my friends at Chef have a done a great job with [Chef Workflow in Automate](https://docs.chef.io/workflow.html). For us, however, [Jenkins](https://jenkins.io/) is our tool of choice with managing our deployment pipelines, for a few reasons:
 
 1. Jenkins is **free**. We are able to get done what we need inside of the free version, so it's nice that we don't have or need a license or support.
 2. Jenkins is **flexible**. We have complicated requirements around security, and Jenkins has been easy to bend to those requirements without requiring a lot of fuss.
 3. Jenkins is **friendly to a pipeline mindset**. Compared to TeamCity, Jenkins is much better at laying out a workflow and walking through the various stages of that workflow, defined in a single file.
+4. Jenkins is **recommended by expensive consultants**. In a large enterprise that's important. If you go with a tool that the high-powered consultants don't put on a "here's what people are doing" list, you end up fighting an uphill battle. Choose those battles wisely; you'll likely lose them unless you have a *very* compelling use case.
 
 So now that we've decided on Jenkins as our CI of choice, let's talk about how we would implement that.
 
 # Jenkinsfile Example
 
-First, in your cookbook repository in git you would have a `Jenkinsfile`. Ours looks like this:
+First, in your cookbook repository in git you would have a `Jenkinsfile`. Ours looks like this (just scroll down if you don't care; it's ok):
 
 ```groovy
 #!/usr/bin/env groovy
-import groovy.json.JsonSlurper;
 // COOKBOOK BUILD SETTINGS
 
 // name of this cookbook
@@ -192,8 +192,10 @@ The pull requests inside of bitbucket are set to not allow acceptance without a 
 
 You'll also notice that the `Jenkinsfile` has a lot of `try/catch` logic in it. This is so the `Jenkinsfile` can notify the pull request verifier that a build failed, and that message will show up inside of the pull request. So you get some complexity here, but great benefit with having nice integration with your pull request workflow.
 
-Once pull requests are solid, it's now time to lock down your master branch. Don't let a lot of people commit directly to it; instead have them submit pull requests. This follows the normal open source model that products like Chef use, and you'll find that it works.
+Once pull requests are solid, it's now time to lock down your master branch. Don't let a lot of people commit directly to it; instead have them submit pull requests. This follows the normal open source model that products like Chef use, and you'll find that it works very well.
 
 # Conclusion
 
 With a solid cookbook build in place and a CI process, things start to get regularly tested and quality goes up. I had to be persuaded by my colleagues to go the pull request verifier route, but now that I have, I see what they were trying to tell me: pull requests get tested, master is solid, and your speed of delivery goes up. Maybe one day the Jenkins blue ocean project will catch up to Bitbucket integration, but until then, this works pretty nice for us.
+
+I'd like to also thank and credit my colleagues John Kerry and Richard Godbee for leading me in this direction. They spent a ton of time helping me understand how to make a good workflow in Jenkins, and the outline above would not be possible if it weren't for their help.
