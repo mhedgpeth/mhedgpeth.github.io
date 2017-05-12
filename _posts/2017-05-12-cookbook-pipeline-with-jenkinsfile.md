@@ -13,7 +13,7 @@ show_related_posts: true
 square_related: related-cookbook-pipeline-with-jenkinsfile
 permalink: /cookbook-pipeline-with-jenkinsfile/
 ---
-Now that we have a [local cookbook build](cookbook-development-with-rakefile) ready to go, it's time to get that in a CI environment. I have been a fan of [TeamCity](https://www.jetbrains.com/teamcity) and my friends at Chef have a done a great job with [Chef Workflow in Automate](https://docs.chef.io/workflow.html). For us, however, [Jenkins](https://jenkins.io/) is our tool of choice with managing our deployment pipelines, for a few reasons:
+Now that we have a [local cookbook build](/cookbook-development-with-rakefile/) ready to go, it's time to get that in a CI environment. I have been a fan of [TeamCity](https://www.jetbrains.com/teamcity) and my friends at Chef have a done a great job with [Chef Workflow in Automate](https://docs.chef.io/workflow.html). For us, however, [Jenkins](https://jenkins.io/) is our tool of choice with managing our deployment pipelines, for a few reasons:
 
 1. Jenkins is **free**. We are able to get done what we need inside of the free version, so it's nice that we don't have or need a license or support.
 2. Jenkins is **flexible**. We have complicated requirements around security, and Jenkins has been easy to bend to those requirements without requiring a lot of fuss.
