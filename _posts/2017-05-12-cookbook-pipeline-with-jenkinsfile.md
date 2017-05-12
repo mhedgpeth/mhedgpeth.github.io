@@ -198,4 +198,4 @@ Once pull requests are solid, it's now time to lock down your master branch. Don
 
 With a solid cookbook build in place and a CI process, things start to get regularly tested and quality goes up. I had to be persuaded by my colleagues to go the pull request verifier route, but now that I have, I see what they were trying to tell me: pull requests get tested, master is solid, and your speed of delivery goes up. Maybe one day the Jenkins blue ocean project will catch up to Bitbucket integration, but until then, this works pretty nice for us.
 
-I'd like to also thank and credit my colleagues John Kerry and Richard Godbee for leading me in this direction. They spent a ton of time helping me understand how to make a good workflow in Jenkins, and the outline above would not be possible if it weren't for their help.
+I'd like to also thank and credit my colleagues [John Kerry](http://kerryhouse.net/) and Richard Godbee for leading me in this direction. They spent a ton of time helping me understand how to make a good workflow in Jenkins, and the outline above would not be possible if it weren't for their help.
