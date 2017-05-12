@@ -185,7 +185,7 @@ This provides a very simple way for cookbooks to go from a checkin to the superm
 
 In Jenkins we create two builds:
 
-1. A [pipeline](https://jenkins.io/doc/book/pipeline/) build that builds off of `master`. Notice that we **don't** use the multi-branch pipeline build at the moment, because we were having quality issues with that and wanted to test our pull requests.
+1. A [pipeline](https://jenkins.io/doc/book/pipeline/) build that builds off of `master`. Notice that we **don't** use the multi-branch pipeline build at the moment, because we were having quality issues with that feature in Jenkins and wanted to test our pull requests.
 2. A [pull request](https://wiki.jenkins-ci.org/display/JENKINS/Stash+pullrequest+builder+plugin) builder that tests pull requests in our local [bitbucket](https://www.atlassian.com/software/bitbucket) server.
 
 The pull requests inside of bitbucket are set to not allow acceptance without a passing build, so this keeps our `master` branch clean and ready to go. Just in case, the `master` build will build everything before sending the cookbook off to the supermarket.
