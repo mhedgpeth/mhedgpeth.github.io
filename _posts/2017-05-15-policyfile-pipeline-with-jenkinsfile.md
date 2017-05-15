@@ -15,7 +15,7 @@ permalink: /policyfile-pipeline-with-jenkinsfile/
 ---
 I'm a huge proponent of [policyfiles](/policyfiles/) for managing Chef changes in all of your environments. Let's talk a little about how we take a policyfile and create a pipeline in Jenkins around it to get it deployed to the right places.
 
-Many environments that aren't as security-conscious will have a single Chef Server to rule them all, connected to a single CI server. This is the model that Chef Workflow assumes, and it's a nice situation. In those situations, the pipeline I lay out will be much simpler, but I still recommend following the basic pieces. We'll go for a disconnected, releasable pipeline that can and will traverse the development to operations barrier that many security-minded organizations have.
+Many environments that aren't as security-conscious will have a single Chef Server to rule them all, connected to a single CI server. This is the model that [Chef Workflow](https://docs.chef.io/workflow.html) assumes, and it's a nice situation to be in. In those situations, the pipeline I lay out will be much simpler, but I still recommend following the basic pieces. Since it's more complicated and therefore covers all the bases, we'll go for a disconnected, releasable pipeline that can and will traverse the development to operations barrier that many security-minded organizations have.
 
 For our policyfiles pipeline, we create a similar process to our cookbooks: 
 
@@ -97,7 +97,7 @@ Let's unpack this a little bit. Here's what's going on:
 
 1. **compile_poilcies** will run `chef install` against all files that have the pattern `myproduct-*.rb`. So it basicaly generates the `Policyfile.lock.json` for all the policies in the repo.
 2. **export_policies** will export all policies to a `tgz` file with `chef export` command.
-3. **stage** will stage all the things that are to be packaged into a `staging` folder
+3. **stage** will stage all the things that are to be packaged into a `staging` folder including the deployment scripts written in psake (more on that in the next post).
 4. **package** will package the `tgz` file and the deployment scripts into a package
 
 # Policyfile Jenkinsfile
@@ -181,7 +181,7 @@ Here is a description of all the stages:
 | Package  | Creates tgz files and zips them up with deployment scripts        |
 | Publish  | Publishes this all to artifactory                                 |
 
-You can see a pattern here with the pipelines. They rely on script that can run locally, then end up being deployed to something that is a source of the next step in the process. More on that in the next post: how we deploy these policies to a Chef Server.
+You can see a pattern here with the pipelines from the earlier post on [cookbook build](/cookbook-development-with-rakefile/) and [cookbook pipelines](/cookbook-pipeline-with-jenkinsfile/). They rely on script that can run locally, then end up being deployed to something that is a source of the next step in the process. More on that in the next post: how we deploy these policies to a Chef Server and reconverge the nodes.
 
 # Conclusion
 
