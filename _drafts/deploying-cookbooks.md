@@ -719,29 +719,83 @@ They are spelled out and must be in all caps
 
 **Wildcards, range and fuzzy matching**
 
+[wildcard:](https://docs.chef.io/knife_search.html#wildcard-matching)
 
+`?` one character
+`*` many characters
+
+[range]:
+
+`port:[500 TO 800]`
 
 
 ### SEARCH USING KNIFE AND IN A RECIPE
 Candidates should understand:
-Knife command line search syntax
-Recipe search syntax
+
+**Knife command line search syntax**
+
+Use [knife search](https://docs.chef.io/knife_search.html):
+
+```knife search type query``
+
+like:
+
+```knife search node 'policy_group:production'`
+
+**Recipe search syntax**
+
+Like [this](https://docs.chef.io/chef_search.html#nodes):
+
+```ruby
+# Print every node matching the search pattern
+search(:node, "*:*").each do |matching_node|
+  puts matching_node.to_s
+end
+```
+
 ### FILTERING RESULTS 
 Candidates should understand:
-How do you filter on Chef Server
-Selecting attributes to be returned
+
+**How do you filter on Chef Server**
+
+By using `knife search` or `search` method inside of a cookbooks
+
+**Selecting attributes to be returned**
+
+[pass in](https://docs.chef.io/knife_search.html#options) `-a` with the attribute name
 
 ## CHEF SOLO 
 
 ### WHAT CHEF SOLO IS
 Candidates should understand:
-Advantages & disadvantages of Chef-solo vs Chef Server
-Chef-solo executable and options
-Cookbooks, nodes and attributes
-Using Data Bags, Roles & Environments
-Chef-solo run intervals
-Retreiving cookbooks from remote locations
-Chef-solo and node object
+
+**Advantages & disadvantages of Chef-solo vs Chef Server**
+
+Chef solo makes it easy to get going, Chef Server is how you scale
+
+**Chef-solo executable and options**
+
+Use `chef-client -x`
+
+**Cookbooks, nodes and attributes**
+
+You need to create a `chef_repo` and run it from there, having a `cookbooks` directory (with all dependencies) and [node objects](https://docs.chef.io/chef_solo.html#nodes) (if needed) stored as json file
+
+**Using Data Bags, Roles & Environments**
+
+[data bags](https://docs.chef.io/chef_solo.html#data-bags) are stored locally as well
+
+**Chef-solo run intervals**
+
+To run it every `X` seconds, pass in `-i X`
+
+**Retreiving cookbooks from remote locations**
+
+To get a recipe from a remote location pass in a recipe URL: `-r url`
+
+**Chef-solo and node object**
+
+The node object is stored as json locally
 
 ## DATA BAGS 
 
