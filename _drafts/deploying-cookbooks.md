@@ -636,35 +636,91 @@ Pass in the `--fips` flag and make sure the kernal has it turned on
 
 **What are Custom Templates**
 
-
+[Used](https://docs.chef.io/knife_bootstrap.html#custom-templates) to specify which place to download during the bootstrap.
 
 ### UNATTENDED INSTALLS 
+
 Candidates should understand:
-Configuring Unattended Installs
-What conditions must exists for unattended install to take place?
+
+**Configuring Unattended Installs**
+
+[Unattended installs](https://docs.chef.io/install_bootstrap.html#unattended-installs) are configured:
+
+1. Attributes through passing in a json file to the `chef-client`: i.e. `chef-client -J attributes.json`. This should include a `run_list` or `policy_file`/`policy_name`.
+2. Environment is set through `--environment` flag to the `chef-client`
+
+**What conditions must exists for unattended install to take place?**
+
+1. Must be able to log into a chef server with a `validator.pem`
+2. Must be able to configure a run list
+3. Unique node name
 
 ### FIRST CHEF-CLIENT RUN
 Candidates should understand:
-How does authentication work during the first chef-client run?
-What is `ORGANIZATION-validator.pem` file and when is it used?
-What is the `first-boot.json` file?
+
+**How does authentication work during the first chef-client run?**
+
+1. Validatorless - uses the `user.pem` that is located in the `.chef` directory
+2. Validator (classic) - uses the `ORGANIZATION-validator.pem` to log into it
+
+Validatorless is more secure because you have to keep track of one less file
+
+**What is `ORGANIZATION-validator.pem` file and when is it used?**
+
+See above and [help topic](https://docs.chef.io/install_bootstrap.html#validatorless-bootstrap).
+
+**What is the `first-boot.json` file?**
+
+A way to seed all of the attributes for that node.
 
 ## POLICY FILES 
 
 ### BASIC KNOWLEDGE AND USAGE
 Candidates should understand:
-What are policy files, and what problems do they solve?
-Policy file use cases?
-What can/not be configured in a policy file?
-Policy files and Chef Workflow
+
+**What are policy files, and what problems do they solve?**
+
+A way to define a node's run list and dependencies in one place. Simplifies everything. It's the best.
+
+**Policy file use cases?**
+
+1. `chef install` will compile the policyfile
+2. `chef push` will update the chef server
+
+
+**What can/not be configured in a policy file?**
+
+Can: run list, dependencies, data bags
+Can not: roles, environments
+
+**Policy files and Chef Workflow**
+
+They aren't supported by Chef Workflow. :(
 
 ## SEARCH 
 
 ### BASIC SEARCH USAGE 
 Candidates should understand:
-What information is indexed and available for search?
-Search operators and query syntax
-Wildcards, range and fuzzy matching
+
+**What information is indexed and available for search?**
+
+[Search can be indexed by](https://docs.chef.io/knife_search.html#):
+`client`, `node`, `role`, `environment`
+
+**Search operators and query syntax**
+
+Query is `attribute:value_pattern`
+[Operators](https://docs.chef.io/knife_search.html#about-operators):
+`AND`
+`OR`
+`NOT`
+
+They are spelled out and must be in all caps
+
+**Wildcards, range and fuzzy matching**
+
+
+
 
 ### SEARCH USING KNIFE AND IN A RECIPE
 Candidates should understand:
@@ -691,18 +747,55 @@ Chef-solo and node object
 
 ### WHAT IS A DATA_BAG
 Candidates should understand:
-When might you use a data_bag?
-Indexing data_bags
-What is a data_bag?
-Data_bag and Chef-solo
+
+**When might you use a data_bag?**
+
+When you need to share data among multiple cookbooks
+
+**Indexing data_bags**
+
+It's indexed as a json object, so it can have any hierarchy it needs.
+
+**What is a data_bag?**
+
+A key/value nested hash of shared data
+
+**Data_bag and Chef-solo**
+
+With chef solo you need to bring the data bags with you and put them in the `data_bags` folder of your local `chef_repo`
+
 
 ### DATA_BAG ENCRYPTION
 Candidates should understand:
-Deploying Cookbooks Page 7 v1.0
-How do you encrypt a data_bag
-What is Chef Vault
+
+**How do you encrypt a data_bag**
+
+Pass in a `--secret-file` when creating the data bag and this file can be used to encrypt/decrypt the data bag
+
+**What is Chef Vault**
+
+A way to encrypt data bags per user key
+
 
 ### USING DATA_BAGS
 Candidates should understand:
-How do you create a data_bag?
-How can you edit a data_bag
+
+**How do you create a data_bag?**\
+
+The best way to do it is from a file:
+
+```
+knife data bag from file data_bag.json
+```
+
+But you could also create it and then edit the contents with an editor.
+
+```
+knife data bag create cfc
+```
+
+You need to create the data bag before you create the item.
+
+**How can you edit a data_bag**
+
+Set your `EDITOR` environment variable and then run [`knife data bage edit name item`](https://docs.chef.io/knife_data_bag.html#edit)
