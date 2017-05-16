@@ -72,7 +72,7 @@ I really love how readable and self-documenting this is. So much so, that I don'
 3. Converge All Nodes
 4. Resume Chef
 
-The control and safety here should make every Chef user giddy with excitement. This change event is so scary, that you need safety around it. Cafe brings you that safety, and if you agree I would love your help making cafe everything it should be within the Chef ecosystem.
+The control and safety here should make every Chef user giddy with excitement. This change event is so scary, that you need safety around it. Coupled with Policyfiles, cafe brings you that safety, and if you agree I would love your help making cafe everything it should be within the Chef ecosystem.
 
 # Pipeline for Deployment
 
