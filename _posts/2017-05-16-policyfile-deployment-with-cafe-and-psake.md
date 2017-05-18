@@ -9,7 +9,7 @@ author_name: Michael
 author_url: /author/michael
 author_avatar: michael
 show_avatar: false
-read_time: 5
+read_time: 8
 feature_image: feature-policyfile-deployment-with-cafe-and-psake
 show_related_posts: true
 square_related: related-policyfile-deployment-with-cafe-and-psake
