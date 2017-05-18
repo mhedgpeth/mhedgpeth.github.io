@@ -100,6 +100,17 @@ end
 
 Having an https url is great because I can use a lot of third party chef cookbooks that just need a URL.
 
+We have even taken it a step further and developed our own custom resource:
+
+```ruby
+artifactory_file 'C:\cafe\staging\chef-client-13.0.118-1-x64.msi' do
+  repsoitory_path 'chef-repo/chef-client-13.0.118-1-x64.msi'
+  checksum 'c594965648e20a2339d6f33d236b4e3e22b2be6916cceb1b0f338c74378c03da'
+end
+```
+
+This will automatically determine the artifactory path we use to all of our cookbooks that just want to download a file can be easier to code.
+
 # Checksum Validation
 
 You should be checking checksums on all downloads. Fortunately the `remote_file` resource gives you a built-in way to do this. Simply add the `checksum` attribute to your resource and you have checking. That way if your files are tampered with or not what you expected, you don't go ahead; you stop right there. That's the "limit the damage when things go wrong" principle at work again. This is something I learned well from my security friends.
