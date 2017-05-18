@@ -29,6 +29,10 @@ With policyfiles, rollback of your Chef code is quite easy; you simply upload th
 
 And, now that I've shown you how you can do a controlled, atomic deployment with a [policyfile deployment](/policyfile-deployment-with-cafe-and-psake/), things get even easier! You **just** went to Jenkins and uploaded policy `1.0.32` for your nodes related to product X. Things went south. Now go back to that same place and enter in `1.0.31` and roll out that new policy to all your nodes, safely and immediately with [cafe](/introducing-cafe/).
 
+# Sometimes a Data Bag will Suffice
+
+If you're just dealing with whether you're going to deploy version `A` or `B` of your application, with Chef you can just store which version you're on in a Data Bag. If your Chef code doesn't need to change, a "rollback" is simply an update of your Data Bag and then a convergence with cafe. I've found it a best practice to decouple my Chef code, wrapped in policies, with what version my application is on, stored in Data Bags.
+
 # Code a Rollback in Critical Situations
 
 It would be silly of me to suggest merely rolling back chef code and product code are enough to satisfy a true rollback. In some situations that isn't sufficient. Let's say we have a situation like this:
