@@ -14,7 +14,7 @@ show_related_posts: true
 square_related: related-devops-project
 permalink: /devops-project/
 ---
-I was at lunch with my friend [Megan Bohl](https://twitter.com/MeganBohl) who is a fellow DevOps Days Organizer, and is taking a DevOps course with [Tech Talent South](https://www.techtalentsouth.com/). Megan is finishing her course in a few weeks and is ready to go find a DevOps job. However, like many people learning about this stuff for the first time, Megan wants to bring everything together into a nice project.
+I was at lunch with my friend [Megan Bohl](https://twitter.com/MeganBohl) who is a fellow [DevOps Days Organizer](https://www.devopsdays.org/events/2018-dallas/), and is taking a DevOps course with [Tech Talent South](https://www.techtalentsouth.com/). Megan is finishing her course in a few weeks and is ready to go find a DevOps job. However, like many people learning about this stuff for the first time, Megan wants to bring everything together into a nice project.
 
 Before lunch, I spoke with Megan and her class about how it's necessary to know the context and problems that different technologies address in order to properly understand and properly be prepared for a DevOps Engineering position. So with that in mind, I'll propose a project that Megan and anyone can do to get a basic feel for what DevOps is all about. Hopefully this can be used by a lot of people to get their feet wet with DevOps automation tools.
 
