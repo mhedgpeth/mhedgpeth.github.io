@@ -139,7 +139,7 @@ The environment within which your application runs is one of the most complicate
 
 # Phase 7: Workflow Automation with Jenkins
 
-Now that we have an automated process that will deploy our stuff, we want to make our workflow easy to execute with Jenkins. Before you move on I highly recommend Wes Higbee's [Terraform class on Pluralsight](https://www.pluralsight.com/courses/jenkins-2-getting-started). It's well worth the trouble. That will give you the context you need to go through these steps:
+Now that we have an automated process that will deploy our stuff, we want to make our workflow easy to execute with Jenkins. Before you move on I highly recommend Wes Higbee's [Jenkins class on Pluralsight](https://www.pluralsight.com/courses/jenkins-2-getting-started). It's well worth the trouble. That will give you the context you need to go through these steps:
 
 1. Create a rakefile for your `my_website` cookbook using [my blog post])(http://hedge-ops.com/cookbook-development-with-rakefile/) as a guide.
 2. Create a `Jenkinsfile` for your cookbook using [my blog post](http://hedge-ops.com/cookbook-pipeline-with-jenkinsfile/) as a guide
