@@ -1,0 +1,146 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on Michael Hedgpeth</title><link>https://hedge-ops.com/tags/security/</link><description>Recent content in Security on Michael Hedgpeth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>MIT</copyright><lastBuildDate>Wed, 06 Apr 2016 00:00:32 +0000</lastBuildDate><atom:link href="https://hedge-ops.com/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>chef-vault Tutorial</title><link>https://hedge-ops.com/chef-vault-tutorial/</link><pubDate>Wed, 06 Apr 2016 00:00:32 +0000</pubDate><guid>https://hedge-ops.com/chef-vault-tutorial/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-chef-vault-tutorial.jpg" alt="Vault Tutorial" />
+&lt;/div>
+&lt;p>This week I researched &lt;a href="https://github.com/chef/chef-vault">chef-vault&lt;/a> and struggled quite a bit &lt;a href="https://docs.chef.io/chef_vault.html">with the documentation&lt;/a>, so I thought I would write a bit of a tutorial on the technology for those who are interested in quickly understanding how it might work for their organizations.&lt;/p>
+&lt;h2 id="why-chef-vault">Why chef-vault?&lt;/h2>
+&lt;p>&lt;a href="https://docs.chef.io/data_bags.html#encrypt-a-data-bag-item">Encrypted data bags&lt;/a> force you to copy the shared secret that is used for decryption to your infrastructure. It&amp;rsquo;s very easy to take that secret file and nefariously decrypt the data from somewhere else without anyone knowing about it. Chef-vault makes this much more difficult by giving both nodes and chef server users expressed permission to decrypt certain data. With chef-vault you don&amp;rsquo;t have to share a secret file with all of your nodes. This is a step up that simplifies everything.&lt;/p>
+&lt;p>The solution isn&amp;rsquo;t without its drawbacks. The main one is if you add nodes, you have to rerun something on the server to get that node to be able to decrypt the data bag. With &lt;a href="https://www.hashicorp.com/blog/vault.html">Hashicorp&amp;rsquo;s vault&lt;/a> you get better control over that, and better lease management, and credentials creation. To me, encrypted data bags are an unreliable used car, chef-vault is a nice mid-size sedan, and Hashicorp&amp;rsquo;s vault is like a luxury car.&lt;/p>
+&lt;p>So now that we know where the tool sits within our choices, let&amp;rsquo;s look at the basics:&lt;/p>
+&lt;h2 id="setup">Setup&lt;/h2>
+&lt;p>To get started with chef-vault, have the latest &lt;a href="https://downloads.chef.io/chef-dk/">ChefDK&lt;/a> installed (0.12 or greater) and install the &lt;a href="https://rubygems.org/gems/chef-vault/versions/2.8.0">chef-vault gem&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chef gem install chef-vault
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>And then ensure you have a .chef directory that connects to a chef server.&lt;/p>
+&lt;h2 id="creation">Creation&lt;/h2>
+&lt;p>Creating a vault is easy:&lt;/p>
+&lt;pre>&lt;code>knife vault create passwords root -S &amp;quot;policy_name:webserver&amp;quot; -A &amp;quot;michael&amp;quot; -J root.json -M client
+&lt;/code>&lt;/pre>&lt;p>For whatever reason the &lt;code>knife vault&lt;/code>  command doesn&amp;rsquo;t default to talk to a chef server. So to create a knife vault, you have to specify &lt;code>-M client&lt;/code>  at the end. Or you can make your life easier going forward by adding this line to your knife.rb:&lt;/p>
+&lt;pre>&lt;code>knife[:vault_mode] = 'client'
+&lt;/code>&lt;/pre>&lt;p>For the command, I used this root.json:&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;username&amp;quot;: &amp;quot;mhedgpeth&amp;quot;,
+&amp;quot;password&amp;quot;: &amp;quot;myPassword&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Let&amp;rsquo;s review the options:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Team&lt;/th>
+&lt;th>Natural Alignment&lt;/th>
+&lt;th>Natural Misalignment&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Development&lt;/td>
+&lt;td>Faster Delivery of features&lt;/td>
+&lt;td>Have to be engaged in operations, more &amp;ldquo;work&amp;rdquo; to do&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Operations&lt;/td>
+&lt;td>Less fires, more consistency&lt;/td>
+&lt;td>Have to learn a new skillset and be a beginner&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security&lt;/td>
+&lt;td>More consistency, compliance&lt;/td>
+&lt;td>Automation can cause unknown vulnerabilities&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Business&lt;/td>
+&lt;td>Faster ROI for development, lower cost for operations, and a scale model that works&lt;/td>
+&lt;td>Takes ongoing investment in culture and tools&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>This uploads two data bag items to a data bag called &amp;ldquo;passwords&amp;rdquo;:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>root&lt;/code> which has the data above&lt;/li>
+&lt;li>&lt;strong>&lt;code>root_keys&lt;/code>&lt;/strong> which stores the metadata about which clients can read and edit this data bag (as you specified above in the search criteria and administrators list.&lt;/li>
+&lt;/ol>
+&lt;h3 id="making-it-even-more-secure">Making it Even More Secure&lt;/h3>
+&lt;p>&lt;a href="https://coderanger.net/">Noah Kantrowitz&lt;/a> helped me understand the vulnerabilities of the above approach using the &lt;code>-S&lt;/code>  flag. With that flag, you give the nodes the ability to define the criteria by which they are allowed to decrypt the vault. So if you say I want nodes that have &lt;code>policy_name:webserver&lt;/code>  to decrypt this data, all it takes is someone saying they are &lt;code>'policy_name:webserver'&lt;/code>  and they will be granted the keys.&lt;/p>
+&lt;p>A better way to handle this is through specifying each node explicitly through the -A flag. So your command would be:&lt;/p>
+&lt;pre>&lt;code>knife vault create passwords root -A &amp;quot;michael,webserver1,webserver2&amp;quot; -J root.json -M client
+&lt;/code>&lt;/pre>&lt;h2 id="viewing-a-vault">Viewing a Vault&lt;/h2>
+&lt;p>Now that we have created a vault, let&amp;rsquo;s view it:&lt;/p>
+&lt;pre>&lt;code>knife vault show passwords root -M client
+&lt;/code>&lt;/pre>&lt;p>which will output:&lt;/p>
+&lt;pre>&lt;code>id: root
+password: myPassword
+username: mhedgpeth
+&lt;/code>&lt;/pre>&lt;p>It lets me view it in cleartext because I am one of the administrators on the vault itself. If I want, I can even view it in JSON if you want to move the file to another chef server:&lt;/p>
+&lt;pre>&lt;code>knife vault show passwords root -M client -Fjson
+&lt;/code>&lt;/pre>&lt;h2 id="viewing-encrypted-version">Viewing Encrypted Version&lt;/h2>
+&lt;p>To view the encrypted version of the vault, you can simply use the normal commands for viewing data bag, just realizing that the vault data bag also has a _keys one too:&lt;/p>
+&lt;pre>&lt;code>knife data bag show passwords root
+&lt;/code>&lt;/pre>&lt;p>and&lt;/p>
+&lt;pre>&lt;code>knife data bag show password root_keys
+&lt;/code>&lt;/pre>&lt;p>Will show you lots of encrypted goodness which I will not show. The keys is helpful to see what clients are connected to it.&lt;/p>
+&lt;h2 id="adding-nodes">Adding nodes&lt;/h2>
+&lt;p>Probably the weakest part of chef-vault is what to do when you add nodes. If you have an elastic situation this can be dicey, because when you add nodes, you have to run this command to generate keys for those nodes to read the encrypted data:&lt;/p>
+&lt;pre>&lt;code>knife vault refresh passwords root --clean-unknown-clients
+&lt;/code>&lt;/pre>&lt;p>This updates the &lt;code>root_keys&lt;/code>  encrypted data bag with information on the nodes that now match the search criteria. So it&amp;rsquo;s  important to know that the nodes that can read a vault is a snapshot in time based on the search criteria, not a dynamic list.&lt;/p>
+&lt;p>If you aren&amp;rsquo;t using a search criteria, you&amp;rsquo;ll need to add nodes to the administrators list itself:&lt;/p>
+&lt;pre>&lt;code>knife vault update passwords root -A 'newnode,newnode2'
+&lt;/code>&lt;/pre>&lt;h2 id="rotating-keys">Rotating keys&lt;/h2>
+&lt;p>You might want to rotate the key that encrypts the data in the data bag. The way this works is the clients use their own key as a private key to combine with the public key on the chef server to decrypt the data bag&amp;rsquo;s key. That key encrypts the real data bag. This command will change that key:&lt;/p>
+&lt;pre>&lt;code>knife vault rotate all keys
+&lt;/code>&lt;/pre>&lt;h2 id="cookbook-development">Cookbook Development&lt;/h2>
+&lt;p>What use is a data bag without using it in a cookbook? To be able to deal with this data bag in the cookbook, include the &lt;code>chef-vault::default&lt;/code>  recipe in your runlist. Then you will have the &lt;code>chef_vault_item&lt;/code>  method that you can call like this:&lt;/p>
+&lt;pre>&lt;code>item = chef_vault_item(&amp;quot;passwords&amp;quot;, &amp;quot;root&amp;quot;)
+password = item['password']
+&lt;/code>&lt;/pre>&lt;p>Using &lt;code>chef_vault_item&lt;/code>  will make your cookbook more testable by test kitchen (see below).&lt;/p>
+&lt;h2 id="version-control">Version Control&lt;/h2>
+&lt;p>With data bags, we like to have a data_bags repository that we use to promote shared data and version control changes. This kind of thing doesn&amp;rsquo;t work with chef-vault. Instead you get a small team that can update the vault and then have them manually do it. This isn&amp;rsquo;t ideal, but secrets are hard and, as I wrote above, using a dedicated secrets management tool like Hashicorp Vault will keep you from that level of work.&lt;/p>
+&lt;h2 id="kitchen-support">Kitchen Support&lt;/h2>
+&lt;p>To make this work in kitchen, just put a cleartext data bag in the data_bags folder that your kitchen run refers to (probably in &lt;code>test/integration/data_bags&lt;/code>). Then the vault commands fall back into using that dummy data when you use &lt;code>chef_vault_item&lt;/code>  to retrieve it.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>The chef-vault functionality is compelling enough for serious consideration. Hopefully this walkthrough will help you decide if it is right for you.&lt;/p></description></item><item><title>The Power of Culture in Cross-Discipline Change Initiatives</title><link>https://hedge-ops.com/the-power-of-culture-in-cross-discipline-change-initiatives/</link><pubDate>Fri, 12 Feb 2016 08:00:17 +0000</pubDate><guid>https://hedge-ops.com/the-power-of-culture-in-cross-discipline-change-initiatives/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-power-of-culture-in-cross-discipline-change-initiatives.jpg" alt="Power of Culture" />
+&lt;/div>
+&lt;p>When I started my career, I was rewarded for &lt;a href="https://hedge-ops.com/christmas-with-russians/">being creative&lt;/a>, stretching the boundaries, getting changes through the system to &lt;a href="https://hedge-ops.com/funding/">bring more revenue to my company&lt;/a>. I was a developer.&lt;/p>
+&lt;p>When my SecOps colleague started his career, he was rewarded for keeping people like me from destroying the business with poorly planned implementations that make us vulnerable to attacks.&lt;/p>
+&lt;p>When my Operations colleague started her career, she was rewarded for taking the crazy ideas that the developer wanted to implement and translating them into something that &lt;em>will actually work&lt;/em>, subject to the rules that the SecOps person dictates.&lt;/p>
+&lt;p>In the natural state, we have all created value in our careers by trying to work around the flaws of the other groups.&lt;/p>
+&lt;p>To the developer, SecOps and Operations needlessly slow everything down.&lt;/p>
+&lt;p>To SecOps, developers are dangerous and operations are unreliable.&lt;/p>
+&lt;p>To Operations, SecOps are paranoid and developers don&amp;rsquo;t have a clue.&lt;/p>
+&lt;p>&lt;strong>I vastly underrated the power of these cultural scripts when first initiating our change initiatives around DevOps and automation.&lt;/strong> In fact, I mindlessly continued to follow my script. I went to SecOps with the attitude of &amp;ldquo;here&amp;rsquo;s this awesome change I want to do that will change our business, please approve of it.&amp;rdquo; They followed their cultural script with the response of &amp;ldquo;oh look here is a developer who just walked in with a weapon that can wipe out our entire business.&amp;rdquo; There is no partnership there; there is only conflict. And unfortunately, conflict is what I began with. &lt;a href="https://hedge-ops.com/my-advice-for-chef-in-large-corporations/">I&amp;rsquo;m still working to undo the damage&lt;/a> I did in those early days.&lt;/p>
+&lt;p>Instead of the attitude I learned as a developer, I should have taken an attitude of a business person: &amp;ldquo;What are the problems that are or have the potential to drag down revenue and increase costs, and how can I help fix them?&amp;rdquo; It turns out that SecOps and Operations both have extremely valuable roles and they aren&amp;rsquo;t getting in the way of my awesome developer changes. They have problems just like the rest of us, and if I take the time to understand them, perhaps we can partner and solve them together.&lt;/p>
+&lt;p>Instead of coming to SecOps to try to get approval for the tool, why don&amp;rsquo;t I start with their compliance challenges and how we solve those? If I can use a tool to get their system more compliant, then that&amp;rsquo;s a &lt;em>better&lt;/em> baseline from which we can do some other great things, like configuration management.&lt;/p>
+&lt;p>Instead of coming to Operations to merely implement the tool, why don&amp;rsquo;t I start with the problems they are having and iteratively help them solve those problems? Instead of just relying on the development teams, maybe I should start going to the Change Advisory Board meetings and then show up when the deployment happens. Then after that I can follow up and say, &amp;ldquo;For a couple of days of work, we can automate that. How does that sound?&amp;rdquo; All of the sudden I go from being a &lt;em>developer who doesn&amp;rsquo;t get it&lt;/em> to &lt;em>partner who will make my life easier&lt;/em>.&lt;/p>
+&lt;p>When the cultural roles shift away from conflict and towards cooperation, magical things will happen. I&amp;rsquo;m working like crazy to make that happen right now.&lt;/p></description></item><item><title>Three Essential Components to Compliance at Velocity in the Enteprise</title><link>https://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/</link><pubDate>Fri, 06 Nov 2015 08:00:26 +0000</pubDate><guid>https://hedge-ops.com/three-essential-components-to-compliance-at-velocity-in-the-enteprise/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-three-essential-components-to-compliance-at-velocity-in-the-enteprise.jpg" alt="Compliance at Velocity" />
+&lt;/div>
+&lt;p>Security has been the most difficult part of &lt;a href="https://hedge-ops.com/intrinsic-motivators-leading-to-chef/">implementing chef&lt;/a> in my large organization. I recently spoke with Chef about this and had a great conversation with &lt;a href="https://twitter.com/dromologue">Justin Arbuckle&lt;/a> related to it. Chef is focusing this year on helping organizations like mine to achieve compliance at velocity.&lt;/p>
+&lt;p>Through the conversation and Justin&amp;rsquo;s great advice, I realized that every Chef initiative must have these three elements to be sucessful:&lt;/p>
+&lt;h2 id="focus-on-the-workflow">Focus on the Workflow&lt;/h2>
+&lt;p>At first I was focused on the technology and what talked to what, which commands would be used, and how awesome the outcome would be for our business. From a security perspective, however, this was worthless. Security and compliance are focused on &lt;em>how we can safely make changes to this system&lt;/em>. This means that you don&amp;rsquo;t accidentally bring production down by a cookbook change. It also means that you get approvals within a defined process before making &lt;em>any&lt;/em> change. For us, this workflow didn&amp;rsquo;t really take shape until we decided to fully adopt &lt;a href="https://github.com/chef/chef-dk/blob/master/POLICYFILE_README.md">the Policy feature&lt;/a> and workflow for change management. We then wrote extensive documentation and visio diagrams to explain every element of every step in the journey from a checkin to a production change.&lt;/p>
+&lt;p>It wasn&amp;rsquo;t until we had this documented and clear that we started making progress with our security team. The lesson we learned was: &lt;em>the technology is secondary to the workflow&lt;/em>. The workflow is most important. And, for you, if you&amp;rsquo;re security conscious and you haven&amp;rsquo;t looked at Policies yet, you really need to.&lt;/p>
+&lt;h2 id="make-it-real">Make it Real&lt;/h2>
+&lt;p>Looking back at the last few months of our implementation, we&amp;rsquo;ve spent way too much time in visio and not enough time creating a real environment in order to demonstrate the changes we&amp;rsquo;re talking about. I spent quite a lot of time trying to consolidate the chef ecosystem into something that someone could understand in an hour-long meeting, but that was ineffective. It turns out that: (1) chef is complicated and hard, that&amp;rsquo;s why it&amp;rsquo;s so powerful, and (2) people don&amp;rsquo;t generally have time to wrap their minds around it like I have.&lt;/p>
+&lt;p>Knowing what I know today, I would have started by creating an environment that demonstrated what I was talking about and then showed every stakeholder the workflow (defined above) applied to a real work situation that I could control. This is what we have done: we migrated YouTrack management to Chef and will demonstrate a secure, repeatable workflow to our security stakeholders with that.&lt;/p>
+&lt;p>This will shift the conversation away from the abstract and into the implemented. It also means there are no unknowns to implementing the solution.&lt;/p>
+&lt;h2 id="empower-security">Empower Security&lt;/h2>
+&lt;p>Security people are used to hearing from people, &amp;ldquo;We want to do this cool thing that will make &lt;em>our&lt;/em> lives easier but will make &lt;em>your&lt;/em> lives more difficult.&amp;rdquo; It&amp;rsquo;s natural for them to  approach chef in the same way.&lt;/p>
+&lt;p>Fortunately, chef has made some amazing investments lately in features that enable a partnership with security rather than an impediment. The &lt;a href="https://www.chef.io/blog/2015/04/09/chef-audit-mode-cis-benchmarks/">audit mode features&lt;/a> recently released in Chef allow a security team to map the auditor&amp;rsquo;s implementation of the security compliance into actionable requirements that can then be applied to the system.&lt;/p>
+&lt;p>So, all of the sudden, the crazy devops person who wants to make everything go faster is the person who will enable automated, reported compliance for PCI throughout our data center. The posture of the security group changes from being antagonistic into being a true partnership.&lt;/p>
+&lt;p>We&amp;rsquo;re planning on taking some PCI requirements and writing audit cookbooks for them. We&amp;rsquo;ll go into the auditing relationship with demonstratable proof that we are creating a more secure, auditable, and fast system for managing configuration in our hosted environment.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Empathy is probably the most important aspect of any change. Begin with how a change will improve the effectiveness of your colleagues and the ultimate profitability of your company. Security is no different. Thanks to my friends at Chef, I have a more solid strategy for meeting those goals.&lt;/p></description></item><item><title>Solving SSL Validation failure with knife</title><link>https://hedge-ops.com/solving-ssl-validation-failure-with-knife/</link><pubDate>Mon, 05 Jan 2015 08:00:37 +0000</pubDate><guid>https://hedge-ops.com/solving-ssl-validation-failure-with-knife/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-solving-ssl-validation-failure-with-knife.jpg" alt="SSL Validation" />
+&lt;/div>
+&lt;p>After I moved to a hosted version of the &lt;a href="http://chef.io">chef&lt;/a> server, I started getting this problem with knife:&lt;/p>
+&lt;pre>&lt;code>knife download environments
+ERROR: SSL Validation failure connecting to host: chef.yourdomain.com - SSL_connect returned=1 errno=0 state=SSLv3 read server
+certificate B: certificate verify failed
+ERROR: OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify
+failed
+&lt;/code>&lt;/pre>&lt;p>There are a couple of ways to fix this. The short-term way is to ignore SSL on your knife.rb file with this setting:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">ssl_verify_mode &lt;span style="color:#990073">:verify_none&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The better and more long-term solution is to add this line to the knife.rb file:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">trusted_certs_dir        &lt;span style="color:#d14">&amp;#34;&lt;/span>&lt;span style="color:#d14">#{&lt;/span>current_dir&lt;span style="color:#d14">}&lt;/span>&lt;span style="color:#d14">/trusted_certs&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>And then run:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">knife ssl fetch
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>I then had to ignore the trusted_certs file in my git repo.&lt;/p>
+&lt;p>Thanks to &lt;a href="http://www.mattstratton.com/">Matt Stratton&lt;/a> and his colleagues at &lt;a href="http://chef.io">chef&lt;/a> for helping me find the solution.&lt;/p></description></item></channel></rss>

@@ -1,0 +1,578 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>process on Michael Hedgpeth</title><link>https://hedge-ops.com/tags/process/</link><description>Recent content in process on Michael Hedgpeth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>MIT</copyright><lastBuildDate>Fri, 01 May 2015 08:00:12 +0000</lastBuildDate><atom:link href="https://hedge-ops.com/tags/process/index.xml" rel="self" type="application/rss+xml"/><item><title>Kanban Prioritization with Cost of Delay</title><link>https://hedge-ops.com/kanban-prioritization-with-cost-of-delay/</link><pubDate>Fri, 01 May 2015 08:00:12 +0000</pubDate><guid>https://hedge-ops.com/kanban-prioritization-with-cost-of-delay/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-kanban-prioritization-with-cost-of-delay.jpg" alt="Delay" />
+&lt;/div>
+&lt;p>We have established an &lt;a href="https://hedge-ops.com/defining-the-kanban-input-queue/">input queue&lt;/a> and defined &lt;a href="https://hedge-ops.com/the-one-metric-that-matters/">the one metric that matters&lt;/a> for our Kanban project. Our standups are &lt;a href="https://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/">more focused than ever before&lt;/a>. Now we need to focus on how to prioritize items that go into our input queue. &lt;a href="http://amzn.to/1LfPSL8">Lean Enterprise&lt;/a> outlines an interesting way of doing this: prioritize items by their cost of delay.&lt;/p>
+&lt;p>On an immature product, you might prioritize in order of who is screaming the loudest. This creates an unhealthy competition among stakeholders to see who can be the most dramatic when asking for a change.&lt;/p>
+&lt;p>Slightly more mature projects might look to the Hippo: the highest paid person&amp;rsquo;s opinion. This can lead to a strategy that is out of touch with what customers want, because the highest paid person usually talks only to other highly paid people and their direct subordinates.&lt;/p>
+&lt;p>A functional Kanban project looks to return on investment. How much money will we get from this endeavor, and how quickly will we pay off the cost to create the change?&lt;/p>
+&lt;p>This is great, but the problem comes about in software when you have a lot of options on the table that would have a healthy return on investment. &lt;em>What then?&lt;/em>&lt;/p>
+&lt;p>This is when the cost of delay calculation comes in handy. From &lt;em>Lean Enterprise:&lt;/em>&lt;/p>
+&lt;blockquote>
+&lt;p>To use Cost of Delay, we begin by deciding on the metric we are trying to optimize across our value stream. For organizations engaged in product development, this is typically lifecycle profit…When presented with a decision, we look at all the pieces of work affected by that decision and calculate how to maximize our One Metric That Matters given the various options we have. For this, we have to work out, for each piece of work, &lt;strong>what happens to our key metric when we delay that work&lt;/strong> (hence, &amp;ldquo;cost of delay&amp;rdquo;).&lt;/p>
+&lt;/blockquote>
+&lt;p>Tomorrow morning I&amp;rsquo;m meeting with stakeholders for one of my projects and will prioritize tasks with this in mind. The project is focused on adding quality to our products, so the one metric that matters for this project is the rate of adoption of new features by our customers.&lt;/p>
+&lt;p>With that in mind we&amp;rsquo;ll have a few options:&lt;/p>
+&lt;ul>
+&lt;li>we can  invest in a large, new feature that we have evidence has prevented higher adoption&lt;/li>
+&lt;li>we can work on decreasing the defect rate of the automation effort itself, as there are currently more defects being reported than there are being fixed within the automation product itself&lt;/li>
+&lt;li>we can enhance the automation application by adding an undo feature which will make people more efficient at creating automated scripts&lt;/li>
+&lt;/ul>
+&lt;p>These are all important feature requests. I can name individuals who would choose a different answer as to the most important. When evaluated through the cost of delay paradigm, however, things become clear:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Team&lt;/th>
+&lt;th>Natural Alignment&lt;/th>
+&lt;th>Natural Misalignment&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Development&lt;/td>
+&lt;td>Faster Delivery of features&lt;/td>
+&lt;td>Have to be engaged in operations, more &amp;ldquo;work&amp;rdquo; to do&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Operations&lt;/td>
+&lt;td>Less fires, more consistency&lt;/td>
+&lt;td>Have to learn a new skillset and be a beginner&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security&lt;/td>
+&lt;td>More consistency, compliance&lt;/td>
+&lt;td>Automation can cause unknown vulnerabilities&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Business&lt;/td>
+&lt;td>Faster ROI for development, lower cost for operations, and a scale model that works&lt;/td>
+&lt;td>Takes ongoing investment in culture and tools&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Doing this exercise makes it clear to me what our next priority should be. It will be interesting to see if the cost of delay method can be easily understood and adopted by others. We are early in our adoption of Kanban, so we are building this ship as we sail it. I suppose I&amp;rsquo;ll see soon enough.&lt;/p></description></item><item><title>Four Questions for Product Management</title><link>https://hedge-ops.com/four-questions-for-product-management/</link><pubDate>Tue, 28 Apr 2015 08:00:47 +0000</pubDate><guid>https://hedge-ops.com/four-questions-for-product-management/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-four-questions-for-product-management.jpg" alt="Questions for Product Management" />
+&lt;/div>
+&lt;p>As product managers, how do we arrive at delighting customers? There are &lt;a href="https://hedge-ops.com/mission-command/" title="Mission Command">organizational&lt;/a> and (/is-continuous-delivery-needed-in-our-organization/) that I&amp;rsquo;ve learned through the &lt;a href="http://amzn.to/1utrIYL">Lean Enterprise&lt;/a> book, like finding the &lt;a href="https://hedge-ops.com/the-one-metric-that-matters/">one metric that matters&lt;/a>. These flow into team-level initiatives that I&amp;rsquo;ve learned through the &lt;a href="http://amzn.to/1CcuYsg">Kanban book&lt;/a>, like &lt;a href="https://hedge-ops.com/defining-the-kanban-input-queue/">defining an input queue&lt;/a> and &lt;a href="https://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/">structuring your standups in a better way&lt;/a>. But I believe the fundamental change agent lies in how a product manager approaches requirements analysis.&lt;/p>
+&lt;p>I believe requirements analysis boils down to four fundamental questions. The maturity of the team is dependent on which of these questions are being asked. This is in order from lower maturity to higher maturity, but they are all essential.&lt;/p>
+&lt;p>&lt;strong>What do you want to do?&lt;/strong>&lt;/p>
+&lt;p>It&amp;rsquo;s essential to really understand what people want and make sure you understand exactly what&amp;rsquo;s being asked. I&amp;rsquo;ve been in the situation multiple times where a change was asked, but when I asked probing questions about the exact desired behavior, the request fell apart. Also it&amp;rsquo;s important to understand what&amp;rsquo;s being asked for so we don&amp;rsquo;t deliver the wrong thing with the same name. It&amp;rsquo;s a terrible feeling to declare victory on something when celebrating with the development team to realize that the requestor is not equally celebratory of what you just did because it was the wrong thing.&lt;/p>
+&lt;p>This is the foundational question. You have to undertstand.&lt;/p>
+&lt;p>&lt;strong>Why do you want to do that?&lt;/strong>&lt;/p>
+&lt;p>This is the question many people don&amp;rsquo;t get to. The thought is that a customer knows what they want and why is their business. I&amp;rsquo;ve learned over the years that this can be dangerous. If we don&amp;rsquo;t understand &lt;em>why&lt;/em> they want what they are asking for, then how can we know we are delivering the right thing?&lt;/p>
+&lt;p>I&amp;rsquo;ve seen time and time again the scenario I like to call** Declare Victory Yet Nothing Changes** scenario. This is where you do what was asked for, but the outcome everyone was looking for doesn&amp;rsquo;t materialize. But it&amp;rsquo;s easy to declare victory in that situation since you did indeed do what was asked for.&lt;/p>
+&lt;p>Without asking this second question, you&amp;rsquo;ll be lost in not being able to empathize with your customer.&lt;/p>
+&lt;p>&lt;strong>How will this make you more successful?&lt;/strong>&lt;/p>
+&lt;p>This is a difficult question to ask without sounding condescending, because sometimes the answer seems obvious. The crux of this question is: how do you define success? The requestor should be able to explain that and in addition tie the request to this definition of success. This makes everything clearer. The customer might say something like, &amp;ldquo;I want to speed up service to increase revenue,&amp;rdquo; and want a feature to enable that.&lt;/p>
+&lt;p>That&amp;rsquo;s where we want to be. We want to have a clear definition of our goals.&lt;/p>
+&lt;p>&lt;strong>How can we measure success?&lt;/strong>&lt;/p>
+&lt;p>This is the tough part, but it&amp;rsquo;s a key element I&amp;rsquo;ve learned from the lean literature I&amp;rsquo;ve read recently. If you can&amp;rsquo;t measure something, you can&amp;rsquo;t manage it. We need to define success and create a measurement that will get us close to that. We then tie our product development strategy to the measurement of success and iteratively create new capabilities that are shown to influence our success metric. This is the essence of the Lean Startup Cycle.&lt;/p>
+&lt;p>I&amp;rsquo;ve only recently discovered the second two questions and they have made a world of difference. You are much more efficient in achieving your goals when you have defined shared success and have found a way to measure it.&lt;/p></description></item><item><title>How to Apply Kanban to a Large Project with High Feature Variability</title><link>https://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/</link><pubDate>Mon, 23 Mar 2015 08:00:01 +0000</pubDate><guid>https://hedge-ops.com/how-to-apply-kanban-to-a-large-project-with-high-feature-variability/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-how-to-apply-kanban-to-a-large-project-with-high-feature-variability.jpg" alt="Apply Kanban to Large Project" />
+&lt;/div>
+&lt;p>I was introducing some ideas I&amp;rsquo;ve learned recently about &lt;a href="https://hedge-ops.com/initial-tracked-metrics-for-kanban-adoption/">throughput management&lt;/a> to a friend of mine who is on a large project. The question came up, how to make throughput a useful metric when there are some very small features that go through the system and others that can take months with a large team.&lt;/p>
+&lt;p>Let&amp;rsquo;s review a bit: throughput is the measurement of number of items you process through a system over a period of time. So you would say that you did fifteen features and bugs last month, and ten the month before.&lt;/p>
+&lt;p>If you had no control or process in place to deal with the fact that a new customer might want its killer feature, which is months of work for you, then this metric will quickly become meaningless. What to do?&lt;/p>
+&lt;p>There is a simple way to handle this and a complicated way. I suppose the complicated way will be what&amp;rsquo;s needed for my friend&amp;rsquo;s project, but the simple way is good enough for my project.&lt;/p>
+&lt;p>&lt;strong>The Simple Way: Break Things Down into MMFs&lt;/strong>&lt;/p>
+&lt;p>On a simpler project, you can simply break a large request down into a &lt;a href="http://www.netobjectives.com/minimum-marketable-features-mmfs-explained">Minimal Marketable Feature&lt;/a>. The team asks the question, what is the minimal value we can deliver to the customer in a way that they both understand it and accept it as adding value to them? It&amp;rsquo;s not something like &amp;ldquo;the database column is added to the database&amp;rdquo; but it&amp;rsquo;s also not &amp;ldquo;your killer feature is delivered.&amp;rdquo;&lt;/p>
+&lt;p>When you break things down into outcomes that the customer cares about, you end up with a lot of smaller issues and variability is much smaller.&lt;/p>
+&lt;p>This is what I would try first. But what if that doesn&amp;rsquo;t work? What if the customer doesn&amp;rsquo;t care about your breakdown and just wants the feature?&lt;/p>
+&lt;p>&lt;strong>The Complicated Way: Break Epics into Stories&lt;/strong>&lt;/p>
+&lt;p>The more complicated way I got from &lt;a href="http://amzn.to/1GgXlcU">the Kanban book&lt;/a> is to continue to allow the customer to define things &lt;em>their&lt;/em> way. Those items, when they are too big to break down, are called Epics and won&amp;rsquo;t be counted as throughput. The Epics are broken down into stories that are still testable outcomes. In other words, we are still avoiding the &amp;ldquo;database column is added&amp;rdquo; story. Your throughput metric will track the number of stories that are processed through the system.&lt;/p>
+&lt;p>I&amp;rsquo;ve seen mixed success from teams that are trying to break things down. People tend to want to break things down into layers and not into testable outcomes for end users. Once that skill is mastered, however, the team has a good way to track throughput through the system.&lt;/p>
+&lt;p>&lt;strong>But what about Story Points?&lt;/strong>&lt;/p>
+&lt;p>Another way to track throughput is through story points. I don&amp;rsquo;t like this. I&amp;rsquo;ve read evidence that when velocity by story points are managed to increase, the team simply begins to increase their story point estimates. We want to make sure we manage elements of the system that cannot be doctored, either subconsciously or consciously.&lt;/p>
+&lt;p>Also the Kanban book adds to the disdain of story point estimates by bemoaning the waste associated with getting an entire team together for the estimation.&lt;/p>
+&lt;p>So the exercise to measure throughput starts with ensuring that items flowing through the system are of a predictable size. Either way above would work, even for my friend on the large, established project.&lt;/p></description></item><item><title>Initial Tracked Metrics for Kanban Adoption</title><link>https://hedge-ops.com/initial-tracked-metrics-for-kanban-adoption/</link><pubDate>Mon, 16 Mar 2015 08:00:39 +0000</pubDate><guid>https://hedge-ops.com/initial-tracked-metrics-for-kanban-adoption/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-initial-tracked-metrics-for-kanban-adoption.jpg" alt="Initial Tracked Metrics for Kanban Adoption" />
+&lt;/div>
+&lt;p>One of the reasons I&amp;rsquo;ve read through &lt;a href="http://www.djaa.com/">David Anderson&amp;rsquo;s&lt;/a>&amp;rdquo; &lt;a href="http://amzn.to/1ywImb4">Kanban book&lt;/a> is the need for metrics. I was inspired by &lt;a href="http://amzn.to/1CEMvHL">Lean Enterprise&lt;/a> to &lt;a href="https://hedge-ops.com/the-one-metric-that-matters/">become more metric-driven&lt;/a> and &lt;a href="https://hedge-ops.com/measure-for-reality/">make measurement&lt;/a> more of the foundation of my management approach. Anderson did not disappoint. He devotes a whole chapter to which metrics to track on an
+&lt;a href="https://hedge-ops.com/kanban-decoupling-input-cadence-from-delivery-cadence/">initial Kanban initiative&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Cumulative Flow&lt;/strong>&lt;/p>
+&lt;p>Kanban is focused on limiting work in progress to create flow, so it&amp;rsquo;s only natural to create a cumulative flow diagram. This should tell us a lot about the nature of flow in the project. Here is one from a recent release from &lt;a href="https://www.jetbrains.com/youtrack/">YouTrack&lt;/a> that I only looked at today:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2015-03-16-initial-tracked-metrics-for-kanban-adoption/cumulative.png" alt="Cumulative Flow Diagram in YouTrack">&lt;/p>
+&lt;p>You can see that we had a lot in Ready for QA and nothing flowing to &amp;ldquo;Done&amp;rdquo;. But then at the end of the release, many of them drop off. Did they go to the next release? Why? Why weren&amp;rsquo;t they finished? The Developing features were staying constant, so it looks like that isn&amp;rsquo;t a problem. The analysis is bunched up at the start of the release, but isn&amp;rsquo;t occurring toward the end of the release. Is this a problem? There are so many actionable ideas that are coming out of viewing this chart. For now on, this chart will be at the forefront of any metrics my teams provide.&lt;/p>
+&lt;p>&lt;strong>Lead Time&lt;/strong>&lt;/p>
+&lt;p>In a Kanban system, lead time is important because it is the basis of actions in the system. If the lead time is 20 days, you&amp;rsquo;re asking your stakeholders the question, &amp;ldquo;What X items will you want 20 days from now?&amp;rdquo; Also, when determining whether something needs to be rushed through a system, we &lt;em>have&lt;/em> to know lead time. In other words, if a stakeholder needs something in 30 days, is it possible? Without a lead time metric, that&amp;rsquo;s not known.&lt;/p>
+&lt;p>Anderson stresses the importance of lead time distribution over mean lead time, because it will help the team understand the certainty with which commitments can be made. I wasn&amp;rsquo;t able to generate lead time from YouTrack, but I created a mock one in Excel fairly easily:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2015-03-16-initial-tracked-metrics-for-kanban-adoption/lead-time-distribution.png" alt="Lead Time Distribution">&lt;/p>
+&lt;p>This tells us that we can easily promise a lead time of 10 days on the project. Many items will go much faster than that.&lt;/p>
+&lt;p>&lt;strong>Throughput&lt;/strong>&lt;/p>
+&lt;p>Throughput is the measurement of how many items go through the system over a fixed period of time, usually months. Ideally throughput should be high. Here is the throughput on one of my projects from the last part of 2014:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2015-03-16-initial-tracked-metrics-for-kanban-adoption/throughput.png" alt="Throughput">&lt;/p>
+&lt;p>This tells us that there was a huge spike of productivity in October. Why was that? To be honest, it was because there was an important deadline to meet and I worked overtime on the project to get it done. Another observation from this data is that throughput is by no means consistent. Why is this? It can probably be seen in the cumulative flow diagram above if we view it for all months.&lt;/p>
+&lt;p>Continuous improvement goals should be to increase throughput.&lt;/p>
+&lt;p>&lt;strong>Initial Quality&lt;/strong>&lt;/p>
+&lt;p>We want to make sure we don&amp;rsquo;t motivate the team to speed up without regard for quality issues they are creating. So we need quality to be one of our core metrics. Anderson talks about the metric being defects per feature, but I disagree. I want to just track straight defects that are found by customers:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2015-03-16-initial-tracked-metrics-for-kanban-adoption/defects-found.png" alt="Defects Found">&lt;/p>
+&lt;p>Wow, October was busy! This makes me wonder whether all that productivity was worth it. November and December trended downward (but there was vacation in those months as well).&lt;/p>
+&lt;p>A good metric is one that initiates action, and, as you can see here, these metrics are a great start to seeing the health of a project and ideas for improvement. They will be the basis of project management going forward.&lt;/p></description></item><item><title>Kanban Decoupling Input Cadence from Delivery Cadence</title><link>https://hedge-ops.com/kanban-decoupling-input-cadence-from-delivery-cadence/</link><pubDate>Fri, 13 Mar 2015 08:00:45 +0000</pubDate><guid>https://hedge-ops.com/kanban-decoupling-input-cadence-from-delivery-cadence/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-kanban-decoupling-input-cadence-from-delivery-cadence.jpg" alt="Decopuling Input Cadence" />
+&lt;/div>
+&lt;p>For my entire career, I have approached software development project planning at the level of the release. In waterfall, you plan a six month release, the first phase of which is to design and estimate the requested features to determine how much can go into the release. You are supposed to plan the whole thing. In Scrum, you plan a three week release up front. The cadence is shorter, but the process very similar. &lt;a href="http://www.djaa.com/">David Anderson&amp;rsquo;s&lt;/a> &lt;a href="http://amzn.to/1yaDiHw">Kanban book&lt;/a> provides another approach that separates &lt;a href="https://hedge-ops.com/defining-the-kanban-input-queue/">the input process&lt;/a> from the output process.&lt;/p>
+&lt;p>In Kanban, the input queue is largely there to serve the development machine. You want to have as many items in the queue as are needed to not have anyone waiting for new work. On a typical small team, that is probably five items. A product manager would manage this queue by creating a regular meeting for all stakeholders to collectively decide what needs to happen next. Anderson recommends that the meeting happen once a week. If the product is processing work at an agile pace, this should be enough to refill the most important 2-3 items.&lt;/p>
+&lt;p>It&amp;rsquo;s easy to think that this means that there should be weekly releases. When you step back and think about it, the release cycle has its own set of constraints. Remember that the input queue&amp;rsquo;s function is to provide the development team with the most valuable items to do next. The function of the delivery is to provide that value to the customers while minimizing delivery costs.&lt;/p>
+&lt;p>Let&amp;rsquo;s say delivery of the software means that thousands of people need to be trained, materials need to be printed, and a marketing program needs to kick off. In this situation, the fixed costs of the delivery are high and thus it is desirable that they not happen as frequently. Can you imagine doing such a release every two weeks? That would be insane!&lt;/p>
+&lt;p>On the other hand, delivery of the software might be very cheap because of tools &lt;a href="https://hedge-ops.com/learning-chef-book-review/">like chef&lt;/a> and training is built into the product. In this case, it makes sense to release more often. Perhaps a daily release would be a great idea for this type of team.&lt;/p>
+&lt;p>A part of the lean movement focuses on taking a situation like the former one and turning it into the latter one. Lowered fixed costs of release means that value can flow more freely to customers, and ROI happens quicker. But that&amp;rsquo;s a strategic choice. At the beginning, you get the release cycle you get, and continuously improve to a better one. But because we have decoupled the input side of the equation, we get a team that is focused, flowing the highest priority work quickly through the system. I think that this will be a gamechanger for how my teams do product management going forward.&lt;/p></description></item><item><title>Learning from Ebola Healthcare Workers with Enterprise Problem Solving</title><link>https://hedge-ops.com/learning-from-ebola-healthcare-workers-with-enterprise-problem-solving/</link><pubDate>Mon, 09 Mar 2015 09:30:21 +0000</pubDate><guid>https://hedge-ops.com/learning-from-ebola-healthcare-workers-with-enterprise-problem-solving/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-learning-from-ebola-healthcare-workers-with-enterprise-problem-solving.jpg" alt="Learning from Ebola" />
+&lt;/div>
+&lt;p>In a large enterprise it can be difficult to implement large meaningful change. On many days I have ended up frustrated while sitting down to a margarita during &lt;a href="https://hedge-ops.com/measure-for-reality/">one of my quarterly retrospectives&lt;/a>. How do I get through all the opinions and politics to create real, lasting change? After reading about &lt;a href="https://hedge-ops.com/the-lean-startup-cycle/">the Lean Startup Cycle&lt;/a>, I have a new way of thinking about it, which starts with healthcare workers in West Africa &lt;a href="http://www.economist.com/news/international/21625813-ebola-epidemic-west-africa-poses-catastrophic-threat-region-and-could-yet">fighting Ebola&lt;/a>.&lt;/p>
+&lt;p>When these brave individuals arrive to risk their lives and help others, they are met with a striking contrast to the first world. As you have probably learned, there are entire tribes of people in West Africa who celebrate the recently deceased within an elaborate ceremony where the entire tribe drinks after the deceased loved one in a shared cup. Science certainly had nothing to do with it, but science does tell us that when the deceased person has Ebola, this is a surefire way of getting the whole village infected. Couple this with the cultural norm that those who are sick should travel large distances to medicine men who will heal them, and you have an epidemic.&lt;/p>
+&lt;p>So, faced with such a terrible situation of men, women, and children dying every day due to a horrible disease, what do I imagine is the reaction of these healthcare workers? Do they pound their fists and whine, &amp;ldquo;We could change this situation if these people weren&amp;rsquo;t being so &lt;em>stupid?&amp;quot;&lt;/em> Do they clock in and out, thinking that the problem is just too large and that they will just collect a paycheck so that they can support their family? In other words, is their primary approach to the situation that of &lt;em>frustration&lt;/em>?&lt;/p>
+&lt;p>I think they certainly feel frustration.&lt;/p>
+&lt;p>However, these people are professional scientists, and they probably follow &lt;a href="http://en.wikipedia.org/wiki/Scientific_method">a much different formula&lt;/a>:&lt;/p>
+&lt;p>&lt;strong>First, they start with a hypothesis.&lt;/strong> They ask themselves, maybe if we visit the tribal leaders we&amp;rsquo;ll be able to convince them that this practice is dangerous and that will stop the spread of this disease. If the leaders cannot be convince, then they may say that the tribes are a lost cause and that maybe they should lock down the entrances to the cities. I&amp;rsquo;m sure there are hundreds of ideas that they come up, all without despair, but with a genuine hope that something can be done to improve the situation.&lt;/p>
+&lt;p>&lt;strong>Next, they test the most promising hypothesis.&lt;/strong> The team may decide to educate the tribal leaders. They then create a short-term way to test their hypothesis. They decide to go to one village and talk to the tribal leaders then pay an informant to record the activities of the next funeral, which is likely to happen in the coming days. They try this with ten villages.&lt;/p>
+&lt;p>&lt;strong>Finally, they measure the results of the test.&lt;/strong> Out of the ten villages, only two changed their practices. While many of us might view this as a failure, the scientists see this as success. We now know what &lt;em>wouldn&amp;rsquo;t&lt;/em> be helpful. Now we can come up with a better hypothesis and start the process all over again.&lt;/p>
+&lt;p>This method is what got us technology, medicine, and progress. &lt;strong>Why aren&amp;rsquo;t we using it in the enterprise?&lt;/strong>&lt;/p></description></item><item><title>Kanban Standup Meetings: A Way Out of Standup Hell?</title><link>https://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/</link><pubDate>Fri, 06 Mar 2015 08:00:35 +0000</pubDate><guid>https://hedge-ops.com/kanban-standup-meetings-a-way-out-of-standup-hell/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-kanban-standup-meetings-a-way-out-of-standup-hell.jpg" alt="Kanban Standup" />
+&lt;/div>
+&lt;p>In every Agile project, you&amp;rsquo;re supposed to have a daily standup meeting to facilitate communication and collective ownership. Intentions are always great at the beginning, but for me they have always descended into a tolerable mess. Can the &lt;a href="defining-the-kanban-input-queue/">Kanban method&lt;/a> teach us anything about how to do them better?&lt;/p>
+&lt;p>&lt;a href="http://www.mountaingoatsoftware.com/agile/scrum/daily-scrum">If you&amp;rsquo;re following the Scrum process&lt;/a>, the meeting should last 10-15 minutes and everyone should go around the room talking about what they accomplished yesterday, what they plan on doing today, and what, if anything, is blocking them. Every software development methodology I have read tells you to do them; I&amp;rsquo;ve even seen people have success with them on waterfall projects.&lt;/p>
+&lt;p>Everyone is excited about doing the standups correctly, and then someone gets tired and &lt;a href="http://www.batimes.com/articles/seven-common-mistakes-with-the-daily-stand-up-meeting.html">everyone sits down&lt;/a>. Eventually what tends to happen on my team is that everyone reports to &lt;em>me&lt;/em>, the leader, what they intend on doing today and I give them about 10-30 seconds of comment to help them along. While I&amp;rsquo;m engaging with each person, the others are thinking about other things. There is no collective ownership.&lt;/p>
+&lt;p>This is by no means a functional standup meeting.&lt;/p>
+&lt;p>What to do about this? &lt;a href="http://www.djaa.com/">David Anderson&lt;/a> has some suggestions in his &lt;a href="http://amzn.to/1yaebV5">Kanban book&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>The need to go around the room and ask the three questions is obviated by the card wall. The wall contains all the information about who is working on what. Attendees who come regularly can see what has changed since yesterday and whether something is blocked or is not visually evident. So standups take a different format with a Kanban system. &lt;strong>The focus is on the flow of work.&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>I&amp;rsquo;ve done these types before, and it is very effective. The question is now, &amp;ldquo;What needs to happen today to move things forward?&amp;rdquo; and everyone participates. This becomes an obvious group exercise, not a task reporting meeting to management.&lt;/p>
+&lt;p>So in the new standup, you start with the board on the right side and talk about every card. The team collectively identifies the actions taken that day to move it forward. Items that are blocked are highlighted and the team plans for a course of action. While it is driven by a leader, the person driving it can change and everyone is engaged.&lt;/p>
+&lt;p>Also this way of doing standups scales well. Anderson writes:&lt;/p>
+&lt;blockquote>
+&lt;p>Daniel Vacanti ran a successful standup with more than 50 people at a project at Corbis in 2007 where, despite the large size of the team, the meeting was completed in around 10 minutes every morning.&lt;/p>
+&lt;/blockquote>
+&lt;p>A ten minute meeting with fifty people; that&amp;rsquo;s amazing! I&amp;rsquo;m looking forward to getting my standups out of standup hell.&lt;/p></description></item><item><title>Defining the Kanban Input Queue</title><link>https://hedge-ops.com/defining-the-kanban-input-queue/</link><pubDate>Mon, 02 Mar 2015 10:00:33 +0000</pubDate><guid>https://hedge-ops.com/defining-the-kanban-input-queue/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-defining-the-kanban-input-queue.jpg" alt="Defining the Input Queue" />
+&lt;/div>
+&lt;p>I have been reading &lt;a href="http://www.djaa.com/">David Anderson&amp;rsquo;s&lt;/a> wonderful book on &lt;a href="http://amzn.to/14OSLBa">Kanban&lt;/a> this week as a means to get more specific on the project improvements I want to make based &lt;a href="https://hedge-ops.com/the-one-metric-that-matters/">on what I&amp;rsquo;m learning&lt;/a> with &lt;a href="http://amzn.to/1y9Xjhh">Lean Enterprise&lt;/a>. This book has disrupted up my approach to backlog management and prioritization. Within a Scrum or Waterfall process, whenever a customer asks for a request, you put it on a list and regularly prioritize that list. The backlog as a whole is the input queue in the system.&lt;/p>
+&lt;p>Currently there are 397 issues on our backlog. We can&amp;rsquo;t possibly be meaningfully prioritizing all of these.&lt;/p>
+&lt;p>In a Kanban system, this is seen as waste. Why spend all this time prioritizing something when only the top five things at any one time are important? Is there a way to communicate to users that we just won&amp;rsquo;t get around to certain things?&lt;/p>
+&lt;p>At &lt;a href="http://www.corbisimages.com/">Corbis&lt;/a>, Anderson tried something different: he figured out how many items that were needed in the input queue to keep the system going. In other words, we don&amp;rsquo;t want to be caught not knowing what to do next, so what number of items in the input queue would keep that from ever happening? Usually the number is less than five.&lt;/p>
+&lt;p>Every week the team meets with the stakeholders and asks the simple question, &amp;ldquo;What are the most important X things to do next?&amp;rdquo; These items can be pulled off of the backlog or they could even be new. The stakeholders can discuss what the most important changes are and why. The important items are determined and then the changes flow through the system.&lt;/p>
+&lt;p>Now that this discussion is happening regularly, the territorial fighting should decrease. It&amp;rsquo;s up to those in the meeting to come to an agreement on what is next. If your thing isn&amp;rsquo;t done this week, then perhaps it will be done next week. Nothing is set in stone.&lt;/p>
+&lt;p>After a few months of this, it should become apparent that some items on the backlog have very little chance of getting done. Therefore, if a backlog item is more than six months old, we should close it. We can always reopen it if is a priority, but it keeps open communication with those requesting changes about whether to expect the change anytime soon.&lt;/p>
+&lt;p>Yesterday in a project meeting one of our senior developers recommended that we focus more on ensuring buy-in from teams that we are serving for what we are doing. At the time I was focused on how to define appropriate metrics and so didn&amp;rsquo;t know how to implement her point. But now I see that if I follow this pattern of input queue management, I&amp;rsquo;ll be able to bring together stakeholder&amp;rsquo;s desire to have something &lt;em>right now&lt;/em> and their ability to ensure that no other teams are blocking us from creating that outcome. I&amp;rsquo;m really excited to see how this suggestion will work for us.&lt;/p></description></item><item><title>Is Continuous Delivery Needed in Our Organization?</title><link>https://hedge-ops.com/is-continuous-delivery-needed-in-our-organization/</link><pubDate>Fri, 13 Feb 2015 08:00:49 +0000</pubDate><guid>https://hedge-ops.com/is-continuous-delivery-needed-in-our-organization/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-is-continuous-delivery-needed-in-our-organization.jpg" alt="Continuous Delivery" />
+&lt;/div>
+&lt;p>Continuous Delivery sounds wonderful when &lt;a href="http://www.infoq.com/interviews/jez-humble-lean-enterprise">you&amp;rsquo;re at a conference&lt;/a>. You hear about companies like &lt;a href="http://www.infoq.com/presentations/netflix-continuous-delivery">Netflix&lt;/a> that deploy to production many times per day. When &lt;a href="https://hedge-ops.com/learning-chef-book-review/">learning Chef&lt;/a>, people often ask me if we really need something that will enable us to deploy that often. Some of them are on projects that take many months to deliver, and the customer would have it no other way.&lt;/p>
+&lt;p>I answer this problem by splitting it up into two questions:&lt;/p>
+&lt;p>&lt;strong>How quickly does a customer want a Severity 1 defect fixed in production?&lt;/strong>&lt;/p>
+&lt;p>I&amp;rsquo;d say the answer to this is usually, regardless of the tooling used, within a few hours. If there is a critical defect affecting operations, no one is talking about how we&amp;rsquo;ll have that delivered in a few months. People are on phones, developers are doing what it takes to get done, and something happens. So I&amp;rsquo;d say in this situation it&amp;rsquo;s a great investment to automate your delivery so the emergency situation is as tested as the non emergency situation.&lt;/p>
+&lt;p>&lt;strong>How quickly does a customer want a feature in production?&lt;/strong>&lt;/p>
+&lt;p>This is a trickier question. We can separate the answer into what the customer &lt;em>wants&lt;/em> and what the customer &lt;em>expects&lt;/em>. The customer &lt;em>wants&lt;/em> to have the feature in production right now. Otherwise they wouldn&amp;rsquo;t have told you about it. I have never heard a user make a request for change in software and say, &amp;ldquo;I&amp;rsquo;m just letting you know, I&amp;rsquo;d rather have it six months from now.&amp;rdquo; Now is always better.&lt;/p>
+&lt;p>However, our customers have a business to run, so they&amp;rsquo;re not going to be foolish with updates. They want us to &lt;a href="https://hedge-ops.com/safety-net/">fully test and properly deliver the software&lt;/a>. So I believe their answer to this question would be: &lt;strong>as quickly as you can safely get it to me.&lt;/strong>&lt;/p>
+&lt;p>This is a flexible arrangement based on the trust we create from automating our delivery and testing process. The better job we do, the more they trust us and the quicker they get their software. It will probably never be _today_that they get updates, but also if we&amp;rsquo;re taking this seriously it also shouldn&amp;rsquo;t be a long time.&lt;/p>
+&lt;p>So even for us, with real customers that are paying us to get it right, there is room for continuous delivery and Chef.&lt;/p></description></item><item><title>The One Metric that Matters</title><link>https://hedge-ops.com/the-one-metric-that-matters/</link><pubDate>Mon, 09 Feb 2015 08:00:34 +0000</pubDate><guid>https://hedge-ops.com/the-one-metric-that-matters/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-one-metric-that-matters.jpg" alt="Metric that Matters" />
+&lt;/div>
+&lt;p>The more I measure &lt;a href="https://hedge-ops.com/measure-for-reality/">the more successful I am&lt;/a>. I&amp;rsquo;ve known this for a while, but I realize that the lack of measurement is still the thing that is holding my career back. I&amp;rsquo;ve already written about how measurement is key to &lt;a href="https://hedge-ops.com/the-lean-startup-cycle/">The Lean Startup Cycle&lt;/a> of using the scientific method to find innovation in your organization. So I&amp;rsquo;m hooked with this idea, but I desperately want to implement it in a good way. I want to have a breakthrough.&lt;/p>
+&lt;p>The &lt;em>Lean Enterprise&lt;/em> book cites the &lt;em>Lean Analytics&lt;/em> book concept of &lt;strong>The One Metric That Matters (OMTM):&lt;/strong>&lt;/p>
+&lt;blockquote>
+&lt;p>OMTM is a single metric that we prioritize as the most important to drive decisions depending on the stage of our product lifecycle and our business model…We focus on One Metric that Matters to:&lt;/p>
+&lt;ul>
+&lt;li>Answer the most pressing question we have by linking it to the assumptions in the hypothesis we want to test&lt;/li>
+&lt;li>Create focus, conversation, and thought to identify problems and simulate improvement&lt;/li>
+&lt;li>Provide transparency and a shared understanding across the team and wider organization&lt;/li>
+&lt;li>Support a culture of experimentation by basing it on rates or ratios, not averages or totals, relevant to our historical data set&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>When I started out my current project in 2008, my boss for a very short time was &lt;a href="http://www.linkedin.com/pub/jeff-hughes/3/720/3a3">Jeff Hughes&lt;/a>, who is a genius at innovating software. The project I was doing was related to software quality, so Jeff gave me a metric for the first year: make defect containment go up, as defined by the percentage of software defects found inside the company related to the software defects found by our customers. He gave me the one metric that matters, and with that direction I was able to take the project in the direction it needed to go. At first we thought that we were going to stick with testing just customer situations, but we ended up having a mixture of customer situations and vanilla, or regression, situations. Without that &amp;ldquo;one metric that matters&amp;rdquo;, I wouldn&amp;rsquo;t have had the freedom to do that.&lt;/p>
+&lt;p>Fast forward to last year, I started a project to improve the installation experience for all of our products that get installed in restaurants. Everyone seemed to want this to be better so I didn&amp;rsquo;t stop and create the one metric that matters. I rushed ahead and started on the solution. My one metric that mattered internally was lowered cycle time from a release to working software. But I didn&amp;rsquo;t bother to define where we were before I started, and how my changes had improved the situation.&lt;/p>
+&lt;p>This led to a lot of unnecessary drama. People would question &lt;em>why&lt;/em> we were taking a particular approach. People would question whether an improvement was warranted in the first place (even after agreeing that it was warranted before). It&amp;rsquo;s easy to point fingers and talk about how people don&amp;rsquo;t understand or care, but they do understand and they do care. I just didn&amp;rsquo;t take the time to create a metric that would measure what outcome I&amp;rsquo;m trying to create.&lt;/p>
+&lt;p>This is not a lesson &lt;a href="https://hedge-ops.com/failure-the-catalyst/">I will soon forget&lt;/a>. I hope that I will be able to fundamentally transform my approach to include measurement as one of the key aspects.&lt;/p></description></item><item><title>Progression of Responsibility</title><link>https://hedge-ops.com/progression-of-responsibility/</link><pubDate>Fri, 06 Feb 2015 08:00:02 +0000</pubDate><guid>https://hedge-ops.com/progression-of-responsibility/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-progression-of-responsibility.jpg" alt="Progression of Responsibility" />
+&lt;/div>
+&lt;p>While reading &lt;em>&lt;a href="http://amzn.to/1zxdulv">Lean Enterprise&lt;/a>&lt;/em>, I&amp;rsquo;m coming up with &lt;a href="https://hedge-ops.com/mission-command/">a lot of great ideas&lt;/a> and &lt;a href="https://hedge-ops.com/the-lean-startup-cycle/">improvements for my organization&lt;/a>. Much of the book so far has been about how to properly execute portfolio management within an enterprise to make sure that (1) you maximize ROI, and (2) you don&amp;rsquo;t manage your existing proven products with an investment horizon of this year or this quarter the same way that you would manage innovation products that have a longer investment horizon. It&amp;rsquo;s a fascinating read.&lt;/p>
+&lt;p>Something occurred to me though. In order to gain entry into the higher level strategic decisions, one must first master the lower level ones. Here&amp;rsquo;s a progression I can see, that I wish I knew about ten years ago:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Personal Effectiveness:&lt;/strong> do you take on work in an efficient, organized way? Do you have a system for &lt;a href="https://hedge-ops.com/getting-things-done-action-plan/" title="Getting Things Done Action Plan">getting things done&lt;/a>, a system for communicating with others, for follow-up, for &lt;a href="https://hedge-ops.com/failure-the-catalyst/" title="Failure the Catalyst">what to do when things get difficult&lt;/a>? Do you know &lt;a href="https://hedge-ops.com/two-questions-about-commitments/" title="Two Questions You Should Ask About Your Commitments">when you&amp;rsquo;re overcommitting&lt;/a>?&lt;/li>
+&lt;li>&lt;strong>Planning Effectiveness:&lt;/strong> do you understand why we are doing what we are doing on this project? Do you measure things in terms of how they will profit your company or on some other, less meaningful way? Do you have a way to create value for your stakeholders quickly by strategically prioritizing certain things over others? Do you know what the short-term and long-term risks to the product and what can be done about them?&lt;/li>
+&lt;li>&lt;strong>Management Effectiveness:&lt;/strong> do you know &lt;a href="https://hedge-ops.com/measure-for-reality/" title="Measure for Reality">how to measure success&lt;/a>? Have you linked the measurement to profitability of the company? Are you able to iteratively create improvements to measurements in a fluid, changing situation? Are people motivated by your leadership and understand the parameters that you&amp;rsquo;ve set out that measures your team&amp;rsquo;s success?&lt;/li>
+&lt;li>&lt;strong>Executive Effectiveness:&lt;/strong> are you able to create profitability for the various products in your portfolio in a way that respects their lifecycle? Are your established, older products increasing in quality and customer satisfaction? Have your newer innovative products succeeded in creating new markets, as measured by appropriate metrics? Has your team leadership received the appropriate amount of direction (not too detailed to constrain innovation and not too broad to create chaos)? Have you had innovation experiments that have failed in the past three months, that had minimal investment yet provided a valuable lesson for the leadership team?&lt;/li>
+&lt;/ol>
+&lt;p>Right now I&amp;rsquo;m at #3. It&amp;rsquo;s fun reading about #4 in the book, but I do realize the trap of trying to live in a place that is beyond your current capability:** If you live in a later stage than you&amp;rsquo;re at right now, you end up ignoring the key elements that are needed to progress to the next stage.** So I can start thinking a lot about portfolio management or how we would manage innovative products differently than our established products. But if I get too caught up in that, I avoid the reality for me right now: I need to find a measurement of success that leads to profitability of my company for every project that I&amp;rsquo;m doing, be able to communicate that to others, and manage its improvement with a team. That will be my focus over the next year or so.&lt;/p>
+&lt;p>If someone comes to me about how we need to do a better job planning yet don&amp;rsquo;t have an established workflow for how they manage their own work, I quickly get them focused on that.&lt;/p>
+&lt;p>If someone wants to be a manager of a group but can&amp;rsquo;t see what that group is doing strategically and the trade-offs that exist in the group, I get them focused on that.&lt;/p>
+&lt;p>You have to master your current responsibilities before you can progress to others.&lt;/p></description></item><item><title>The Lean Startup Cycle</title><link>https://hedge-ops.com/the-lean-startup-cycle/</link><pubDate>Fri, 23 Jan 2015 08:00:30 +0000</pubDate><guid>https://hedge-ops.com/the-lean-startup-cycle/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-lean-startup-cycle.jpg" alt="Lean Startup Cycle" />
+&lt;/div>
+&lt;p>When &lt;a href="http://en.wikipedia.org/wiki/Hermann_Hauser">Herman Hauser&lt;/a> created a team to create the &lt;a href="http://en.wikipedia.org/wiki/ARM_architecture">ARM processor&lt;/a>, now the processor that runs most of the mobile devices you know and love, &lt;a href="http://www.pcpro.co.uk/features/358750/whatever-happened-to-hermann-hauser">he remarked&lt;/a>*:&lt;/p>
+&lt;blockquote>
+&lt;p>When we decided to do a microprocessor, in hindsight, I think I made two great decisions. I trusted the team and gave them two things that Intel and Motorola had never given their people: the first was no money and the second was no people. They had to keep it simple.&lt;/p>
+&lt;/blockquote>
+&lt;p>When you start a project the normal course of action is to try to get as many people as possible so you will be able to have enough resources to accomplish the goal. In &lt;a href="http://amzn.to/1HdjuUt">Lean Enterprise&lt;/a>, the authors advocate another way, what they call &lt;a href="http://en.wikipedia.org/wiki/Lean_startup">the Lean Startup Cycle&lt;/a>:&lt;/p>
+&lt;ol>
+&lt;li>Working out what we need to &lt;em>learn&lt;/em> by creating a value hypothesis&lt;/li>
+&lt;li>Decide what to &lt;em>measure&lt;/em> in order to test that hypothesis&lt;/li>
+&lt;li>Design an experiment, called the &lt;em>minimum viable product&lt;/em>&lt;/li>
+&lt;li>&lt;em>Build&lt;/em> the minimum viable product to gather the necessary data from real customers to determine if we have a good product/market fit.&lt;/li>
+&lt;/ol>
+&lt;p>The authors continue:&lt;/p>
+&lt;blockquote>
+&lt;p>The trick is to invest a minimum of work to go through this cycle. Since we are operating in conditions of extreme uncertainty, we expect that our value hypothesis will be incorrect. At this point we &lt;em>pivot&lt;/em>, coming up with a new value hypothesis based on what we have learned, and go through this process again.&lt;/p>
+&lt;/blockquote>
+&lt;p>I love this idea. Instead of wasting years of time and money on an idea, let&amp;rsquo;s realize that we don&amp;rsquo;t know everything and use the scientific method to get us to the right idea. Let&amp;rsquo;s not be afraid of failure; you can&amp;rsquo;t have innovation without failure. &lt;strong>The key to innovation isn&amp;rsquo;t avoiding failure; the key is reacting to failure earlier than the competition.&lt;/strong>&lt;/p>
+&lt;p>This method also calls into question the annual budget cycle. If all you have is once chance a year to respond to reality, you&amp;rsquo;ll end up clamoring for more people and avoid the simple, early, scientific method laid out above. A better way is to start small, provide some runway to solve a problem, and scale only when the solution shows its value in the real world.&lt;/p>
+&lt;ul>
+&lt;li>I got this quote from Lean Enterprise as well, but cite the original source as they did.&lt;/li>
+&lt;/ul></description></item><item><title>Mission Command</title><link>https://hedge-ops.com/mission-command/</link><pubDate>Mon, 19 Jan 2015 08:00:54 +0000</pubDate><guid>https://hedge-ops.com/mission-command/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-mission-command.jpg" alt="Mission Command" />
+&lt;/div>
+&lt;p>In the past whenever I found myself micromanaged, I complained that I&amp;rsquo;m not in the military, and I should have freedom to operate in my best judgement to solve the problem. I viewed the military as a command and control environment where orders were specifically given and followed to the T. I then reasoned that this is not how successful organizations operate.&lt;/p>
+&lt;p>The excellent book &lt;em>&lt;a href="http://amzn.to/1zGXBeP">Lean Enterprise&lt;/a>&lt;/em> has debunked this myth with a concept of Mission Command that I&amp;rsquo;d like to share with you. From the book*:&lt;/p>
+&lt;blockquote>
+&lt;p>In reality, command and control has not been fashionable in military circles since 1806 when the Prussian Army, a classic plan-driven organization, was decisively defeated by Napoleon&amp;rsquo;s decentralized, highly motivated forces.&lt;/p>
+&lt;/blockquote>
+&lt;p>Sounds a lot like a startup vs. a large company. Except this is two hundred years ago. The authors continue:&lt;/p>
+&lt;blockquote>
+&lt;p>Napoleon used a style of war known as &lt;em>maneuver warfare&lt;/em> to defeat, larger, better-trained armies. In maneuver warfare, the goal is to minimize the need for actual fighting by disrupting your enemy&amp;rsquo;s ability to act cohesively through the use of shock and surprise. A key element in maneuver warfare is beinig able to learn, make decisions, and act faster than your enemy.&lt;/p>
+&lt;/blockquote>
+&lt;p>Once the Prussians were defeated, they studied what went wrong and how they needed to innovate their military strategy in order to regain dominance. Their thought leadership came up with the concept of &lt;em>Auftragstaktick&lt;/em>, or Mission Command:&lt;/p>
+&lt;blockquote>
+&lt;p>In 1869, Helmuth von Moltke issued a directive titled &amp;ldquo;Guidance for Large Unit Commanders&amp;rdquo; which sets out how to lead a large organization under conditions of uncertainty. In this ducment, von Moltke notes that &amp;ldquo;in war, circumstances change very rapidly, and this is rare indeed for directions which cover a long period of time in a lot of detail to be fully carried out.&amp;rdquo; He thus recommends &lt;strong>&amp;lsquo;not commanding more than is strictly necessary, nor planning beyond the circumstances you can foresee.'&lt;/strong> Instead he has this advice: &amp;ldquo;&lt;strong>the higher the level of command, the shorter and more general the orders should be. The next level down should add whatever further specification it feels &lt;em>to be necessary&lt;/em>&lt;/strong> and the details of the execution are left to verbal instructions or perhaps a word of command.** This ensures that everyone retains the freedom of movement and decision within the bounds of their authority &amp;ldquo;**the rule to follow is that an order should contain all, but also only, what subordinates cannot determine for themselves to achieve a particular purpose.**&amp;rdquo; [emphasis mine]&lt;/p>
+&lt;/blockquote>
+&lt;p>So with lives on the line leaders implemented a sophisticated framework for implementing strategy while preserving freedom. This happened 150 years ago. It&amp;rsquo;s still difficult to implement today, though. We either overdo it with too much control because &amp;ldquo;the leaders know best, that&amp;rsquo;s why they&amp;rsquo;re leaders.&amp;rdquo; Or we give everyone autonomy and everyone ends up going in different directions.&lt;/p>
+&lt;p>These kinds of ideas are what I love about the &lt;em>Lean Enterprise&lt;/em> book in particular and the lean movement in general. Software seems so new to everyone, that you can get caught up in solving problems in new ways and giving crazy names to them, like scrum, agile, TDD, etc. But the lean movement says, &amp;ldquo;Hey, we&amp;rsquo;ve had a few hundred years of solving problems with technology and enlightened thinking. You&amp;rsquo;ll probably find a lot of answers from those who have gone before you.&amp;rdquo; This concept of Mission Control is a great example of that.&lt;/p>
+&lt;ul>
+&lt;li>the book also credits The &lt;a href="http://amzn.to/1Hdelfn">Art of Action&lt;/a> for developing these ideas. I haven&amp;rsquo;t yet read this book but it&amp;rsquo;s on my short list.&lt;/li>
+&lt;/ul></description></item><item><title>Review the Glue</title><link>https://hedge-ops.com/review-the-glue/</link><pubDate>Wed, 30 Jul 2014 08:00:41 +0000</pubDate><guid>https://hedge-ops.com/review-the-glue/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-review-the-glue.jpg" alt="Review the Glue" />
+&lt;/div>
+&lt;p>It happened to me over and over again.&lt;/p>
+&lt;p>I got sick and tired of being disorganized, of missing things, of not meeting my goals. &amp;ldquo;I am going to make a system.&amp;rdquo; I wrote everything I need to do down in a to-do list. I made sure my emails get processed correctly.&lt;/p>
+&lt;p>And a few weeks later it was as if none of that ever happened.&lt;/p>
+&lt;p>Why did this happen to me over and over again? Unlocking this secret was the key to actually implementing Getting Things Done.&lt;/p>
+&lt;p>Here&amp;rsquo;s the key: &lt;strong>your system won&amp;rsquo;t work unless there is a place in it for you to review what you have processed.&lt;/strong>&lt;/p>
+&lt;p>Think about what we talked about earlier regarding your cluttered mind. You can&amp;rsquo;t tell your mind, &amp;ldquo;Stop thinking about that, I&amp;rsquo;ll get to it later&amp;rdquo; unless it can trust that you &lt;em>will&lt;/em> get to it later.&lt;/p>
+&lt;p>Think about the empty inbox. Are you &lt;em>really&lt;/em> going to put that important email in the @Actions folder if you don&amp;rsquo;t trust that you&amp;rsquo;ll keep it there? No. What you&amp;rsquo;ll do instead is keep the &lt;em>important&lt;/em> emails in your inbox because, really, you don&amp;rsquo;t have a review system in place.&lt;/p>
+&lt;p>This is where &lt;a href="https://checkvist.com">Checkvist&lt;/a> really shines for me. I review items in Checkvist two ways:&lt;/p>
+&lt;p>&lt;strong>Due Dates.&lt;/strong> If I need to get something done within a certain amount of time, I&amp;rsquo;ll set its due date. Every day I&amp;rsquo;ll check the &amp;ldquo;Due&amp;rdquo; screen (shortcut dd) and make sure I&amp;rsquo;m not missing anything. I&amp;rsquo;ll even set due dates on items that I &lt;em>commit&lt;/em> to doing by that time. For example no one is forcing me to read a book by August 1, but I put that as a due date to tell myself that is my goal.&lt;/p>
+&lt;p>&lt;strong>Review Repeating Task.&lt;/strong> I set up a task called &amp;ldquo;Review [list]&amp;quot;* for every list I have that recurs as often as I need to review it. For example, I have a &amp;ldquo;Review money&amp;rdquo; task that recurs every Sunday and Wednesday with financial tasks on it. This is &amp;ldquo;Due&amp;rdquo; those days, so it will shows up in my due list that I&amp;rsquo;m checking from the above point. This way I only have to remember: every day look at my due list, which will tell me that I need to review my list.&lt;/p>
+&lt;p>That&amp;rsquo;s my system. Other people can schedule meetings with themselves but that never worked for me. I need to review the areas of my life more regularly than that. And, as one who has tons of projects going on both personally and professionally, I have an even more complicated workflow that I&amp;rsquo;ll share in a future post regarding my reviews. But the above system I think works as well as anything.&lt;/p>
+&lt;p>The bottom line is &lt;strong>make sure you have a system to review things, or else you don&amp;rsquo;t have a system.&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Hint: When you set up the review task, type &amp;ldquo;Review [lst:&amp;rdquo; and the list will pop up. Select the list and you&amp;rsquo;ll be able to navigate to the list with the gg shortcut.&lt;/li>
+&lt;/ul></description></item><item><title>Process and Organize</title><link>https://hedge-ops.com/process-and-organize/</link><pubDate>Mon, 28 Jul 2014 08:00:39 +0000</pubDate><guid>https://hedge-ops.com/process-and-organize/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-process-and-organize.jpg" alt="Process and Organize" />
+&lt;/div>
+&lt;p>When I get home from work, I always go to my mailbox, take a few letters off of the top of my pile, open them, and put them back in the mailbox for later.&lt;/p>
+&lt;p>Said no one ever.&lt;/p>
+&lt;p>It&amp;rsquo;s interesting to me though that is exactly what people do with email. This is insanity.&lt;/p>
+&lt;p>In order for you to have sanity in your life, you need a system that tells you, &amp;ldquo;What of my life have I put in my system to act on later, and what do I need to do so I can take action on them at the appropriate time?&amp;rdquo;&lt;/p>
+&lt;p>This is the process and organize phase of Getting Things Done.&lt;/p>
+&lt;p>Here&amp;rsquo;s how I do it: I go to each of the collection places I set up in the Collect Phase (physical inboxes, evernote, and email accounts), and follow this workflow:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Is this actionable? Is there anything I need to do with this at any conceivable point ever?&lt;/strong> If not I should delete it or store it for reference, but my experience with this item is GONE FOREVER. I will never see this again and it will not invade my life ever again.&lt;/li>
+&lt;li>&lt;strong>Can I do it in two minutes or less?&lt;/strong> If I can then I do it. There&amp;rsquo;s no sense of creating a to-do list item for &amp;ldquo;Reply &amp;ldquo;Yes&amp;rdquo; to email, &amp;ldquo;Are you coming tonight?&amp;rdquo; That would be silly. So keep it simple and get stuff out of the way that will just overload your system.&lt;/li>
+&lt;li>&lt;strong>What actions need to be taken for this to be done?&lt;/strong> It&amp;rsquo;s not enough to say &amp;ldquo;Pool care&amp;rdquo; in your list. You have to have your list contain &lt;em>actions&lt;/em>, not just stuff. The action might be &amp;ldquo;Call the pool care company to schedule a filter cleaning.&amp;rdquo; Or it might even be &amp;ldquo;Search for a pool care company to help me with filter cleaning.&amp;rdquo; &lt;strong>It&amp;rsquo;s not &lt;em>stuff&lt;/em>, it&amp;rsquo;s actions.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Add the actions into &lt;a href="http://www.checkvist.com">Checkvist&lt;/a>.&lt;/strong> I add whatever comes to my mind to finish what the item in my inbox represents into Checkvist. At first I recommend just having a &amp;ldquo;To Do&amp;rdquo; list in Checkvist and make it complicated later. You are dumping everything into that program because that is going to be your one-stop-shop for getting things done.&lt;/li>
+&lt;li>&lt;strong>Archive the item.&lt;/strong> It doesn&amp;rsquo;t stay in the inbox. Archive it. Move it to a folder. Whatever. But you will never see this again unless you need to. In this system there is a clear distinction between &lt;em>what is processed&lt;/em> and &lt;em>what needs to be processed.&lt;/em>&lt;/li>
+&lt;/ol>
+&lt;p>Some more notes about this system:&lt;/p>
+&lt;p>&lt;strong>I process my items from the top down, with few exceptions.&lt;/strong> This is important because in this workflow, you aren&amp;rsquo;t &lt;em>doing&lt;/em> anything; you&amp;rsquo;re just processing your items. If you think, &amp;ldquo;I don&amp;rsquo;t want to get to this because it will take too long to do.&amp;rdquo; Well in that case, add the item to your list! I have an @Actions folder for these situations, so I know I can go to the email and write in a long response.&lt;/p>
+&lt;p>&lt;strong>My email inbox has zero items in it at some point every day.&lt;/strong> You think I&amp;rsquo;m crazy, I know. Believe me, once you do this workflow, you won&amp;rsquo;t ever go back. I&amp;rsquo;ve been told by people higher up than me that the email gets unbearable and that my workflow is impossible. I&amp;rsquo;d like to think that it isn&amp;rsquo;t. I&amp;rsquo;ve already started forwarding emails to people on my team with short responses: &amp;ldquo;Yours&amp;rdquo; or &amp;ldquo;Let me know if I need to do anything&amp;rdquo;. Most threads I&amp;rsquo;m copied on aren&amp;rsquo;t important. So I think that this should apply to everyone, and you &lt;em>have&lt;/em> to know what it is you need to get done in your life to have sanity in any way.&lt;/p>
+&lt;p>&lt;strong>The key to processing is translating &amp;ldquo;Stuff&amp;rdquo; into Actions.&lt;/strong> I can tell when someone really knows GTD by the items on their to-do list. &amp;ldquo;Set up blog&amp;rdquo; becomes &amp;ldquo;Buy domain on BlueHost&amp;rdquo; and &amp;ldquo;Set up Genesis Theme on blog&amp;rdquo; and about fifty other things. How much faster do I burn through the fifty specific, actionable things, than my &amp;ldquo;Set up blog&amp;rdquo;? Honestly, for me &amp;ldquo;Set up Blog&amp;rdquo; goes nowhere, because &amp;ldquo;watch episode of Biggest Loser&amp;rdquo; is much more actionable.&lt;/p>
+&lt;p>Do you think inbox zero will work in your situation? If not, why not?&lt;/p></description></item><item><title>Collect for Sanity</title><link>https://hedge-ops.com/collect-for-sanity/</link><pubDate>Fri, 25 Jul 2014 08:00:22 +0000</pubDate><guid>https://hedge-ops.com/collect-for-sanity/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-collect-for-sanity.jpg" alt="Collect for Sanity" />
+&lt;/div>
+&lt;p>We are inundated with stuff. Stuff we need to act on. Stuff we need to remember. Stuff we need to worry about later.&lt;/p>
+&lt;p>Most of us are stressed out with the amount of stuff in our lives. What to do about it?&lt;/p>
+&lt;p>The system outlined in Getting Things Done starts with collection: &lt;strong>there needs to be a system in your life for putting things that need to be processed later.&lt;/strong>&lt;/p>
+&lt;p>So when you&amp;rsquo;re driving down the road and think of something, what is your system for collecting that for later? When you get a bill in the mail, but don&amp;rsquo;t want to pay it, what is your system for that?&lt;/p>
+&lt;p>Without this system &lt;strong>your mind will always be reminding you about everything.&lt;/strong> And you will never find peace. You will constantly be running from thing to thing and never able to say to yourself, &amp;ldquo;Relax, I&amp;rsquo;ll get to it later.&amp;rdquo; &lt;strong>Because your mind knows you won&amp;rsquo;t, because you don&amp;rsquo;t have a system for it.&lt;/strong>&lt;/p>
+&lt;p>Here is where I collect things to be processed later:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Inbox at home.&lt;/strong> All my mail, bills, go here&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Inbox at work.&lt;/strong> All my physical meeting notes, receipts go here&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Evernote.&lt;/strong> all my digital meeting notes go here&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Gmail Inbox.&lt;/strong> All my personal email goes here&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Outlook Inbox.&lt;/strong> All my work email goes here&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>If I want something to be processed in my life, they &lt;em>must&lt;/em> go here. If I put them here, I can forget about them, because I have a system to deal with them.&lt;/p>
+&lt;p>One thing I haven&amp;rsquo;t figured out a system for yet, but want to: daydreaming away from my computer. For this system to &lt;em>really&lt;/em> work, you have to empty your mind of all your stuff into a system. Anything that you ignore will come back over and over again. In the process phase you can say &amp;ldquo;no&amp;rdquo; to those things, but the key is that you tell your mind, &amp;ldquo;Forget about it. It&amp;rsquo;s in the system. Trust me.&amp;rdquo; This frees you up to &lt;em>truly focus.&lt;/em>&lt;/p>
+&lt;p>Right now I have no system for when I&amp;rsquo;m thinking in the car and realize, &amp;ldquo;I need to organize my closet.&amp;rdquo; Normally I forget about it by the time I arrive at my destination, and my mind gets stuck in a loop.&lt;/p>
+&lt;p>The obvious solution to this would be my phone, but a lot of times it&amp;rsquo;s locked and difficult to get to. Another solution might be a portable recording device. I think I might experiment with that.&lt;/p>
+&lt;p>Has anyone come up with a good system for dealing with these times when you&amp;rsquo;re away from your inboxes or computers?&lt;/p></description></item><item><title>Planned Thinking</title><link>https://hedge-ops.com/planned-thinking/</link><pubDate>Wed, 23 Jul 2014 08:00:05 +0000</pubDate><guid>https://hedge-ops.com/planned-thinking/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-planned-thinking.jpg" alt="Planned Thinking" />
+&lt;/div>
+&lt;p>In 2012 our efforts to add automated integrated testing to our central Point-of-Sale product were showing great results. We &lt;a href="https://hedge-ops.com/measure-for-reality/">were finding 20-40%&lt;/a> of all defects found in the software, many of which were found within hours of those defects being introduced by the developer. It took years of hard work to get to this place, and I was feeling good about our accomplishments.&lt;/p>
+&lt;p>But there was a problem.&lt;/p>
+&lt;p>I was running everything on adrenaline.&lt;/p>
+&lt;p>I was working extra hours, reacting to everything, and doing the next best thing to be done. But I was neglecting other really big things. It was review time and my boss wanted me to take my capabilities to another level. His advice was among the more valuable I&amp;rsquo;ve had in a review:&lt;/p>
+&lt;p>&amp;ldquo;You need to stop at least once a week and think about things. You just need to stop and think&amp;rdquo;&lt;/p>
+&lt;p>My goodness he was right. And I knew better than this. Years ago I read the book Getting Things Done (GTD for short), which revolutionized how I did things. My problem was that I hadn&amp;rsquo;t developed a system for GTD principles. In the last year and a half I&amp;rsquo;ve focused on growing this area. I&amp;rsquo;m so excited to share with you my system, because I think it&amp;rsquo;s a great one that illustrates the concepts in GTD that I have only recently taken to the next level. If you read the book you get a good overview of the system. I don&amp;rsquo;t believe you really understand it until you see a system in practice.&lt;/p>
+&lt;p>The center of my GTD system is &lt;a href="http://www.checkvist.com">Checkvist&lt;/a>. I met the creator a Checkvist a little over two years ago at Jetbrains when I was discussing TeamCity with them. Kirill was taking notes in Checkvist and copied me on it. I didn&amp;rsquo;t take the tool seriously until after the review at the start of 2013. This tool is the single biggest reason for my success in the last 18 months. I can&amp;rsquo;t imagine life without Checkvist. In fact, this blog is managed through Checkvist and helped me create a workable plan that I could execute on.&lt;/p>
+&lt;p>There are five phases of Getting Things Done that I will cover in detail in four posts:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Collect:&lt;/strong> how do you take the things in your life and put them in places that you know you&amp;rsquo;ll get to when you have time?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Process/Organize:&lt;/strong> Now that you have time, how do you take the things you have collected and put them in a system that you trust you will come back to later?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Review:&lt;/strong> what is your system for coming back to the things you&amp;rsquo;ve put in your system?&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Do:&lt;/strong> when you&amp;rsquo;re going to do something, what is your system for knowing what is best?&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>If you haven&amp;rsquo;t yet checked out Checkvist. I encourage you to do so and follow along in the next couple of weeks to get yourself organized. I&amp;rsquo;m here to help!&lt;/p></description></item><item><title>Solve Problems by Isolating Them</title><link>https://hedge-ops.com/solve-problems-by-isolating-them/</link><pubDate>Wed, 16 Jul 2014 08:02:33 +0000</pubDate><guid>https://hedge-ops.com/solve-problems-by-isolating-them/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-solve-problems-by-isolating-them.jpg" alt="Isolate Problems" />
+&lt;/div>
+&lt;p>My kids have been drawn into the world of Legos. They love &lt;a href="http://www.lego.com/en-us/ninjago">Ninjago&lt;/a> and &lt;a href="http://www.imdb.com/title/tt1490017/">The Lego Movie&lt;/a>.&lt;/p>
+&lt;p>It turns out there is a [My kids have been drawn into the world of Legos. They love &lt;a href="http://www.lego.com/en-us/ninjago">Ninjago&lt;/a> and &lt;a href="http://www.imdb.com/title/tt1490017/">The Lego Movie&lt;/a>.&lt;/p>
+&lt;p>It turns out there is a &lt;a href="http://www.legolanddiscoverycenter.com/dallasfw/">Legoland Discovery center&lt;/a> nearby. The other day they went to a birthday party there. The kids had an absolute blast. Legos, legos everywhere. It was totally awesome.&lt;/p>
+&lt;p>It also turns out that we have a &lt;a href="https://www.sixflags.com/overtexas">Six Flags&lt;/a> nearby. Fast roller coasters. Every amusement park craziness imaginable. We spent last summer doing that, and let me tell you, mom and I really got sick of it. But the kids absolutely loved it. They even wanted to do it again this summer.&lt;/p>
+&lt;p>So DFW area: lego land: check. amusement park: check. &lt;a href="http://california.legoland.com/">lego amusement park&lt;/a>? That will be a trip to California and $4000 please.&lt;/p>
+&lt;p>It&amp;rsquo;s interesting how &lt;strong>the solution to a problem gets a lot more complicated and a lot more expensive when you combine it with another problem.&lt;/strong> I come across this a lot at work. I ruthlessly go through a project and eliminate anything that isn&amp;rsquo;t needed, because I want to ship it as quickly as possible and I know every little thing just adds to the time and complexity and makes the project that much more unrealistic.&lt;/p>
+&lt;p>So are we going to the LegoLand California Resort? If we do it, it will be with [My kids have been drawn into the world of Legos. They love &lt;a href="http://www.lego.com/en-us/ninjago">Ninjago&lt;/a> and &lt;a href="http://www.imdb.com/title/tt1490017/">The Lego Movie&lt;/a>.&lt;/p></description></item><item><title>Immunity</title><link>https://hedge-ops.com/immunity/</link><pubDate>Mon, 14 Jul 2014 08:05:46 +0000</pubDate><guid>https://hedge-ops.com/immunity/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-immunity.jpg" alt="Immunity" />
+&lt;/div>
+&lt;p>We finally figured out a bedtime routine.&lt;/p>
+&lt;p>But the kids were late to school every day.&lt;/p>
+&lt;p>We figured out how to sit down every night for dinner.&lt;/p>
+&lt;p>But we were spending too much on groceries.&lt;/p>
+&lt;p>It&amp;rsquo;s a reality we all face: no matter what you do, &lt;a href="https://hedge-ops.com/failure-the-catalyst/">some other problem comes up to wreck everything&lt;/a>. And the same was true for my project that was dedicated to improving the quality of our software.&lt;/p>
+&lt;p>When we started, we focused mainly on making sure there was no problem with how an order was created, the receipt was printed, and the financials were calculated. We had prioritized this correctly; getting these three things right is critical to our success.&lt;/p>
+&lt;p>Once we had ramped up our solution, we saw a &lt;em>lot&lt;/em> of problems that we were able to catch before shipping our latest releases to anyone. We saved ourselves and our customers a lot of headaches that our competitors and their customers were likely suffering through.&lt;/p>
+&lt;p>But over time, those problems decreased and the system seems to now have an immunity to these types of issues. It&amp;rsquo;s not a phenomenon I totally understand, but is one I&amp;rsquo;ve heard of from others in the industry.&lt;/p>
+&lt;p>Our newfound immunity also hadn&amp;rsquo;t made us immune to &lt;em>every&lt;/em> problem. The problems we &lt;em>weren&amp;rsquo;t&lt;/em> focused on were still there.&lt;/p>
+&lt;p>We hadn&amp;rsquo;t focused on how software is installed at the site and that the correct environment was set up. So the software could be rock solid, but if the environment is off, we&amp;rsquo;re in trouble. It will likely never end, but it&amp;rsquo;s a fun journey to iteratively create immunity through automation in the system.&lt;/p>
+&lt;p>My advice with problem solving is &lt;strong>create a system that makes you immune to having the problem again.&lt;/strong> So get a month ahead of income so you never overdraft. Or put all your bills on autopay so you never miss one. Or every Friday take your spouse out for dinner. &lt;strong>But don&amp;rsquo;t expect all problems to go away entirely.&lt;/strong> Keep working at it, and you&amp;rsquo;ll grow beyond where you imagined, solving problems you didn&amp;rsquo;t even think you were capable of taking on. It&amp;rsquo;s a wonderful journey.&lt;/p></description></item><item><title>Problem Owner is Solution Owner</title><link>https://hedge-ops.com/problem-owner-is-solution-owner/</link><pubDate>Wed, 09 Jul 2014 08:07:29 +0000</pubDate><guid>https://hedge-ops.com/problem-owner-is-solution-owner/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-problem-owner-is-solution-owner.jpg" alt="Problem Owner" />
+&lt;/div>
+&lt;p>The room was standing room only. I was playing &amp;ldquo;&lt;a href="https://www.youtube.com/watch?v=o1tj2zJ2Wvg">Welcome to the Jungle&lt;/a>&amp;rdquo; as loud as my company-issued laptop would play. There was a considerable buzz in the room.&lt;/p>
+&lt;p>I was &lt;a href="https://hedge-ops.com/speaking/">speaking at a conference session&lt;/a> entitled &amp;ldquo;The New Diagnostic Utility.&amp;rdquo; This wasn&amp;rsquo;t a Get Rich Quick with Flipping Real Estate conference session. This was The Diagnostic Utility.&lt;/p>
+&lt;p>What was so jarring about this experience was the lackluster response I had gotten to this tool up until this point. The idea came &lt;a href="www.linkedin.com/in/nicolemillspmp">from a colleague&lt;/a> that dealt with diagnosing environmental issues in sites. She and her team were excited about it. I understood the need. But no one else seemed to be enthused. Why not?&lt;/p>
+&lt;p>The conference I was at was full of people who install our software at restaurants all over North America. They had issues that needed to be diagnosed. The title &amp;ldquo;The Diagnostic Utility&amp;rdquo; was translated to them like &amp;ldquo;Save Yourself Hours of Time Making Sure You Did Everything Right&amp;rdquo;. This was the &lt;a href="https://hedge-ops.com/safety-net/">safety net&lt;/a> they needed. Their attendance and enthusiasm confirmed it.&lt;/p>
+&lt;p>This is probably the most valuable lesson I&amp;rsquo;ve learned this year: &lt;strong>a solution is only effective when it is &lt;em>in the hands&lt;/em> of the one that has a problem.&lt;/strong> Not the one that &lt;em>knows&lt;/em> about the problem. Not even the one who is &lt;em>losing money&lt;/em> on the problem. &lt;strong>The one who has the problem.&lt;/strong>&lt;/p>
+&lt;p>So when your kid doesn&amp;rsquo;t want to get to school on time, the solution is waking up earlier, but it&amp;rsquo;s only effective when your kid &lt;em>wants&lt;/em> to be on time to school to avoid a consequence.&lt;/p>
+&lt;p>When a project is proposed but the people who own that process don&amp;rsquo;t believe there&amp;rsquo;s a problem, you don&amp;rsquo;t do the project.&lt;/p>
+&lt;p>When you&amp;rsquo;re getting frustrated that a customer isn&amp;rsquo;t responsive enough to your solution, perhaps they don&amp;rsquo;t see there is a problem and perhaps you need to find another customer.&lt;/p>
+&lt;p>That was the case for The New Diagnostic Utility. Once I found the right audience, everything fell into place.&lt;/p></description></item><item><title>Measure for Reality</title><link>https://hedge-ops.com/measure-for-reality/</link><pubDate>Mon, 07 Jul 2014 08:10:44 +0000</pubDate><guid>https://hedge-ops.com/measure-for-reality/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-measure-for-reality.jpg" alt="Measure for Reality" />
+&lt;/div>
+&lt;p>Buffalo Ribeye, medium at &lt;a href="http://www.reata.net/fort-worth-restaurant.html">Reata&lt;/a> with a glass of cab. That&amp;rsquo;s what I get when I&amp;rsquo;m ready to celebrate.&lt;/p>
+&lt;p>We had finally sold our house and knew we needed to jump on the next one. On the first day of looking, we found a house with a lot of potential and decided we wanted to make an offer. When the offer was accepted, we got babysitting for the kids and headed to Reata to celebrate. Then I got a text. Look away, look away! Another one. My wife is more important than this phone. Another one.&lt;/p>
+&lt;p>A friend of mine wanted me to come work with him.&lt;/p>
+&lt;p>The offer was very attractive and tempting. But I didn&amp;rsquo;t take it for a number of reasons, one of which was that I felt like my work wasn&amp;rsquo;t finished at my current job.&lt;/p>
+&lt;p>Then the next two weeks were hell at work. Negativity. Failure. Struggle. Wondering to myself if there will every be anything but negativity, failure, and struggle.&lt;/p>
+&lt;p>I was fed up and needed to get honest with myself, so I went to &lt;a href="http://www.esparzastexas.com/home">Esparzas&lt;/a> and mapped out how I could get out of the situation I was in over a few margaritas.&lt;/p>
+&lt;p>Let me let you in on a little secret of mine: every three months, I go to a restaurant, have at least two margaritas, and write out what I&amp;rsquo;m happy about, what I&amp;rsquo;m not happy about, and what I&amp;rsquo;m going to do about it. This particular day I was not happy about the fact that I turned down a great offer and didn&amp;rsquo;t have a wildly successful project at the time that made that decision feel worth it.&lt;/p>
+&lt;p>The problem I uncovered that day over a few margaritas was that &lt;strong>we were doing some great things but those great things weren&amp;rsquo;t &lt;em>measured&lt;/em> and &lt;em>reported on&lt;/em>.&lt;/strong> So to outsiders, especially senior management, those great things didn&amp;rsquo;t exist. What I needed to do was measure the outcomes we were creating, and then share those measurements with the stakeholders on the project. That would turn &amp;ldquo;is this ever going to work?&amp;rdquo; into &amp;ldquo;this is working but they have a few issues right now.&amp;rdquo;&lt;/p>
+&lt;p>In a few months, we created a daily report that showed the project&amp;rsquo;s output &lt;em>every day&lt;/em> for the runs that happened &lt;em>every day&lt;/em>. This was a game changer for my project, and for my job. Now I look for any way to measure what outcomes I&amp;rsquo;m creating because I know no matter how good the outcome is, if it isn&amp;rsquo;t measured, it doesn&amp;rsquo;t exist.&lt;/p>
+&lt;p>To wrap up the story, I made the right decision with staying with my company. The project just needed some advertised regular measurement. Once that was in place everything changed. And my friend left that job six months after he made that offer, due to strife. A year after that the project he was on was cancelled.&lt;/p></description></item><item><title>Embrace Difficulty</title><link>https://hedge-ops.com/embrace-difficulty/</link><pubDate>Wed, 02 Jul 2014 08:12:45 +0000</pubDate><guid>https://hedge-ops.com/embrace-difficulty/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-embrace-difficulty.jpg" alt="Embrace Difficulty" />
+&lt;/div>
+&lt;p>It was an impossible project and I was scared. The fact that &lt;a href="https://hedge-ops.com/christmas-with-russians/">the world was ending&lt;/a> was the least of my concerns. We have software that is so flexible and configurable that it was impossible to fully test all the combinations of options our customers could run. My leadership at the time asked us to mitigate this by recording everything that happened at a restaurant and playing it back it back internally on prereleased software to make sure everything behaved the same.&lt;/p>
+&lt;p>I can&amp;rsquo;t overstate how I felt: this problem scared the crap out of me. So much could go wrong, and so many issues to figure out. How would I get the software started? How would I know when/if the simulation was running correctly? What about all the other automation projects I had heard about over the years that had been cancelled due to lack of results? Would this project (and my career with it) be the next one thrown on the scrap heap when management realizes how impossible it is?&lt;/p>
+&lt;p>I had to step back, step away from my fear, and think of a good strategy. We were facing a difficult problem. The process we would come up with was likely to fail. A lot. Instead of running &lt;em>away&lt;/em> from that failure, we needed to embrace it. We needed to welcome it with open arms. Because &lt;strong>if we didn&amp;rsquo;t face the failure head on, we would never get past it, and we would fail.&lt;/strong>&lt;/p>
+&lt;p>So we created a system where we ran any automation we had &lt;em>every day&lt;/em>. In fact, this is how we do it today, with over 150 restaurants running in a virtual environment and over 4,000 small scenarios. We do it every night. Do we have to do it every night? Technically no. But we embrace the difficulty of it by doing it every night so we get quick feedback of the problems and keep it on track.&lt;/p>
+&lt;p>People still argue with me over whether we &lt;em>have&lt;/em> to run this every night. I&amp;rsquo;m fine with that; I know it seems silly at times. But I think it&amp;rsquo;s key to our success: &lt;strong>we embrace the difficulty by doing difficult things all the time, so we can learn how to deal with them and make them not difficult anymore.&lt;/strong>&lt;/p>
+&lt;p>Here are a few other examples of embracing the difficulty in a system:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>When&lt;/th>
+&lt;th>Embrace Difficulty By&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Doing Laundry&lt;/td>
+&lt;td>Doing it every day&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Budgeting&lt;/td>
+&lt;td>Starting every month and facing reality&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Blogging&lt;/td>
+&lt;td>Keeping a month ahead and posting at a regular pace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Learning to Cook&lt;/td>
+&lt;td>Cooking a regular meal on a day of a week&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Keeping the Family Close&lt;/td>
+&lt;td>Eating dinner together every night&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>What have you avoided that you need to embrace in order to overcome it?&lt;/p></description></item><item><title>Failure the Catalyst</title><link>https://hedge-ops.com/failure-the-catalyst/</link><pubDate>Mon, 16 Jun 2014 08:00:40 +0000</pubDate><guid>https://hedge-ops.com/failure-the-catalyst/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-failure-the-catalyst.jpg" alt="Failure the Catalyst" />
+&lt;/div>
+&lt;p>&amp;ldquo;We don&amp;rsquo;t take credit cards, only cash.&amp;rdquo;&lt;/p>
+&lt;p>It was November 2009, and I was locked into &amp;ldquo;Project: Have a Third Child&amp;rdquo;. Part of the deal I made with my wife is that we could offset some of the hardships of having another child by doing some things for ourselves. This translated partly into changing our half bath into a full bath and completely redoing the furniture and decorating of our master bedroom.&lt;/p>
+&lt;p>As with most home projects, reality quickly surpassed our budget. That was OK. I was going to use my credit card. Nevermind that I promised myself I would never use it in this manner…this totally frivolous remodeling project was an emergency! I would pay it off, I promised. I just needed to get through this.&lt;/p>
+&lt;p>&lt;a href="http://www.viperplumbing.com/">My plumber&lt;/a> dug a hole in our foundation, extended the toilet drain to what would be the shower, and charged me a hefty sum to do it.&lt;/p>
+&lt;p>And he only took cash.&lt;/p>
+&lt;p>As did &lt;a href="http://mastertilesetter.com/">the tile guys&lt;/a> and &lt;a href="http://paulhedgpethpainting.blogspot.com/">the painter&lt;/a>. Crap.&lt;/p>
+&lt;p>The inevitable occurred. I overdrafted our checking account and our finances went into a tailspin that took us a few weeks to get out of.&lt;/p>
+&lt;p>My wife and I awoke to how totally out of control and useless our current financial system had been. Some major changes were on the horizon. But these changes had a beginning in failure. At the time failure seems so terrible, so awful, that nothing good can come out of it. But in reality failure is often a catalyst for change.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>When you fail by&lt;/th>
+&lt;th>it is the catalyst for&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>losing your job&lt;/td>
+&lt;td>putting yourself on the right path to meet your goals, with the options wide open&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>a marital separation or affair&lt;/td>
+&lt;td>finding or abandoning your true commitment to that person, which means there will no longer be a lukewarm relationship&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>a project failure at work&lt;/td>
+&lt;td>understanding what &lt;i>will not &lt;/i>work, so you can pursue what will work either for you or your organization&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>gaining weight&lt;/td>
+&lt;td>reanalyzing your relationship with food and an active lifestyle and making changes&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Failure feels terrible at the moment, but it really is a wonderful blessing because it is the only catalyst I know of for real success. I haven&amp;rsquo;t yet been able to believe this enough to make failure suck any less, but it sure is nice to know while I&amp;rsquo;m going through it.&lt;/p></description></item><item><title>Engineering Laundry</title><link>https://hedge-ops.com/engineering-laundry/</link><pubDate>Fri, 13 Jun 2014 08:00:54 +0000</pubDate><guid>https://hedge-ops.com/engineering-laundry/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-engineering-laundry.jpg" alt="Engineering Laundry" />
+&lt;/div>
+&lt;p>Before two weeks ago, &lt;a href="http://www.anniehedgie.com">my wife&lt;/a> had an intense hatred she only shared with close friends. This was something she avoided; she abhorred. Something that trapped her in a life of anger and despair.&lt;/p>
+&lt;p>Clothes. Worn and discarded. Washed. Dried. Put away. Repeat. Until death.&lt;/p>
+&lt;p>A couple of weeks ago, she asked me to reduce her workload by doing laundry. I wasn&amp;rsquo;t thrilled but I couldn&amp;rsquo;t argue against helping her out with a job that I could do.&lt;/p>
+&lt;p>Once I got to thinking about it, here&amp;rsquo;s what really intrigued me: laundry is a simple system that can be optimized, or engineered, for maximum efficiencies. As an engineer, I really love maximizing efficiencies. So I decided to tackle this problem of laundry using principles I&amp;rsquo;ve learned as an engineer.&lt;/p>
+&lt;h2 id="inherited-system">Inherited &lt;strong>System&lt;/strong>&lt;/h2>
+&lt;p>The system I inherited went something like this, for our family of five:&lt;/p>
+&lt;ol>
+&lt;li>Each room on the second floor has a clothes hamper (all of our sleeping rooms are on the second floor). When cleaning the room, put the clothes in the clothes hamper.&lt;/li>
+&lt;li>If you&amp;rsquo;re on the first floor, put the clothes in the laundry room which is on the first floor.&lt;/li>
+&lt;li>Once a week, on no particular day, take all the clothes from the rooms and pile it in the laundry room.&lt;/li>
+&lt;li>Sort the clothes into loads of whites, colors, towels.&lt;/li>
+&lt;li>Wash and dry the clothes (this takes two days).&lt;/li>
+&lt;li>When the clothes are dried, put the clothes that are to be hung up flat on top of the dryer. Put the clothes that are in dressers in a bag that hangs on the wall, one for each person. There is also a bag for kitchen towels and bathroom towels.&lt;/li>
+&lt;li>At some point take all bags upstairs, and put the clothes away in dressers.&lt;/li>
+&lt;li>At some point hang up the clothes.&lt;/li>
+&lt;/ol>
+&lt;p>This entire process would begin as it was ending. In other words, laundry ended up being a neverending mess of never-done-ness.&lt;/p>
+&lt;h2 id="problems-with-the-system">Problems &lt;strong>with the System&lt;/strong>&lt;/h2>
+&lt;p>I looked at the system not as a household chore but as a system that I could maximize using principles I use at work. So looking at it that way, what were the problems with this system?&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Excessive Batching.&lt;/strong> Everything was piled up and done at once, and there was no flow. When there is so much work in progress, you can&amp;rsquo;t optimize the system because there are too many variables in it. It&amp;rsquo;s like trying to cook Thanksgiving Dinner…all at once. There has to be a clear process in place and simplicity at every step for any hope of true optimization.&lt;/li>
+&lt;li>&lt;strong>Excessive Sorting.&lt;/strong> Laundry was sorted at least two times within a large set. There was a separation of &lt;em>all the laundry&lt;/em> into loads, and another separation of &lt;em>all the laundry&lt;/em> by who owned the laundry. This was especially difficult with the kids, whose sizes are remarkably similar and ever-changing, even though they insist it&amp;rsquo;s totally obvious that the shirt belongs to one or the other.&lt;/li>
+&lt;li>&lt;strong>Lack of Ownership.&lt;/strong> My wife was doing all the work. None of us wanted to do the job. So we were leaving valuable contributions from me and my sons on the table, which led to…&lt;/li>
+&lt;li>&lt;strong>Despair from Lack of Closure.&lt;/strong> The system didn&amp;rsquo;t give you a sense of being &amp;ldquo;done&amp;rdquo;. In software terms there was no &amp;ldquo;release&amp;rdquo;. It was just always going.&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-system">New System&lt;/h2>
+&lt;p>I did some internet searching and &lt;a href="http://lifeasmom.com/2013/04/kids-can-do-laundry.html">came across an article&lt;/a> that was extremely close to what I have implemented. It addresses all of the problems stated above. Here&amp;rsquo;s the system:&lt;/p>
+&lt;ol>
+&lt;li>Every person in the house gets their own laundry basket except for parents who share theirs. Every person is responsible for putting their own clothes into &lt;em>only&lt;/em> their own basket.&lt;/li>
+&lt;li>There is a basket downstairs that towels and linens go into.&lt;/li>
+&lt;li>Every basket is done by its owner on a particular day of the week. Someone helps too if that&amp;rsquo;s needed. Our schedule is:&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Day&lt;/th>
+&lt;th>Basket&lt;/th>
+&lt;th>Owner&lt;/th>
+&lt;th>Helper&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Monday&lt;/td>
+&lt;td>Parents&lt;/td>
+&lt;td>Mom&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tuesday&lt;/td>
+&lt;td>Oldest&lt;/td>
+&lt;td>Oldest&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wednesday&lt;/td>
+&lt;td>Towels&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;td>Mom&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thursday&lt;/td>
+&lt;td>Middle Child&lt;/td>
+&lt;td>Middle Child&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Friday&lt;/td>
+&lt;td>Youngest Child&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="benefits-of-the-new-system">Benefits of the New System&lt;/h2>
+&lt;p>We&amp;rsquo;ve done this system for a week now, and wow has it made a difference. Here&amp;rsquo;s why:&lt;/p>
+&lt;ul>
+&lt;li>We&amp;rsquo;ve broken the whole system down into smaller, manageable chunks. That way there is a sense of progress, completion, and lack of despair. Since the laundry room is clean (other than a basket with towels), it is a place where you can create an outcome relatively quickly and get out. You&amp;rsquo;re done. There&amp;rsquo;s not a big scary laundry monster in there to kill you.&lt;/li>
+&lt;li>Sorting has been drastically minimized. Now when we wash the youngest child&amp;rsquo;s clothes, it&amp;rsquo;s extremely clear whose clothes those are when they come out of the dryer. This knocks off the total time we spend on it.&lt;/li>
+&lt;li>Everyone owns laundry. It&amp;rsquo;s not something that only Mom does. And she gets to do the part that is most important to her (her own clothes), so we win by me not accidentally shrinking her brand new sweater.&lt;/li>
+&lt;/ul>
+&lt;p>The problem that one might have with this system is that you are doing laundry &lt;em>every day&lt;/em>. But a different person is in charge of it, and it&amp;rsquo;s a mangable amount. It seems to be working out well for us so far.&lt;/p>
+&lt;p>The great thing I found through this process is how well management principles relate to so many other areas of life. That&amp;rsquo;s one of the things I want to explore in the future: taking wisdom from one area of life and applying it elsewhere.&lt;/p>
+&lt;p>&lt;em>Do these principles apply to another area of your life?&lt;/em>&lt;/p></description></item><item><title>Surprise</title><link>https://hedge-ops.com/surprise/</link><pubDate>Wed, 11 Jun 2014 08:00:02 +0000</pubDate><guid>https://hedge-ops.com/surprise/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-surprise.jpg" alt="Surprise" />
+&lt;/div>
+&lt;p>In &lt;a href="https://hedge-ops.com/the-grand-vision/">the last post&lt;/a> I wrote about a mistake I made where I focused too much on The Grand Vision and not enough on solving small problems. At the time, I felt that accomplishing The Grand Vision was going to be awesome and would save the world, and would mean that there would be a parade for my entire team, and cheering, and wonderful speeches given for us all. It will be glorious, except, now I realize I totally screwed it up:&lt;/p>
+&lt;p>&lt;strong>I left no room for surprise.&lt;/strong>&lt;/p>
+&lt;p>Surprise is when someone&amp;rsquo;s expectation is suddenly shifted into a totally new place in an instant. &lt;strong>Surprise has a way of changing the game immediately and causing your competitors to scramble.&lt;/strong>&lt;/p>
+&lt;p>When your competition expects an outcome, they have time to spin it as no big deal. Your flaws (and there will be flaws if you ship it) will be the surprises, not the big game-changing outcome that you created. People adjust to the &amp;ldquo;new&amp;rdquo; reality over a period of months, when in fact the reality hasn&amp;rsquo;t even changed.&lt;/p>
+&lt;p>This lesson will be central to everything I do for the rest of my life. If I am trying to create an important outcome that makes a difference, I should focus &lt;em>first&lt;/em> on creating the outcome. &lt;strong>If it is as important as I think it is, surprise will be my ally.&lt;/strong>&lt;/p></description></item><item><title>The Grand Vision</title><link>https://hedge-ops.com/the-grand-vision/</link><pubDate>Mon, 09 Jun 2014 08:00:03 +0000</pubDate><guid>https://hedge-ops.com/the-grand-vision/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-grand-vision.jpg" alt="The Grand Vision" />
+&lt;/div>
+&lt;p>Late last year I started a new project that was dedicated to improving our delivery process and tools. I spent a few weeks talking to people throughout our organization about what the problems were and how we can best address them. And then I came up with &lt;strong>The Grand Vision.&lt;/strong>&lt;/p>
+&lt;p>The Grand Vision was an awesome elevator speech where I drew quadrants and arrows, talked about the main problems I was seeing and how to bring them together into one, totally awesome, unified structure that Would Save The World.&lt;/p>
+&lt;p>In one of the meetings, a key leader I respect said to me, &amp;ldquo;That&amp;rsquo;s ambitious.&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Thanks,&amp;rdquo; I replied.&lt;/p>
+&lt;p>&lt;em>It wasn&amp;rsquo;t a complement&lt;/em>.&lt;/p>
+&lt;p>The lesson I learned is that it&amp;rsquo;s important to map out the process and see how what you&amp;rsquo;re doing fits into the entire goal. &lt;em>But it&amp;rsquo;s also important to solve problems immediately that have a quick return on investment.&lt;/em>&lt;/p>
+&lt;p>This kind of thinking happens all the time:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Ambitious&lt;/th>
+&lt;th>Should be&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>I&amp;rsquo;m going to get rid of all sugar in my house and go GLUTEN FREE&lt;/td>
+&lt;td>On Fridays I eat donuts that people bring in the office. In June I&amp;rsquo;m not going to eat any.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>I&amp;rsquo;m going to get a gym membership with personal training and wake up every day at 5:30AM and get RIPPED!&lt;/td>
+&lt;td>I&amp;rsquo;m going to bike anywhere within 5 miles of my house and do 20 pushups a night&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>We are going to a full week marriage conference in Aspen, Colorado so we can get our marriage back on track&lt;/td>
+&lt;td>Let&amp;rsquo;s go on a date and not look at our phones&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;strong>It&amp;rsquo;s so easy to avoid the really tough problems in front of you by dreaming a big dream.&lt;/strong> I think many of us like to think if we can&amp;rsquo;t do it all, then why do it at all? The real battle is won when we drop that all or nothing thinking and get something done&amp;hellip;&lt;strong>today&lt;/strong>.&lt;/p>
+&lt;p>When have you let the grand vision distract you from what really needed to be done right then and there?&lt;/p></description></item></channel></rss>

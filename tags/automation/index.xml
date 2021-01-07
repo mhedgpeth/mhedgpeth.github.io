@@ -1,0 +1,440 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>automation on Michael Hedgpeth</title><link>https://hedge-ops.com/tags/automation/</link><description>Recent content in automation on Michael Hedgpeth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>MIT</copyright><lastBuildDate>Wed, 15 Jun 2016 07:39:22 +0000</lastBuildDate><atom:link href="https://hedge-ops.com/tags/automation/index.xml" rel="self" type="application/rss+xml"/><item><title>Finding Habitat</title><link>https://hedge-ops.com/finding-habitat/</link><pubDate>Wed, 15 Jun 2016 07:39:22 +0000</pubDate><guid>https://hedge-ops.com/finding-habitat/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-finding-habitat.jpg" alt="Finding Habitat" />
+&lt;/div>
+&lt;p>A few months ago I caught up with Julian Dunn in Ghent about what he was up to. His &lt;a href="https://www.youtube.com/watch?v=kfF9IATUask">talk on orchestration&lt;/a> was instrumental in forming &lt;a href="https://hedge-ops.com/orchestration-maturity-model-with-chef/">our approach&lt;/a> to solving the problem with Consul and his &lt;a href="http://www.juliandunn.net/2015/12/04/the-oncoming-train-of-enterprise-container-deployments/">blog post on docker&lt;/a> showed me he was thinking deeply and critically about some interesting topics. I reached out to him to learn more about what he was up to and spent some time with him to learn about Habitat.&lt;/p>
+&lt;p>When I learned that Fletcher Nichol was also working on the project, I got even more excited. Fletcher&amp;rsquo;s work on &lt;a href="http://kitchen.ci/">Test Kitchen&lt;/a> has &lt;a href="https://hedge-ops.com/test-kitchen-required-not-optional/">revolutionized our workflow&lt;/a>. Recently, I saw it lower the barrier to entry for &lt;a href="http://www.anniehedgie.com/">my wife&lt;/a> to learn Chef. There really is a &amp;ldquo;before Kitchen&amp;rdquo; and &amp;ldquo;after Kitchen&amp;rdquo; epoch in her learning. It&amp;rsquo;s that revolutionary. And to see that Fletcher was focusing on this problem as well was quite exciting.&lt;/p>
+&lt;p>&lt;a href="https://www.chef.io/blog/2016/06/14/introducing-habitat/">Adam Jacob&amp;rsquo;s blog post &lt;/a> left me both intrigued me and a little confused. I wanted to understand what Habitat was and how it fit into Chef&amp;rsquo;s infrastructure and strategy. So I watched the event and got on twitter and had a fun time figuring it out.&lt;/p>
+&lt;p>It was clear to me even from my early talks with Julian that Habitat was a disruptive technology. This is yet another reason why &lt;a href="https://hedge-ops.com/technology-partnership/">Chef is such a good partner for us&lt;/a>. I can trust them to prioritize &lt;em>the right solution&lt;/em> for me over whether this will help their sales numbers this quarter. That trust drives sales higher than other companies because navigating this journey is difficult and we need people on our side who will tell us the hard truths on how to arrive at our destination. So kudos to Chef and its leadership for being so brave to make this step that says &amp;ldquo;there&amp;rsquo;s another aspect to the problem that could be better, here&amp;rsquo;s what we think&amp;rdquo;&lt;/p>
+&lt;p>Unfortunately, the initial message of Habitat didn&amp;rsquo;t resonate with me. I feel that it suffered from a few flaws that hurt it&amp;rsquo;s ability to resonate with enterprise customers like me:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>You&amp;rsquo;re doing it wrong&lt;/strong>. I reread the narrative about the siloed enterprise and the big web and am still struggling to understand it. What I felt initially is &amp;ldquo;how you have been approaching the problem of configuration management is all wrong.&amp;rdquo; I&amp;rsquo;m honestly not sure whether that should have been the feeling I got because honestly I still don&amp;rsquo;t understand the narrative they were going for. I do know that a good pitch to enterprise people &lt;em>should not&lt;/em> start with the message &amp;ldquo;your organization is fundamentally improperly structured&amp;rdquo; People don&amp;rsquo;t like to hear that. And even if they agree, there is nothing they can do about it. The message (intended or not) isn&amp;rsquo;t necessary because Habitat doesn&amp;rsquo;t ask you to change any of that (see my revised message below).&lt;/li>
+&lt;li>&lt;strong>Here is a Cool Solution.&lt;/strong> And it is. You put some really great people on this project for months or more, I expect it to be cool. But from an enterprise perspective its coolness carries little weight on whether it will help us solve the problems we are having. I would have preferred some discussion on what outcomes the team was able to accomplish as they partnered with an early customer, preferably from the enterprise. What did they do? Is it better? Why? Without this context it was difficult to put the solution in context.&lt;/li>
+&lt;li>&lt;strong>Context?&lt;/strong> This was the part I struggled with the most. How does Habitat fit into the Chef ecosystem? Where does it start and Chef begin? What problems does it solve that &lt;em>both&lt;/em> products could solve? Why would I choose one over the other? It was difficult to understand, especially over the medium of twitter where characters are limited and tone isn&amp;rsquo;t easily communicated.&lt;/li>
+&lt;/ul>
+&lt;p>Am I still excited about Habitat? Absolutely! After talking with a few people and with Julian for 15 minutes or so, I can now think about it in terms that make sense to me that I can share with others in our organization. In the spirit of providing alternatives when sharing problems, &lt;strong>here&amp;rsquo;s the pitch I would give if someone in my organization would ask me about it today&lt;/strong>:&lt;/p>
+&lt;blockquote>
+&lt;p>Chef&amp;rsquo;s has done an outstanding job with configuration management of infrastructure. This is why they are our partner. They have built upon that core competency with a reporting product to see what&amp;rsquo;s happening and a delivery product to manage changes. On top of that (and most importantly for us), they even help make your infrastructure more secure by helping you scan your infrastructure for security vulnerabilities and use Chef to remediate them. With Chef it is very easy to get a secure, hardened infrastructure configured for your business.&lt;/p>
+&lt;p>That&amp;rsquo;s not all you want to do, though. You want applications &lt;em>running&lt;/em> on that infrastructure. And it turns out when you start down this path, things get complicated quickly. You face problems that aren&amp;rsquo;t &lt;em>really&lt;/em> configuration management problems like orchestration or service discovery. You have to figure out how to scale. And you have an application team that wants to focus on &lt;em>those issues&lt;/em> rather than configure a specific machine to run. They might even insist on &lt;em>not&lt;/em> running a production-like machine for their development by insisting that they use docker to speed up development. How do you engage the application team in a way that helps them own their solution and use it, then deliver that automation to a broader ecosystem in a meaningful way?&lt;/p>
+&lt;p>Enter Habitat. With Habitat, your application team can define availability, upgrade, red/green deployments, and other application-level-concerns and package that &lt;em>with the application&lt;/em> and deliver it to their target environments. This means that Chef can focus what it&amp;rsquo;s good at: configuration management of the infrastructure. A habitat package can live as a docker container on a development machine, a minimal QA environment, or as a full-blown linux node which was also configured using Chef.&lt;/p>
+&lt;p>It&amp;rsquo;s tempting to try to find the one solution that will solve all of your problems. Many times that leaves you doing &lt;em>a lot of work&lt;/em> as you try to solve a problem with a solution that was not meant to solve those types of problems. Instead, it&amp;rsquo;s totally fine to have a solution to the application&amp;rsquo;s problems and a different solution for the infrastructure problems. As long as both solutions start with code, are tested early and often, and meet together very quickly, we can take advantage of their differentiated power.&lt;/p>
+&lt;/blockquote>
+&lt;p>This, to me is Habitat&amp;rsquo;s story and is what makes me so excited for its future and so happy that I&amp;rsquo;m a partner with Chef.&lt;/p></description></item><item><title>Promoting Cookbooks into a Private Chef Supermarket with TeamCity</title><link>https://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/</link><pubDate>Fri, 29 Apr 2016 08:01:34 +0000</pubDate><guid>https://hedge-ops.com/promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-promoting-cookbooks-into-a-private-chef-supermarket-with-teamcity.jpg" alt="Promoting Cookbooks" />
+&lt;/div>
+&lt;p>&lt;a href="http://hedge-ops.com/my-advice-for-chef-in-large-corporations/">We want the ability to control&lt;/a> which versions of which cookbooks we rely on and that those cookbooks are available to us even if the author removes them from GitHub. In fact with &lt;a href="http://www.theverge.com/2016/3/24/11300840/how-an-irate-developer-briefly-broke-javascript">the recent craziness on dependency management&lt;/a> and after listening to &lt;a href="https://www.arresteddevops.com/availability/">an episode on availability on Arrested DevOps,&lt;/a> I&amp;rsquo;m starting to think that this isn&amp;rsquo;t just for large organizations like mine.&lt;/p>
+&lt;p>So to protect ourselves from that kind of craziness, we have created a &lt;a href="https://www.chef.io/blog/2015/12/31/a-supermarket-of-your-own-running-a-private-supermarket/">private chef supermarket&lt;/a> that we host all dependencies on. Then in our policyfiles, we specify that private supermarket as our default source for finding cookbooks.&lt;/p>
+&lt;p>At first, to get us started, we manually uploaded the cookbooks we needed and got to working. Then as we scaled we got tired of people asking us to upload another version. On top of that we want to have a good, clean process for approving external cookbooks/code into our blessed environment. Here&amp;rsquo;s how we implemented it:&lt;/p>
+&lt;h2 id="1-synchronize-github-with-internal-git-server">1: Synchronize GitHub with internal Git server&lt;/h2>
+&lt;p>We have an internal, corporately blessed git server we use, so we needed to get what was in GitHub into that Git server. For each of the cookbooks, we create a TeamCity &lt;a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration">build configuration&lt;/a> (that&amp;rsquo;s based on a &lt;a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration+Template">template&lt;/a>) that does just this with a simple &lt;a href="https://confluence.jetbrains.com/display/TCD9/Command+Line">Command Line runner&lt;/a> (that runs in Windows only at the moment):&lt;/p>
+&lt;pre class="lang:default decode:true ">mkdir %Repository Name%.git
+git clone --mirror %Github Clone URL%
+cd %Repository Name%.git
+git remote add stash %Stash Clone URL%
+git push --all stash
+git push --tags stash&lt;/pre>
+&lt;p>There are three variables that are &lt;a href="https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Parameters">defined as parameters&lt;/a> here:&lt;/p>
+&lt;ol>
+&lt;li>Repository Name: the name of the git repository, like &lt;span class="lang:default decode:true crayon-inline ">chef-client&lt;/span>&lt;/li>
+&lt;li>Github Clone URL: the URL to clone the git on GitHub, like &lt;span class="lang:default decode:true crayon-inline ">&lt;a href="https://github.com/chef-cookbooks/chef-client">https://github.com/chef-cookbooks/chef-client&lt;/a>&lt;/span>&lt;/li>
+&lt;li>Stash URL: the URL to push the code to internally&lt;/li>
+&lt;/ol>
+&lt;p>I had to go into our internal Git server and create a repo with the same name as the GitHub one so something could be pushed.&lt;/p>
+&lt;p>I then &lt;a href="https://confluence.jetbrains.com/display/TCD9/Configuring+Build+Triggers">schedule this to run every day&lt;/a>, and let it do its thing. If I got crazy I could make it run everytime there was a checkin on github, but the model doesn&amp;rsquo;t &lt;em>have&lt;/em> to have immediacy to it. My repository internally will be reasonably up to date.&lt;/p>
+&lt;h2 id="2-create-an-internally-approved-branch-based-on-a-tag">2: Create an internally approved branch based on a tag&lt;/h2>
+&lt;p>The next thing we do is create a new branch on our internal git server that outlines what we have code reviewed and have approved to be a part of our infrastructure. During the first setup, we first clone the repo on our local machine with the internal git server:&lt;/p>
+&lt;pre class="lang:default decode:true ">git clone http://mycompanygitserver.com/chef-client.git&lt;/pre>
+&lt;p>Then we simply run these commands:&lt;/p>
+&lt;pre class="lang:default decode:true ">git checkout -b mycompany-approved v4.3.2
+git push origin mycompany-approved&lt;/pre>
+&lt;p>This creates our &amp;ldquo;safe&amp;rdquo; branch, from which our promotion can occur.&lt;/p>
+&lt;h2 id="3-run-cookbook-build-just-as-with-other-cookbooks">3: Run cookbook build just as with other cookbooks&lt;/h2>
+&lt;p>The cookbook build will run as I outlined in &lt;a href="http://hedge-ops.com/chef-cookbook-builds-in-teamcity/">a different post&lt;/a>. The only difference is the VCS Root that I pull will be off of the &lt;span class="lang:default decode:true crayon-inline ">mycompany-approved&lt;/span>  branch created above.&lt;/p>
+&lt;h2 id="4-promote-cookbook-to-supermarket">4: Promote cookbook to supermarket&lt;/h2>
+&lt;p>Then I promote a cookbook to the supermarket using a TeamCity template that I use for all cookbook promotions, which is basically this command:&lt;/p>
+&lt;pre class="lang:default decode:true ">knife supermarket share %cookbook_name% "Other" -o .&lt;/pre>
+&lt;p>I had to ensure that the &lt;span class="lang:default decode:true crayon-inline ">knife-supermarket&lt;/span>  gem was installed on my build server (of course, configured by chef as well). Also I parameterized the cookbook name so this could be inside of a template that can be reused everywhere.&lt;/p>
+&lt;p>The cookbook also has a &lt;a href="https://confluence.jetbrains.com/display/TCD9/Snapshot+Dependencies">snapshot dependency&lt;/a> to the cookbook build above, ensuring that it is only released to our supermarket when it passes the build. That keeps everyone honest.&lt;/p>
+&lt;h2 id="5-merge-into-approved-branch-as-people-request">5: Merge into approved branch as people request&lt;/h2>
+&lt;p>People will still request that we merge into the approved branch, which is locked down so that a smaller team can approve of the changes. We can use a pull request model to review and audit how this happens.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>Doing it this way gave us the most control over which changes go into our infrastructure. It avoids the public supermarket alltogether, because we found that the packages posted on that server cannot be pushed to another supermarket. Even if that problem were fixed, this way is superior because it gives us the ability to code review and audit every dependency we have going into our system.&lt;/p></description></item><item><title>Orchestration Maturity Model with Chef</title><link>https://hedge-ops.com/orchestration-maturity-model-with-chef/</link><pubDate>Fri, 22 Apr 2016 08:00:44 +0000</pubDate><guid>https://hedge-ops.com/orchestration-maturity-model-with-chef/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-orchestration-maturity-model-with-chef.jpg" alt="Orchestration with Chef" />
+&lt;/div>
+&lt;p>One of our &lt;a href="https://hedge-ops.com/proof-of-concept/">earliest questions&lt;/a> about configuration management tools is how we would do orchestration with them. We realized early on that with chef the orchestration story was fairly weak, especially compared with something like &lt;a href="http://saltstack.com/">salt&lt;/a>. But chef&amp;rsquo;s &lt;a href="http://hedge-ops.com/technology-partnership/">other benefits&lt;/a> outweighed the weaknesses so we moved forward.&lt;/p>
+&lt;p>The whole time though I was confused about why Chef hadn&amp;rsquo;t invested more in orchestration. Salt and Ansible has it as a first class citizen and Puppet was &lt;a href="https://docs.puppet.com/pe/latest/app_orchestration_overview.html">actively adding it to its product&lt;/a>. I didn&amp;rsquo;t really &amp;ldquo;get&amp;rdquo; it until I listened to Julian Dunn&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=kfF9IATUask">excellent presentation&lt;/a> on it at Ghent.&lt;/p>
+&lt;p>Chef, as a company, is more interested in giving you what will work for you than giving you what you&amp;rsquo;re asking for. This is what makes them such a special partner for us. They&amp;rsquo;re more of a coach and less of an enabler. This has led me to think of orchestration as a maturity journey through three phases:&lt;/p>
+&lt;h2 id="phase-1-do-it-like-before">&lt;strong>Phase 1: Do it Like Before!&lt;/strong>&lt;/h2>
+&lt;p>The first phase of orchestration will be to model how you have been doing things before. OK, I need to stop services, copy files, start services. That&amp;rsquo;s orchestration, right?&lt;/p>
+&lt;p>At a surface level this is fine, but it leaves out the edge cases that happen when you&amp;rsquo;re dealing with a scaled infrastructure:&lt;/p>
+&lt;ul>
+&lt;li>What happens when a node was down and didn&amp;rsquo;t get the message to stop, and then comes back up in the middle of your upgrade, and starts?&lt;/li>
+&lt;li>What happens when a new node is added at a time when  you&amp;rsquo;re not doing an upgrade? Are any of those orchestration commands critical to the node itself?&lt;/li>
+&lt;li>Are you splitting configuration management between your configuration management tool &lt;em>and&lt;/em> your orchestration? If you are directly stopping a service, THEN running chef later, then your configuration management is leaking out of your system and into other places.&lt;/li>
+&lt;/ul>
+&lt;h2 id="phase-2-declaratively-manage-state">&lt;strong>Phase 2: Declaratively Manage State&lt;/strong>&lt;/h2>
+&lt;p>If we&amp;rsquo;re writing chef recipes and starting from the beginning with some infrastructure, why live with the limitations of Phase 1? Why don&amp;rsquo;t we solve this problem? Thankfully with a tool like &lt;a href="https://www.consul.io/">consul&lt;/a> we can solve the problem by making some subtle changes:&lt;/p>
+&lt;ul>
+&lt;li>Create a real-time shared data view of the state of your system (with consul, &lt;a href="https://zookeeper.apache.org/">zookeeper&lt;/a>)&lt;/li>
+&lt;li>Using this shared data view, define &lt;em>all&lt;/em> desired states of the system. So if you need to transition your web cluster from the states of: off, waiting, converged, set that in your key value store&lt;/li>
+&lt;li>Write your chef recipe to define the desired state (resources) that are compiled &lt;em>based on the desired state defined in the shared data view&lt;/em>. So you have an if statement that says &amp;ldquo;if we want this thing to be off right now, there is a service resource with action of ‘off&amp;rsquo;&amp;rdquo;&lt;/li>
+&lt;li>Write an orchestrator that manages the state transitions between nodes in the environment &lt;em>by updating the shared data view&lt;/em>.  With consul we can do a consul_exec on our nodes to force chef to run. Or take it even further. And the orchestrator itself can be written through chef.&lt;/li>
+&lt;/ul>
+&lt;p>This gives you a number of benefits over the earlier phase:&lt;/p>
+&lt;ul>
+&lt;li>If a node isn&amp;rsquo;t there when the state changes, it checks in and converges to the correct state, immediately! You &lt;em>always&lt;/em> get the node at the right state in the process because they are sharing the latest up to date shared data view&lt;/li>
+&lt;li>If a node is added, it will also converge to the correct state. It checks in and catches up immediately. Now you don&amp;rsquo;t have to worry about adding nodes and coordinating that with upgrades; things will just happen.&lt;/li>
+&lt;li>All configuration management are belong to chef. Simple.&lt;/li>
+&lt;/ul>
+&lt;h2 id="phase-3-decouple-the-nodes">&lt;strong>Phase 3: Decouple the Nodes&lt;/strong>&lt;/h2>
+&lt;p>The unfortunate reality though, is that even after phase 2 you may not be ready for bursting and scale. In order for those capabilities to exist, you need to have services that are independent of each other. So it shouldn&amp;rsquo;t matter that your web tier is on a particular version and the database hasn&amp;rsquo;t caught up yet. The web tier should tolerate that reality. So you can then update them separately and not worry about it.&lt;/p>
+&lt;p>I still think there is a role for real-time orchestration to happen in order to manage the portions of your infrastructure to go through a little at a time until all is upgraded. But the complexities of having to turn one layer off so another layer can do its thing should largely go away.&lt;/p>
+&lt;p>Unfortunately this is really up to the software design itself to facilitate. Therefore, it&amp;rsquo;s really a business decision on whether that infrastructure should be made burstable and thus truly cloud-enabled. In some cases, we&amp;rsquo;ll only get as far as phase 2. In others we&amp;rsquo;ll go all the way, but probably camp out at phase 2 while the software catches up. That&amp;rsquo;s the way it should be: let&amp;rsquo;s get there little by little. As long as we&amp;rsquo;re going in the right direction, we&amp;rsquo;re good.&lt;/p></description></item><item><title>Chef Cookbook Builds in TeamCity</title><link>https://hedge-ops.com/chef-cookbook-builds-in-teamcity/</link><pubDate>Fri, 15 Apr 2016 08:00:50 +0000</pubDate><guid>https://hedge-ops.com/chef-cookbook-builds-in-teamcity/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-chef-cookbook-builds-in-teamcity.jpg" alt="Chef Cookbook Builds in TeamCity" />
+&lt;/div>
+&lt;p>As more and more teams are &lt;a href="http://hedge-ops.com/my-advice-for-chef-in-large-corporations/">coming on board with Chef&lt;/a>, I&amp;rsquo;ve began to standardize our pipeline and ensure that everyone meets quality gates for the infrastructure they are creating. This started with finally figuring out how to get &lt;a href="http://hedge-ops.com/test-kitchen-required-not-optional/">Test Kitchen working with Windows&lt;/a>, then quickly migrated to getting it running in &lt;a href="http://hedge-ops.com/christmas-with-russians/">TeamCity&lt;/a>. Our entire division uses TeamCity for configuration management, so it&amp;rsquo;s something that I needed to plan out carefully in order to make the Chef pipeline &lt;em>feel&lt;/em> like it&amp;rsquo;s a part of a team&amp;rsquo;s normal build process.&lt;/p>
+&lt;h2 id="project-structure">Project Structure&lt;/h2>
+&lt;p>With this in mind, we created a** Chef** &lt;a href="https://confluence.jetbrains.com/display/TCD9/Creating+and+Editing+Projects">subproject&lt;/a> _inside_ of each team&amp;rsquo;s _existing_ project. We want them to have ownership when Chef infrastructure breaks and to take action on problems, just as if the problem happened in their own software build.&lt;/p>
+&lt;p>We then created a** Chef Cookbook** &lt;a href="https://confluence.jetbrains.com/display/TCD9/Build+Configuration+Template">build template&lt;/a> at the &lt;Root Project> level that all cookbooks can use for their own builds. This template defines a cookbook parameter that enables the build steps below to know where the cookbook is in source.&lt;/p>
+&lt;h2 id="version-control-settings">Version Control Settings&lt;/h2>
+&lt;p>We&amp;rsquo;re not really sure about how we approach testing at the moment when it comes to dependencies. If a cookbook is very young or if we are testing a lot of things at once, we might want to use relative path dependencies to other cookbooks. Or we might want to use data bags at some level. So we&amp;rsquo;ve decided on the build agent itself to mimic a chef repo and then test it that way. We do this &lt;a href="https://confluence.jetbrains.com/display/TCD9/Build+Checkout+Directory#BuildCheckoutDirectory-Customcheckoutdirectory">through a checkout rule&lt;/a>, like this:&lt;/p>
+&lt;pre>&lt;code>+:.=&amp;amp;gt;cookbooks/contributors
+&lt;/code>&lt;/pre>&lt;p>This means that the contributors cookbook will go to the cookbooks/contributors repo relative to build working directory.&lt;/p>
+&lt;h2 id="build-steps">Build Steps&lt;/h2>
+&lt;h3 id="1-run-foodcritic">&lt;strong>1. Run Foodcritic&lt;/strong>&lt;/h3>
+&lt;p>We want to do Chef liniting first before we get into further testing, so we run &lt;a href="http://www.foodcritic.io/">foodcritic&lt;/a>. This is done simply by creating a &lt;a href="https://confluence.jetbrains.com/display/TCD9/Command+Line">Command Line runner&lt;/a> with the foodcritic command:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-foodcritic-1.png" alt="Run Foodcritic">&lt;/p>
+&lt;h3 id="2-run-rubocop">&lt;strong>2. Run Rubocop&lt;/strong>&lt;/h3>
+&lt;p>Once foodcritic runs, we want to finish our cookbook linting with &lt;a href="http://batsov.com/rubocop/">rubocop&lt;/a>:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-rubocop.png" alt="Run Rubocop">&lt;/p>
+&lt;h3 id="3-run-cookbook-unit-tests">&lt;strong>3. Run Cookbook Unit Tests&lt;/strong>&lt;/h3>
+&lt;p>I&amp;rsquo;m not a huge fan of &lt;a href="https://docs.chef.io/chefspec.html">ChefSpec&lt;/a> because I believe they mock too much out and end up not adding a lot of value. But I do think having at least one there that ensures that your code will converge is immensely helpful. It&amp;rsquo;s much better waiting the few seconds to ensure that code converges than the few minutes to wait for kitchen to tell you the same thing. So I put the step here:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-chef-unit-tests.png" alt="Run Chef Unit Tests">&lt;/p>
+&lt;p>&lt;em>Update: actually just before this published, I removed this. The Chef Spec unit tests required too much ruby expertise to be helpful. Plus people are working well with kitchen and learn to rely on it instead. So as of yesterday, this step was removed.&lt;/em>&lt;/p>
+&lt;h3 id="4-run-test-kitchen">&lt;strong>4.&lt;/strong> &lt;strong>Run Test Kitchen&lt;/strong>&lt;/h3>
+&lt;p>And now for the magic! I need to &lt;a href="http://hedge-ops.com/test-kitchen-required-not-optional/">run Test Kitchen&lt;/a>. If I&amp;rsquo;m using vagrant, I need to have a physical build agent to do this on. &lt;a href="http://hedge-ops.com/tutorial-for-test-kitchen-with-azure/">If I&amp;rsquo;m running azure&lt;/a>, I need to have some credentials set up on the build agent. All of that configuration is handled through chef itself, so at this point all I need to do is run the command itself:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-kitchen-test.png" alt="Run Kitchen Test">&lt;/p>
+&lt;p>Kitchen test will do a create, converge, and verify. It runs through the whole process. And I&amp;rsquo;ve tested that if it fails, the build will fail.&lt;/p>
+&lt;h3 id="5-kitchen-destroy">&lt;strong>5. Kitchen Destroy&lt;/strong>&lt;/h3>
+&lt;p>If the above test fails, it&amp;rsquo;s important to not keep the virtual machine running. This is especially true if I&amp;rsquo;m using the azure runner. So at the end I&amp;rsquo;ll call kitchen destroy, and &lt;em>always&lt;/em> call it, even if the previous command failed:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/run-kitchen-destroy.png" alt="Run Kitchen Destroy">&lt;/p>
+&lt;h2 id="build-agent-setup">Build Agent Setup&lt;/h2>
+&lt;p>As I mentioned earlier, our build agents are set up through Chef itself, so configuration of them is easy. Since we are creating our Chef Projects inside of the product&amp;rsquo;s projects, we don&amp;rsquo;t want to mix their build agents with the chef ones. We keep them separated because we let each team have their own build agents that they manage. To solve for the mix, we add the** Chef** subproject set up above to our own Chef build &lt;a href="https://confluence.jetbrains.com/display/TCD9/Agent+Pools">agent pool&lt;/a>. Then in our template, we add a &lt;a href="https://confluence.jetbrains.com/display/TCD9/Agent+Requirements">build agent requirement&lt;/a>:&lt;/p>
+&lt;p>&lt;img src="https://hedge-ops.com/images/post-assets/2016-04-15-chef-cookbook-builds-in-teamcity/chef-cookbook-requirement.png" alt="Chef Cookbook Requirement">&lt;/p>
+&lt;p>In our recipe for the build agent, we set this environment variable, so this limits our cookbook builds to only run on build agents on which our chef recipe has run.&lt;/p>
+&lt;h2 id="triggering">Triggering&lt;/h2>
+&lt;p>Finally, we want to trigger this cookbook build whenever something in the cookbook is checked in. We do this through adding a &lt;a href="https://confluence.jetbrains.com/display/TCD9/Configuring+VCS+Triggers">VCS trigger&lt;/a> with the default settings to the template.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>With the template in place, it takes about ten minutes to add a team&amp;rsquo;s cookbook to be fully tested and built within their own environment. It feels very much like a software build, which is fantastic for everyone because it reminds us that the infrastructure code we are creating is like any other code; it should be subject to automation just like the rest.&lt;/p></description></item><item><title>chef-vault Tutorial</title><link>https://hedge-ops.com/chef-vault-tutorial/</link><pubDate>Wed, 06 Apr 2016 00:00:32 +0000</pubDate><guid>https://hedge-ops.com/chef-vault-tutorial/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-chef-vault-tutorial.jpg" alt="Vault Tutorial" />
+&lt;/div>
+&lt;p>This week I researched &lt;a href="https://github.com/chef/chef-vault">chef-vault&lt;/a> and struggled quite a bit &lt;a href="https://docs.chef.io/chef_vault.html">with the documentation&lt;/a>, so I thought I would write a bit of a tutorial on the technology for those who are interested in quickly understanding how it might work for their organizations.&lt;/p>
+&lt;h2 id="why-chef-vault">Why chef-vault?&lt;/h2>
+&lt;p>&lt;a href="https://docs.chef.io/data_bags.html#encrypt-a-data-bag-item">Encrypted data bags&lt;/a> force you to copy the shared secret that is used for decryption to your infrastructure. It&amp;rsquo;s very easy to take that secret file and nefariously decrypt the data from somewhere else without anyone knowing about it. Chef-vault makes this much more difficult by giving both nodes and chef server users expressed permission to decrypt certain data. With chef-vault you don&amp;rsquo;t have to share a secret file with all of your nodes. This is a step up that simplifies everything.&lt;/p>
+&lt;p>The solution isn&amp;rsquo;t without its drawbacks. The main one is if you add nodes, you have to rerun something on the server to get that node to be able to decrypt the data bag. With &lt;a href="https://www.hashicorp.com/blog/vault.html">Hashicorp&amp;rsquo;s vault&lt;/a> you get better control over that, and better lease management, and credentials creation. To me, encrypted data bags are an unreliable used car, chef-vault is a nice mid-size sedan, and Hashicorp&amp;rsquo;s vault is like a luxury car.&lt;/p>
+&lt;p>So now that we know where the tool sits within our choices, let&amp;rsquo;s look at the basics:&lt;/p>
+&lt;h2 id="setup">Setup&lt;/h2>
+&lt;p>To get started with chef-vault, have the latest &lt;a href="https://downloads.chef.io/chef-dk/">ChefDK&lt;/a> installed (0.12 or greater) and install the &lt;a href="https://rubygems.org/gems/chef-vault/versions/2.8.0">chef-vault gem&lt;/a>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chef gem install chef-vault
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>And then ensure you have a .chef directory that connects to a chef server.&lt;/p>
+&lt;h2 id="creation">Creation&lt;/h2>
+&lt;p>Creating a vault is easy:&lt;/p>
+&lt;pre>&lt;code>knife vault create passwords root -S &amp;quot;policy_name:webserver&amp;quot; -A &amp;quot;michael&amp;quot; -J root.json -M client
+&lt;/code>&lt;/pre>&lt;p>For whatever reason the &lt;code>knife vault&lt;/code>  command doesn&amp;rsquo;t default to talk to a chef server. So to create a knife vault, you have to specify &lt;code>-M client&lt;/code>  at the end. Or you can make your life easier going forward by adding this line to your knife.rb:&lt;/p>
+&lt;pre>&lt;code>knife[:vault_mode] = 'client'
+&lt;/code>&lt;/pre>&lt;p>For the command, I used this root.json:&lt;/p>
+&lt;pre>&lt;code>{
+&amp;quot;username&amp;quot;: &amp;quot;mhedgpeth&amp;quot;,
+&amp;quot;password&amp;quot;: &amp;quot;myPassword&amp;quot;
+}
+&lt;/code>&lt;/pre>&lt;p>Let&amp;rsquo;s review the options:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Team&lt;/th>
+&lt;th>Natural Alignment&lt;/th>
+&lt;th>Natural Misalignment&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Development&lt;/td>
+&lt;td>Faster Delivery of features&lt;/td>
+&lt;td>Have to be engaged in operations, more &amp;ldquo;work&amp;rdquo; to do&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Operations&lt;/td>
+&lt;td>Less fires, more consistency&lt;/td>
+&lt;td>Have to learn a new skillset and be a beginner&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Security&lt;/td>
+&lt;td>More consistency, compliance&lt;/td>
+&lt;td>Automation can cause unknown vulnerabilities&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Business&lt;/td>
+&lt;td>Faster ROI for development, lower cost for operations, and a scale model that works&lt;/td>
+&lt;td>Takes ongoing investment in culture and tools&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>This uploads two data bag items to a data bag called &amp;ldquo;passwords&amp;rdquo;:&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>root&lt;/code> which has the data above&lt;/li>
+&lt;li>&lt;strong>&lt;code>root_keys&lt;/code>&lt;/strong> which stores the metadata about which clients can read and edit this data bag (as you specified above in the search criteria and administrators list.&lt;/li>
+&lt;/ol>
+&lt;h3 id="making-it-even-more-secure">Making it Even More Secure&lt;/h3>
+&lt;p>&lt;a href="https://coderanger.net/">Noah Kantrowitz&lt;/a> helped me understand the vulnerabilities of the above approach using the &lt;code>-S&lt;/code>  flag. With that flag, you give the nodes the ability to define the criteria by which they are allowed to decrypt the vault. So if you say I want nodes that have &lt;code>policy_name:webserver&lt;/code>  to decrypt this data, all it takes is someone saying they are &lt;code>'policy_name:webserver'&lt;/code>  and they will be granted the keys.&lt;/p>
+&lt;p>A better way to handle this is through specifying each node explicitly through the -A flag. So your command would be:&lt;/p>
+&lt;pre>&lt;code>knife vault create passwords root -A &amp;quot;michael,webserver1,webserver2&amp;quot; -J root.json -M client
+&lt;/code>&lt;/pre>&lt;h2 id="viewing-a-vault">Viewing a Vault&lt;/h2>
+&lt;p>Now that we have created a vault, let&amp;rsquo;s view it:&lt;/p>
+&lt;pre>&lt;code>knife vault show passwords root -M client
+&lt;/code>&lt;/pre>&lt;p>which will output:&lt;/p>
+&lt;pre>&lt;code>id: root
+password: myPassword
+username: mhedgpeth
+&lt;/code>&lt;/pre>&lt;p>It lets me view it in cleartext because I am one of the administrators on the vault itself. If I want, I can even view it in JSON if you want to move the file to another chef server:&lt;/p>
+&lt;pre>&lt;code>knife vault show passwords root -M client -Fjson
+&lt;/code>&lt;/pre>&lt;h2 id="viewing-encrypted-version">Viewing Encrypted Version&lt;/h2>
+&lt;p>To view the encrypted version of the vault, you can simply use the normal commands for viewing data bag, just realizing that the vault data bag also has a _keys one too:&lt;/p>
+&lt;pre>&lt;code>knife data bag show passwords root
+&lt;/code>&lt;/pre>&lt;p>and&lt;/p>
+&lt;pre>&lt;code>knife data bag show password root_keys
+&lt;/code>&lt;/pre>&lt;p>Will show you lots of encrypted goodness which I will not show. The keys is helpful to see what clients are connected to it.&lt;/p>
+&lt;h2 id="adding-nodes">Adding nodes&lt;/h2>
+&lt;p>Probably the weakest part of chef-vault is what to do when you add nodes. If you have an elastic situation this can be dicey, because when you add nodes, you have to run this command to generate keys for those nodes to read the encrypted data:&lt;/p>
+&lt;pre>&lt;code>knife vault refresh passwords root --clean-unknown-clients
+&lt;/code>&lt;/pre>&lt;p>This updates the &lt;code>root_keys&lt;/code>  encrypted data bag with information on the nodes that now match the search criteria. So it&amp;rsquo;s  important to know that the nodes that can read a vault is a snapshot in time based on the search criteria, not a dynamic list.&lt;/p>
+&lt;p>If you aren&amp;rsquo;t using a search criteria, you&amp;rsquo;ll need to add nodes to the administrators list itself:&lt;/p>
+&lt;pre>&lt;code>knife vault update passwords root -A 'newnode,newnode2'
+&lt;/code>&lt;/pre>&lt;h2 id="rotating-keys">Rotating keys&lt;/h2>
+&lt;p>You might want to rotate the key that encrypts the data in the data bag. The way this works is the clients use their own key as a private key to combine with the public key on the chef server to decrypt the data bag&amp;rsquo;s key. That key encrypts the real data bag. This command will change that key:&lt;/p>
+&lt;pre>&lt;code>knife vault rotate all keys
+&lt;/code>&lt;/pre>&lt;h2 id="cookbook-development">Cookbook Development&lt;/h2>
+&lt;p>What use is a data bag without using it in a cookbook? To be able to deal with this data bag in the cookbook, include the &lt;code>chef-vault::default&lt;/code>  recipe in your runlist. Then you will have the &lt;code>chef_vault_item&lt;/code>  method that you can call like this:&lt;/p>
+&lt;pre>&lt;code>item = chef_vault_item(&amp;quot;passwords&amp;quot;, &amp;quot;root&amp;quot;)
+password = item['password']
+&lt;/code>&lt;/pre>&lt;p>Using &lt;code>chef_vault_item&lt;/code>  will make your cookbook more testable by test kitchen (see below).&lt;/p>
+&lt;h2 id="version-control">Version Control&lt;/h2>
+&lt;p>With data bags, we like to have a data_bags repository that we use to promote shared data and version control changes. This kind of thing doesn&amp;rsquo;t work with chef-vault. Instead you get a small team that can update the vault and then have them manually do it. This isn&amp;rsquo;t ideal, but secrets are hard and, as I wrote above, using a dedicated secrets management tool like Hashicorp Vault will keep you from that level of work.&lt;/p>
+&lt;h2 id="kitchen-support">Kitchen Support&lt;/h2>
+&lt;p>To make this work in kitchen, just put a cleartext data bag in the data_bags folder that your kitchen run refers to (probably in &lt;code>test/integration/data_bags&lt;/code>). Then the vault commands fall back into using that dummy data when you use &lt;code>chef_vault_item&lt;/code>  to retrieve it.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>The chef-vault functionality is compelling enough for serious consideration. Hopefully this walkthrough will help you decide if it is right for you.&lt;/p></description></item><item><title>Tutorial for Test Kitchen with Azure</title><link>https://hedge-ops.com/tutorial-for-test-kitchen-with-azure/</link><pubDate>Fri, 04 Mar 2016 08:00:20 +0000</pubDate><guid>https://hedge-ops.com/tutorial-for-test-kitchen-with-azure/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-tutorial-for-test-kitchen-with-azure.jpg" alt="Test Kitchen Azure" />
+&lt;/div>
+&lt;p>As I wrote in &lt;a href="https://hedge-ops.com/test-kitchen-required-not-optional/">the last post&lt;/a>, Test Kitchen as one of the &lt;a href="https://hedge-ops.com/learning-chef-book-review/">things that attracted me to Chef&lt;/a>. There was a problem, though: running Windows on virtual machines automatically is difficult.&lt;/p>
+&lt;p>I&amp;rsquo;ve spent quite a bit of time trying to create a vagrant image &lt;a href="http://www.hurryupandwait.io/blog/creating-windows-base-images-for-virtualbox-and-hyper-v-using-packer-boxstarter-and-vagrant">using Matt Wrock&amp;rsquo;s excellent blog&lt;/a> as a resource, and haven&amp;rsquo;t quite gotten it there yet. Plus, if I go the vagrant route, people have to have powerful machines on which to run test kitchen. The more I worked through that option, the more I because discouraged and dismayed that this may just never work for us.&lt;/p>
+&lt;p>And then I discovered azure.&lt;/p>
+&lt;p>Don&amp;rsquo;t get me wrong: I&amp;rsquo;m not a Microsoft fanboy. But there are some great advantages to going this route:&lt;/p>
+&lt;ol>
+&lt;li>Through my Microsoft-friendly workplace I get a MSDN Subscription, &lt;a href="https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/">with which I get $50/month credit to use azure&lt;/a>. So this is free, and I can run test kitchen on not-my compute resources.&lt;/li>
+&lt;li>Microsoft by definition is going to get Windows images right. So I don&amp;rsquo;t have to fight it anymore. I can just use it. It just works, just like it should.&lt;/li>
+&lt;li>&lt;a href="http://stuartpreston.net/">Stuart Preston&lt;/a> wrote a plugin for me that gets anyone past the learning curve very quickly. With this plugin you don&amp;rsquo;t have to really know anything about azure to use it for test kitchen&lt;/li>
+&lt;/ol>
+&lt;p>These reasons are so compelling, this is what our teams will be going with in the coming months. It&amp;rsquo;s critical that everyone be able to run test kitchen easily, and azure gives us the best shot at doing that without a lot of drama.&lt;/p>
+&lt;p>Setting up was easy:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="http://blogs.msdn.com/b/msgulfcommunity/archive/2014/09/15/how-to-activate-azure-benefit-for-msdn-subscribers.aspx">Activate your subscription from your MSDN account&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/">Install the Azure CLI for Windows&lt;/a>&lt;/li>
+&lt;li>Follow the directions &lt;a href="https://github.com/pendrica/kitchen-azurerm">on the kitchen-azurerm main page&lt;/a> to set up a Security Principal, Tenant, Password, and configure it in your user directory&lt;/li>
+&lt;li>In a simple cookbook, create &lt;a href="https://gist.github.com/mhedgpeth/a70ef0a7edf01d9c7ed2">a simple kitchen.yml file&lt;/a> like this:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yml" data-lang="yml">---&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">driver&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>azurerm&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">driver_config&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">subscription_id&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&amp;lt;%=&lt;span style="color:#bbb"> &lt;/span>ENV[&lt;span style="color:#d14">&amp;#39;AZURE_SUBSCRIPTION_ID&amp;#39;&lt;/span>]&lt;span style="color:#bbb"> &lt;/span>%&lt;span style="color:#d14">&amp;gt;
+&lt;/span>&lt;span style="color:#d14"> location: &amp;#39;South Central US&amp;#39;&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">machine_size&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#d14">&amp;#39;Standard_D1&amp;#39;&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">provisioner&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>chef_zero&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">verifier&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>inspec&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">platforms&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- &lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>windows2012-r2&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">driver_config&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">image_urn&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>MicrosoftWindowsServer:WindowsServer:&lt;span style="color:#099">2012&lt;/span>-R2-Datacenter:latest&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">transport&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>winrm&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- &lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>centos71&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">driver_config&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">image_urn&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>OpenLogic:CentOS:&lt;span style="color:#099">7.1&lt;/span>:latest&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb">&lt;/span>&lt;span style="color:#000;font-weight:bold">suites&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- &lt;span style="color:#000;font-weight:bold">name&lt;/span>:&lt;span style="color:#bbb"> &lt;/span>default&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">run_list&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>- recipe[contributors::default]&lt;span style="color:#bbb">
+&lt;/span>&lt;span style="color:#bbb"> &lt;/span>&lt;span style="color:#000;font-weight:bold">attributes&lt;/span>:&lt;span style="color:#bbb">
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It&amp;rsquo;s really that simple. Now I can run test kitchen commands:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>command&lt;/th>
+&lt;th>description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>kitchen create&lt;/td>
+&lt;td>creates azure infrastructure for running, powers on machines&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>kitchen converge&lt;/td>
+&lt;td>does kitchen create if needed, will converge the node using chef&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>kitchen verify&lt;/td>
+&lt;td>does create and converge if needed, runs the tests that you&amp;rsquo;ve written&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>kitchen test&lt;/td>
+&lt;td>does everything: create, converge, verify&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>kitchen destroy&lt;/td>
+&lt;td>don&amp;rsquo;t forget this one; it removes the resources&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>There you have it, go through those easy steps and you have Kitchen working with Azure.&lt;/p></description></item><item><title>Test Kitchen: Required, not Optional</title><link>https://hedge-ops.com/test-kitchen-required-not-optional/</link><pubDate>Fri, 26 Feb 2016 08:00:21 +0000</pubDate><guid>https://hedge-ops.com/test-kitchen-required-not-optional/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-test-kitchen-required-not-optional.jpg" alt="Test Kitchen" />
+&lt;/div>
+&lt;p>When I first started reading through &lt;a href="https://hedge-ops.com/learning-chef-book-review/">the Learning Chef book&lt;/a> I became quite fascinated and enamored by &lt;a href="http://kitchen.ci/">Test Kitchen&lt;/a>. The community created such a wonderful way to introduce testing into their workflow. That&amp;rsquo;s fantastic!&lt;/p>
+&lt;p>Integration and support of Test Kitchen was one of our reasons for &lt;a href="https://hedge-ops.com/technology-partnership/">partnering with Chef&lt;/a>. We had a way to create a test-driven infrastructure, which would be essential to truly scaling our automation to fit our vision. But, I reasoned, for now we would leave it out of the picture so we can focus on the more important tasks like developing cookbooks and establishing a &lt;a href="https://hedge-ops.com/my-advice-for-chef-in-large-corporations/">change-management workflow&lt;/a> that fit our broader security model.&lt;/p>
+&lt;p>I now see that I was looking at this all wrong.&lt;/p>
+&lt;p>The choice to forego testing is a common one: teams often make sure then have a core idea that will work before they invest in testing. Then they pivot very hard into the testing direction when the core is there. This is the direction I took, largely because of how we couldn&amp;rsquo;t easily get Windows, Test Kitchen and vagrant to work together.&lt;/p>
+&lt;p>I changed my mind when I recently tried to work with a group of 25 people to learn Chef. In the workshop I asked people to set up a virtual machine somewhere, copy stuff over, get it on a chef server (or run it in local mode directly) and then watched them struggle with the nonessential details and not get much done.&lt;/p>
+&lt;p>The reality then dawned on me: &lt;strong>Test Kitchen is the only efficient way to run your cookbooks.&lt;/strong> It&amp;rsquo;s not for testing first. It&amp;rsquo;s for running first. If you are a developer, you&amp;rsquo;re used to coding a little and running a little. The reality all developers discovered decades ago is that &lt;strong>you&amp;rsquo;re not going to get very far with coding unless you are running your code frequently.&lt;/strong>&lt;/p>
+&lt;p>Since chef runs on an infrastructure, it&amp;rsquo;s much more difficult to run. You have to run it on a virtual machine. This is what Test Kitchen is for.****&lt;/p>
+&lt;p>Using chef without Test Kitchen is like opening a restaurant and inviting everyone to taste the food without practicing with your kitchen staff first. No one would do that because it would fail miserably. The restaurant would spend a massive amount of time getting feedback on a product that they can&amp;rsquo;t trust is ready for external consumption.&lt;/p>
+&lt;p>So my next task is to get us up and running with Test Kitchen. I now know that it&amp;rsquo;s not just a nice tool for testing; it&amp;rsquo;s an essential part of coding with chef.&lt;/p></description></item><item><title>Technology &lt; Partnership</title><link>https://hedge-ops.com/technology-partnership/</link><pubDate>Fri, 22 Jan 2016 08:00:43 +0000</pubDate><guid>https://hedge-ops.com/technology-partnership/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-technology-partnership.jpg" alt="Technology Partnership" />
+&lt;/div>
+&lt;p>Last year our organization &lt;a href="https://hedge-ops.com/intrinsic-motivators-leading-to-chef/">made a major decision to use Chef&lt;/a> for our configuration management. People often ask me why we chose Chef over Puppet, SaltStack, or Ansible. I tell them that we chose Chef over the others because they have a better sales organization.&lt;/p>
+&lt;p>I&amp;rsquo;m only half kidding.&lt;/p>
+&lt;p>I&amp;rsquo;ve come to believe that the essence of success with change initiatives and tools is &lt;a href="https://hedge-ops.com/dont-start-with-tools/">not about the underlying technology&lt;/a>. Chances are if you have a &lt;a href="https://hedge-ops.com/funding/">funded popular tool&lt;/a> it&amp;rsquo;s going to have some cool technology. All of the above was cool.&lt;/p>
+&lt;p>Instead the essence of success with change initiatives is managing the organizational and cultural changes needed to make it to the other side. Chef is a great partner in helping us navigate our change through the various parties and &lt;a href="https://hedge-ops.com/my-advice-for-chef-in-large-corporations/">into a model that rapidly delivers value for our business&lt;/a>. I&amp;rsquo;ve been extremely impressed with their organization at all levels and don&amp;rsquo;t think I would be where I am without their help.&lt;/p>
+&lt;p>So don&amp;rsquo;t start with the tools. Start with the people, the culture, the process that will lead to safe, repeatable, high-velocity change. If you find a tool that will partner with you in that discovery, you probably have a world-class tool. If you start with the tool and ignore the other things, you might end up with a cool tool that no one wants or understands.&lt;/p></description></item><item><title>Programming Ruby (Pickaxe) Book Review</title><link>https://hedge-ops.com/programming-ruby-pickaxe-book-review/</link><pubDate>Mon, 26 Jan 2015 08:00:32 +0000</pubDate><guid>https://hedge-ops.com/programming-ruby-pickaxe-book-review/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-programming-ruby-pickaxe-book-review.jpg" alt="Ruby Pickaxe" />
+&lt;/div>
+&lt;p>When I started &lt;a href="https://hedge-ops.com/learning-chef-book-review/">learning Chef&lt;/a> in earnest I realized quickly that my need to know what was happening was leading me to need to dive into a book on Ruby and figure out what all the magic I was seeing in Chef was really about. Chef has an amazing way of being usable for those who don&amp;rsquo;t know much Ruby, but I&amp;rsquo;m the curious type that just needs to know.&lt;/p>
+&lt;p>I started out with &lt;a href="http://amzn.to/13QZz1v">The Ruby Programming Language&lt;/a> but found it to be too much of a reference work that basically stated facts about the language instead of walking the reader through the learning process. I was delighted to find &lt;a href="http://ruby-doc.com/docs/ProgrammingRuby/">Programming Ruby&lt;/a> to be exactly that.&lt;/p>
+&lt;p>I was able to get through the book in a few days. It starts you out with objects, which for Ruby is the right place to start out. As I&amp;rsquo;m teaching my son how to program, the concept of objects is very easy for him to pick up. You don&amp;rsquo;t need to start with primitives, then control flow, then objects for people to learn. Learning is less logically structured than that. People don&amp;rsquo;t think like computers.&lt;/p>
+&lt;p>Each chapter in the book is about fifteen to twenty minutes of time investment and walks you through an example that you can easily code on your own. I find that when learning these things, I can&amp;rsquo;t just read it and know it. I need to &lt;em>do&lt;/em> something as well. This book did a great job at keeping me engaged with my ruby interpreter as well as with my mind.&lt;/p>
+&lt;p>In November I set a goal to be working with Ruby every day by February. This book did a great job at making the goal possible. It demystified how Chef was doing its magic, but it has done so much more. It has opened me up to a whole new world of possibilities by quickly being able to script a solution to a problem without having to go through all the hoops of a statically typed programming language. While I still love C# and will use it for certain problems, Ruby is not a part of my life, thanks partly to this excellent book.&lt;/p></description></item><item><title>Customizing Chef Book Review</title><link>https://hedge-ops.com/customizing-chef-book-review/</link><pubDate>Fri, 16 Jan 2015 08:00:36 +0000</pubDate><guid>https://hedge-ops.com/customizing-chef-book-review/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-customizing-chef-book-review.jpg" alt="Customizing Chef" />
+&lt;/div>
+&lt;p>When I was stuck trying to understand simple concepts about Chef, I bought two books: &lt;a href="http://amzn.to/1wHMEZb">Learning Chef&lt;/a> (read the review) and &lt;a href="http://amzn.to/1Ajtt8G">Customizing Chef&lt;/a> by &lt;a href="http://jonliv.es/">Jon Cowie&lt;/a>.&lt;/p>
+&lt;p>Learning Chef gave me the basic concepts, but Customizing Chef gave me the deep understanding I needed to evaluate the tool for my large, complicated organization.&lt;/p>
+&lt;p>In the closed-source Microsoft world, you figure out what the thing can do and just accept it. The book opened my eyes that Chef allows me to use a skill (reading code) that I&amp;rsquo;ve built up for over ten years. This leads to a much deeper understanding of how it works than just &amp;ldquo;trust us this feature does X&amp;rdquo;.&lt;/p>
+&lt;p>That&amp;rsquo;s not the best thing about the book though. The thing I appreciated the most was the ability to learn from the author who implemented a world class deployment solution for &lt;a href="https://codeascraft.com/">Etsy&lt;/a> using chef. The examples he provided were real world. This wasn&amp;rsquo;t a textbook exposition on chef. You could tell that this was the real deal. Learning from him in this way reinforced the idea that chef was something I could implement in my complicated organization and that with every problem that arises I have options because of chef&amp;rsquo;s extensibility.&lt;/p>
+&lt;p>The author did a wonderful job at explaining that extensibility with examples at every level. I learned how to customize chef&amp;rsquo;s notification customizations, cookbooks, and even knife itself. Every explanation of a customization didn&amp;rsquo;t merely explain it; it started with the code and took the reader through a series of examples to build up understanding of the customization.&lt;/p>
+&lt;p>Customizing Chef isn&amp;rsquo;t for someone who is just starting chef. For that I would recommend the tutorials or the book Learning Chef. For someone who is tasked with implementing it in a complicated organization or someone who has been using it for months and has come across some scaling challenges, this book is a life-saver.&lt;/p></description></item><item><title>Learning Chef Book Review</title><link>https://hedge-ops.com/learning-chef-book-review/</link><pubDate>Fri, 09 Jan 2015 08:00:12 +0000</pubDate><guid>https://hedge-ops.com/learning-chef-book-review/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-learning-chef-book-review.jpg" alt="Learning Chef Book Review" />
+&lt;/div>
+&lt;p>A couple of months ago I found myself drowning in the learning curve that was &lt;a href="http://chef.io">chef&lt;/a>. I had great support from them, but I&amp;rsquo;m the type of person who needs to know a technology in order to appropriately evaluate it. I could tell that chef was a nice technology, but I didn&amp;rsquo;t know how.&lt;/p>
+&lt;p>I went through &lt;a href="https://learn.chef.io/">the tutorials&lt;/a> but they weren&amp;rsquo;t adequate for me to understand the solution. Then I found the book &lt;a href="http://amzn.to/1Ajqayd">Learning Chef&lt;/a>.&lt;/p>
+&lt;p>Learning Chef is an excellent first step in understanding the chef universe in order to get started on the right foot with the tool. I absolutely loved the tutorial, incremental approach that &lt;a href="http://misheska.com/">the&lt;/a> &lt;a href="https://sethvargo.com/">authors&lt;/a> take to go from running a recipe on your own machine to running tests on locally available virtual machines.&lt;/p>
+&lt;p>Which leads me to my other pleasant surprise of this book: it lays out the techniques you can use with chef in order to test what you&amp;rsquo;re doing so you know that it works. That is what separates chef from many other solutions I&amp;rsquo;ve seen: &lt;a href="http://kitchen.ci/">they bake testing into the process itself&lt;/a>. If you&amp;rsquo;re going to treat infrastructure as code then you &lt;em>have&lt;/em> to test it as a part of your deployment pipeline. Fortunately this introductory book doesn&amp;rsquo;t skimp on this core aspect of chef.&lt;/p>
+&lt;p>The third great thing about this book is that it is very approachable to those of us who have built their careers programming in the Windows environment. Every command has a hint at what you would do on a windows box. This really increased my comfort level with learning chef by allowing me to learn it in &lt;em>my own&lt;/em> development environment.&lt;/p>
+&lt;p>The book is not for people who want a quick, few hour understanding of chef to get up and running. For example if I bring a new team on board with Chef, I probably won&amp;rsquo;t hand them this book; I&amp;rsquo;ll probably do a couple of day class with them to teach them the basics. If they&amp;rsquo;re the type of person (like me) who wants to dig deeper though and learns by doing, this book is a fabulous step in becoming proficient at using chef.&lt;/p></description></item><item><title>Solving SSL Validation failure with knife</title><link>https://hedge-ops.com/solving-ssl-validation-failure-with-knife/</link><pubDate>Mon, 05 Jan 2015 08:00:37 +0000</pubDate><guid>https://hedge-ops.com/solving-ssl-validation-failure-with-knife/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-solving-ssl-validation-failure-with-knife.jpg" alt="SSL Validation" />
+&lt;/div>
+&lt;p>After I moved to a hosted version of the &lt;a href="http://chef.io">chef&lt;/a> server, I started getting this problem with knife:&lt;/p>
+&lt;pre>&lt;code>knife download environments
+ERROR: SSL Validation failure connecting to host: chef.yourdomain.com - SSL_connect returned=1 errno=0 state=SSLv3 read server
+certificate B: certificate verify failed
+ERROR: OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify
+failed
+&lt;/code>&lt;/pre>&lt;p>There are a couple of ways to fix this. The short-term way is to ignore SSL on your knife.rb file with this setting:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">ssl_verify_mode &lt;span style="color:#990073">:verify_none&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The better and more long-term solution is to add this line to the knife.rb file:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-ruby" data-lang="ruby">trusted_certs_dir        &lt;span style="color:#d14">&amp;#34;&lt;/span>&lt;span style="color:#d14">#{&lt;/span>current_dir&lt;span style="color:#d14">}&lt;/span>&lt;span style="color:#d14">/trusted_certs&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>And then run:&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">knife ssl fetch
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>I then had to ignore the trusted_certs file in my git repo.&lt;/p>
+&lt;p>Thanks to &lt;a href="http://www.mattstratton.com/">Matt Stratton&lt;/a> and his colleagues at &lt;a href="http://chef.io">chef&lt;/a> for helping me find the solution.&lt;/p></description></item><item><title>Immunity</title><link>https://hedge-ops.com/immunity/</link><pubDate>Mon, 14 Jul 2014 08:05:46 +0000</pubDate><guid>https://hedge-ops.com/immunity/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-immunity.jpg" alt="Immunity" />
+&lt;/div>
+&lt;p>We finally figured out a bedtime routine.&lt;/p>
+&lt;p>But the kids were late to school every day.&lt;/p>
+&lt;p>We figured out how to sit down every night for dinner.&lt;/p>
+&lt;p>But we were spending too much on groceries.&lt;/p>
+&lt;p>It&amp;rsquo;s a reality we all face: no matter what you do, &lt;a href="https://hedge-ops.com/failure-the-catalyst/">some other problem comes up to wreck everything&lt;/a>. And the same was true for my project that was dedicated to improving the quality of our software.&lt;/p>
+&lt;p>When we started, we focused mainly on making sure there was no problem with how an order was created, the receipt was printed, and the financials were calculated. We had prioritized this correctly; getting these three things right is critical to our success.&lt;/p>
+&lt;p>Once we had ramped up our solution, we saw a &lt;em>lot&lt;/em> of problems that we were able to catch before shipping our latest releases to anyone. We saved ourselves and our customers a lot of headaches that our competitors and their customers were likely suffering through.&lt;/p>
+&lt;p>But over time, those problems decreased and the system seems to now have an immunity to these types of issues. It&amp;rsquo;s not a phenomenon I totally understand, but is one I&amp;rsquo;ve heard of from others in the industry.&lt;/p>
+&lt;p>Our newfound immunity also hadn&amp;rsquo;t made us immune to &lt;em>every&lt;/em> problem. The problems we &lt;em>weren&amp;rsquo;t&lt;/em> focused on were still there.&lt;/p>
+&lt;p>We hadn&amp;rsquo;t focused on how software is installed at the site and that the correct environment was set up. So the software could be rock solid, but if the environment is off, we&amp;rsquo;re in trouble. It will likely never end, but it&amp;rsquo;s a fun journey to iteratively create immunity through automation in the system.&lt;/p>
+&lt;p>My advice with problem solving is &lt;strong>create a system that makes you immune to having the problem again.&lt;/strong> So get a month ahead of income so you never overdraft. Or put all your bills on autopay so you never miss one. Or every Friday take your spouse out for dinner. &lt;strong>But don&amp;rsquo;t expect all problems to go away entirely.&lt;/strong> Keep working at it, and you&amp;rsquo;ll grow beyond where you imagined, solving problems you didn&amp;rsquo;t even think you were capable of taking on. It&amp;rsquo;s a wonderful journey.&lt;/p></description></item><item><title>Measure for Reality</title><link>https://hedge-ops.com/measure-for-reality/</link><pubDate>Mon, 07 Jul 2014 08:10:44 +0000</pubDate><guid>https://hedge-ops.com/measure-for-reality/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-measure-for-reality.jpg" alt="Measure for Reality" />
+&lt;/div>
+&lt;p>Buffalo Ribeye, medium at &lt;a href="http://www.reata.net/fort-worth-restaurant.html">Reata&lt;/a> with a glass of cab. That&amp;rsquo;s what I get when I&amp;rsquo;m ready to celebrate.&lt;/p>
+&lt;p>We had finally sold our house and knew we needed to jump on the next one. On the first day of looking, we found a house with a lot of potential and decided we wanted to make an offer. When the offer was accepted, we got babysitting for the kids and headed to Reata to celebrate. Then I got a text. Look away, look away! Another one. My wife is more important than this phone. Another one.&lt;/p>
+&lt;p>A friend of mine wanted me to come work with him.&lt;/p>
+&lt;p>The offer was very attractive and tempting. But I didn&amp;rsquo;t take it for a number of reasons, one of which was that I felt like my work wasn&amp;rsquo;t finished at my current job.&lt;/p>
+&lt;p>Then the next two weeks were hell at work. Negativity. Failure. Struggle. Wondering to myself if there will every be anything but negativity, failure, and struggle.&lt;/p>
+&lt;p>I was fed up and needed to get honest with myself, so I went to &lt;a href="http://www.esparzastexas.com/home">Esparzas&lt;/a> and mapped out how I could get out of the situation I was in over a few margaritas.&lt;/p>
+&lt;p>Let me let you in on a little secret of mine: every three months, I go to a restaurant, have at least two margaritas, and write out what I&amp;rsquo;m happy about, what I&amp;rsquo;m not happy about, and what I&amp;rsquo;m going to do about it. This particular day I was not happy about the fact that I turned down a great offer and didn&amp;rsquo;t have a wildly successful project at the time that made that decision feel worth it.&lt;/p>
+&lt;p>The problem I uncovered that day over a few margaritas was that &lt;strong>we were doing some great things but those great things weren&amp;rsquo;t &lt;em>measured&lt;/em> and &lt;em>reported on&lt;/em>.&lt;/strong> So to outsiders, especially senior management, those great things didn&amp;rsquo;t exist. What I needed to do was measure the outcomes we were creating, and then share those measurements with the stakeholders on the project. That would turn &amp;ldquo;is this ever going to work?&amp;rdquo; into &amp;ldquo;this is working but they have a few issues right now.&amp;rdquo;&lt;/p>
+&lt;p>In a few months, we created a daily report that showed the project&amp;rsquo;s output &lt;em>every day&lt;/em> for the runs that happened &lt;em>every day&lt;/em>. This was a game changer for my project, and for my job. Now I look for any way to measure what outcomes I&amp;rsquo;m creating because I know no matter how good the outcome is, if it isn&amp;rsquo;t measured, it doesn&amp;rsquo;t exist.&lt;/p>
+&lt;p>To wrap up the story, I made the right decision with staying with my company. The project just needed some advertised regular measurement. Once that was in place everything changed. And my friend left that job six months after he made that offer, due to strife. A year after that the project he was on was cancelled.&lt;/p></description></item><item><title>Embrace Difficulty</title><link>https://hedge-ops.com/embrace-difficulty/</link><pubDate>Wed, 02 Jul 2014 08:12:45 +0000</pubDate><guid>https://hedge-ops.com/embrace-difficulty/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-embrace-difficulty.jpg" alt="Embrace Difficulty" />
+&lt;/div>
+&lt;p>It was an impossible project and I was scared. The fact that &lt;a href="https://hedge-ops.com/christmas-with-russians/">the world was ending&lt;/a> was the least of my concerns. We have software that is so flexible and configurable that it was impossible to fully test all the combinations of options our customers could run. My leadership at the time asked us to mitigate this by recording everything that happened at a restaurant and playing it back it back internally on prereleased software to make sure everything behaved the same.&lt;/p>
+&lt;p>I can&amp;rsquo;t overstate how I felt: this problem scared the crap out of me. So much could go wrong, and so many issues to figure out. How would I get the software started? How would I know when/if the simulation was running correctly? What about all the other automation projects I had heard about over the years that had been cancelled due to lack of results? Would this project (and my career with it) be the next one thrown on the scrap heap when management realizes how impossible it is?&lt;/p>
+&lt;p>I had to step back, step away from my fear, and think of a good strategy. We were facing a difficult problem. The process we would come up with was likely to fail. A lot. Instead of running &lt;em>away&lt;/em> from that failure, we needed to embrace it. We needed to welcome it with open arms. Because &lt;strong>if we didn&amp;rsquo;t face the failure head on, we would never get past it, and we would fail.&lt;/strong>&lt;/p>
+&lt;p>So we created a system where we ran any automation we had &lt;em>every day&lt;/em>. In fact, this is how we do it today, with over 150 restaurants running in a virtual environment and over 4,000 small scenarios. We do it every night. Do we have to do it every night? Technically no. But we embrace the difficulty of it by doing it every night so we get quick feedback of the problems and keep it on track.&lt;/p>
+&lt;p>People still argue with me over whether we &lt;em>have&lt;/em> to run this every night. I&amp;rsquo;m fine with that; I know it seems silly at times. But I think it&amp;rsquo;s key to our success: &lt;strong>we embrace the difficulty by doing difficult things all the time, so we can learn how to deal with them and make them not difficult anymore.&lt;/strong>&lt;/p>
+&lt;p>Here are a few other examples of embracing the difficulty in a system:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>When&lt;/th>
+&lt;th>Embrace Difficulty By&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Doing Laundry&lt;/td>
+&lt;td>Doing it every day&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Budgeting&lt;/td>
+&lt;td>Starting every month and facing reality&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Blogging&lt;/td>
+&lt;td>Keeping a month ahead and posting at a regular pace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Learning to Cook&lt;/td>
+&lt;td>Cooking a regular meal on a day of a week&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Keeping the Family Close&lt;/td>
+&lt;td>Eating dinner together every night&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>What have you avoided that you need to embrace in order to overcome it?&lt;/p></description></item><item><title>Christmas with Russians</title><link>https://hedge-ops.com/christmas-with-russians/</link><pubDate>Mon, 26 May 2014 08:00:28 +0000</pubDate><guid>https://hedge-ops.com/christmas-with-russians/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-christmas-with-russians" alt="Christmas" />
+&lt;/div>
+&lt;p>It was Christmas 2008, and the world was going to end. We didn&amp;rsquo;t know if there would be an economy or even civilization. And I had two weeks of vacation to end the year. I had an 18 month old who was mostly occupying himself with Christmas toys, and my wife was two months away from having my second child. I didn&amp;rsquo;t really want to take the vacation, but the policy at the time was &amp;ldquo;use it or lose it&amp;rdquo;, so I took it.&lt;/p>
+&lt;p>I could have done anything with those two weeks.&lt;/p>
+&lt;p>I chose to set up &lt;a href="http://martinfowler.com/articles/continuousIntegration.html">Continous Integration&lt;/a> for one of our largest products through &lt;a href="http://www.jetbrains.com/teamcity/">TeamCity&lt;/a>.&lt;/p>
+&lt;p>This was something I was passionate about. I had &lt;a href="http://www.amazon.com/gp/product/B0026772IS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B0026772IS&amp;amp;linkCode=as2&amp;amp;tag=hedgeopscom-20&amp;amp;linkId=RJ6US3SXFLCWDTR5">read the literature&lt;/a> on how transformative Continuous Integration had been to organizations. This product was built twice a day by a homeade tool called bmcon.exe and some batch files. If the build broke, dozens of people stopped everything to try to get it working, with no clear feedback mechanism for knowing what went wrong, who did it, and whether it was being worked on.&lt;/p>
+&lt;p>It was my moral duty to fix this.&lt;/p>
+&lt;p>And it so happened that those working on TeamCity were going to take their Christmas holiday&amp;hellip;&lt;a href="http://en.wikipedia.org/wiki/Christmas_in_Russia">on January 7&lt;/a>. They were Russian. So I took it upon myself to monitor the email and get the build working over the Christmas holidays. I remember on Christmas day &lt;a href="http://youtrack.jetbrains.com/issue/TW-6471">I was conversing with&lt;/a> &lt;a href="http://de.linkedin.com/in/jonnyzzz">Eugene Pentrenko&lt;/a> across the world about how to deal with the complexities of TFS pulling thousands of files and then building them*.&lt;/p>
+&lt;p>Years later, almost all of our products build with TeamCity, and we have thousands of integration tests and tens of thousands unit tests that run on our 100+ build agents to make it happen. It is central to everything we do. And it all started one Christmas years ago when I had a &amp;ldquo;moral duty&amp;rdquo; to do something.&lt;/p>
+&lt;p>In the book &amp;ldquo;&lt;a href="http://www.amazon.com/gp/product/B008KPM424/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B008KPM424&amp;amp;linkCode=as2&amp;amp;tag=hedgeopscom-20&amp;amp;linkId=52YQPMBZ7Z4IMUKU">Selling with Noble Purpose&lt;/a>&amp;rdquo;, &lt;a href="http://www.mcleodandmore.com/what-is-selling-with-noble-purpose/">Lisa McLeod&lt;/a> leads the reader through an exercise where the reader thinks about situations where one makes a difference with customers, in a different way than other people, while loving what they are doing. When I went through this exercise I was reminded of this story. Through the exercise I found my noble purpose:&lt;/p>
+&lt;p>&lt;strong>I share tools and insight for success&lt;/strong>&lt;/p>
+&lt;p>This is what truly excites me, and why this blog exists. I want to share the tools and insights I&amp;rsquo;ve found to succeed. I want to help those who have given me tools and insights that have made me more effective by spreading them to others. And I want to properly define success so I can make sure to follow the path that will lead me there.&lt;/p>
+&lt;p>In the next few posts, I&amp;rsquo;ll talk about key elements of &lt;em>true&lt;/em> success. Success is one of those things that seems easy to see in others, but never seems recognizable in ourselves. I think I&amp;rsquo;ve found a few reasons why this is.&lt;/p>
+&lt;p>_* You can&amp;rsquo;t see it in the issue I link to above but Eugene was emailing me and went above and beyond, after his normal hours, to resolve the issue._&lt;/p></description></item></channel></rss>

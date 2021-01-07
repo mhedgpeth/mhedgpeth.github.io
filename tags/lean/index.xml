@@ -1,0 +1,122 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lean on Michael Hedgpeth</title><link>https://hedge-ops.com/tags/lean/</link><description>Recent content in lean on Michael Hedgpeth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>MIT</copyright><lastBuildDate>Mon, 02 Feb 2015 08:00:14 +0000</lastBuildDate><atom:link href="https://hedge-ops.com/tags/lean/index.xml" rel="self" type="application/rss+xml"/><item><title>The Phoenix Project Book Review</title><link>https://hedge-ops.com/the-phoenix-project-book-review/</link><pubDate>Mon, 02 Feb 2015 08:00:14 +0000</pubDate><guid>https://hedge-ops.com/the-phoenix-project-book-review/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-phoenix-project-book-review.jpg" alt="Phoenix Project" />
+&lt;/div>
+&lt;p>As I&amp;rsquo;ve looked into devops more and more over the past few months, the book &lt;a href="http://amzn.to/1AinIdB">The Phoenix Project&lt;/a> has come up over and over. I finally bought it when Matt Stratton at chef basically insisted on it in &lt;a href="http://www.mattstratton.com/tech/devops">his very awesome reading list&lt;/a> to ramp yourself up on devops.&lt;/p>
+&lt;p>I haven&amp;rsquo;t been into fiction very much, but over the summer I read &lt;a href="http://amzn.to/1zx9aT7">A Man in Full&lt;/a> as a means of integrating stoicism into my own philosophy. That book lit up my imagination and helped me absorb the stoic themes in a way that would be difficult had I just read an outline of stoicism. I was awakened to the reality of how fiction can transform your mind deeply by awakening all aspects of the mind during learning.&lt;/p>
+&lt;p>So I was very excited to read the book. And the book did not disappoint in changing my outlook on my own career and what is possible for those around me. It taught me a few basic lessons that I believe will transform my behavior in the future:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Have a respect for the system.&lt;/strong> Up until I read this book I treated a inefficient system like it was garbage. Let&amp;rsquo;s get rid of the inefficiency! This is dumb! What I realized by reading the book is that in order for you to effectively and profitably change a system, you must have a respect and understanding of why it is the way it is. If you don&amp;rsquo;t know why it is this way, you can realize that it is an inefficient system, but you will not effectively change it.&lt;/li>
+&lt;li>&lt;strong>&lt;a href="https://hedge-ops.com/measure-for-reality/">Measure, Measure, Measure&lt;/a>.&lt;/strong> The main character in the book has a great respect for measurement. People say you can&amp;rsquo;t manage what you don&amp;rsquo;t measure. I think that can be taken too far, but there is a reality in it: if I can&amp;rsquo;t measure the reality of the system, it will be very difficult for me to (1) convince people that a more efficient change is needed, and (2) know that the changes I am making are having their desired effect.&lt;/li>
+&lt;li>&lt;strong>Take a Breath and Count to 2.&lt;/strong> One of the nice things about the book that taught me a lesson is when the main character interacts with various antagonists, who are obviously being reckless, dumb, and incendiary, the main character will take a breath and count to 2. Then respond. And when he responds, it&amp;rsquo;s with facts and an attitude of doing what&amp;rsquo;s best for everyone. I desperately want to exhibit this kind of tact and patience. I get so passionate about my ideas that I can forget to have patience, be calm, and move the ball forward.&lt;/li>
+&lt;li>&lt;strong>Find the Bottleneck Constraint.&lt;/strong> In the book there is a legendary character named Brent. Brent can do everything. He can fix problems in seconds that everyone has spent days trying to understand. He knows why this server is the way it is, and the answer lies in activities from 2002. Brent has everyone asking him for everything and the business is at it&amp;rsquo;s knees due to Brent&amp;rsquo;s inability to clone himself into fifty other people. In the book, the main focus was on getting Brent isolated and his work properly documented, prioritized, and managed. Brent remained a hugely valuable member of the team, but they couldn&amp;rsquo;t grow until his workload was under control. And once Brent had his priorities under control, he was able to do some special things for the company.&lt;/li>
+&lt;/ul>
+&lt;p>I really enjoyed the Phoenix Project and recommend it to anyone wanting to lead change in their organization using lean principles. It reaches the reader in a way that a nonfiction book can&amp;rsquo;t: you can feel the tension. You drop the F-bombs right there with the reader. You feel the desperation as the core concepts come to life. And therefore when you face similar situations, you have a whole new world of awesome manufacturing theory available to you.&lt;/p>
+&lt;p>This book was one of the best software-related books I&amp;rsquo;ve ever read. If you want to be a leader, please get a copy and read it. Then invite me to lunch and let&amp;rsquo;s talk about it; maybe we can change the world together.&lt;/p></description></item><item><title>The Lean Startup Cycle</title><link>https://hedge-ops.com/the-lean-startup-cycle/</link><pubDate>Fri, 23 Jan 2015 08:00:30 +0000</pubDate><guid>https://hedge-ops.com/the-lean-startup-cycle/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-the-lean-startup-cycle.jpg" alt="Lean Startup Cycle" />
+&lt;/div>
+&lt;p>When &lt;a href="http://en.wikipedia.org/wiki/Hermann_Hauser">Herman Hauser&lt;/a> created a team to create the &lt;a href="http://en.wikipedia.org/wiki/ARM_architecture">ARM processor&lt;/a>, now the processor that runs most of the mobile devices you know and love, &lt;a href="http://www.pcpro.co.uk/features/358750/whatever-happened-to-hermann-hauser">he remarked&lt;/a>*:&lt;/p>
+&lt;blockquote>
+&lt;p>When we decided to do a microprocessor, in hindsight, I think I made two great decisions. I trusted the team and gave them two things that Intel and Motorola had never given their people: the first was no money and the second was no people. They had to keep it simple.&lt;/p>
+&lt;/blockquote>
+&lt;p>When you start a project the normal course of action is to try to get as many people as possible so you will be able to have enough resources to accomplish the goal. In &lt;a href="http://amzn.to/1HdjuUt">Lean Enterprise&lt;/a>, the authors advocate another way, what they call &lt;a href="http://en.wikipedia.org/wiki/Lean_startup">the Lean Startup Cycle&lt;/a>:&lt;/p>
+&lt;ol>
+&lt;li>Working out what we need to &lt;em>learn&lt;/em> by creating a value hypothesis&lt;/li>
+&lt;li>Decide what to &lt;em>measure&lt;/em> in order to test that hypothesis&lt;/li>
+&lt;li>Design an experiment, called the &lt;em>minimum viable product&lt;/em>&lt;/li>
+&lt;li>&lt;em>Build&lt;/em> the minimum viable product to gather the necessary data from real customers to determine if we have a good product/market fit.&lt;/li>
+&lt;/ol>
+&lt;p>The authors continue:&lt;/p>
+&lt;blockquote>
+&lt;p>The trick is to invest a minimum of work to go through this cycle. Since we are operating in conditions of extreme uncertainty, we expect that our value hypothesis will be incorrect. At this point we &lt;em>pivot&lt;/em>, coming up with a new value hypothesis based on what we have learned, and go through this process again.&lt;/p>
+&lt;/blockquote>
+&lt;p>I love this idea. Instead of wasting years of time and money on an idea, let&amp;rsquo;s realize that we don&amp;rsquo;t know everything and use the scientific method to get us to the right idea. Let&amp;rsquo;s not be afraid of failure; you can&amp;rsquo;t have innovation without failure. &lt;strong>The key to innovation isn&amp;rsquo;t avoiding failure; the key is reacting to failure earlier than the competition.&lt;/strong>&lt;/p>
+&lt;p>This method also calls into question the annual budget cycle. If all you have is once chance a year to respond to reality, you&amp;rsquo;ll end up clamoring for more people and avoid the simple, early, scientific method laid out above. A better way is to start small, provide some runway to solve a problem, and scale only when the solution shows its value in the real world.&lt;/p>
+&lt;ul>
+&lt;li>I got this quote from Lean Enterprise as well, but cite the original source as they did.&lt;/li>
+&lt;/ul></description></item><item><title>Engineering Laundry</title><link>https://hedge-ops.com/engineering-laundry/</link><pubDate>Fri, 13 Jun 2014 08:00:54 +0000</pubDate><guid>https://hedge-ops.com/engineering-laundry/</guid><description>&lt;div class="full-width">
+&lt;img src="https://hedge-ops.com/images/feature-engineering-laundry.jpg" alt="Engineering Laundry" />
+&lt;/div>
+&lt;p>Before two weeks ago, &lt;a href="http://www.anniehedgie.com">my wife&lt;/a> had an intense hatred she only shared with close friends. This was something she avoided; she abhorred. Something that trapped her in a life of anger and despair.&lt;/p>
+&lt;p>Clothes. Worn and discarded. Washed. Dried. Put away. Repeat. Until death.&lt;/p>
+&lt;p>A couple of weeks ago, she asked me to reduce her workload by doing laundry. I wasn&amp;rsquo;t thrilled but I couldn&amp;rsquo;t argue against helping her out with a job that I could do.&lt;/p>
+&lt;p>Once I got to thinking about it, here&amp;rsquo;s what really intrigued me: laundry is a simple system that can be optimized, or engineered, for maximum efficiencies. As an engineer, I really love maximizing efficiencies. So I decided to tackle this problem of laundry using principles I&amp;rsquo;ve learned as an engineer.&lt;/p>
+&lt;h2 id="inherited-system">Inherited &lt;strong>System&lt;/strong>&lt;/h2>
+&lt;p>The system I inherited went something like this, for our family of five:&lt;/p>
+&lt;ol>
+&lt;li>Each room on the second floor has a clothes hamper (all of our sleeping rooms are on the second floor). When cleaning the room, put the clothes in the clothes hamper.&lt;/li>
+&lt;li>If you&amp;rsquo;re on the first floor, put the clothes in the laundry room which is on the first floor.&lt;/li>
+&lt;li>Once a week, on no particular day, take all the clothes from the rooms and pile it in the laundry room.&lt;/li>
+&lt;li>Sort the clothes into loads of whites, colors, towels.&lt;/li>
+&lt;li>Wash and dry the clothes (this takes two days).&lt;/li>
+&lt;li>When the clothes are dried, put the clothes that are to be hung up flat on top of the dryer. Put the clothes that are in dressers in a bag that hangs on the wall, one for each person. There is also a bag for kitchen towels and bathroom towels.&lt;/li>
+&lt;li>At some point take all bags upstairs, and put the clothes away in dressers.&lt;/li>
+&lt;li>At some point hang up the clothes.&lt;/li>
+&lt;/ol>
+&lt;p>This entire process would begin as it was ending. In other words, laundry ended up being a neverending mess of never-done-ness.&lt;/p>
+&lt;h2 id="problems-with-the-system">Problems &lt;strong>with the System&lt;/strong>&lt;/h2>
+&lt;p>I looked at the system not as a household chore but as a system that I could maximize using principles I use at work. So looking at it that way, what were the problems with this system?&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Excessive Batching.&lt;/strong> Everything was piled up and done at once, and there was no flow. When there is so much work in progress, you can&amp;rsquo;t optimize the system because there are too many variables in it. It&amp;rsquo;s like trying to cook Thanksgiving Dinner…all at once. There has to be a clear process in place and simplicity at every step for any hope of true optimization.&lt;/li>
+&lt;li>&lt;strong>Excessive Sorting.&lt;/strong> Laundry was sorted at least two times within a large set. There was a separation of &lt;em>all the laundry&lt;/em> into loads, and another separation of &lt;em>all the laundry&lt;/em> by who owned the laundry. This was especially difficult with the kids, whose sizes are remarkably similar and ever-changing, even though they insist it&amp;rsquo;s totally obvious that the shirt belongs to one or the other.&lt;/li>
+&lt;li>&lt;strong>Lack of Ownership.&lt;/strong> My wife was doing all the work. None of us wanted to do the job. So we were leaving valuable contributions from me and my sons on the table, which led to…&lt;/li>
+&lt;li>&lt;strong>Despair from Lack of Closure.&lt;/strong> The system didn&amp;rsquo;t give you a sense of being &amp;ldquo;done&amp;rdquo;. In software terms there was no &amp;ldquo;release&amp;rdquo;. It was just always going.&lt;/li>
+&lt;/ul>
+&lt;h2 id="new-system">New System&lt;/h2>
+&lt;p>I did some internet searching and &lt;a href="http://lifeasmom.com/2013/04/kids-can-do-laundry.html">came across an article&lt;/a> that was extremely close to what I have implemented. It addresses all of the problems stated above. Here&amp;rsquo;s the system:&lt;/p>
+&lt;ol>
+&lt;li>Every person in the house gets their own laundry basket except for parents who share theirs. Every person is responsible for putting their own clothes into &lt;em>only&lt;/em> their own basket.&lt;/li>
+&lt;li>There is a basket downstairs that towels and linens go into.&lt;/li>
+&lt;li>Every basket is done by its owner on a particular day of the week. Someone helps too if that&amp;rsquo;s needed. Our schedule is:&lt;/li>
+&lt;/ol>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Day&lt;/th>
+&lt;th>Basket&lt;/th>
+&lt;th>Owner&lt;/th>
+&lt;th>Helper&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Monday&lt;/td>
+&lt;td>Parents&lt;/td>
+&lt;td>Mom&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Tuesday&lt;/td>
+&lt;td>Oldest&lt;/td>
+&lt;td>Oldest&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Wednesday&lt;/td>
+&lt;td>Towels&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;td>Mom&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Thursday&lt;/td>
+&lt;td>Middle Child&lt;/td>
+&lt;td>Middle Child&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Friday&lt;/td>
+&lt;td>Youngest Child&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;td>Dad&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="benefits-of-the-new-system">Benefits of the New System&lt;/h2>
+&lt;p>We&amp;rsquo;ve done this system for a week now, and wow has it made a difference. Here&amp;rsquo;s why:&lt;/p>
+&lt;ul>
+&lt;li>We&amp;rsquo;ve broken the whole system down into smaller, manageable chunks. That way there is a sense of progress, completion, and lack of despair. Since the laundry room is clean (other than a basket with towels), it is a place where you can create an outcome relatively quickly and get out. You&amp;rsquo;re done. There&amp;rsquo;s not a big scary laundry monster in there to kill you.&lt;/li>
+&lt;li>Sorting has been drastically minimized. Now when we wash the youngest child&amp;rsquo;s clothes, it&amp;rsquo;s extremely clear whose clothes those are when they come out of the dryer. This knocks off the total time we spend on it.&lt;/li>
+&lt;li>Everyone owns laundry. It&amp;rsquo;s not something that only Mom does. And she gets to do the part that is most important to her (her own clothes), so we win by me not accidentally shrinking her brand new sweater.&lt;/li>
+&lt;/ul>
+&lt;p>The problem that one might have with this system is that you are doing laundry &lt;em>every day&lt;/em>. But a different person is in charge of it, and it&amp;rsquo;s a mangable amount. It seems to be working out well for us so far.&lt;/p>
+&lt;p>The great thing I found through this process is how well management principles relate to so many other areas of life. That&amp;rsquo;s one of the things I want to explore in the future: taking wisdom from one area of life and applying it elsewhere.&lt;/p>
+&lt;p>&lt;em>Do these principles apply to another area of your life?&lt;/em>&lt;/p></description></item></channel></rss>
