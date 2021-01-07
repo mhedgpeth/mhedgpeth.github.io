@@ -1,13 +1,12 @@
 ---
 title: Embrace Difficulty
 date: 2014-07-02T08:12:45+00:00
-tags:
-  - growth
-  - culture
-  - process
 author: Michael
 slug: embrace-difficulty
 tags:
+  - growth
+  - culture
+  - process  
   - agile
   - automation
   - difficulty

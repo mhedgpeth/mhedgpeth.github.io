@@ -1,13 +1,13 @@
 ---
 title: Ten Takeaways from the Last 10 Years at Radiant/NCR
 date: 2014-07-11T08:00:22+00:00
-tags: culture
 author: Michael
 feature_image: feature-ten-takeaways-from-the-last-10-years-at-radiantncr 
 show_related_posts: true 
 guid: http://hedge-ops.com/?p=405
 slug: ten-takeaways-from-the-last-10-years-at-radiantncr
 tags:
+  - culture
   - ncr
   - radiant
   - retrospective

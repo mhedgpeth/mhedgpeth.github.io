@@ -1,7 +1,8 @@
 ---
 title: Margin for Leadership
 date: 2016-10-07T00:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: margin-for-leadership
 ---

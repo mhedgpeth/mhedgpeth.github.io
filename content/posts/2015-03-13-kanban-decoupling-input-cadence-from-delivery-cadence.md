@@ -1,10 +1,10 @@
 ---
 title: Kanban Decoupling Input Cadence from Delivery Cadence
 date: 2015-03-13T08:00:45+00:00
-tags: process
 author: Michael
 slug: kanban-decoupling-input-cadence-from-delivery-cadence
 tags:
+  - process
   - Agile Software Development
   - David Anderson
   - Delivery Cadence

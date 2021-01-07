@@ -1,10 +1,10 @@
 ---
 title: Sanitize Your Smartphone with Republic Wireless
 date: 2014-09-29T08:00:08+00:00
-tags: growth
 author: Michael
 slug: sanitize-your-smartphone-with-republic-wireless
 tags:
+  - growth
   - distraction
   - republic wireless
   - smartphone

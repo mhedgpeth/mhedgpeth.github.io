@@ -1,10 +1,10 @@
 ---
 title: The Economist Keeps it Real
 date: 2014-09-05T08:00:12+00:00
-tags: growth
 author: Michael
 slug: the-economist-keeps-it-real
 tags:
+  - growth
   - economist
   - magazine
   - news

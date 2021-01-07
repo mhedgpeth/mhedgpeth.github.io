@@ -1,10 +1,10 @@
 ---
 title: "Our Culture's Script"
 date: 2014-08-22T08:00:38+00:00
-tags: growth
 author: Michael
 slug: our-cultures-script
 tags:
+  - growth
   - consumerism
   - life
   - meaning

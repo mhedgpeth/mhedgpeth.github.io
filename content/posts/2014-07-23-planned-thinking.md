@@ -1,12 +1,11 @@
 ---
 title: Planned Thinking
 date: 2014-07-23T08:00:05+00:00
-tags: 
-  - growth
-  - gtd
 author: Michael
 slug: planned-thinking
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
   - process

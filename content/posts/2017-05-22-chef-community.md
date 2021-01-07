@@ -1,7 +1,8 @@
 ---
 title: Chef is a Community Before It's a Vendor
 date: 2017-05-22T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: chef-community
 ---

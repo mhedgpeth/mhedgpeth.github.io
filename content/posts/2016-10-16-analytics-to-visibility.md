@@ -2,7 +2,8 @@
 layout: post
 title: "Migrating from Chef Analytics to Chef Visibility"
 date: 2016-10-16T08:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: analytics-to-visibility
 ---

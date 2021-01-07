@@ -1,7 +1,7 @@
 ---
 title: Finding Habitat
 date: 2016-06-15T07:39:22+00:00
-tags: 
+tags:
   - automation
   - chef
 author: Michael

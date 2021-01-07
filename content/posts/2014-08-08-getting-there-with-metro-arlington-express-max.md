@@ -1,10 +1,10 @@
 ---
 title: Getting There with Metro Arlington Express (MAX)
 date: 2014-08-08T08:00:03+00:00
-tags: growth
 author: Michael
 slug: getting-there-with-metro-arlington-express-max
 tags:
+  - growth
   - arlington
   - mass transit
   - max

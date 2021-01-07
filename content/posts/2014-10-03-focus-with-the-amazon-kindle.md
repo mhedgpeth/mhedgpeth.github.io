@@ -1,10 +1,10 @@
 ---
 title: Focus with the Amazon Kindle
 date: 2014-10-03T08:00:20+00:00
-tags: growth
 author: Michael
 slug: focus-with-the-amazon-kindle
 tags:
+  - growth
   - books
   - kindle
   - leadership

@@ -1,13 +1,11 @@
 ---
 title: Solving SSL Validation failure with knife
 date: 2015-01-05T08:00:37+00:00
-tags: 
-  - automation
-  - chef
 author: Michael
 slug: solving-ssl-validation-failure-with-knife
 tags:
-  - chef
+  - automation
+  - chef  
   - knife
   - Security
   - Ssl Problem

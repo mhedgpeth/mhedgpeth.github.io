@@ -1,7 +1,7 @@
 ---
 title: Intrinsic Motivators Leading to Chef
 date: 2015-05-04T08:00:25+00:00
-tags: 
+tags:
   - culture
   - chef
 author: Michael

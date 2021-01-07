@@ -1,7 +1,8 @@
 ---
 title: Discriminatory Wind
 date: 2015-10-30T08:00:05+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: discriminatory-wind
 ---

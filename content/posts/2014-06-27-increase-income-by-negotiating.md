@@ -1,10 +1,10 @@
 ---
 title: Increase Income by Negotiating
 date: 2014-06-27T08:00:20+00:00
-tags: growth
 author: Michael
 slug: increase-income-by-negotiating
 tags:
+  - growth
   - negotiate
   - review
   - salary

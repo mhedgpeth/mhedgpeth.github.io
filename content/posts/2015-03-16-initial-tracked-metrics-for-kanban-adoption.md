@@ -1,10 +1,10 @@
 ---
 title: Initial Tracked Metrics for Kanban Adoption
 date: 2015-03-16T08:00:39+00:00
-tags: process
 author: Michael
 slug: initial-tracked-metrics-for-kanban-adoption
 tags:
+  - process
   - Cumulative Flow
   - David Anderson
   - Initial Quality

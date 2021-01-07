@@ -1,7 +1,8 @@
 ---
 title: How to Apply Kanban to a Large Project with High Feature Variability
 date: 2015-03-23T08:00:01+00:00
-tags: process
+tags:
+  - process
 author: Michael
 slug: how-to-apply-kanban-to-a-large-project-with-high-feature-variability
 ---

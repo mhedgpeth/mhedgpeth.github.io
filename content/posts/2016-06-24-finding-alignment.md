@@ -1,7 +1,8 @@
 ---
 title: "Finding Alignment"
 date: 2016-06-24T08:00:59+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: finding-alignment
 ---

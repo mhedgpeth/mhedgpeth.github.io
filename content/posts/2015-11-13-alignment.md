@@ -1,7 +1,8 @@
 ---
 title: Alignment
 date: 2015-11-13T08:00:34+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: alignment
 ---

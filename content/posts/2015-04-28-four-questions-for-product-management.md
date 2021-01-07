@@ -1,7 +1,8 @@
 ---
 title: Four Questions for Product Management
 date: 2015-04-28T08:00:47+00:00
-tags: process
+tags:
+  - process
 author: Michael
 slug: four-questions-for-product-management
 ---

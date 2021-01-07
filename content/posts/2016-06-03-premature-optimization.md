@@ -1,7 +1,8 @@
 ---
 title: Premature Optimization
 date: 2016-06-03T08:00:28+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: premature-optimization
 ---

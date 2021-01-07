@@ -1,12 +1,11 @@
 ---
 title: The Ultimate Test of Tolerance
 date: 2014-11-24T08:00:10+00:00
-tags: 
-  - growth
-  - culture
 author: Michael
 slug: the-ultimate-test-of-tolerance
 tags:
+  - growth
+  - culture
   - control
   - marriage
   - Marriages

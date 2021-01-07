@@ -1,12 +1,11 @@
 ---
 title: The One Metric that Matters
 date: 2015-02-09T08:00:34+00:00
-tags:
-  - process
-  - culture
 author: Michael
 slug: the-one-metric-that-matters
 tags:
+  - process
+  - culture
   - Enterprise One
   - Lean Analytics
   - lean startup

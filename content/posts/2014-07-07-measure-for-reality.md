@@ -1,10 +1,10 @@
 ---
 title: Measure for Reality
 date: 2014-07-07T08:10:44+00:00
-tags: process
 author: Michael
 slug: measure-for-reality
 tags:
+  - process
   - automation
   - goal setting
   - measurement

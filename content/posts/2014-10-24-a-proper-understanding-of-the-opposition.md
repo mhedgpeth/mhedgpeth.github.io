@@ -1,10 +1,10 @@
 ---
 title: A Proper Understanding of the Opposition
 date: 2014-10-24T08:00:31+00:00
-tags: growth
 author: Michael
 slug: a-proper-understanding-of-the-opposition
 tags:
+  - growth
   - politics
   - religion
   - tolerance

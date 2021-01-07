@@ -1,12 +1,11 @@
 ---
 title: Progression of Responsibility
 date: 2015-02-06T08:00:02+00:00
-tags:
-  - process
-  - culture
 author: Michael
 slug: progression-of-responsibility
 tags:
+  - process
+  - culture
   - book
   - getting things done
   - leadership

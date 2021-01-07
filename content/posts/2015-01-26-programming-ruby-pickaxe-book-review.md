@@ -1,13 +1,12 @@
 ---
 title: Programming Ruby (Pickaxe) Book Review
 date: 2015-01-26T08:00:32+00:00
+author: Michael
+slug: programming-ruby-pickaxe-book-review
 tags:
   - books
   - chef
   - automation
-author: Michael
-slug: programming-ruby-pickaxe-book-review
-tags:
   - Book Review
   - chef
   - Learn Chef

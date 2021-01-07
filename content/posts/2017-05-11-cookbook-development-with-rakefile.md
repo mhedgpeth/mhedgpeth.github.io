@@ -1,7 +1,8 @@
 ---
 title: Cookbook Development with Rakefiles
 date: 2017-05-11T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: cookbook-development-with-rakefile
 ---
@@ -68,7 +69,7 @@ namespace :style do
     desc 'Run foodcritic style checks'
     FoodCritic::Rake::LintTask.new(:foodcritic) do |task|
       task.options = {
-        fail_tags: ['any'],
+        fail_tags:['any'],
         progress: true,
       }
     end

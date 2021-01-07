@@ -1,7 +1,8 @@
 ---
 title: Which Line?
 date: 2017-04-05T00:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: which-line
 ---

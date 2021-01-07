@@ -1,7 +1,8 @@
 ---
 title: The Technical Asshole Curse
 date: 2016-03-18T08:00:41+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: the-technical-asshole-curse
 ---

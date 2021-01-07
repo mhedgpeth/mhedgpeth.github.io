@@ -1,7 +1,7 @@
 ---
 title: The Power of Culture in Cross-Discipline Change Initiatives
 date: 2016-02-12T08:00:17+00:00
-tags: 
+tags:
   - culture
   - chef
   - security

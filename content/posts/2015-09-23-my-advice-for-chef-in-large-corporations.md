@@ -1,7 +1,7 @@
 ---
 title: My Advice For Chef in Large Corporations
 date: 2015-09-23T11:21:34+00:00
-tags: 
+tags:
   - culture
   - chef
 author: Michael

@@ -1,10 +1,10 @@
 ---
 title: Lowering Expenses with Contentment
 date: 2014-06-25T08:00:26+00:00
-tags: growth
 author: Michael
 slug: lowering-expenses-with-contentment
 tags:
+  - growth
   - budgeting
   - contentment
   - dave ramsey

@@ -1,7 +1,8 @@
 ---
 title: Why Habitat?
 date: 2017-03-27T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: why-habitat
 ---

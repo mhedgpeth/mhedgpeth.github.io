@@ -1,10 +1,10 @@
 ---
 title: 'Kanban Standup Meetings: A Way Out of Standup Hell?'
 date: 2015-03-06T08:00:35+00:00
-tags: process
 author: Michael
 slug: kanban-standup-meetings-a-way-out-of-standup-hell
 tags:
+  - process
   - Collective Ownership
   - Daily Standup Meeting
   - Kanban

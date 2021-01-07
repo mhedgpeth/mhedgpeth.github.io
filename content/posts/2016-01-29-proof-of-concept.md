@@ -1,7 +1,7 @@
 ---
 title: Proof of Concept
 date: 2016-01-29T08:00:45+00:00
-tags: 
+tags:
   - culture
   - chef
 author: Michael

@@ -1,9 +1,9 @@
 ---
 title: Engineering Travel
 date: 2014-06-30T08:00:05+00:00
-tags: growth
 author: Michael
 tags:
+  - growth
   - biking
   - car
   - commuting

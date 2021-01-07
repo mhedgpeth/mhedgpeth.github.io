@@ -1,7 +1,8 @@
 ---
 title: Policyfiles
 date: 2016-11-02T08:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: policyfiles
 ---

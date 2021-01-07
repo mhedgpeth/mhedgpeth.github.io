@@ -1,10 +1,10 @@
 ---
 title: Facing the Ultimate Distraction and Often Losing
 date: 2014-09-26T08:00:09+00:00
-tags: growth
 author: Michael
 slug: facing-the-ultimate-distraction-and-often-losing
 tags:
+  - growth
   - distraction
   - escaping
   - facebook

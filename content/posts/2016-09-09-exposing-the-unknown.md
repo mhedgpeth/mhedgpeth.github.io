@@ -1,7 +1,8 @@
 ---
 title: Exposing the Unknown
 date: 2016-09-09T08:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: exposing-the-unknown
 ---

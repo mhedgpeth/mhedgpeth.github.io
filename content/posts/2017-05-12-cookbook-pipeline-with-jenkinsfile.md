@@ -1,7 +1,8 @@
 ---
 title: Cookbook Pipeline with Jenkinsfile
 date: 2017-05-12T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: cookbook-pipeline-with-jenkinsfile
 ---

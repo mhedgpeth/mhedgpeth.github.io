@@ -1,12 +1,11 @@
 ---
 title: Process and Organize
 date: 2014-07-28T08:00:39+00:00
-tags: 
-  - growth
-  - gtd
 author: Michael
 slug: process-and-organize
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
   - process

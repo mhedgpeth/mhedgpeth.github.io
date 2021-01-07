@@ -1,7 +1,8 @@
 ---
 title: Chef with Windows
 date: 2016-10-24T08:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: chef-with-windows
 ---

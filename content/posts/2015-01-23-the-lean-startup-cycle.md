@@ -1,12 +1,11 @@
 ---
 title: The Lean Startup Cycle
 date: 2015-01-23T08:00:30+00:00
-tags:
-  - process
-  - culture
 author: Michael
 slug: the-lean-startup-cycle
 tags:
+  - process
+  - culture
   - Budget Cycling
   - innovation
   - lean

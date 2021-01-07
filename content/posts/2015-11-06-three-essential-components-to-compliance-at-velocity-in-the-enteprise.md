@@ -1,7 +1,7 @@
 ---
 title: Three Essential Components to Compliance at Velocity in the Enteprise
 date: 2015-11-06T08:00:26+00:00
-tags: 
+tags:
   - culture
   - chef
   - security

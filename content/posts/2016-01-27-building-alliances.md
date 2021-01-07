@@ -1,7 +1,8 @@
 ---
 title: Building Alliances
 date: 2016-01-27T08:00:15+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: building-alliances
 ---

@@ -1,7 +1,8 @@
 ---
 title: Whose Goals?
 date: 2015-12-11T08:00:38+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: whose-goals
 ---

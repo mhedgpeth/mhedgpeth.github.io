@@ -1,12 +1,11 @@
 ---
 title: Solve Problems by Isolating Them
 date: 2014-07-16T08:02:33+00:00
-tags:
-  - process
-  - growth
 author: Michael
 slug: solve-problems-by-isolating-them
 tags:
+  - process
+  - growth
   - kids
   - lego
   - strategy

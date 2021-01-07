@@ -11,8 +11,9 @@ tags:
   - continuous integration
   - success
   - teamcity
-  - toolsauthor_name: Michael
-permalink: /christmas-with-russians
+  - tools
+author: Michael
+slug: christmas-with-russians
 ---
 <div class="full-width">
   <img src="/images/feature-christmas-with-russians" alt="Christmas" />

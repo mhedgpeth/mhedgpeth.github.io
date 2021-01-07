@@ -1,12 +1,11 @@
 ---
 title: Life is Art
 date: 2014-08-18T08:00:05+00:00
-tags:
-  - growth
-  - culture
 author: Michael
 slug: life-is-art
 tags:
+  - growth
+  - culture
   - art
   - life
   - meaning

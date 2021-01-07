@@ -1,12 +1,11 @@
 ---
 title: How Growth Got Me Organized and Productive
 date: 2014-07-21T08:00:35+00:00
-tags: 
-  - growth
-  - gtd
 author: Michael
 slug: productivity
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
   - organization

@@ -1,12 +1,11 @@
 ---
 title: A European Education
 date: 2014-10-20T22:14:05+00:00
-tags: 
-  - growth
-  - culture
 author: Michael
 slug: a-european-education
 tags:
+  - growth
+  - culture
   - education
   - europe
   - friends

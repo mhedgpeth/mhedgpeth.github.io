@@ -1,7 +1,8 @@
 ---
 title: Chef Artifacts with Artifactory
 date: 2017-05-19T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: artifactory
 ---

@@ -1,7 +1,8 @@
 ---
 title: Summer of Discovery
 date: 2016-09-07T08:00:00+00:00
-tags: growth
+tags:
+  - growth
 slug: summer-of-discovery
 ---
 <div class="full-width">

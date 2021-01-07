@@ -1,12 +1,11 @@
 ---
 title: Mission Command
 date: 2015-01-19T08:00:54+00:00
-tags: 
-  - process
-  - culture
 author: Michael
 slug: mission-command
 tags:
+  - process
+  - culture
   - lean enterprise
   - Lean Movement
   - Maneuver Warfare

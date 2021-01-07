@@ -1,7 +1,8 @@
 ---
 title: Putting Developers On Call
 date: 2016-01-13T08:00:14+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: putting-developers-on-call
 ---

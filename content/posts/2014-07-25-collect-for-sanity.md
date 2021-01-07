@@ -1,12 +1,11 @@
 ---
 title: Collect for Sanity
 date: 2014-07-25T08:00:22+00:00
-tags: 
-  - growth
-  - gtd
 author: Michael
 slug: collect-for-sanity
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
   - process

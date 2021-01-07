@@ -1,7 +1,8 @@
 ---
 title: Planning vs. Execution
 date: 2016-09-23T08:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: planning-vs-execution
 ---

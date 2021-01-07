@@ -1,12 +1,10 @@
 ---
 title: Defining the Kanban Input Queue
 date: 2015-03-02T10:00:33+00:00
-tags: process
 author: Michael
 slug: defining-the-kanban-input-queue
 tags:
   - process
-tags:
   - agile
   - Backlog Management
   - David Anderson

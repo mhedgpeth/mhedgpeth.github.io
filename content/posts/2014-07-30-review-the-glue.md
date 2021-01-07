@@ -1,12 +1,11 @@
 ---
 title: Review the Glue
 date: 2014-07-30T08:00:41+00:00
-tags:
-  - growth
-  - gtd
 author: Michael
 slug: review-the-glue
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
   - process

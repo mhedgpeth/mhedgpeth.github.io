@@ -1,10 +1,10 @@
 ---
 title: Problem Owner is Solution Owner
 date: 2014-07-09T08:07:29+00:00
-tags: process
 author: Michael
 slug: problem-owner-is-solution-owner
 tags:
+  - process
   - leadership
   - project planning
   - strategy

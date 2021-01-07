@@ -1,12 +1,11 @@
 ---
 title: Getting Things Done Action Plan
 date: 2014-08-04T08:00:55+00:00
-tags:
-  - growth
-  - gtd
 author: Michael
 slug: getting-things-done-action-plan
 tags:
+  - growth
+  - gtd
   - action plan
   - checkvist
   - gtd

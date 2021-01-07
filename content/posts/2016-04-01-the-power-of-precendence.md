@@ -1,7 +1,8 @@
 ---
 title: The Power of Precendence
 date: 2016-04-01T08:00:24+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: the-power-of-precendence
 ---

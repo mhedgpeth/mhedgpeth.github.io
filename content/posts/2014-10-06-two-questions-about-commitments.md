@@ -1,10 +1,10 @@
 ---
 title: Two Questions You Should Ask About Your Commitments
 date: 2014-10-06T08:00:51+00:00
-tags: growth
 author: Michael
 slug: two-questions-about-commitments
 tags:
+  - growth
   - commitments
   - introspection
   - planning

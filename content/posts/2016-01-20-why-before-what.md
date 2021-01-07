@@ -1,7 +1,8 @@
 ---
 title: Why Before What
 date: 2016-01-20T08:00:19+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: why-before-what
 ---

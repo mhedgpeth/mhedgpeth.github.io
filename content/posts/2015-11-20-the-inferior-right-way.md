@@ -1,7 +1,7 @@
 ---
 title: 'The Inferior "Right" Way'
 date: 2015-11-20T08:00:20+00:00
-tags: 
+tags:
   - culture
   - teamcity
   - chef

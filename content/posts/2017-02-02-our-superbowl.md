@@ -1,7 +1,8 @@
 ---
 title: Our Superbowl
 date: 2017-02-02T00:00:00+00:00
-tags: chef
+tags:
+  - chef
 author: Michael
 slug: our-superbowl
 ---

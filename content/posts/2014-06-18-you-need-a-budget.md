@@ -1,10 +1,10 @@
 ---
 title: You Need a Budget
 date: 2014-06-18T07:45:19+00:00
-tags: growth
 author: Michael
 slug: you-need-a-budget
 tags:
+  - growth
   - budgeting
   - product review
   - you need a budget

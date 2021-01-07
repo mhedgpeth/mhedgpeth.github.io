@@ -1,7 +1,8 @@
 ---
 title: All or Nothing Changes
 date: 2016-02-19T08:00:53+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: all-or-nothing-changes
 ---

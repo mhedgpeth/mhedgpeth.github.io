@@ -1,7 +1,8 @@
 ---
 title: Finding a Philosophy of Life
 date: 2014-08-25T08:00:29+00:00
-tags: growth
+tags:
+ - growth
 author: Michael
 feature_image: feature-finding-a-philosophy-of-life 
 slug: finding-a-philosophy-of-life

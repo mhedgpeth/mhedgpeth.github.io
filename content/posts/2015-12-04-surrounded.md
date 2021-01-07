@@ -1,7 +1,8 @@
 ---
 title: Surrounded
 date: 2015-12-04T08:00:23+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: surrounded
 ---

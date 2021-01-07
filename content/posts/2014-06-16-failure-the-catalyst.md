@@ -5,12 +5,11 @@ tags:
   - growth
   - culture
   - process
-author: Michael
-slug: failure-the-catalyst
-tags:
   - budgeting
   - failure
   - home improvement
+author: Michael
+slug: failure-the-catalyst
 ---
 <div class="full-width">
   <img src="/images/feature-failure-the-catalyst.jpg" alt="Failure the Catalyst" />

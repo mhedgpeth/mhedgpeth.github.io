@@ -1,7 +1,8 @@
 ---
 title: DevOps Leadership Summit in Dallas
 date: 2017-05-09T00:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: devops-leadership-summit
 ---

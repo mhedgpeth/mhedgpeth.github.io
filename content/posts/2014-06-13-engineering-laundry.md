@@ -1,10 +1,10 @@
 ---
 title: Engineering Laundry
 date: 2014-06-13T08:00:54+00:00
-tags: growth
 author: Michael
 slug: engineering-laundry
 tags:
+  - growth
   - batching
   - engineering
   - flow

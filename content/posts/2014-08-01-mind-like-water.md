@@ -1,12 +1,11 @@
 ---
 title: Mind Like Water
 date: 2014-08-01T08:00:37+00:00
-tags:
-  - growth
-  - gtd
 author: Michael
 slug: mind-like-water
 tags:
+  - growth
+  - gtd
   - checkvist
   - gtd
 ---

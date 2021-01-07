@@ -1,10 +1,10 @@
 ---
 title: 'Sports News: Soap Operas for People Who Make Fun of Soap Operas'
 date: 2014-09-17T08:00:17+00:00
-tags: growth
 author: Michael
 slug: sports-news-soap-operas-for-people-who-make-fun-of-soap-operas
 tags:
+  - growth
   - distraction
   - escaping
   - news

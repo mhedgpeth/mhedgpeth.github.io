@@ -1,10 +1,10 @@
 ---
 title: Coding for Kids
 date: 2015-01-12T08:00:18+00:00
-tags: growth
 author: Michael
 slug: coding-for-kids
 tags:
+  - growth
   - Computer
   - Computers
   - Elementary School

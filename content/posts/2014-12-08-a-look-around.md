@@ -1,10 +1,10 @@
 ---
 title: A Look Around
 date: 2014-12-08T11:39:48+00:00
-tags: growth
 author: Michael
 slug: a-look-around
 tags:
+  - growth
   - blog
   - Michael Hyatt
   - retrospective

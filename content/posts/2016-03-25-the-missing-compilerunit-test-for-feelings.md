@@ -1,7 +1,8 @@
 ---
 title: The Missing Compiler/Unit Test for Feelings
 date: 2016-03-25T08:00:10+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: the-missing-compilerunit-test-for-feelings
 ---

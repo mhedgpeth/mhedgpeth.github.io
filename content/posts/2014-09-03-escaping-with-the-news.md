@@ -1,10 +1,10 @@
 ---
 title: Escaping with the News
 date: 2014-09-03T08:00:59+00:00
-tags: growth
 author: Michael
 slug: escaping-with-the-news
 tags:
+  - growth
   - distraction
   - escaping
   - news

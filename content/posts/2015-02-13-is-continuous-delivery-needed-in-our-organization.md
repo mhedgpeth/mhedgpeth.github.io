@@ -1,12 +1,11 @@
 ---
 title: Is Continuous Delivery Needed in Our Organization?
 date: 2015-02-13T08:00:49+00:00
-tags: 
-  - culture
-  - process
 author: Michael
 slug: is-continuous-delivery-needed-in-our-organization
 tags:
+  - culture
+  - process
   - chef
   - Continuous Delivery
   - lean enterprise

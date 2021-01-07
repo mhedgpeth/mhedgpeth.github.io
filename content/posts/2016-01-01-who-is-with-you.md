@@ -1,7 +1,8 @@
 ---
 title: Who is with you?
 date: 2016-01-01T08:00:31+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: who-is-with-you
 ---

@@ -1,7 +1,8 @@
 ---
 title: Introducing Cafe
 date: 2017-01-23T00:00:00+00:00
-tags: cafe
+tags:
+  - cafe
 author: Michael
 slug: introducing-cafe
 ---

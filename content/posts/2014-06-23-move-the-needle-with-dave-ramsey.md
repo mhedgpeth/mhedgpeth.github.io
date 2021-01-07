@@ -1,10 +1,10 @@
 ---
 title: Move the Needle with Dave Ramsey
 date: 2014-06-23T08:00:21+00:00
-tags: growth
 author: Michael
 slug: move-the-needle-with-dave-ramsey
 tags:
+  - growth
   - budgeting
   - dave ramsey
   - live like no one else

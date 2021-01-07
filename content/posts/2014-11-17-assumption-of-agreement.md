@@ -1,13 +1,12 @@
 ---
 title: Assumption of Agreement
 date: 2014-11-17T08:00:31+00:00
-tags:
-  - growth
-  - culture
 author: Michael
 slug: assumption-of-agreement
 tags:
   - Live Simply
+  - growth
+  - culture
   - tolerance
 ---
 <div class="full-width">

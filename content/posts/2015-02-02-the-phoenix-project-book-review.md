@@ -1,12 +1,11 @@
 ---
 title: The Phoenix Project Book Review
 date: 2015-02-02T08:00:14+00:00
-tags:
-  - books
-  - culture
 author: Michael
 slug: the-phoenix-project-book-review
 tags:
+  - books
+  - culture
   - chef
   - devops
   - lean

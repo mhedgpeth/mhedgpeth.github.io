@@ -1,10 +1,10 @@
 ---
 title: You Have Time
 date: 2014-09-24T08:00:39+00:00
-tags: growth
 author: Michael
 slug: you-have-time
 tags:
+  - growth
   - purpose
   - time management
 ---

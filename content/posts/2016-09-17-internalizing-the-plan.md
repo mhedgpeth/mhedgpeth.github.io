@@ -1,7 +1,8 @@
 ---
 title: Internalizing the Plan
 date: 2016-09-17T08:00:00+00:00
-tags: growth
+tags:
+  - growth
 author: Michael
 slug: internalizing-the-plan
 ---

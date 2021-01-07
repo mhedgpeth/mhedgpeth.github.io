@@ -5,13 +5,12 @@ tags:
   - process
   - culture
   - growth
-author: Michael
-slug: the-grand-vision
-tags:
   - goals
   - marketing
   - product management
   - strategy
+author: Michael
+slug: the-grand-vision
 ---
 <div class="full-width">
   <img src="/images/feature-the-grand-vision.jpg" alt="The Grand Vision" />

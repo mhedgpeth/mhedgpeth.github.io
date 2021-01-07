@@ -1,7 +1,8 @@
 ---
 title: 'Feelings > Compliance'
 date: 2016-03-12T08:00:32+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: feelings-compliance
 ---

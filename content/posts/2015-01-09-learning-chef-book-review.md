@@ -1,13 +1,12 @@
 ---
 title: Learning Chef Book Review
 date: 2015-01-09T08:00:12+00:00
-tags: 
-  - books
-  - chef
-  - automation
 author: Michael
 slug: learning-chef-book-review
 tags:
+  - books
+  - chef
+  - automation
   - Book Learning
   - Book Reviews
   - chef

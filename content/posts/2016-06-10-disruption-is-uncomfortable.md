@@ -1,7 +1,8 @@
 ---
 title: Disruption is Uncomfortable
 date: 2016-06-10T08:00:54+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: disruption-is-uncomfortable
 ---

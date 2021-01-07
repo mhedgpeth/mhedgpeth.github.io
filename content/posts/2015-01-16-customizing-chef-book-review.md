@@ -1,13 +1,12 @@
 ---
 title: Customizing Chef Book Review
 date: 2015-01-16T08:00:36+00:00
-tags: 
-  - books
-  - chef
-  - automation
 author: Michael
 slug: customizing-chef-book-review
 tags:
+  - books
+  - chef
+  - automation
   - Book Learning
   - Book Review
   - chef

@@ -1,11 +1,11 @@
 ---
 title: Month Ahead
 date: 2014-06-20T08:00:18+00:00
-tags: growth
 author: Michael
 feature_image: feature-month-ahead 
 slug: month-ahead
 tags:
+  - growth
   - budgeting
   - paycheck to paycheck
   - rule four

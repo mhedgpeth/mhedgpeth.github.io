@@ -1,7 +1,8 @@
 ---
 title: The Overdependent Organization
 date: 2016-02-05T08:00:36+00:00
-tags: culture
+tags:
+  - culture
 author: Michael
 slug: the-overdependent-organization
 ---

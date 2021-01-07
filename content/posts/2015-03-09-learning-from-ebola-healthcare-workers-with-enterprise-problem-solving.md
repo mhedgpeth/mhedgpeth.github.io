@@ -1,12 +1,11 @@
 ---
 title: Learning from Ebola Healthcare Workers with Enterprise Problem Solving
 date: 2015-03-09T09:30:21+00:00
-tags:
-  - process
-  - culture
 author: Michael
 slug: learning-from-ebola-healthcare-workers-with-enterprise-problem-solving
 tags:
+  - process
+  - culture
   - lean enterprise
   - lean startup
   - Management Problems

@@ -1,10 +1,10 @@
 ---
 title: "My Son's Choice Between Negativity and Taking Action"
 date: 2015-01-30T08:00:06+00:00
-tags: culture
 author: Michael
 slug: my-sons-choice-between-negativity-and-taking-action
 tags:
+  - culture
   - despair
   - leadership
   - love
