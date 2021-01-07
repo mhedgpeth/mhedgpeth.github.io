@@ -1,1 +1,0 @@
-Talk through how we do the learning plan
